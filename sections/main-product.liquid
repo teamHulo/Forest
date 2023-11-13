@@ -1,3 +1,38 @@
+<style>
+.product_tab {
+    position: relative;
+}
+.product_tab summary {
+
+}
+.product_tab p {
+
+}
+.product_tab a {
+
+}
+.product_tab[open]::before {
+    transform: rotate(0deg);
+}
+.product_tab::after {
+    content: '';
+    border: 1px solid #6D5F52;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    width: 14px;
+}
+.product_tab::before {
+    transition: all 0.3s ease;
+    content: '';
+    border: 1px solid #6D5F52;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    top: 7px;
+    width: 14px;
+}
+</style>
 <section
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
@@ -64,7 +99,8 @@
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
-      {% render 'product-media-gallery', variant_images: variant_images %}
+      {% comment %} {% render 'product-media-gallery', variant_images: variant_images %} {% endcomment %}
+      {% render 'custom-product-media-gallery', product: product %}
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <product-info
@@ -409,6 +445,13 @@
 
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+            {%- when 'custom_variant' -%}
+              {% render 'custom-variant', list: block.settings.list, curent: product %}
+            {%- when 'tab' -%}
+              <details class="product_tab">
+                <summary>{{ block.settings.title }}</summary>
+                {{ block.settings.text }}
+              </details>
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
             {%- when 'rating' -%}
@@ -1998,6 +2041,36 @@
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         }
+      ]
+    },
+    {
+      "name": "Custom variant",
+      "type": "custom_variant",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "product_list",
+          "id": "list",
+          "label": "Product list"
+        }
+      ]
+    },
+    {
+      "name": "Tab",
+      "type": "tab",
+      "settings": [
+          {
+              "type": "text",
+              "id": "title",
+              "label": "Title",
+              "default": "Use Guide"
+          },
+          {
+              "type": "richtext",
+              "id": "text",
+              "label": "Text",
+              "default": "<p>Orgainc Olea Europaea Fruit Oil (Olive Oil) , Local Cera alba (Beeswax), Organic Butyrospermum Parkii Butter (Shea), Organic Punica Granatum Seed Oil (Pomegranate)</p> "
+          }
       ]
     }
   ],

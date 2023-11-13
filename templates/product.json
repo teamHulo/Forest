@@ -15,20 +15,36 @@
           "settings": {
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "rating": {
           "type": "rating",
           "settings": {
           }
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "4ed11026-50de-4318-8310-fd057b0df5ba": {
+          "type": "custom_variant",
+          "settings": {
+            "list": [
+              "chiavari-chair",
+              "copy-of-chiavari-chair",
+              "copy-of-copy-of-chiavari-chair"
+            ]
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
           }
         },
         "quantity_selector": {
@@ -39,32 +55,53 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
           }
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
+          }
+        },
+        "6be0b615-fb42-467a-9755-ffa8984cffba": {
+          "type": "tab",
+          "settings": {
+            "title": "Details",
+            "text": "<p>RENTAL COST:<br\/>The rental price includes rent, cleaning and VAT.<br\/><br\/>RENTAL PERIOD:<br\/>The rental fee is for 4 days (e.g. Friday-Monday).<br\/><br\/>If you wish to collect the rental items a day earlier or rent for a day longer, we will charge an extension fee of 25% of the rental price for each additional day.<br\/><br\/>ORDERING PROCESS:<br\/>Simply send us your rental request through our online rental store. Please note that this is only a request! You will then receive a full quote from us, including shipping costs if applicable. When you confirm your order, you will receive an invoice for a deposit of 25% of the rental price. The remaining amount must be transferred 14 days prior to the event for delivery. If picking it up in person, you can pay the remaining amount directly on site with cash or EC Cash.<br\/><br\/>CLEANING:<br\/>Cleaning of rented items is done by our professional cleaners and is included in the rental price. But please pay attention before returning\/resubmitting:<br\/><br\/>Wet bedspreads and table linens must be dried or mold stains will appear very quickly.<br\/>Candlesticks must be cleaned of coarse wax residue.<\/p>"
+          }
+        },
+        "10a7b13a-ae4a-4b39-a9cf-aec0da8fb9f6": {
+          "type": "tab",
+          "settings": {
+            "title": "Rent Terms",
+            "text": "<p>RENTAL COST:<br\/>The rental price includes rent, cleaning and VAT.<br\/><br\/>RENTAL PERIOD:<br\/>The rental fee is for 4 days (e.g. Friday-Monday).<br\/><br\/>If you wish to collect the rental items a day earlier or rent for a day longer, we will charge an extension fee of 25% of the rental price for each additional day.<br\/><br\/>ORDERING PROCESS:<br\/>Simply send us your rental request through our online rental store. Please note that this is only a request! You will then receive a full quote from us, including shipping costs if applicable. When you confirm your order, you will receive an invoice for a deposit of 25% of the rental price. The remaining amount must be transferred 14 days prior to the event for delivery. If picking it up in person, you can pay the remaining amount directly on site with cash or EC Cash.<br\/><br\/>CLEANING:<br\/>Cleaning of rented items is done by our professional cleaners and is included in the rental price. But please pay attention before returning\/resubmitting:<br\/><br\/>Wet bedspreads and table linens must be dried or mold stains will appear very quickly.<br\/>Candlesticks must be cleaned of coarse wax residue.<\/p>"
+          }
+        },
+        "2515e14c-3496-45d5-b216-0476026c7473": {
+          "type": "tab",
+          "settings": {
+            "title": "Delivery and returns",
+            "text": "<p>RENTAL COST:<br\/>The rental price includes rent, cleaning and VAT.<br\/><br\/>RENTAL PERIOD:<br\/>The rental fee is for 4 days (e.g. Friday-Monday).<br\/><br\/>If you wish to collect the rental items a day earlier or rent for a day longer, we will charge an extension fee of 25% of the rental price for each additional day.<br\/><br\/>ORDERING PROCESS:<br\/>Simply send us your rental request through our online rental store. Please note that this is only a request! You will then receive a full quote from us, including shipping costs if applicable. When you confirm your order, you will receive an invoice for a deposit of 25% of the rental price. The remaining amount must be transferred 14 days prior to the event for delivery. If picking it up in person, you can pay the remaining amount directly on site with cash or EC Cash.<br\/><br\/>CLEANING:<br\/>Cleaning of rented items is done by our professional cleaners and is included in the rental price. But please pay attention before returning\/resubmitting:<br\/><br\/>Wet bedspreads and table linens must be dried or mold stains will appear very quickly.<br\/>Candlesticks must be cleaned of coarse wax residue.<\/p>"
           }
         }
       },
       "block_order": [
         "vendor",
         "title",
+        "description",
         "rating",
-        "price",
         "variant_picker",
+        "4ed11026-50de-4318-8310-fd057b0df5ba",
+        "price",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "share",
+        "6be0b615-fb42-467a-9755-ffa8984cffba",
+        "10a7b13a-ae4a-4b39-a9cf-aec0da8fb9f6",
+        "2515e14c-3496-45d5-b216-0476026c7473"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -99,10 +136,22 @@
         "padding_top": 0,
         "padding_bottom": 60
       }
+    },
+    "eb3b51b0-6b77-4954-9e0d-af5d2f5200ce": {
+      "type": "section-tabs-slider",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "list": [
+          "frontpage",
+          "test"
+        ]
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "eb3b51b0-6b77-4954-9e0d-af5d2f5200ce"
   ]
 }
