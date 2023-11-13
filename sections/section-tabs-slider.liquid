@@ -1,0 +1,127 @@
+<style>
+#shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+.flickity-viewport:focus-visible, .carousel:focus-visible {
+    box-shadow: none !important;
+    outline: none;
+}
+.tabs {
+	display: flex;
+	flex-wrap: wrap; 
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+    transition: background ease 0.2s;
+}
+.tabs .tab {
+    order: 99;
+    flex-grow: 1;
+	width: 100%;
+	display: none;
+    background: #fff;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	border-bottom: 2px solid #6D5F52;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+.carousel-cell {
+  width: 20%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+.carousel-cell img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+    background-color: #EDDFD5;
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+</style>
+<div class="page-width tabs">
+    {% for collection in section.settings.list %}  
+        <input type="radio" name="tabs" id="tab-{{ forloop.index }}" checked="checked">
+        <label for="tab-{{ forloop.index }}">{{ collection.title }}</label>
+        <div class="tab">
+            <div class="carousel"
+            data-flickity='{ "groupCells": true }'>
+            {% for product in collection.products %}    
+                <div class="carousel-cell">
+                    {% render 'product-media', media: product.media[0] %}
+                </div>
+            {% endfor %}
+            </div>          
+        </div>
+    {% endfor %}
+</div>
+{% schema %}
+{
+    "name": "Tabs Slider",
+    "settings": [
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 36
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 36
+        },
+        {
+            "type": "collection_list",
+            "id": "list",
+            "label": "Collections"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Tabs Slider"
+        }
+    ]
+}
+{% endschema %}
