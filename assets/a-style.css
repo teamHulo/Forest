@@ -1,192 +1,370 @@
 @font-face {
-    font-family: Acumin Pro;
-    src: url(https://cdn.shopify.com/s/files/1/0572/9442/2095/files/Acumin-RPro.otf?v=1699615469);
+  font-family: Acumin Pro;
+  src: url(https://cdn.shopify.com/s/files/1/0572/9442/2095/files/Acumin-RPro.otf?v=1699615469);
 }
 @font-face {
-    font-family: IvyPresto Display;
-    src: url(https://cdn.shopify.com/s/files/1/0572/9442/2095/files/Acumin-RPro.otf?v=1699615469);
+  font-family: IvyPresto Display;
+  src: url(https://cdn.shopify.com/s/files/1/0572/9442/2095/files/Acumin-RPro.otf?v=1699615469);
 }
-:root{
-    --font-size-60: clamp(35px,4.167vw,60px);
-    --font-size-48: clamp(30px,3.333vw,48px);
-    --font-size-36: clamp(25px,2.500vw,36px);
-    --font-size-30: clamp(22px,2.083vw,30px);
-    --font-size-24: clamp(18px,1.667vw,24px);
-    --font-size-14: 14px;
-    --font-size-12:12px;
-    --font-size-10:10px;
-}
-
-
-
-h1{
-    font-family: IvyPresto Display;
-    font-size: var(--font-size-60);
-    font-style: normal;
-    font-weight: 300;
-    line-height: 120%; /* 43.2px */
-    text-transform: capitalize;
+:root {
+  --font-size-60: clamp(35px, 4.167vw, 60px);
+  --font-size-48: clamp(30px, 3.333vw, 48px);
+  --font-size-36: clamp(25px, 2.5vw, 36px);
+  --font-size-30: clamp(22px, 2.083vw, 30px);
+  --font-size-24: clamp(18px, 1.667vw, 24px);
+  --font-size-14: 14px;
+  --font-size-12: 12px;
+  --font-size-10: 10px;
 }
 
-h2{
-    color: var(--brown-01, #6D5F52);
-
-    /* H2 */
-    font-family: IvyPresto Display;
-    font-size: var(--font-size-48);
-    font-style: normal;
-    font-weight: 300;
-    line-height: 110%; /* 52.8px */
-    text-transform: capitalize;
+h1 {
+  font-family: IvyPresto Display;
+  font-size: var(--font-size-60);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 43.2px */
+  text-transform: capitalize;
 }
 
-h3{
-    font-family: IvyPresto Display;
-    font-size: var(--font-size-36);
-    font-style: normal;
-    font-weight: 300;
-    line-height: 120%; /* 43.2px */
-    text-transform: capitalize;
+h2 {
+  color: var(--brown-01, #6d5f52);
+
+  /* H2 */
+  font-family: IvyPresto Display;
+  font-size: var(--font-size-48);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%; /* 52.8px */
+  text-transform: capitalize;
 }
 
-h4{
-    font-family: IvyPresto Display;
-    font-size: var(--font-size-30);
-    font-style: normal;
-    font-weight: 300;
-    line-height: 120%; /* 43.2px */
-    text-transform: capitalize;
+h3 {
+  font-family: IvyPresto Display;
+  font-size: var(--font-size-36);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 43.2px */
+  text-transform: capitalize;
+}
+
+h4 {
+  font-family: IvyPresto Display;
+  font-size: var(--font-size-30);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 43.2px */
+  text-transform: capitalize;
 }
 /***** subtitle 1 ****/
-h5{
-    font-family: IvyPresto Display;
-    font-size: var(--font-size-24);
-    font-style: normal;
-    font-weight: 300;
-    line-height: 120%; /* 43.2px */
-    text-transform: capitalize;
+h5 {
+  font-family: IvyPresto Display;
+  font-size: var(--font-size-24);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 43.2px */
+  text-transform: capitalize;
 }
 
 /**** subtitle 2 ****/
-h6{
-    color: var(--brown-01, #6D5F52);
-    font-family: Acumin Pro;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 21px */
+h6 {
+  color: var(--brown-01, #6d5f52);
+  font-family: Acumin Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
 }
 /**** body 1 ***/
-p{
-    color: var(--brown-01, #6D5F52);
-    font-family: Acumin Pro;
-    font-size:var(--font-size-14);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 21px */
+p {
+  color: var(--brown-01, #6d5f52);
+  font-family: Acumin Pro;
+  font-size: var(--font-size-14);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
 }
 
 .overline p {
-    color: var(--brown-03, #A7A294);
-    /* Overline */
-    font-family: Acumin Pro;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%; /* 14px */
-    letter-spacing: 0.1px;
-    text-transform: uppercase;
+  color: var(--brown-03, #a7a294);
+  /* Overline */
+  font-family: Acumin Pro;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 14px */
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
 }
 
-.a-btn{
-    display:flex;
-    width:100%;
-    height: 37px;
-    justify-content: center;
-    align-items: center;
-    padding:0 10px;
-    background: var(--soft-coral, #EDDFD5);
+.a-btn {
+  display: flex;
+  width: 100%;
+  height: 37px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  background: var(--soft-coral, #eddfd5);
 
-
-    color: var(--brown-01, #6D5F52);
-    /* Subtitle 2 */
-    font-family: Acumin Pro;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 100%; /* 21px */
-    text-decoration: none;
-    transition: all .4 cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: var(--brown-01, #6d5f52);
+  /* Subtitle 2 */
+  font-family: Acumin Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 21px */
+  text-decoration: none;
+  transition: all 0.4 cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.a-btn:hover{
-    background: var(--brown-01, #6D5F52);
+.a-btn:hover {
+  background: var(--brown-01, #6d5f52);
 
-    transition: all .4 cubic-bezier(0.075, 0.82, 0.165, 1);
-    color: var(--soft-coral, #EDDFD5);
+  transition: all 0.4 cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: var(--soft-coral, #eddfd5);
 }
-.container{
-    max-width: 1440px;
-    margin:0 auto;
-    padding-left:clamp(20px,3.472vw,50px);
-    padding-right:clamp(20px,3.472vw,50px);
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: clamp(20px, 3.472vw, 50px);
+  padding-right: clamp(20px, 3.472vw, 50px);
 }
 .page-width {
-    max-width: 1440px;
-    margin:0 auto;
-    padding-left:clamp(20px,3.472vw,50px);
-    padding-right:clamp(20px,3.472vw,50px);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: clamp(20px, 3.472vw, 50px);
+  padding-right: clamp(20px, 3.472vw, 50px);
 }
 
 /**** my card ****/
-.my-card{
-    height: 100%;
+.my-card {
+  height: 100%;
 }
-.my-card .overline p{
-    color: var(--brown-03, #A7A294);
+.my-card .overline p {
+  color: var(--brown-03, #a7a294);
 }
-.my-card .image .image__body{
-    position: relative;
-    padding-top:120%;
-    
+.my-card .image .image__body {
+  position: relative;
+  padding-top: 120%;
 }
-.my-card .my-card__wrap{
-    height: 100%;
-    display:flex;
-    flex-direction: column;
+.my-card .my-card__wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.my-card .item-content{
-    padding:8px 0;
+.my-card .item-content {
+  padding: 8px 0;
 }
-.my-card .image .image__body img{
-    display:block;
-    width:100%;
-    height: 100%;
-    /*object-fit: cover;*/
-    position: absolute;
-    top:0;
-    left:0;
+.my-card .image .image__body img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /*object-fit: cover;*/
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .my-card .title {
-    margin:0 0 4px 0;
+  margin: 0 0 4px 0;
 }
-.my-card .title h6{
-    margin:0;
+.my-card .title h6 {
+  margin: 0;
 }
-.my-card .product_price{
- margin-top:14px;
+.my-card .product_price {
+  margin-top: 14px;
 }
-.my-card .product-btn{
-    margin-top:auto;
+.my-card .product-btn {
+  margin-top: auto;
 }
-.my-card .product_price p{
-    color: var(--brown-01, #6D5F52);
-    font-family: Acumin Pro;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.12px;
-    text-transform: uppercase;
+.my-card .product_price p {
+  color: var(--brown-01, #6d5f52);
+  font-family: Acumin Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
 }
 /**** end my card ****/
+
+/******** product *******/
+.product {
+  justify-content: space-between;
+}
+.product .product__media-wrapper {
+  max-width: 49.328% !important;
+  width: 49.328% !important;
+}
+.product .product__info-container {
+  max-width: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap:12px;
+}
+.product .product__info-wrapper {
+  max-width: 45.2238% !important;
+  width: 45.2238% !important;
+  padding: 0;
+}
+.product .product__title {
+  margin: 0 0 12px 0;
+  width: 100%;
+}
+.product .product__title h1 {
+}
+.product .product__description {
+  width: 100%;
+  margin: 0 0 24px 0 !important;
+  /* Body 1 */
+  font-family: Acumin Pro;
+  font-size: var(--font-size-14);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+.product .price-item {
+  color: var(--brown-01, #6d5f52);
+  font-family: IvyPresto Display;
+  font-size: var(--font-size-24);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 31.2px */
+  letter-spacing: 0.24px;
+  text-transform: capitalize;
+}
+.product .price__container {
+  margin: 0;
+}
+.product .product-price {
+  margin: 0 0 14px 0 !important;
+  width: 100%;
+}
+.m0 {
+  margin: 0 !important;
+  display: none !important;
+}
+.product .product__text {
+  color: var(--brown-03, #a7a294);
+  font-family: Acumin Pro;
+  font-size: var(--font-size-12);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.12px;
+  margin: 0;
+  max-width: 226px;
+}
+.product .product-text {
+  margin: 0 0 24px 0;
+  width: 100%;
+}
+.product .product-form__input {
+  max-width: 154px !important;
+}
+.product .product-form__input .quantity {
+  width: 154px;
+}
+.quantity {
+  min-height: 0;
+  height: 37px;
+}
+.quantity__input {
+  color: var(--brown-01, #6d5f52);
+  text-align: center;
+
+  /* Subtitle 2 */
+  font-family: Acumin Pro;
+  font-size: var(--font-size-14);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+}
+.product-buttons{
+    margin:0 0 48px 0 !important;
+    max-width: 268px;
+    width:100%;
+}
+.product-form{
+    margin:0 !important;
+   
+}
+.product-form__input{
+    margin:0 !important;
+}
+.product-form__buttons{
+    max-width: 100% !important;
+}
+.product-form__submit {
+  margin:0 !important;
+  display: flex;
+  justify-content: center;
+  height: 37px;
+  align-items: center;
+  max-width: 268px;
+  width: 100%;
+  min-height: 37px !important;
+  color: var(--brown-01, #6d5f52);
+  text-align: center;
+  font-family: Acumin Pro;
+  font-size: var(--font-size-14);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+
+  background: var(--soft-coral, #eddfd5);
+}
+
+.product_tab{
+    width:100%;
+}
+.product_tab[open] summary{
+    padding-bottom: 0;
+}
+.product_tab summary{
+    color: var(--brown-01, #6D5F52);
+
+    /* Subtitle 2 */
+    font-family: Acumin Pro;
+    font-size: var(--font-size-14);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    padding-bottom:12px;
+}
+.product_tab{
+    border-bottom: 1px solid #A7A294;
+    margin:0 !important;
+}
+.product_tab .tab-content{
+    border-top: 1px solid #A7A294;
+    margin-top:12px;
+}
+.product_tab .tab-content p{
+    margin: 12px 0 !important;
+
+    color: var(--brown-02, #7C6F62);
+
+    /* Body 2 - Regular */
+    font-family: Acumin Pro;
+    font-size: var(--font-size-12);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    letter-spacing: 0.12px;
+}
+
+
+@media (max-width:767px){
+  .product .product__info-wrapper{
+    width:100% !important;
+    max-width: 100% !important;
+  }
+  .product .product__media-wrapper{
+    width:100% !important;
+    max-width: 100% !important;
+  }
+  .product__media-wrapper{
+    margin-bottom:20px;
+  }
+}
+/****** end product ******/

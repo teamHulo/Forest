@@ -1,33 +1,34 @@
 {{ 'custom-product-media-gallery.css' | asset_url | stylesheet_tag }}
 
-<div class="custom-product-media-gallery">
-  <div class="row">
-    <div class="col-1">
-       <div class="carousel carousel-nav" 
-            data-flickity='{
-              "asNavFor": ".carousel-main",
-              "draggable": false,
-              "percentPosition": false,
-              "groupCells": "100%",
-              "pageDots": false
-            }'>
-            {% for  media in product.media %}
-                <div class="carousel-cell aaa">
-                    {% render 'product-media', media: media %}
+<div class="my-product-media">
+  <div class="my-product-media__wrap">
+
+    <div  class="swiper my-product-media-swiper">
+      <div class="swiper-wrapper">
+        {% for  media in product.media %}
+          <div class="swiper-slide">
+            <div class="swiper-slide__wrap">
+              <div class="image__wrap">
+                <div class="image__body">
+                  {% render 'product-media', media: media %}
                 </div>
-            {% endfor %}
+              </div>
+              
+            </div>
+          </div>
+        {% endfor %}
       </div>
+      <div class="swiper-pagination product-media-pagination"></div>  
     </div>
-    <div class="col-11">
-      <div class="carousel carousel-main"
-           data-flickity='{
-             "contain": true,
-             "pageDots": true,
-             "prevNextButtons": false
-           }'>
-           {% for  media in product.media %}
-                <div class="carousel-cell">{% render 'product-media', media: media %}</div>
-            {% endfor %}
+    <div thumbsSlider="" class="swiper my-product-thumbs-swiper">
+      <div class="swiper-wrapper">
+        {% for  media in product.media %}
+          <div class="swiper-slide">
+            <div class="swiper-slide__wrap">
+              {% render 'product-media', media: media %}
+            </div>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>

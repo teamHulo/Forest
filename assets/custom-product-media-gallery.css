@@ -1,10 +1,10 @@
-.custom-product-media-gallery .carousel-cell {
+/* .custom-product-media-gallery .carousel-cell {
     counter-increment: carousel-cell;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-   /* cell number */
+ 
 }
 .custom-product-media-gallery .carousel-main .carousel-cell {
     width: 100%;
@@ -27,7 +27,7 @@
     cursor: pointer;
     margin-right: 1rem;
     font-size: 1.4rem;
-   /* selected cell */
+   
 }
 .custom-product-media-gallery .carousel-nav .carousel-cell img {
    transform: rotate(-90deg);
@@ -54,4 +54,78 @@
    object-fit: contain;
    width: 100%;
    height: 100%;
+} */
+.my-product-media__wrap .my-product-media-swiper{
+    width: calc(100% - 113px);
+    margin:0 !important;
+}
+.my-product-media  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+.my-product-thumbs-swiper{
+    max-height: 550px;
+    max-width: 98px;
+    margin:0;
+}
+.my-product-thumbs-swiper .swiper-slide{
+    height: 98px !important;
+}
+.my-product-thumbs-swiper .swiper-slide-thumb-active img{
+    cursor: pointer;
+    border: 1px solid var(--brown-01, #6D5F52);
+    background: var(--beige-02, #F8F5F0);
+}
+
+.my-product-thumbs-swiper img{
+    width:96px;
+    height: 96px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.my-product-media-swiper .swiper-pagination-bullet-active{
+    background-color: #6D5F52 !important;
+}
+.my-product-media-swiper .swiper-pagination-bullet{
+    background-color: #A7A294 ;
+    opacity: 1 !important;
+}
+.my-product-media-swiper .image__body{
+    position: relative; 
+    padding-top:100%;
+    background: var(--beige-02, #F8F5F0);
+}
+.my-product-media-swiper .image__body img{
+    position: absolute;
+    top:0; 
+    left:0;
+}
+
+.my-product-media__wrap{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.my-product-media-swiper{
+
+}
+@media (max-width:1200px){
+    .my-product-thumbs-swiper .swiper-slide{
+        width: 98px;
+
+    }
+    .my-product-media__wrap{
+        display: block;
+    }
+    .my-product-media__wrap .my-product-media-swiper{
+        width: 100%;
+    }
+    .my-product-thumbs-swiper{
+        max-width: 100%;
+    }
+    .my-product-thumbs-swiper{
+        margin-top:15px;
+    }
 }
