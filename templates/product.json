@@ -127,10 +127,24 @@
         "padding_top": 0,
         "padding_bottom": 60
       }
+    },
+    "8532fafa-06cd-45c1-9f26-f43a429da3c1": {
+      "type": "section-contact",
+      "settings": {
+        "img1": "shopify:\/\/shop_images\/Weddings_-_Holly_Clark_Photography_3e8565c8-96ee-44a4-9646-437687af42d8.png",
+        "img2": "shopify:\/\/shop_images\/Monochromatic_Wedding_Florals_A_Wild_Vine_94a775bc-008d-4a2e-b850-e4f263284e5a.png",
+        "title": "contact us",
+        "text": "<p>If you have any questions, you can contact us at the specified contacts<\/p>",
+        "phone": "Phone",
+        "phone_name": "+1 343 343 33 22",
+        "email": "Email",
+        "email_name": "info@forestevents.com"
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "8532fafa-06cd-45c1-9f26-f43a429da3c1"
   ]
 }
