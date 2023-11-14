@@ -5,6 +5,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "6009c6b7-b27c-435a-89fa-da783b7949c0": {
+          "type": "images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Clip_path_group.png"
+          }
+        },
         "7b3816f6-f6fc-4a61-bd73-c080e3f06dcc": {
           "type": "link_list",
           "settings": {
@@ -18,11 +24,26 @@
             "heading": "For clients",
             "menu": "for-clients"
           }
+        },
+        "e9851edb-6b63-4de6-a478-b8e52d0ab4e7": {
+          "type": "contact_and_social",
+          "settings": {
+            "header_contact": "Contacts",
+            "header_social": "Social Media",
+            "phone_label": "Phone",
+            "phone": "+1 343 343 33 22",
+            "email_label": "Phone",
+            "email": "info@forestevents.com",
+            "hour_label": "Opening Hours",
+            "hour": "Mon-Fri 9:00-18:00"
+          }
         }
       },
       "block_order": [
+        "6009c6b7-b27c-435a-89fa-da783b7949c0",
         "7b3816f6-f6fc-4a61-bd73-c080e3f06dcc",
-        "871c332f-548e-4c0d-b1a3-38cd3be6e5d2"
+        "871c332f-548e-4c0d-b1a3-38cd3be6e5d2",
+        "e9851edb-6b63-4de6-a478-b8e52d0ab4e7"
       ],
       "settings": {
         "color_scheme": "scheme-25a74b07-c373-4b46-9fdc-3a7023a81200",
