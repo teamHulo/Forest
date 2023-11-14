@@ -609,3 +609,105 @@ p {
   padding:30px 0  36px 0;
 }
 /**** end breadcrumbs ***/
+/***** footer ****/
+.footer-img img{
+  display:block;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 47px;
+  max-width:109px;
+}
+.footer-block__heading , .contact-and-social .title h2{
+  color: var(--brown-01, #6D5F52) !important;
+/* Subtitle 2 */
+font-family: "acumin-pro" !important;
+font-size: var(--font-size-14) !important;
+font-style: normal !important;
+font-weight: 500 !important;
+line-height: 150% !important;
+margin:0 0 12px 0 !important;
+width:max-content !important;
+}
+.block-social-my{
+  margin-left:auto
+}
+.contact-and-social .title{
+  margin:0;
+}
+.contact-and-social__wrap{
+  display: flex;
+  gap:0 clamp(20px,3.194vw,46px);
+  flex-wrap:wrap;
+}
+.footer-block.grid__item{
+  width:max-content !important;
+}
+.footer-block__details-content li, .footer-block__details-content{
+  width:max-content !important;
+}
+.footer-block__details-content{
+  flex-grow: 0 !important;
+}
+.footer .grid__item{
+  flex-grow:0 !important;
+}
+.footer__blocks-wrapper{
+  gap:30px clamp(20px,7.639vw,110px);
+}
+.social .social_list ul{
+  display:block;
+}
+
+.footer-block__details-content .link, .footer .label, .contact-contant a, .contact-and-social .social_list .link{
+  color: var(--brown-01, #6D5F52);
+
+  /* Body 2 - Regular */
+  font-family: "acumin-pro";
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+  letter-spacing: 0.12px;
+  text-decoration: none;
+}
+.contact-contant p{
+  margin:0;
+}
+.footer .label{
+  margin-bottom:6px;
+}
+.contact-contant .item{
+  margin-bottom:20px;
+}
+
+.contact-and-social .social_list .link{
+  padding:0;
+  
+}
+.contact-and-social .social_list li{
+  margin-bottom: 20px;
+}
+.footer__content-top{
+  padding-bottom:0 !important;
+}
+.footer__content-bottom{
+  padding-top:16px !important;
+  padding-bottom: 16px;
+}
+.footer__copyright{
+  margin-top:0 !important;
+}
+.copyright__content, .copyright__content a{
+  color: var(--brown-03, #A7A294);
+  text-align: center;
+
+  /* Body 2 - Medium */
+  font-family: Acumin Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+/***** end footer ****/
