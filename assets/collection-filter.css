@@ -1,3 +1,29 @@
+/*  */
+.isolate > .rich-text {
+    margin-top: 50px;
+}
+.isolate > .rich-text h2 {
+    text-align: center;
+    font-family: ivypresto-display;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 126.667%;
+    text-transform: capitalize;
+}
+.isolate > .rich-text p {
+    font-family: acumin-pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+/*  */
+
+.active-facets {
+    display: none !important;
+}
 .product-count, .facets__header {
     display: none !important;
 }
@@ -51,7 +77,7 @@ ul.list-menu.list-menu--inline:before {
     color: var(--brown-01, #6D5F52);
 
     /* H3 */
-    font-family: IvyPresto Display;
+    font-family: ivypresto-display;
     font-size: 36px;
     font-style: normal;
     font-weight: 300;
@@ -165,23 +191,25 @@ ul.list-menu.list-menu--inline:before {
 
 .facets-horizontal .facet-filters {
     padding-left: 0;
-    border: 1px solid #A7A294;
-    padding: 8px 12px;
-
+    display: flex;
+    align-items: center;
 }
 .facets-horizontal .facet-filters .select {
     width: 100%;
     height: 100%;
+
 }
 .facets-horizontal .facet-filters .select select {
     outline: none;
+    padding: 8px 12px;
+    border: 1px solid #A7A294;
 }
 .facets-horizontal .facet-filters .select select:focus-visible {
     outline: none;
     box-shadow: none;
 }
 .facets-horizontal .facets__form {
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr;
     gap: 15px;
 }
 .facets-horizontal .facets__wrapper {
@@ -189,13 +217,21 @@ ul.list-menu.list-menu--inline:before {
     gap: 15px;
 }
 .facets-horizontal .facets__wrapper details {
-    flex: 1;
+
+
+    width: 190px;
     margin-right: 0;
     border: 1px solid #A7A294;
     padding: 8px 12px 8px 12px;
 }
 .facets-horizontal .facets__wrapper details summary {
     margin-bottom: 0;
+    /* Subtitle 2 */
+    font-family: acumin-pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
 }
 .facets-horizontal .facets__wrapper details summary:hover span {
     text-decoration: none;
