@@ -63,7 +63,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    object-fit:contain;
+    object-fit:cover;
 }
 .my-product-thumbs-swiper{
     max-height: 550px;

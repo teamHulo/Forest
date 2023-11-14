@@ -1,11 +1,12 @@
-@font-face {
+@import url("https://use.typekit.net/kzg8vyl.css");
+ /*@font-face {
   font-family: Acumin Pro;
   src: url(https://cdn.shopify.com/s/files/1/0572/9442/2095/files/Acumin-RPro.otf?v=1699615469);
 }
 @font-face {
   font-family: IvyPresto Display;
   src: url(https://cdn.shopify.com/s/files/1/0572/9442/2095/files/Acumin-RPro.otf?v=1699615469);
-}
+}*/
 :root {
   --font-size-60: clamp(35px, 4.167vw, 60px);
   --font-size-48: clamp(30px, 3.333vw, 48px);
@@ -460,6 +461,29 @@ p {
 
 
 /***** section recomendation ******/
+.rental{
+  width:100%;
+}
+.rental .span{
+  width:max-content;
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  background: #F5EAE2;
+
+  color: var(--brown-01, #6D5F52);
+  text-align: center;
+
+  /* Overline */
+  font-family: Acumin Pro;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 14px */
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+}
 .product-tabs-recomentadion .title{
   margin:0 0 24px 0;
 }
@@ -548,3 +572,40 @@ p {
   width: 100%;
 }
 /******* end recomendation *********/
+
+/**** breadcrumbs ***/
+.breadcrumbs .breadcrumbs__list{
+  display:flex;
+  align-items: center;
+  gap:6px;
+ 
+}
+.breadcrumbs ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+.breadcrumbs a{
+  color: var(--brown-03, #A7A294);
+  /* Body 2 - Medium */
+  font-family: Acumin Pro;
+  font-size: var(--font-size-12);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  display:flex;
+  align-items: center;
+  gap:6px;
+  text-decoration: none;
+}
+.breadcrumbs.breadcrumbs li:last-child a span{
+  display: none;
+}
+.breadcrumbs.breadcrumbs li:last-child a {
+  color: var(--brown-01, #6D5F52);
+}
+.breadcrumbs-body{
+  padding:30px 0  36px 0;
+}
+/**** end breadcrumbs ***/
