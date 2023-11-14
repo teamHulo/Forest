@@ -56,14 +56,6 @@
 
 
 
-
-ul.list-menu.list-menu--inline:before {
-    content: "";
-    position: absolute;
-    height: 44px;
-    width: 100vw;
-    background-color: #EDDFD5;
-}
 .list-menu li {
     z-index: 1;
 }
