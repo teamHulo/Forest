@@ -19,7 +19,7 @@
 }
 
 h1 {
-  font-family: IvyPresto Display;
+  font-family: "ivypresto-display";
   font-size: var(--font-size-60);
   font-style: normal;
   font-weight: 300;
@@ -31,7 +31,7 @@ h2 {
   color: var(--brown-01, #6d5f52);
 
   /* H2 */
-  font-family: IvyPresto Display;
+  font-family: "ivypresto-display";
   font-size: var(--font-size-48);
   font-style: normal;
   font-weight: 300;
@@ -40,7 +40,7 @@ h2 {
 }
 
 h3 {
-  font-family: IvyPresto Display;
+  font-family: "ivypresto-display";
   font-size: var(--font-size-36);
   font-style: normal;
   font-weight: 300;
@@ -49,7 +49,7 @@ h3 {
 }
 
 h4 {
-  font-family: IvyPresto Display;
+  font-family: "ivypresto-display";
   font-size: var(--font-size-30);
   font-style: normal;
   font-weight: 300;
@@ -58,7 +58,7 @@ h4 {
 }
 /***** subtitle 1 ****/
 h5 {
-  font-family: IvyPresto Display;
+  font-family: "ivypresto-display";
   font-size: var(--font-size-24);
   font-style: normal;
   font-weight: 300;
@@ -69,7 +69,7 @@ h5 {
 /**** subtitle 2 ****/
 h6 {
   color: var(--brown-01, #6d5f52);
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -78,7 +78,7 @@ h6 {
 /**** body 1 ***/
 p {
   color: var(--brown-01, #6d5f52);
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: var(--font-size-14);
   font-style: normal;
   font-weight: 400;
@@ -88,7 +88,7 @@ p {
 .overline p {
   color: var(--brown-03, #a7a294);
   /* Overline */
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
@@ -108,7 +108,7 @@ p {
 
   color: var(--brown-01, #6d5f52);
   /* Subtitle 2 */
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -178,7 +178,7 @@ p {
 }
 .my-card .product_price p {
   color: var(--brown-01, #6d5f52);
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -216,7 +216,7 @@ p {
   width: 100%;
   margin: 0 0 24px 0 !important;
   /* Body 1 */
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: var(--font-size-14);
   font-style: normal;
   font-weight: 400;
@@ -224,7 +224,7 @@ p {
 }
 .product .price-item {
   color: var(--brown-01, #6d5f52);
-  font-family: IvyPresto Display;
+  font-family: "ivypresto-display";
   font-size: var(--font-size-24);
   font-style: normal;
   font-weight: 300;
@@ -245,7 +245,7 @@ p {
 }
 .product .product__text {
   color: var(--brown-03, #a7a294);
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: var(--font-size-12);
   font-style: normal;
   font-weight: 400;
@@ -273,7 +273,7 @@ p {
   text-align: center;
 
   /* Subtitle 2 */
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: var(--font-size-14);
   font-style: normal;
   font-weight: 500;
@@ -305,7 +305,7 @@ p {
   min-height: 37px !important;
   color: var(--brown-01, #6d5f52);
   text-align: center;
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: var(--font-size-14);
   font-style: normal;
   font-weight: 500;
@@ -324,7 +324,7 @@ p {
     color: var(--brown-01, #6D5F52);
 
     /* Subtitle 2 */
-    font-family: Acumin Pro;
+    font-family: "acumin-pro";
     font-size: var(--font-size-14);
     font-style: normal;
     font-weight: 500;
@@ -345,7 +345,7 @@ p {
     color: var(--brown-02, #7C6F62);
 
     /* Body 2 - Regular */
-    font-family: Acumin Pro;
+    font-family: "acumin-pro";
     font-size: var(--font-size-12);
     font-style: normal;
     font-weight: 400;
@@ -433,7 +433,7 @@ p {
   color: var(--brown-01, #6D5F52);
 
   /* Body 1 */
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: var(--font-size-14);
   font-style: normal;
   font-weight: 400;
@@ -476,7 +476,7 @@ p {
   text-align: center;
 
   /* Overline */
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
@@ -588,7 +588,7 @@ p {
 .breadcrumbs a{
   color: var(--brown-03, #A7A294);
   /* Body 2 - Medium */
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: var(--font-size-12);
   font-style: normal;
   font-weight: 500;
