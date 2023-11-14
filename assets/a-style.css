@@ -541,4 +541,7 @@ p {
 .swiper-pagination-progressbar-fill{
   background: #EDDFD5 !important;
 }
+.share-button, variant-radios, .color{
+  width: 100%;
+}
 /******* end recomendation *********/
