@@ -101,7 +101,7 @@
     border-left: 9px solid transparent;
 
 /* Body 2 - Medium */
-    font-family: Acumin Pro;
+    font-family:  acumin-pro;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -132,16 +132,16 @@
     transform: rotate(90deg);
     position: absolute;
     right: 10px;
-    top: 12px;
-    width: 14px;
+    top: 16px;
+    width: 11px;
 }
 .product-grid-collection-filter details::after {
     content: '';
     border: 1px solid #6D5F52;
     position: absolute;
     right: 10px;
-    top: 12px;
-    width: 14px;
+    top: 16px;
+    width: 11px;
 }
 .product-grid-collection-filter details[open]::before {
     transform: rotate(0deg);
