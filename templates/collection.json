@@ -9,6 +9,36 @@
         "color_scheme": "background-1"
       }
     },
+    "dbd7eed4-a912-48f1-ba7f-d1e74131eac2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15148980043855__dbd7eed4-a912-48f1-ba7f-d1e74131eac2-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Rent",
+            "heading_size": "h1"
+          }
+        },
+        "template--15148980043855__dbd7eed4-a912-48f1-ba7f-d1e74131eac2-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The rental period is 4 days. You will receive your items on the first day of the selected rental period. The return will take place on the last day of the rental period by 12 noon, if you return the package by post, you will drop off the package at the post office by Monday, 12:00 noon. Would you like to rent the items one day earlier or one day longer? For each additional rental day, we charge 30% of the rental period.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15148980043855__dbd7eed4-a912-48f1-ba7f-d1e74131eac2-heading-1",
+        "template--15148980043855__dbd7eed4-a912-48f1-ba7f-d1e74131eac2-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-d03d9eac-ed74-462f-809d-c747a1512874",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -26,13 +56,14 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "padding_top": 0,
+        "padding_top": 40,
         "padding_bottom": 60
       }
     }
   },
   "order": [
     "banner",
+    "dbd7eed4-a912-48f1-ba7f-d1e74131eac2",
     "product-grid"
   ]
 }
