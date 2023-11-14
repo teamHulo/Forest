@@ -109,11 +109,17 @@
     letter-spacing: 0.12px;
 }
 .collection-filter-item a {
-    margin-top: 10px;
     text-decoration: none;
     color: inherit;
     display: block;
 }
+details.collection-filter-item a {
+    margin-top: 8px;
+}
+.collection-filter-item a.first-subitem {
+    margin-top: 16px;
+}
+
 .collection-filter-item p {
     margin: 0;
 }
