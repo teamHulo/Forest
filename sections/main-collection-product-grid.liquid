@@ -1,6 +1,8 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'collection-filter.css' | asset_url | stylesheet_tag }}
+
 
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
@@ -66,7 +68,7 @@
             </noscript>
           </div>
 
-          <div class="product-count-vertical light" role="status">
+          <div class="aaa product-count-vertical light" role="status">
             <h2 class="product-count__text text-body">
               <span id="ProductCountDesktop">
                 {%- if collection.results_count -%}
@@ -90,13 +92,49 @@
       </facet-filters-form>
     {%- endif -%}
 
-    <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
+
+
+    <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}{% if section.settings.filter_type == 'horizontal' %} facets-horizontal{% endif %}">
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
+      <div class="filter-header-wrapper page-width">
+      {% if section.settings.filter_type == 'horizontal' %}
+        {% if collection.title == 'Products' %}
+          <div class="collection-title">Shop All</div>
+        {% else %}
+          <div class="collection-title">{{ collection.title }}</div>
+        {% endif %}
+      {% endif %}
+          {% comment %} Drawer filter collection {% endcomment %}
+    <div class="product-grid-with-filter-mobile">
+      <details class="mobile-facets__disclosure disclosure-has-popup">
+        <summary class="mobile-facets__open-wrapper focus-offset">
+          <span class="mobile-facets__open">
+            {% render 'icon-filter' %}
+            <span class="mobile-facets__open-label button-label medium-hide large-up-hide">Collection filter</span>
+            <span class="mobile-facets__open-label button-label small-hide">2222</span>
+          </span>
+        </summary>
+        <div>
+          <div id="FacetFiltersFormMobile" class="mobile-facets">
+            <div class="mobile-facets__inner gradient">
+              <div class="mobile-facets__header">
+              <div class="mobile-facets__header-inner">
+                <h2 class="mobile-facets__heading medium-hide large-up-hide">Filter Collection</h2>
+                <h2 class="mobile-facets__heading small-hide">Filter Collection</h2>
+              </div>
+            </div>
+              {% render 'product-collection-filter', list: section.settings.filter_menu.links %}
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+    {% comment %} Drawer filter collection {% endcomment %}
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
         <aside
           aria-labelledby="verticalTitle"
-          class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+          class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}"
           id="main-collection-filters"
           data-id="{{ section.id }}"
         >
@@ -109,7 +147,7 @@
           %}
         </aside>
       {%- endif -%}
-
+      </div>
       <div
         class="product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         id="ProductGridContainer"
@@ -117,6 +155,8 @@
           data-cascade
         {% endif %}
       >
+      <div class="product-grid-with-filter page-width">
+        {% render 'product-collection-filter', list: section.settings.filter_menu.links %}
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
@@ -132,7 +172,7 @@
             </div>
           </div>
         {%- else -%}
-          <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
+          <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width1{% endif %}">
             <div class="loading-overlay gradient"></div>
             <ul
               id="product-grid"
@@ -175,6 +215,7 @@
             {%- endif -%}
           </div>
         {%- endif -%}
+        </div>
       </div>
     </div>
   {%- endpaginate -%}
@@ -212,6 +253,15 @@
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info",
       "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "Menu for filter"
+    },
+    {
+      "type": "link_list",
+      "id": "filter_menu",
+      "label": "Menu for filter"
     },
     {
       "type": "header",
