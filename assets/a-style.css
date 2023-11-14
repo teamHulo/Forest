@@ -781,6 +781,7 @@ summary.list-menu__item{
 }
 .header__icons{
   gap:20px clamp(20px , 2.778vw , 40px);
+  padding-right:0 !important;
 }
 /* .icon-search{
   height: 14px !important;
