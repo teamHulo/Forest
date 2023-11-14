@@ -27,6 +27,7 @@
         },
         "4ed11026-50de-4318-8310-fd057b0df5ba": {
           "type": "custom_variant",
+          "disabled": true,
           "settings": {
             "list": [
               "chiavari-chair",
@@ -38,6 +39,13 @@
         "price": {
           "type": "price",
           "settings": {
+          }
+        },
+        "7619a3c7-f9b2-4b8c-9e82-bc6f676abe92": {
+          "type": "text",
+          "settings": {
+            "text": "Rental price for 4 days including cleaning and VAT (+ delivery costs if applicable)",
+            "text_style": "body"
           }
         },
         "quantity_selector": {
@@ -88,6 +96,7 @@
         "variant_picker",
         "4ed11026-50de-4318-8310-fd057b0df5ba",
         "price",
+        "7619a3c7-f9b2-4b8c-9e82-bc6f676abe92",
         "quantity_selector",
         "buy_buttons",
         "share",
