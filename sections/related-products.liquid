@@ -1,3 +1,7 @@
+
+
+
+
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'section-related-products.css' | asset_url | stylesheet_tag }}
@@ -20,207 +24,110 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
-  <product-recommendations
-    class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-    data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
-  >
-    {% if recommendations.performed and recommendations.products_count > 0 %}
-      <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
-        {{ section.settings.heading }}
-      </h2>
-      <ul
-        class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
-        role="list"
-      >
-        {% for recommendation in recommendations.products %}
-          <li class="grid__item">
-           {% comment %} {% render 'card-product',
-              card_product: recommendation,
-              media_aspect_ratio: section.settings.image_ratio,
-              image_shape: section.settings.image_shape,
-              show_secondary_image: section.settings.show_secondary_image,
-              show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating
-        %}{% endcomment %} {% render 'my-card', product:recommendation %}
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-  </product-recommendations>
-  {% if section.settings.image_shape == 'arch' %}
-    {% render 'mask-arch' %}
-  {%- endif -%}
-</div>
 
+<div class="product-tabs-recomentadion section-{{ section.id }}-padding">
+  <div class="container">
+    <div class="product-tabs-recomentadion__wrap">
+      <div class="title">
+        <h4>
+          {{ section.settings.heading }}
+        </h4>
+      </div>
+      <div class="tabs">
+        <div class="tabs__header">
+          <div class="tab__item active">
+              <span>
+                Chair decorations
+              </span>
+            </div>
+          {% for value in product.metafields.custom.collections_tab.value%}
+            <div class="tab__item">
+              <span>
+                {{value.title}}
+              </span>
+            </div>
+          {%endfor%}
+        </div>
+        <div class="tabs-contants">
+          <div class="tab-content tab-recomendation active" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=100">
+            
+              <div  class="swiper swiper-recomedation">
+                <div class="swiper-wrapper">
+                  {% for recommendation in recommendations.products %}
+                    <div class="swiper-slide">
+                      <div class="swiper-slide__wrap">
+                        {% render 'my-card', product:recommendation %}
+                        
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+                <div class="swiper-button-next">
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="21" fill="white"/>
+                    <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52"/>
+                  </svg>
+                </div>
+                <div class="swiper-button-prev">
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="21" fill="white"/>
+                    <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52"/>
+                  </svg>
+                </div>
+                <div class="pagination__wrap container">
+                  <div class="swiper-pagination"></div> 
+                </div>
+                
+              </div>
+          </div>
+          {% for value in product.metafields.custom.collections_tab.value%}
+            <div class="tab-content " >
+              <div  class="swiper swiper-recomedation">
+                <div class="swiper-wrapper">
+                  {% for product in value.products %}
+                    <div class="swiper-slide">
+                      <div class="swiper-slide__wrap">
+                        {% render 'my-card', product:product %}
+                        
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+                <div class="swiper-button-next swiper-btn">
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="21" fill="white"/>
+                    <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52"/>
+                  </svg>
+                </div>
+                <div class="swiper-button-prev swiper-btn"> 
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="21" fill="white"/>
+                    <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52"/>
+                  </svg>
+                </div>
+                <div class="pagination__wrap container">
+                  <div class="swiper-pagination"></div> 
+                </div>
+              </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% schema %}
 {
   "name": "t:sections.related-products.name",
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "paragraph",
-      "content": "t:sections.related-products.settings.paragraph__1.content"
-    },
+    
     {
       "type": "inline_richtext",
       "id": "heading",
       "default": "You may also like",
       "label": "t:sections.related-products.settings.heading.label"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
-        },
-        {
-          "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
-        }
-      ],
-      "default": "h1",
-      "label": "t:sections.all.heading_size.label"
-    },
-    {
-      "type": "range",
-      "id": "products_to_show",
-      "min": 2,
-      "max": 10,
-      "step": 1,
-      "default": 4,
-      "label": "t:sections.related-products.settings.products_to_show.label"
-    },
-    {
-      "type": "range",
-      "id": "columns_desktop",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "default": 4,
-      "label": "t:sections.related-products.settings.columns_desktop.label"
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "info": "t:sections.all.colors.has_cards_info",
-      "default": "background-1"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.related-products.settings.header__2.content"
-    },
-    {
-      "type": "select",
-      "id": "image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.related-products.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.related-products.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.related-products.settings.image_ratio.options__3.label"
-        }
-      ],
-      "default": "adapt",
-      "label": "t:sections.related-products.settings.image_ratio.label"
-    },
-    {
-      "type": "select",
-      "id": "image_shape",
-      "options": [
-        {
-          "value": "default",
-          "label": "t:sections.all.image_shape.options__1.label"
-        },
-        {
-          "value": "arch",
-          "label": "t:sections.all.image_shape.options__2.label"
-        },
-        {
-          "value": "blob",
-          "label": "t:sections.all.image_shape.options__3.label"
-        },
-        {
-          "value": "chevronleft",
-          "label": "t:sections.all.image_shape.options__4.label"
-        },
-        {
-          "value": "chevronright",
-          "label": "t:sections.all.image_shape.options__5.label"
-        },
-        {
-          "value": "diamond",
-          "label": "t:sections.all.image_shape.options__6.label"
-        },
-        {
-          "value": "parallelogram",
-          "label": "t:sections.all.image_shape.options__7.label"
-        },
-        {
-          "value": "round",
-          "label": "t:sections.all.image_shape.options__8.label"
-        }
-      ],
-      "default": "default",
-      "label": "t:sections.all.image_shape.label",
-      "info": "t:sections.all.image_shape.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_secondary_image",
-      "default": false,
-      "label": "t:sections.related-products.settings.show_secondary_image.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_vendor",
-      "default": false,
-      "label": "t:sections.related-products.settings.show_vendor.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_rating",
-      "default": false,
-      "label": "t:sections.related-products.settings.show_rating.label",
-      "info": "t:sections.related-products.settings.show_rating.info"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.related-products.settings.header_mobile.content"
-    },
-    {
-      "type": "select",
-      "id": "columns_mobile",
-      "default": "2",
-      "label": "t:sections.related-products.settings.columns_mobile.label",
-      "options": [
-        {
-          "value": "1",
-          "label": "t:sections.related-products.settings.columns_mobile.options__1.label"
-        },
-        {
-          "value": "2",
-          "label": "t:sections.related-products.settings.columns_mobile.options__2.label"
-        }
-      ]
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
     },
     {
       "type": "range",
