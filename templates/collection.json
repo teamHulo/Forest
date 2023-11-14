@@ -1,5 +1,12 @@
 {
   "sections": {
+    "ded4a3e4-1785-40bd-9274-76321471056d": {
+      "type": "section-breadcrumb",
+      "settings": {
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -62,6 +69,7 @@
     }
   },
   "order": [
+    "ded4a3e4-1785-40bd-9274-76321471056d",
     "banner",
     "dbd7eed4-a912-48f1-ba7f-d1e74131eac2",
     "product-grid"
