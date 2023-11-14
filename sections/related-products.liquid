@@ -27,7 +27,7 @@
 {% for i in product.metafields.custom.collections_tab.value %}
   {%  assign counter = counter | plus: 1%}
 {% endfor %}
-<div class="product-tabs-recomentadion>
+<div class="product-tabs-recomentadion">
   {%  assign rp =  recommendations.products_count %} 
   {% if rp != 0 or counter != 0%}
   <div class="container">
