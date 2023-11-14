@@ -7,6 +7,7 @@
   font-family: IvyPresto Display;
   src: url(https://cdn.shopify.com/s/files/1/0572/9442/2095/files/Acumin-RPro.otf?v=1699615469);
 }*/
+body::-webkit-scrollbar { width: 0; }
 :root {
   --font-size-60: clamp(35px, 4.167vw, 60px);
   --font-size-48: clamp(30px, 3.333vw, 48px);
@@ -96,7 +97,9 @@ p {
   letter-spacing: 0.1px;
   text-transform: uppercase;
 }
-
+#MainContent{
+  overflow: hidden;
+}
 .a-btn {
   display: flex;
   width: 100%;
@@ -703,7 +706,7 @@ width:max-content !important;
   text-align: center;
 
   /* Body 2 - Medium */
-  font-family: Acumin Pro;
+  font-family: "acumin-pro";
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -711,3 +714,112 @@ width:max-content !important;
   letter-spacing: 0.12px;
 }
 /***** end footer ****/
+
+/****** header ******/
+sticky-header{
+  
+}
+.list-menu__item{
+  font-family: "acumin-pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  text-decoration:none !important;
+}
+.header__active-menu-item{
+  color: var(--brown-03, #A7A294);
+}
+.header__active-menu-item{
+  text-decoration: none;
+}
+.header__menu-item{
+  padding:0;
+}
+summary.list-menu__item{
+  padding-right:0 !important;
+}
+.header__inline-menu{
+  margin-top:29px !important;
+  padding:10px 0;
+  position: relative;
+}
+.header__inline-menu .list-menu{
+  gap:20px clamp(20px, 3.472vw ,50px);
+  position: relative;
+  z-index: 1;
+}
+.header__inline-menu:before{
+  content:'';
+  position: absolute;
+  top:0;
+  height: 100%;
+  width:100vw;
+  background: var(--soft-coral, #EDDFD5);
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.header__icon--cart, .header__icon--account, .header__icon--search{
+  display: flex;
+  align-items: center;
+  gap:4px;
+  text-decoration: none;
+  color: var(--brown-01, #6D5F52);
+
+  /* Body 2 - Medium */
+  font-family: "acumin-pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  margin-right: 0;
+  height: auto;
+  width: auto;
+  padding-right: 0;
+}
+.header__icons{
+  gap:20px clamp(20px , 2.778vw , 40px);
+}
+/* .icon-search{
+  height: 14px !important;
+  width: 14px !important;
+} */
+.header__heading .header__heading-link{
+  padding:0;
+}
+.header__search{
+  display: flex;
+  align-items: center;
+}
+.mega-menu[open] .mega-menu__content{
+  transform: translateY(15px) !important;
+}
+.announcement-bar__message{
+  color: var(--brown-01, #6D5F52);
+  text-align: center;
+  /* Body 2 - Regular */
+  font-family: "acumin-pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+  letter-spacing: 0.12px;
+  padding:10px 0 6px 0 !important;
+}
+.mega-menu__content{
+  background: rgba(248, 245, 240, 0.90) !important;
+  backdrop-filter: blur(5px);
+}
+.mega-menu__link{
+  color: var(--brown-03, #A7A294) !important;
+
+  /* Subtitle 2 */
+  font-family: "acumin-pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important; /* 21px */
+}
+/***** end header *****/

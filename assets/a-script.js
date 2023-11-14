@@ -77,7 +77,7 @@ $(() => {
       .then((response) => response.text())
       .then((text) => {
         const $html = $("<div>").html(text);
-        console.log(text);
+        
         const $recommendations = $html.find(".product-tabs-recomentadion");
         
         $(".product-tabs-recomentadion").replaceWith($recommendations);
@@ -91,7 +91,7 @@ $(() => {
     $(".tab__item").removeClass("active");
     let dateTab = $(this).attr('data-title');
     let indx = $(this).index();
-    console.log(dateTab);
+   
     $(this).addClass("active");
     $(".tab-content").removeClass("active");
     $('.tab-content[data-title="'+ dateTab +'"]').addClass("active");
