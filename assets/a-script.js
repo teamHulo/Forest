@@ -70,27 +70,34 @@ $(() => {
       },
     });
   }
-  swiperRecommendation();
+ 
   function generateRelated() {
     let urlProduct = $(".tab-recomendation").attr("data-url");
     fetch(urlProduct)
       .then((response) => response.text())
       .then((text) => {
         const $html = $("<div>").html(text);
-        const $recommendations = $html.find(".tab-recomendation");
-        $(".tab-recomendation").replaceWith($recommendations);
+        console.log(text);
+        const $recommendations = $html.find(".product-tabs-recomentadion");
+        
+        $(".product-tabs-recomentadion").replaceWith($recommendations);
         swiperRecommendation();
       })
       .catch((e) => {});
   }
   generateRelated();
 
-  $(".tab__item").click(function () {
+  $(document).on('click','.tab__item',function () {
     $(".tab__item").removeClass("active");
-    let index = $(this).index() + 1;
-    console.log(index);
+    let dateTab = $(this).attr('data-title');
+    let indx = $(this).index();
+    console.log(dateTab);
     $(this).addClass("active");
     $(".tab-content").removeClass("active");
-    $(".tab-content").eq(index).addClass("active");
+    $('.tab-content[data-title="'+ dateTab +'"]').addClass("active");
+    $('.tab-content').eq(indx).addClass("active");
   });
+
+  swiperRecommendation();
 });
+

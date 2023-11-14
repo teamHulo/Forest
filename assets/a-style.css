@@ -466,6 +466,9 @@ p {
 .product-tabs-recomentadion .title h4{
   margin:0;
 }
+.product-tabs-recomentadion .tab-content:after , .product-tabs-recomentadion .tab__item:after{
+  content:none !important;
+}
 .product-tabs-recomentadion .container{
   padding-right: 0;
 }

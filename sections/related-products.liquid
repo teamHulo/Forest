@@ -23,11 +23,16 @@
     }
   }
 {%- endstyle -%}
-
-
+{%  assign counter = 0 %}
+{% for i in product.metafields.custom.collections_tab.value %}
+  {%  assign counter = counter | plus: 1%}
+{% endfor %}
 <div class="product-tabs-recomentadion section-{{ section.id }}-padding">
+  {%  assign rp =  recommendations.products_count %} 
+  {{counter}}
+  {% if rp != 0 or counter != 0%}
   <div class="container">
-    <div class="product-tabs-recomentadion__wrap">
+    <div class="product-tabs-recomentadion__wrap section-{{ section.id }}-padding">
       <div class="title">
         <h4>
           {{ section.settings.heading }}
@@ -35,22 +40,33 @@
       </div>
       <div class="tabs">
         <div class="tabs__header">
-          <div class="tab__item active">
-              <span>
-                Chair decorations
-              </span>
-            </div>
+            {% if rp != 0 %}
+              <div class="tab__item tab__item-recomendation active" data-title="recomendation">
+                
+                <span>
+                  Chair decorations
+                </span>
+              
+              </div>
+            {% endif %}
           {% for value in product.metafields.custom.collections_tab.value%}
-            <div class="tab__item">
+            {% assign sizeCollection = value.products | size %}
+            {% if sizeCollection != 0 %}
+            <div class="tab__item" data-title="{{value.title}}">
+             
+              
               <span>
                 {{value.title}}
               </span>
             </div>
+          {% endif %}
           {%endfor%}
         </div>
         <div class="tabs-contants">
-          <div class="tab-content tab-recomendation active" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=100">
-            
+         
+          <div class="tab-content tab-recomendation active" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=100"  data-title="recomendation">
+              {% comment %}{% if recommendations.performed and recommendations.products_count > 0 %}{%endif%}{% endcomment %}
+           
               <div  class="swiper swiper-recomedation">
                 <div class="swiper-wrapper">
                   {% for recommendation in recommendations.products %}
@@ -79,42 +95,48 @@
                 </div>
                 
               </div>
+            
           </div>
+        
           {% for value in product.metafields.custom.collections_tab.value%}
-            <div class="tab-content " >
-              <div  class="swiper swiper-recomedation">
-                <div class="swiper-wrapper">
-                  {% for product in value.products %}
-                    <div class="swiper-slide">
-                      <div class="swiper-slide__wrap">
-                        {% render 'my-card', product:product %}
-                        
-                      </div>
+            {% assign sizeCollection1 = value.products | size %}
+            {% if sizeCollection1 != 0 %}
+          <div class="tab-content  {% if rp == 0 and forloop.index == 1%} active {%endif%}"  data-title="{{value.title}}">
+                  <div  class="swiper swiper-recomedation">
+                    <div class="swiper-wrapper">
+                      {% for product in value.products %}
+                        <div class="swiper-slide">
+                          <div class="swiper-slide__wrap">
+                            {% render 'my-card', product:product %}
+                            
+                          </div>
+                        </div>
+                      {% endfor %}
                     </div>
-                  {% endfor %}
-                </div>
-                <div class="swiper-button-next swiper-btn">
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="21" cy="21" r="21" fill="white"/>
-                    <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52"/>
-                  </svg>
-                </div>
-                <div class="swiper-button-prev swiper-btn"> 
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="21" cy="21" r="21" fill="white"/>
-                    <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52"/>
-                  </svg>
-                </div>
-                <div class="pagination__wrap container">
-                  <div class="swiper-pagination"></div> 
-                </div>
+                    <div class="swiper-button-next swiper-btn">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="21" fill="white"/>
+                        <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52"/>
+                      </svg>
+                    </div>
+                    <div class="swiper-button-prev swiper-btn"> 
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="21" fill="white"/>
+                        <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52"/>
+                      </svg>
+                    </div>
+                    <div class="pagination__wrap container">
+                      <div class="swiper-pagination"></div> 
+                    </div>
+                  </div>
               </div>
-          </div>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
     </div>
   </div>
+        {% endif %}
 </div>
 {% schema %}
 {
