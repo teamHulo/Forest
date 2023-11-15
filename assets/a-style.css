@@ -389,7 +389,7 @@ p {
   object-fit: cover;
 }
 .section-contact .contant{
-  padding: clamp(50px, 11.319vw, 163px) 20px/*clamp(20px, 15.347vw, 221px) */clamp(50px, 9.722vw, 140px) 20px/*clamp(20px, 11.389vw, 164px)*/; 
+  padding: clamp(50px, 11.319vw, 163px) 20px clamp(50px, 9.722vw, 140px) 20px; 
   max-width: 324px;
   margin: 0 auto;
 }
