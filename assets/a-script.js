@@ -101,3 +101,8 @@ $(() => {
   swiperRecommendation();
 });
 
+$(() => {
+  $(document).on('click','.aside-btn', function(){
+    $(this).closest('.first-lvl').toggleClass('active');
+  });
+});

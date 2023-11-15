@@ -824,3 +824,113 @@ summary.list-menu__item{
   line-height: 150% !important; /* 21px */
 }
 /***** end header *****/
+
+/**** collection aside ****/
+.my-aside-collection ul{
+  list-style-type: none;
+
+  padding:0;
+  margin:0;
+}
+.menu-aside{
+
+  
+}
+.menu-aside > li{
+  margin-bottom:10px;
+  padding:10px 11px 10px 20px;
+  background: var(--beige-02, #F8F5F0);
+}
+.menu-aside li:last-child{
+  margin-bottom:0px;
+}
+.menu-aside > li  a{
+  color: var(--brown-01, #6D5F52);
+
+  /* Body 2 - Medium */
+  font-family: "acumin-pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.12px;
+  text-decoration: none;
+
+}
+.my-aside-collection {
+  margin-block-start: 1em;
+  width:211px;
+}
+.menu-aside .link-item{
+  line-height: 0;
+}
+.menu-aside .links-second-lvl{
+  display:none;
+}
+.menu-aside .first-lvl.active .links-second-lvl{
+  display: block;
+}
+.menu-aside .link-item{
+  display:flex;
+  justify-content: space-between;
+  gap:10px;
+  align-items: center;
+}
+.menu-aside .first-lvl{
+  position:relative;
+}
+.menu-aside .first-lvl::before{
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  width:9px;
+  background: var(--soft-coral, #EDDFD5);
+  height: 100%;
+  opacity: 0;
+}
+.menu-aside .first-lvl.active{
+  position:relative;
+}
+.menu-aside .first-lvl.active::before{
+  opacity: 1;
+}
+.my-aside-collection .links-second-lvl {
+  margin-top:16px;
+}
+.my-aside-collection .links-second-lvl li{
+  line-height: 1;
+}
+.my-aside-collection .links-second-lvl li{
+  margin-bottom:8px;
+
+}
+.my-aside-collection svg{
+  cursor:pointer;
+}
+.my-aside-collection .links-second-lvl li:last-child{
+  margin-bottom:0;
+}
+.menu-aside .first-lvl .aside-btn line:first-child{
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: all .3s ease;
+}
+.menu-aside .first-lvl.active .aside-btn line:first-child{
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: all .3s ease;
+}
+@media (max-width:989px){
+  .my-aside-collection{
+    display: none;
+  }
+  .mobile-facets__inner .my-aside-collection{
+    display:block;
+  }
+  .mobile-facets__inner .my-aside-collection{
+    width:100%;
+    padding:0 20px;
+  }
+}
+/**** end collection aside ****/
