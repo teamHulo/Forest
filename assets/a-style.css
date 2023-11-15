@@ -544,13 +544,13 @@ p {
   width: 42px;
   height: 42px;
 }
-.product-tabs-recomentadion .swiper-btn::after{
-  content:none;
+.product-tabs-recomentadion .swiper-btn::after, .tab-recomendation .swiper-btn::after{
+  content:none !important;
 }
-.product-tabs-recomentadion .swiper-button-disabled{
+.product-tabs-recomentadion .swiper-button-disabled, .tab-recomendation .swiper-button-disabled{
   display: none !important;
 }
-.product-tabs-recomentadion .swiper-button-prev.swiper-btn svg{
+.product-tabs-recomentadion .swiper-button-prev.swiper-btn svg, .tab-recomendation .swiper-button-prev.swiper-btn svg{
   transform: rotate(-180deg);
 }
 .product-tabs-recomentadion .pagination__wrap{
