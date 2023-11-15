@@ -68,7 +68,7 @@
     "blog_card_shadow_blur": 5,
     "text_boxes_border_thickness": 0,
     "text_boxes_border_opacity": 10,
-    "text_boxes_radius": 20,
+    "text_boxes_radius": 0,
     "text_boxes_shadow_opacity": 0,
     "text_boxes_shadow_horizontal_offset": 0,
     "text_boxes_shadow_vertical_offset": 4,
@@ -210,6 +210,17 @@
           "button": "#eddfd5",
           "button_label": "#6d5f52",
           "secondary_button_label": "#eddfd5",
+          "shadow": "#f8f5f0"
+        }
+      },
+      "scheme-d03d9eac-ed74-462f-809d-c747a1512874": {
+        "settings": {
+          "background": "#f8f5f0",
+          "background_gradient": "",
+          "text": "#6d5f52",
+          "button": "#eddfd5",
+          "button_label": "#6d5f52",
+          "secondary_button_label": "#6d5f52",
           "shadow": "#f8f5f0"
         }
       }

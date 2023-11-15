@@ -5,7 +5,7 @@
           <summary>{{ item.title }}</summary>
           {% for sub_item in item.links %}
             <p>
-              <a href="{{ sub_item.url }}">{{ sub_item.title }}</a>
+              <a {% if forloop.first %}class="first-subitem"{% endif %} href="{{ sub_item.url }}">{{ sub_item.title }}</a>
             </p>
           {% endfor %}
         </details>
