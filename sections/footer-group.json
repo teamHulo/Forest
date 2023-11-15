@@ -14,28 +14,28 @@
         "7b3816f6-f6fc-4a61-bd73-c080e3f06dcc": {
           "type": "link_list",
           "settings": {
-            "heading": "Collection",
+            "heading": "Kategorien",
             "menu": "kategorien"
           }
         },
         "871c332f-548e-4c0d-b1a3-38cd3be6e5d2": {
           "type": "link_list",
           "settings": {
-            "heading": "For clients",
+            "heading": "Kundendienst",
             "menu": "for-clients"
           }
         },
         "e9851edb-6b63-4de6-a478-b8e52d0ab4e7": {
           "type": "contact_and_social",
           "settings": {
-            "header_contact": "Contacts",
+            "header_contact": "Kontaktinfo",
             "header_social": "Social Media",
-            "phone_label": "Phone",
-            "phone": "+1 343 343 33 22",
-            "email_label": "Phone",
-            "email": "info@forestevents.com",
-            "hour_label": "Opening Hours",
-            "hour": "Mon-Fri 9:00-18:00"
+            "phone_label": "Telefon",
+            "phone": "+41 76 710 24 13",
+            "email_label": "E-Mail",
+            "email": "info@forest-events.ch",
+            "hour_label": "",
+            "hour": ""
           }
         }
       },
