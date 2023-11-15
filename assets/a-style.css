@@ -905,6 +905,9 @@ summary.list-menu__item{
   margin-bottom:8px;
 
 }
+.my-aside-collection .links-second-lvl a{
+  color: var(--brown-03, #A7A294);
+}
 .my-aside-collection svg{
   cursor:pointer;
 }
