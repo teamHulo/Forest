@@ -273,7 +273,7 @@
       "title": "Dein Warenkorb",
       "caption": "Artikel im Warenkorb",
       "remove_title": "{{ title }} entfernen",
-      "note": "Gewünschtes Datum und Kommentar",
+      "note": "<strong>Erforderlich<\/strong>: 📅 Gew&uuml;nschtes Datum und Kommentar",
       "checkout": "Auschecken",
       "empty": "Dein Warenkorb ist leer",
       "cart_error": "Beim Aktualisieren deines Warenkorbs ist ein Fehler aufgetreten. Bitte versuche es erneut.",
