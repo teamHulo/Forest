@@ -26,7 +26,7 @@
     display: none !important;
 }
 .facet-checkbox__text {
-    font-family: Acumin Pro;
+    font-family: acumin-pro;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -203,6 +203,21 @@ details.collection-filter-item a {
     outline: none;
     padding: 4px 12px;
     border: 1px solid #A7A294;
+
+    /* Subtitle 2 */
+    font-family: acumin-pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+.facets-horizontal .facet-filters .select select option {
+    font-family: acumin-pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
 }
 .facets-horizontal .facet-filters .select select:focus-visible {
     outline: none;
@@ -235,4 +250,65 @@ details.collection-filter-item a {
 }
 .facets-horizontal .facets__wrapper details summary:hover span {
     text-decoration: none;
+}
+.facets__item label:hover span {
+    text-decoration: none !important;
+}
+@media(max-width: 1290px) {
+    .price-range-details {
+        /* width: 45%; */
+        order: 2;
+    }
+    .facets-horizontal .facet-filters {
+        order: 3;
+        width: calc(100% / 3 - 10px);
+    }
+    .facets-horizontal .facets__wrapper details {
+        width: calc(100% / 3 - 10px);
+    }
+    .facets-horizontal .facets__wrapper {
+        justify-content: space-between;
+    }
+}
+
+
+.type-color input {
+    display: none;
+}
+.facets__wrapper .facets__label {
+    padding: 5px !important;
+}
+.aa {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 25px;
+}
+.aa::before {
+    transition: all 0.3s;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #D9C8B8;
+    position: absolute;
+    left: 0;
+}
+.aa.active::after {
+    position: absolute;
+    content: "";
+    left: -3px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #6d5f52;
+    border-radius: 50px;
+}
+.facets__wrapper .facet-checkbox .icon-checkmark {
+    left: 0.7rem !important;
+    top: 0.9rem !important;
+}
+.type-color .mobile-facets__submenu fieldset {
+    border-color: transparent;
 }

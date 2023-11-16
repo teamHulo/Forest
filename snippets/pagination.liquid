@@ -37,7 +37,12 @@
                 class="pagination__item link"
                 aria-label="{{ 'general.pagination.page' | t: number: part.title }}"
               >
-                {{- part.title -}}
+                {% if part.title < 10 %}
+                  0{{- part.title -}}
+                {% else %}
+                  {{- part.title -}}
+                {% endif %}
+                
               </a>
             {%- else -%}
               {%- if part.title == paginate.current_page -%}
@@ -48,7 +53,11 @@
                   aria-current="page"
                   aria-label="{{ 'general.pagination.page' | t: number: part.title }}"
                 >
-                  {{- part.title -}}
+                  {% if part.title < 10 %}
+                    0{{- part.title -}}
+                  {% else %}
+                    {{- part.title -}}
+                  {% endif %}
                 </a>
               {%- else -%}
                 <span class="pagination__item">{{ part.title }}</span>

@@ -128,6 +128,89 @@
 
               {% case filter.type %}
                 {% when 'boolean', 'list' %}
+                  {% comment %} New dropdown type radio {% endcomment %}
+                  {% if filter.label == 'Color' %}
+
+                    <details
+                      id="Details-{{ forloop.index }}-{{ section.id }}"
+                      class="type-color {% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
+                      data-index="{{ forloop.index }}"
+                    >
+                      <summary
+                        class="facets__summary caption-large focus-offset"
+                        aria-label="{{ filter.label }} ({{ 'products.facets.filters_selected.one' | t: count: filter.active_values.size }})"
+                      >
+                        <div>
+                          <span class="facets__summary-label">
+                            {{- filter.label | escape }}
+                            {%- if filter_type == 'vertical' -%}
+                              <span class="facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}">
+                                ({{ filter.active_values.size }})</span
+                              >
+                            {%- endif -%}
+                          </span>
+                          {%- if filter_type == 'vertical' and filter.operator == 'AND' -%}
+                            <span class="facets__and-helptext">
+                              {{ 'products.facets.filter_and_operator_subtitle' | t }}
+                            </span>
+                          {%- endif -%}
+                          {% render 'icon-caret' %}
+                        </div>
+                      </summary>
+                      <div id="Facet-{{ forloop.index }}-{{ section.id }}" 
+                        class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
+                      >
+                        <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
+                          <legend class="visually-hidden">{{ filter.label | escape }}</legend>
+                            <ul
+                              class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
+                              role="list"
+                            >
+                              {%- liquid
+                                assign sorted_values = filter.values
+                                # Keep the selected values grouped together when operator is AND
+                                if filter.operator == 'AND'
+                                  assign active_filter_values = filter.values | where: 'active', true
+                                  assign inactive_filter_values = filter.values | where: 'active', false
+                                  assign sorted_values = active_filter_values | concat: inactive_filter_values
+                                endif
+                              -%}
+                              {%- for value in sorted_values -%}
+                                {% liquid
+                                  assign is_disabled = false
+                                  if value.count == 0 and value.active == false
+                                    assign is_disabled = true
+                                  endif
+                                %}
+                                <li class="list-menu__item facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
+                                  <label
+                                    for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+                                    class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
+                                  >
+                                    <input
+                                      type="radio"
+                                      name="{{ value.param_name }}"
+                                      value="{{ value.value }}"
+                                      id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+                                      {% if value.active %}
+                                        checked
+                                      {% endif %}
+                                      {% if is_disabled %}
+                                        disabled
+                                      {% endif %}
+                                    >
+                                    <span class="aa {% if value.active %}active{% endif %} facet-checkbox__text" aria-hidden="true">
+                                      {{- value.label | escape }}</span >
+                                  </label>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                        </fieldset>
+                      </div>
+                    </details>
+                  {% else %}
+                  {% comment %} New dropdown type radio {% endcomment %}
+
                   <details
                     id="Details-{{ forloop.index }}-{{ section.id }}"
                     class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
@@ -359,6 +442,7 @@
                       {%- endif %}
                     </div>
                   </details>
+                    {% endif %}
                 {% when 'price_range' %}
                   {% liquid
                     assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,UYU,VES,VND' | split: ','
@@ -369,7 +453,7 @@
                   %}
                   <details
                     id="Details-{{ forloop.index }}-{{ section.id }}"
-                    class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
+                    class="{% if filter_type == 'horizontal' %}price-range-details disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
                     data-index="{{ forloop.index }}"
                     {% if filter_type == 'vertical' and forloop.index == 1 %}
                       open
@@ -383,7 +467,7 @@
                     </summary>
                     <div
                       id="Facet-{{ forloop.index }}-{{ section.id }}"
-                      style="width: 35rem !important;"
+                      style="width: 100% !important;"
                       class="{% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
                     >
                       <div class="{% if filter_type == 'horizontal' %}facets__header{% else %}facets__header-vertical{% endif %}">
@@ -399,7 +483,7 @@
                           </facet-remove>
                         {%- endif -%}
                       </div>
-                      <price-range class="facets__price">
+                      {% comment %} <price-range class="facets__price">
                         <span class="field-currency">{{ cart.currency.symbol }}</span>
                         <div class="field">
                           <input
@@ -455,7 +539,8 @@
                             {{- 'products.facets.to' | t -}}
                           </label>
                         </div>
-                      </price-range>
+                      </price-range> {% endcomment %}
+                      {% render 'price-range', filter: filter %}
                     </div>
                   </details>
               {% endcase %}
@@ -700,10 +785,10 @@
                         assign visual_layout_class = 'facets-layout-list'
                     endcase
                   %}
-<script>console.log('{{ filter.label }}')</script>
                   {% case filter.type %}
                     {% when 'boolean', 'list' %}
                       {% if filter.label == 'Color' %}
+                        {% comment %} <h1>menu drawer</h1> {% endcomment %}
                         
                       {% endif %}
                       <details
