@@ -24,10 +24,18 @@
     <div class="my-aside-collection__wrap">
       <ul class="menu-aside">
         {% for item in list %}
-          <li class="first-lvl">
+            {% assign isOpen = false %}
+            {% if item.links != empty %}
+              {% for lk in item.links %}
+                {% if lk.current %}
+                  {% assign isOpen = true %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          <li class="first-lvl {% if isOpen %}active{% endif %}">
             <div class="link-item">
-              <a href="{{item.url}}"> {{item.title}}</a>
-              {% if  item.links != empty%}
+              <a href="{{ item.url }}"> {{ item.title }}</a>
+              {% if  item.links != empty %}
                 <svg  class="aside-btn"  width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line x1="5.63281" y1="0.5" x2="5.63281" y2="11.5" stroke="#6D5F52"/>
                   <line x1="11" y1="6.13379" y2="6.13379" stroke="#6D5F52"/>
@@ -37,7 +45,7 @@
             <ul class="links-second-lvl">
               {% for sub_item in item.links %}
                 <li>
-                  <a href="{{sub_item.url}}">{{sub_item.title}}</a>
+                  <a href="{{ sub_item.url }}">{{ sub_item.title }}</a>
                 </li>
               {% endfor %}
             </ul>
