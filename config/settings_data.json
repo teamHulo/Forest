@@ -2,6 +2,7 @@
   "current": {
     "logo": "shopify:\/\/shop_images\/forest-events_logo_horizontal_golden-brown_1000px-2.png",
     "logo_width": 200,
+    "favicon": "shopify:\/\/shop_images\/forest-events_favicon_bg.png",
     "type_header_font": "archivo_n7",
     "heading_scale": 110,
     "type_body_font": "questrial_n4",
