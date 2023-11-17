@@ -20,6 +20,7 @@
         },
         "871c332f-548e-4c0d-b1a3-38cd3be6e5d2": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "Kundendienst",
             "menu": "for-clients"
