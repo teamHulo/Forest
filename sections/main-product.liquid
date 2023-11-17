@@ -476,6 +476,10 @@
                 <details class="product_tab">
                   <summary>{{ block.settings.title }}</summary>
                   <div class="tab-content">
+                    {% if product.metafields.custom.masse != blank %}
+                      <p>Masse: {{ product.metafields.custom.masse }}</p>
+                    {% endif %}
+                    {{ block.settings.text }}
                     {% if product.metafields.custom.material != blank %}
                       <p>Material: {{ product.metafields.custom.material }}</p>
                     {% endif %}
@@ -485,10 +489,6 @@
                     {% if product.metafields.custom.style != blank %}
                       <p>Style: {{ product.metafields.custom.style }}</p>
                     {% endif %}
-                    {% if product.metafields.custom.masse != blank %}
-                      <p>Masse: {{ product.metafields.custom.masse }}</p>
-                    {% endif %}
-                    {{ block.settings.text }}
                   </div>
                 </details>
               {% else %}
