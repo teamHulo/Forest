@@ -472,13 +472,36 @@
             {%- when 'custom_variant' -%}
               {% render 'custom-variant', list: block.settings.list, curent: product %}
             {%- when 'tab' -%}
-              <details class="product_tab">
-                <summary>{{ block.settings.title }}</summary>
-                <div class="tab-content">
-                  {{ block.settings.text }}
-                </div>
-                
-              </details>
+              {% if block.settings.title == 'Details' and block.settings.text == blank %}
+                <details class="product_tab">
+                  <summary>{{ block.settings.title }}</summary>
+                  <div class="tab-content">
+                    {% if product.metafields.custom.material != blank %}
+                      <p>Material: {{ product.metafields.custom.material }}</p>
+                    {% endif %}
+                    {% if product.metafields.custom.color != blank %}
+                      <p>Farbe: {{ product.metafields.custom.color }}</p>
+                    {% endif %}
+                    {% if product.metafields.custom.style != blank %}
+                      <p>Style: {{ product.metafields.custom.style }}</p>
+                    {% endif %}
+                    {% if product.metafields.custom.masse != blank %}
+                      <p>Masse: {{ product.metafields.custom.masse }}</p>
+                    {% endif %}
+                    {{ block.settings.text }}
+                  </div>
+                </details>
+              {% else %}
+              {% if block.settings.text != blank %}
+                <details class="product_tab">
+                  <summary>{{ block.settings.title }}</summary>
+                  <div class="tab-content">
+                    {{ block.settings.text }}
+                  </div>
+                </details>
+              {% endif %}
+            {% endif %}
+
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
             {%- when 'rating' -%}
