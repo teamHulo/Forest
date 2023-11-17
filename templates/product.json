@@ -71,7 +71,7 @@
           "type": "tab",
           "settings": {
             "title": "Details",
-            "text": "<p>{{ product.metafields.custom.details | metafield_tag }}<\/p>"
+            "text": ""
           }
         },
         "10a7b13a-ae4a-4b39-a9cf-aec0da8fb9f6": {
