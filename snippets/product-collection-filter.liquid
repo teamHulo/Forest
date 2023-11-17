@@ -25,6 +25,9 @@
       <ul class="menu-aside">
         {% for item in list %}
             {% assign isOpen = false %}
+            {% if item.current %}
+              {% assign isOpen = true %}
+            {% endif %}
             {% if item.links != empty %}
               {% for lk in item.links %}
                 {% if lk.current %}
