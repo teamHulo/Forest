@@ -473,7 +473,7 @@
               {% render 'custom-variant', list: block.settings.list, curent: product %}
             {%- when 'tab' -%}
               {% if block.settings.title == 'Details' and block.settings.text == blank %}
-                <details class="product_tab">
+                <details class="product_tab" open>
                   <summary>{{ block.settings.title }}</summary>
                   <div class="tab-content">
                     {% if product.metafields.custom.masse != blank %}

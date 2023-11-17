@@ -61,5 +61,12 @@
         </li>
     {%- endcase -%}
   </ul>
+    <a class="back__link" href="/collection" style="color: #6D5F52;">← Zurück zu den Artikeln</a>
 </nav>
 {%- endunless -%}
+<script>
+  document.querySelector('.back__link').addEventListener('click', function(e) {
+    e.preventDefault();
+    history.back();
+  })
+</script>
