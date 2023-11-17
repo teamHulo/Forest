@@ -84,8 +84,8 @@
         "2515e14c-3496-45d5-b216-0476026c7473": {
           "type": "tab",
           "settings": {
-            "title": "Delivery and returns",
-            "text": "<p>{{ product.metafields.custom.delivery_and_returns | metafield_tag }}<\/p>"
+            "title": "Lieferung und Rückgabe",
+            "text": "<p><strong>Sebstabholung ab 30 Stühle<\/strong>: CHF 40.-<br\/><br\/><strong>Lieferung<\/strong>: CHF 80.- zuzüglich CHF 1.- pro gefahrener Kilometer<br\/><br\/><strong>Rückgabe:<\/strong><\/p>"
           }
         }
       },
