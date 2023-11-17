@@ -44,7 +44,7 @@
         "7619a3c7-f9b2-4b8c-9e82-bc6f676abe92": {
           "type": "text",
           "settings": {
-            "text": "Rental price for 4 days including cleaning and VAT (+ delivery costs if applicable)",
+            "text": "Mietpreis für 4 Tage (+30% für jeden weiteren Tag)",
             "text_style": "body"
           }
         },
