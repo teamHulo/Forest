@@ -2111,8 +2111,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
-  bottom: 0.8rem;
-  left: 2.2rem;
+  bottom: 1.1rem;
+  left: 1rem;
   line-height: calc(1 + 0.1 / var(--font-body-scale));
 }
 
