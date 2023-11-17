@@ -78,7 +78,7 @@
           "type": "tab",
           "settings": {
             "title": "Rent Terms",
-            "text": "<p>{{ product.metafields.custom.rent_terms | metafield_tag }}<\/p>"
+            "text": "<p>RENTAL COST:<br\/>The rental price includes rent, cleaning and VAT.<br\/><br\/>RENTAL PERIOD:<br\/>The rental fee is for 4 days (e.g. Friday-Monday).<br\/><br\/>If you wish to collect the rental items a day earlier or rent for a day longer, we will charge an extension fee of 25% of the rental price for each additional day.<br\/><br\/>ORDERING PROCESS:<br\/>Simply send us your rental request through our online rental store. Please note that this is only a request! You will then receive a full quote from us, including shipping costs if applicable. When you confirm your order, you will receive an invoice for a deposit of 25% of the rental price. The remaining amount must be transferred 14 days prior to the event for delivery. If picking it up in person, you can pay the remaining amount directly on site with cash or EC Cash.<br\/><br\/>CLEANING:<br\/>Cleaning of rented items is done by our professional cleaners and is included in the rental price. But please pay attention before returning\/resubmitting:<br\/><br\/>Wet bedspreads and table linens must be dried or mold stains will appear very quickly.<br\/>Candlesticks must be cleaned of coarse wax residue.<\/p>"
           }
         },
         "2515e14c-3496-45d5-b216-0476026c7473": {
