@@ -937,3 +937,323 @@ summary.list-menu__item{
   }
 }
 /**** end collection aside ****/
+
+
+/******** hero-banner ****/
+.hero-banner{
+
+}
+.hero-banner .container{
+  padding-right: 0px;
+}
+.hero-banner__wrap{
+  display:flex;
+  justify-content: space-between;
+  gap:20px;
+}
+.hero-banner__wrap img{
+  display:block;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-banner__wrap .left{
+  width: 100%;
+  max-width: 493px;
+}
+.hero-banner__wrap .left__wrap{
+  padding:50px 0 43px 0;
+}
+.hero-banner .images{
+  margin-bottom:24px;
+}
+.hero-banner .title h3 span{
+  font-style: italic;
+}
+.hero-banner .title h3{
+  margin:0;
+  max-width: 450px;
+  text-transform: none;
+}
+.hero-banner .title {
+  margin-bottom:16px;
+}
+.hero-banner .subtitle{
+  margin-bottom:20px;
+}
+.hero-banner .images__wrap{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+}
+.hero-banner .images__wrap .image{
+  max-width: 211px;
+  width:100%;
+}
+.hero-banner .images__wrap .image .image__body{
+  position: relative;
+  padding-top: 121.805%;
+}
+.hero-banner .images__wrap .image .image__body img{
+  position:absolute;
+  top:0;
+  left:0;
+
+}
+.hero-banner .right{
+  max-width: 943px;
+  width: 100%;
+}
+.hero-banner .right .right__wrap{
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-banner .right .right__wrap .image{
+  height: 100%;
+  max-width: 543px;
+}
+.hero-banner .text {
+  margin-bottom:20px;
+}
+.hero-banner .text h6{
+  margin:0;
+}
+.hero-banner .a-btn{
+  max-width:267px;
+}
+@media (max-width:1023px){
+  .hero-banner .container{
+    padding-right: clamp(20px, 3.472vw, 50px);
+  }
+  .hero-banner__wrap{
+    flex-wrap:wrap;
+  }
+  .hero-banner .right{
+    max-width: 100%;
+    width: 100%;
+  }.hero-banner .left{
+    max-width: 100%;
+    width: 100%;
+  }
+  .images__wrap{
+    justify-content: center;
+  }
+  .hero-banner .title h3{
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-banner .text h6{
+    text-align: center;
+  }
+  .hero-btn{
+    display: flex;
+    justify-content: center;
+  }
+  .hero-banner .right .right__wrap{
+    justify-content: center;
+  }
+}
+/***** end hero-banner ****/
+
+
+/***** section-title-btn *****/
+
+.section-title-btn{
+  background: var(--beige-02, #F8F5F0);
+  padding:42px 0;
+}
+.section-title-btn .title{
+  margin:0 auto 24px auto;
+  max-width: 620px;
+
+}
+.section-title-btn .title h4{
+  margin:0;
+  text-align: center;
+  text-transform: none;
+}
+.section-besten .container{
+  padding-left:0;
+}
+.section-title-btn .section-title-btns{
+  display:flex;
+  justify-content: center;
+}
+.section-title-btn .section-title-btns .a-btn{
+  max-width: 268px;
+}
+/**** end section-title-btn ***/
+.section-besten__wrap{
+  display:flex;
+  justify-content: space-between;
+  gap:5.89%;
+}
+.section-besten__wrap .left{
+  width:100%;
+  max-width: 761px;
+}
+.section-besten__wrap .left .left__wrap{
+  height: 100%;
+}
+.section-besten__wrap .left .left__wrap .images{
+  height: 100%;
+}
+.section-besten__wrap .left .left__wrap .images__wrap{
+  height: 100%;
+}
+.section-besten__wrap .left .left__wrap .images__wrap{
+  height: 100%;
+}
+.section-besten__wrap .left .left__wrap .images__wrap .image{
+  height: 100%;
+}
+.section-besten__wrap img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-besten__wrap .right .right__wrap{
+  padding:clamp(50px,11.528vw,166px) 0;
+}
+.section-besten__wrap .images__wrap{
+  position:relative;
+  padding-right: clamp(50px,7.292vw,105px);
+}
+.section-besten__wrap .image-small{
+  max-width: clamp(100px,14.653vw,211px);
+  max-height: clamp(150px,18.819vw,271px);
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right: 0px;
+}
+.section-besten__wrap .right{
+  width: 73%;
+  max-width: 500px;
+  text-align: left;
+}
+.section-besten__wrap .title{
+  margin-bottom:16px;
+}
+.section-besten__wrap .title h4{
+  margin:0;
+  
+}
+.section-besten__wrap .text p{
+  margin-bottom:10px;
+  margin-top:0;
+  letter-spacing: 0;
+}
+.section-besten__wrap .text p:last-child{
+  margin-bottom:0;
+}
+@media (max-width:1023px){
+  .section-besten__wrap .right .right__wrap{
+    padding:50px 0;
+  }
+  .section-besten__wrap{
+    
+    gap:3.89%;
+  }
+}
+
+@media (max-width:767px){
+  .section-besten .container{
+    padding-left:0;
+    padding-right:0;
+  }
+  .section-besten__wrap .right .right__wrap{
+    padding:50px 0;
+  }
+  .section-besten__wrap{
+    
+    flex-wrap:wrap;
+  }
+  .section-besten__wrap .right{
+    width:100%;
+    max-width:100%;
+  }
+  .section-besten__wrap .left{
+    width:100%;
+    max-width:100%;
+  }
+  .section-besten__wrap .image-small{
+    max-width: 211px;
+    max-height: 271px;
+   
+  }
+  .section-besten__wrap .right{
+    padding-left: clamp(20px, 3.472vw, 50px);
+    padding-right: clamp(20px, 3.472vw, 50px);
+  }
+}
+@media (max-width:500px){
+  .section-besten__wrap .left .left__wrap .images__wrap{
+    padding-right: 0px;
+  }
+  .section-besten__wrap .image-small{
+    top:auto;
+    bottom:-50px;
+    right: 10px;
+    transform: translateY(0);
+  }
+  .section-besten__wrap .image-small{
+    max-width: 150px;
+    max-height: 200px;
+  }
+}
+/******/ 
+
+/***** my-blocks-item ****/
+.my-blocks-item{
+
+}
+.my-blocks-item .title{
+  margin-bottom:10px;
+}
+.my-blocks-item .title h4{
+  margin:0;
+  font-style: italic;
+}
+.my-blocks-item .image .image__wrap{
+  position: relative;
+  padding-top:110%;
+}
+.my-blocks-item .text{
+  margin-bottom:13px;
+}
+.my-blocks-item .text p{
+  margin: 0;
+}
+.my-blocks-item .image .image__wrap img{
+  display: block;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+/***** end my-blocks-item ****/
+
+
+/******************/
+.section-blocks-grid{
+  padding:36px 0;
+  background: var(--beige-02, #F8F5F0);
+}
+.section-blocks-grid .title{
+  margin:0 auto 36px auto;
+  max-width: 506px;
+}
+.section-blocks-grid .title h4{
+  margin:0;
+}
+.section-blocks-grid .blocks-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px 1.08%;
+}
+.section-blocks-grid .blocks-list .my-blocks-item{
+  width: 24.179%;
+}
+/*******************/

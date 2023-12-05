@@ -1,0 +1,68 @@
+<div class="section-besten">
+    <div class="container">
+        <div class="section-besten__wrap">
+            <div class="left">
+                <div class="left__wrap">
+                    <div class="images">
+                        <div class="images__wrap">
+                            <div class="image">
+                                <img src="{{section.settings.img1 | img_url: 'master'}}" alt="">
+                            </div>
+                            <div class="image image-small">
+                                <img src="{{section.settings.img2 | img_url: 'master'}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right__wrap">
+                    <div class="title">
+                        <h4>
+                            {{section.settings.title}}
+                        </h4>
+                    </div>
+                    <div class="text">
+                        {{section.settings.text}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "section-besten",
+        "settings": [
+            {
+                "type":"image_picker",
+                "id":"img1",
+                "label":"image"
+                
+            },
+            {
+                "type":"image_picker",
+                "id":"img2",
+                "label":"small image"
+            },
+            {
+                "type":"text",
+                "id":"title",
+                "label":"title",
+                "default": "Und wie feiert man diese am besten? "
+            },{
+                "type":"richtext",
+                "id":"text",
+                "label":"text",
+                "default": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!</p><p>Da du dich nun auf unserer Seite wiedergefunden hast, wirst du wohl auch gerade vor der Frage stehen, was dir für den perfekten Tag noch fehlt. Möglicherweise hast du auch schon ganz konkrete Vorstellungen, aber einfach noch niemanden gefunden, der diese optimal umsetzen kann? </p>"
+            }
+            
+        ],
+        "presets": [
+            {
+                "name": "section-besten"
+            }
+        ]
+    }
+    {% endschema %}

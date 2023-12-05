@@ -1,0 +1,78 @@
+<div class="section-blocks-grid">
+  <div class="container">
+    <div class="section-blocks-grid__wrap">
+      <div class="title">
+        <h3>
+          {{ section.settings.title }}
+        </h3>
+      </div>
+      <div class="blocks-list">
+        {% for block in section.blocks %}
+          {% render 'my-blocks-item'
+           , title: block.settings.title,
+           text: block.settings.text,
+           url: block.settings.url,
+           btn_name: block.settings.btn_name,
+           img: block.settings.img %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "section-blocks-grid",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "title",
+        "default": "Wir bieten dir einen umfassenden Service in folgenden Kategorien: "
+      }
+
+    ],
+    "max_blocks": 4,
+    "blocks": [
+      {
+        "name": "item",
+        "type": "item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "title",
+            "default": "Eventmöbelverleih"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "text",
+            "default": "Cupcakes, Candybar oder Hochzeitstorte? Alles kein Problem für uns - wir gestalten die Leckereien für deine Feier nach deiner Traumvorstellung und vor allem mit Liebe zum Detail."
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "btn name",
+            "default": "Mehr Erfahren"
+          }, {
+            "type": "url",
+            "id": "url",
+            "label": "url"
+          }
+
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "section-blocks-grid"
+      }
+    ]
+  }
+{% endschema %}

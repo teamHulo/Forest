@@ -1,0 +1,47 @@
+<div class="section-title-btn">
+    <div class="container">
+        <div class="section-title-btn__wrap">
+            <div class="title">
+                <h4>
+                    {{section.settings.title}}
+                </h4>
+            </div>
+            {% if  section.settings.url != blank %}
+                <div class="section-title-btns">
+                    <a href="{{section.settings.url}}" class="a-btn">{{section.settings.btn_name}}</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "section-title-btn",
+        "settings": [
+
+            {
+                "type":"text",
+                "id":"title",
+                "label":"title",
+                "default": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt? Dann setze dich direkt mit uns in Verbindung:"
+            },
+            {
+                "type":"text",
+                "id":"btn_name",
+                "label":"btn name",
+                "default":"Kontaktiere uns"
+            },
+            {
+                "type":"url",
+                "id":"url",
+                "label":"url"
+            }
+        ],
+        "presets": [
+            {
+                "name": "section-title-btn"
+            }
+        ]
+    }
+    {% endschema %}
