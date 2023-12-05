@@ -20,7 +20,6 @@
         },
         "variant_picker": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
             "picker_type": "button"
           }
@@ -44,7 +43,7 @@
         "7619a3c7-f9b2-4b8c-9e82-bc6f676abe92": {
           "type": "text",
           "settings": {
-            "text": "Rental price for 4 days including cleaning and VAT (+ delivery costs if applicable)",
+            "text": "Mietpreis für 4 Tage (+30% für jeden weiteren Tag)",
             "text_style": "body"
           }
         },
@@ -71,21 +70,21 @@
           "type": "tab",
           "settings": {
             "title": "Details",
-            "text": "<p>RENTAL COST:<br\/>The rental price includes rent, cleaning and VAT.<br\/><br\/>RENTAL PERIOD:<br\/>The rental fee is for 4 days (e.g. Friday-Monday).<br\/><br\/>If you wish to collect the rental items a day earlier or rent for a day longer, we will charge an extension fee of 25% of the rental price for each additional day.<br\/><br\/>ORDERING PROCESS:<br\/>Simply send us your rental request through our online rental store. Please note that this is only a request! You will then receive a full quote from us, including shipping costs if applicable. When you confirm your order, you will receive an invoice for a deposit of 25% of the rental price. The remaining amount must be transferred 14 days prior to the event for delivery. If picking it up in person, you can pay the remaining amount directly on site with cash or EC Cash.<br\/><br\/>CLEANING:<br\/>Cleaning of rented items is done by our professional cleaners and is included in the rental price. But please pay attention before returning\/resubmitting:<br\/><br\/>Wet bedspreads and table linens must be dried or mold stains will appear very quickly.<br\/>Candlesticks must be cleaned of coarse wax residue.<\/p>"
+            "text": ""
           }
         },
         "10a7b13a-ae4a-4b39-a9cf-aec0da8fb9f6": {
           "type": "tab",
           "settings": {
-            "title": "Rent Terms",
-            "text": "<p>RENTAL COST:<br\/>The rental price includes rent, cleaning and VAT.<br\/><br\/>RENTAL PERIOD:<br\/>The rental fee is for 4 days (e.g. Friday-Monday).<br\/><br\/>If you wish to collect the rental items a day earlier or rent for a day longer, we will charge an extension fee of 25% of the rental price for each additional day.<br\/><br\/>ORDERING PROCESS:<br\/>Simply send us your rental request through our online rental store. Please note that this is only a request! You will then receive a full quote from us, including shipping costs if applicable. When you confirm your order, you will receive an invoice for a deposit of 25% of the rental price. The remaining amount must be transferred 14 days prior to the event for delivery. If picking it up in person, you can pay the remaining amount directly on site with cash or EC Cash.<br\/><br\/>CLEANING:<br\/>Cleaning of rented items is done by our professional cleaners and is included in the rental price. But please pay attention before returning\/resubmitting:<br\/><br\/>Wet bedspreads and table linens must be dried or mold stains will appear very quickly.<br\/>Candlesticks must be cleaned of coarse wax residue.<\/p>"
+            "title": "Mietkonditionen",
+            "text": "<p><strong>Mietdauer<\/strong>: Freitags ab 9:00 - Monatgs 11:30<br\/>Bei zusätzlichen Tagen werden 30% der Mietkosten dazugerechnet. <br\/><br\/><strong>Aufstellservice<\/strong>: (nach Verfügbarkeit CHF 80.-\/h berechnet nach effektivem Aufwand) <br\/><br\/><strong>Deine Anfrage wird durch Forest Events geprüft.<br\/>Falls die Artikel verfügbar sind, senden wir dir das Angebot per E-Mail zum Bestätigen und zur Bezahlung.<\/strong><br\/><br\/>Angebote können mit einer Anzahlung von 50% reserviert werden. <br\/><br\/>Die Restzahlung ist bis 30 Tage vor dem Event fällig. <br\/><br\/>Reservationen können bis 6 Monate vor dem Event gegen eine Gebühr von Fr. 150.- storniert werden.<br\/><br\/>Liegt der Stornierungszeitpunkt innerhalb der 6 Monate behalten wir uns das Recht vor, die bereits getätigte Anzahlung von 50% der Gesamtsumme einzubehalten.  Der Betrag ist jedoch niemals kleiner als die zum Zeitpunkt tatsächlich entstandenen Kosten.<br\/> <br\/>Bitte beachten Sie, dass Anfragen\/offene Gespräche nicht als reservierte Artikel gelten.<br\/><br\/><strong>Unsere Reservationen sind nur nach Anzahlung fixiert.<\/strong><br\/> <br\/>Reservationen unter 200.- sind auf Vorauskasse<\/p>"
           }
         },
         "2515e14c-3496-45d5-b216-0476026c7473": {
           "type": "tab",
           "settings": {
-            "title": "Delivery and returns",
-            "text": "<p>RENTAL COST:<br\/>The rental price includes rent, cleaning and VAT.<br\/><br\/>RENTAL PERIOD:<br\/>The rental fee is for 4 days (e.g. Friday-Monday).<br\/><br\/>If you wish to collect the rental items a day earlier or rent for a day longer, we will charge an extension fee of 25% of the rental price for each additional day.<br\/><br\/>ORDERING PROCESS:<br\/>Simply send us your rental request through our online rental store. Please note that this is only a request! You will then receive a full quote from us, including shipping costs if applicable. When you confirm your order, you will receive an invoice for a deposit of 25% of the rental price. The remaining amount must be transferred 14 days prior to the event for delivery. If picking it up in person, you can pay the remaining amount directly on site with cash or EC Cash.<br\/><br\/>CLEANING:<br\/>Cleaning of rented items is done by our professional cleaners and is included in the rental price. But please pay attention before returning\/resubmitting:<br\/><br\/>Wet bedspreads and table linens must be dried or mold stains will appear very quickly.<br\/>Candlesticks must be cleaned of coarse wax residue.<\/p>"
+            "title": "Lieferung und Rückgabe",
+            "text": "<p>Genaue Details erfolgen bei der offiziellen Reservierung, welche nach der Anzahlung aktiv ist.<strong><br\/><br\/>Sebstabholung ab 30 Stühle<\/strong>: CHF 40.-<br\/><br\/><strong>Lieferung<\/strong>: CHF 80.- zuzüglich CHF 1.- pro gefahrener Kilometer<br\/><br\/><strong>Rückgabe: <\/strong>Die Gegenstände müssen gereinigt, trocken, rückstandslos und schadlos zum vereinbarten Zeitpunkt zurückgebracht werden.<\/p>"
           }
         }
       },
@@ -123,7 +122,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Das könnte dir auch gefallen",
         "padding_top": 0,
         "padding_bottom": 60
       }
@@ -133,12 +132,12 @@
       "settings": {
         "img1": "shopify:\/\/shop_images\/Weddings_-_Holly_Clark_Photography_3e8565c8-96ee-44a4-9646-437687af42d8.png",
         "img2": "shopify:\/\/shop_images\/Monochromatic_Wedding_Florals_A_Wild_Vine_94a775bc-008d-4a2e-b850-e4f263284e5a.png",
-        "title": "contact us",
-        "text": "<p>If you have any questions, you can contact us at the specified contacts<\/p>",
-        "phone": "Phone",
-        "phone_name": "+1 343 343 33 22",
-        "email": "Email",
-        "email_name": "info@forestevents.com"
+        "title": "Kontaktiere uns",
+        "text": "<p>Bei Fragen melde dich gerne bei uns unter:<\/p>",
+        "phone": "Telefon",
+        "phone_name": "+41 76 710 24 13",
+        "email": "E-Mail",
+        "email_name": "info@forest-events.ch"
       }
     }
   },

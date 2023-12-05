@@ -28,7 +28,7 @@
         "tiktok": "TikTok"
       }
     },
-    "continue_shopping": "Weiter shoppen",
+    "continue_shopping": "Weiter stöbern",
     "pagination": {
       "label": "Seitennummerierung",
       "page": "Seite {{ number }}",
@@ -106,7 +106,7 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "In den Warenkorb legen",
+      "add_to_cart": "Zum Warenkorb",
       "description": "Beschreibung",
       "on_sale": "Sale",
       "quantity": {
@@ -273,8 +273,8 @@
       "title": "Dein Warenkorb",
       "caption": "Artikel im Warenkorb",
       "remove_title": "{{ title }} entfernen",
-      "note": "Spezielle Bestellanweisungen",
-      "checkout": "Auschecken",
+      "note": "📅 Gewünschtes Datum und Kommentar (Erforderlich)*",
+      "checkout": "Anfragen",
       "empty": "Dein Warenkorb ist leer",
       "cart_error": "Beim Aktualisieren deines Warenkorbs ist ein Fehler aufgetreten. Bitte versuche es erneut.",
       "cart_quantity_error_html": "Du kannst deinem Warenkorb nur {{ quantity }} Stück dieses Artikels hinzufügen.",
@@ -507,6 +507,13 @@
       "send_on_label": "Senden am (optional)",
       "expanded": "Formular für den Empfänger des Geschenkgutscheins erweitert",
       "collapsed": "Formular für den Empfänger des Geschenkgutscheins minimiert"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "complete_purchase_button_label": "Anfrage senden"
+      }
     }
   }
 }

@@ -22,14 +22,14 @@
         "template--15148980043855__dbd7eed4-a912-48f1-ba7f-d1e74131eac2-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "About Rent",
+            "heading": "",
             "heading_size": "h1"
           }
         },
         "template--15148980043855__dbd7eed4-a912-48f1-ba7f-d1e74131eac2-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The rental period is 4 days. You will receive your items on the first day of the selected rental period. The return will take place on the last day of the rental period by 12 noon, if you return the package by post, you will drop off the package at the post office by Monday, 12:00 noon. Would you like to rent the items one day earlier or one day longer? For each additional rental day, we charge 30% of the rental period.<\/p>"
+            "text": "<p>Hier findest du Eventmöbel, Stühle und Dekoartikel zur Vermietung. Egal, ob Hochzeit, Firmenfeier oder Geburtstagsparty - wir haben die passende Ausstattung für dich.<\/p>"
           }
         }
       },
@@ -42,12 +42,15 @@
         "content_alignment": "center",
         "color_scheme": "scheme-d03d9eac-ed74-462f-809d-c747a1512874",
         "full_width": false,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 12,
+        "padding_bottom": 36
       }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "custom_css": [
+
+      ],
       "settings": {
         "products_per_page": 12,
         "columns_desktop": 4,
