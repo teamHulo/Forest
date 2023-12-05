@@ -1,3 +1,50 @@
+const allBreakPoints = {
+    breakpoints1: {
+      100: {
+        slidesPerView: 1,
+      },
+    
+      300: {
+        slidesPerView: 1.5,
+      },
+      500: {
+        slidesPerView: 2.5,
+      },
+      767: {
+        slidesPerView: 3,
+      },
+      900: {
+        slidesPerView: 3.5,
+      },
+      1024: {
+        slidesPerView: 4.9,
+      },
+    },
+    
+     breakpoints2 : {
+      100: {
+        slidesPerView: 1,
+      },
+    
+      300: {
+        slidesPerView: 1.5,
+      },
+      500: {
+        slidesPerView: 2.5,
+      },
+      767: {
+        slidesPerView: 3,
+      },
+      900: {
+        slidesPerView: 3.5,
+      },
+      1024: {
+        slidesPerView: 4.9,
+      },
+    }
+}
+
+allBreakPoints['${this.databreakpoint}']
 $(() => {
   console.log(1);
   var swiper = new Swiper(".my-product-thumbs-swiper", {
