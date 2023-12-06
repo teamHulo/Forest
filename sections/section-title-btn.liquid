@@ -1,3 +1,24 @@
+{%  style  %}  
+    #shopify-section-{{section.id}} .title{
+        max-width:{{section.settings.max_width}}px;
+    }
+    #shopify-section-{{section.id}} .section-title-btn{
+        background:{{ section.settings.bg }};
+    }
+    #shopify-section-{{section.id}} .a-btn.second-btn{
+        border: 1px solid var(--brown-01, #6D5F52);
+        background:transparent;
+    }
+    #shopify-section-{{section.id}} .a-btn.second-btn:hover{
+        background:#6d5f52;
+    }
+    #shopify-section-{{section.id}} .section-title-btns{
+        display:flex;
+        gap:15px;
+        flex-wrap:wrap;
+    }
+{% endstyle %} 
+
 <div class="section-title-btn">
     <div class="container">
         <div class="section-title-btn__wrap">
@@ -6,9 +27,15 @@
                     {{section.settings.title}}
                 </h4>
             </div>
-            {% if  section.settings.url != blank %}
+            {% if  section.settings.url != blank or section.settings.url1 != blank%}
                 <div class="section-title-btns">
-                    <a href="{{section.settings.url}}" class="a-btn">{{section.settings.btn_name}}</a>
+                    {% if  section.settings.url != blank %}
+                        <a href="{{section.settings.url}}" class="a-btn second-btn">{{section.settings.btn_name}}</a>
+                    {% endif %}
+                    {% if  section.settings.url1 != blank %}
+                        <a href="{{section.settings.url1}}" class="a-btn">{{section.settings.btn_name1}}</a>
+                    {% endif %}
+                    
                 </div>
             {% endif %}
         </div>
@@ -19,7 +46,12 @@
     {
         "name": "section-title-btn",
         "settings": [
-
+            {
+                "type":"color",
+                "id":"bg",
+                "label":"background-color",
+                "default": "#F8F5F0" 
+            },
             {
                 "type":"text",
                 "id":"title",
@@ -27,15 +59,36 @@
                 "default": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt? Dann setze dich direkt mit uns in Verbindung:"
             },
             {
+            "type": "range",
+            "id": "max_width",
+            "min": 521,
+            "max": 620,
+            "step": 1,
+            "unit": "px",
+            "label": "max-width text",
+            "default": 620
+            },
+            {
                 "type":"text",
                 "id":"btn_name",
-                "label":"btn name",
+                "label":"btn name 1",
                 "default":"Kontaktiere uns"
             },
             {
                 "type":"url",
                 "id":"url",
-                "label":"url"
+                "label":"url 1"
+            },
+            {
+                "type":"text",
+                "id":"btn_name1",
+                "label":"btn name 2",
+                "default":"Kontaktiere uns"
+            },
+            {
+                "type":"url",
+                "id":"url1",
+                "label":"url 2"
             }
         ],
         "presets": [

@@ -1,0 +1,204 @@
+{%  style  %}  
+   .section-sorgen{
+        padding:60px 0;
+        background: var(--beige-02, #F8F5F0);
+   } 
+   .section-sorgen .block-title-text{
+        max-width:66.343%;
+        width:100%;
+        display:flex;
+        align-items:center;
+        gap:20px 42px;
+   }
+   .section-sorgen .block-title-text .content{
+    max-width:clamp(250px,28.472vw,410px);
+   }
+   .section-sorgen .blocks{
+        display:flex;
+        gap:20px 5.22%;
+        align-items:center;
+   }
+   .section-sorgen .block-text-btn{
+        max-width:24.0298%;
+        width:100%;
+   }
+   .section-sorgen .image {
+    width:100%;
+    max-width:437px;
+   }
+   .section-sorgen .title{
+    margin-bottom:16px;
+   }
+   .section-sorgen .title h4{
+    margin:0;
+    letter-spacing:0;
+    text-transform:none;
+    
+   }
+   .section-sorgen .image img{
+    display:block;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+   }
+   .section-sorgen .image__wrap{
+        position:relative;
+        padding-top:110%;
+   }
+   .section-sorgen .text p{
+        margin:0 0 8px 0;
+        letter-spacing:0;
+   }
+   .section-sorgen .text p:last-child{
+    margin:0;
+   }
+   .section-sorgen .block-btn{
+    margin-top:48px;
+   }
+
+   @media(max-width:1023px){
+    .section-sorgen .blocks{
+        flex-wrap:wrap;
+    }
+        .section-sorgen .block-title-text{
+            max-width:100%;
+            width:100%;
+            display:flex;
+            align-items:center;
+            gap:20px 42px;
+    }
+    
+    .section-sorgen .block-text-btn{
+            max-width:100%;
+            width:100%;
+    }
+    .section-sorgen .block-title-text .content{
+    max-width:50%;
+   }
+    .section-sorgen .image {
+        width:100%;
+        max-width:50%;
+    }
+   }
+   @media(max-width:767px){
+    .section-sorgen .block-title-text{
+        flex-wrap:wrap;
+    }
+    .section-sorgen .block-title-text .content{
+    max-width:100%;
+   }
+    .section-sorgen .image {
+        width:100%;
+        max-width:100%;
+    }
+   }
+{% endstyle %} 
+
+
+<div class="section-sorgen">
+    <div class="container">
+        <div class="section-sorgen__wrap">
+            <div class="blocks">
+                {% for block in section.blocks %}
+                    {% case block.type %}
+                        {% when 'title-text' %}
+                            <div class="block-title-text">
+                                <div class="content">
+                                    <div class="title">
+                                        <h4>
+                                            {{block.settings.title}}
+                                        </h4>
+                                    </div>
+                                    <div class="text">
+                                        {{block.settings.text}}
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <div class="image__wrap">
+                                        <img src="{{block.settings.img | img_url: 'master'}}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        
+                           
+                        {% when 'text-btn' %}
+                            <div class="block-text-btn">
+                                <div class="text">
+                                    {{block.settings.text}}
+                                </div>
+                                <div class="block-btn">
+                                    <a href="{{block.settings.url}}" class="a-btn">{{block.settings.btn_name}}</a>
+                                </div>
+                            </div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "section-sorgen",
+      "blocks": [
+        {
+          "name": "title-text",
+          "type": "title-text",
+          "limit":1,
+          "settings": [
+            {
+              "type": "text",
+              "id": "title",
+              "label": "title",
+              "default": "Wieso gerade wir für Magie <br> auf deiner Veranstaltung sorgen?"
+            },
+            {
+              "type": "richtext",
+              "id": "text",
+              "label": "text",
+              "default": "<p>Forest Bakery & Forest Events ist aus dem Gedanken heraus entstanden, einzigartige Tage noch wundervoller und bunter zu gestalten. Wir unterstützen dich bei der Auswahl der passenden Konditorei-Leckereien. Aber auch bei der Auswahl des passenden Farbschemas für deinen Junggesellenabschied. Vielleicht hast du dir aber auch schon immer mal einen Ballonbogen gewünscht? Oder es fehlen dir lediglich noch die passenden Möbel, auf denen die Feiergesellschaft Platz nehmen kann?</p>"
+            },
+            {
+              "type": "image_picker",
+              "id": "img",
+              "label": "image"
+              
+            }
+
+  
+          ]
+        },
+        {
+          "name": "text-btn",
+          "type": "text-btn",
+          "limit":1,
+          "settings": [
+            {
+              "type": "richtext",
+              "id": "text",
+              "label": "text",
+              "default": "<p>Für all diese Wünsche stehen wir dir mit Rat und Tat zur Seite. Denn unsere Mission ist es, deine Träume wahr werden zu lassen. Das haben wir, wie du auch an unseren unzähligen zufriedenen Kunden und Kundinnen sehen kannst, über die Jahre perfektioniert. Lass dich von uns mit auf eine Reise nehmen und wir versprechen dir, dass wir dich verzaubern werden!</p><p>Du möchtest wissen, wieso wir dir dieses Versprechen geben können? </p>"
+            },
+            {
+              "type": "text",
+              "id": "btn_name",
+              "label": "btn name",
+              "default": "Über uns"
+            }, {
+              "type": "url",
+              "id": "url",
+              "label": "url"
+            }
+  
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "section-sorgen"
+        }
+      ]
+    }
+  {% endschema %}

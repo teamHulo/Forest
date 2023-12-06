@@ -1,50 +1,4 @@
-const allBreakPoints = {
-    breakpoints1: {
-      100: {
-        slidesPerView: 1,
-      },
-    
-      300: {
-        slidesPerView: 1.5,
-      },
-      500: {
-        slidesPerView: 2.5,
-      },
-      767: {
-        slidesPerView: 3,
-      },
-      900: {
-        slidesPerView: 3.5,
-      },
-      1024: {
-        slidesPerView: 4.9,
-      },
-    },
-    
-     breakpoints2 : {
-      100: {
-        slidesPerView: 1,
-      },
-    
-      300: {
-        slidesPerView: 1.5,
-      },
-      500: {
-        slidesPerView: 2.5,
-      },
-      767: {
-        slidesPerView: 3,
-      },
-      900: {
-        slidesPerView: 3.5,
-      },
-      1024: {
-        slidesPerView: 4.9,
-      },
-    }
-}
 
-allBreakPoints['${this.databreakpoint}']
 $(() => {
   console.log(1);
   var swiper = new Swiper(".my-product-thumbs-swiper", {
@@ -151,5 +105,56 @@ $(() => {
 $(() => {
   $(document).on('click','.aside-btn', function(){
     $(this).closest('.first-lvl').toggleClass('active');
+  });
+});
+
+$(() => {
+  let sliderImages = new Swiper(".images-slider", {
+    slidesPerView: 4,
+    centeredSlides: true,
+    spaceBetween:15,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      100: {
+        slidesPerView: 1,
+      },
+      250: {
+        slidesPerView: 1.5,
+      },
+      500: {
+        slidesPerView: 2.5,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1023: {
+        slidesPerView: 4,
+      },
+    },
+  });
+ 
+});
+
+$(() => {
+  let sliderHistory = new Swiper(".history-sliders", {
+    slidesPerView: 2,
+    spaceBetween: 15,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      100: {
+        slidesPerView: 1,
+      },
+      500: {
+        slidesPerView: 2,
+      },
+      
+    },
   });
 });

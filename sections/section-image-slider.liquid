@@ -1,0 +1,88 @@
+<div class="section-image-slider">
+    <div class="container">
+        <div class="section-image-slider__wrap">
+            <div class="title">
+                <h4>
+                    {{section.settings.title}}
+                </h4>
+            </div>
+            <div class="subtitle">
+                <p>
+                    {{section.settings.text}}
+                </p>
+            </div>
+            <div class="swiper images-slider">
+           
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        <div class="swiper-slide swiper-image-slide">
+                            <div class="swiper-image-slide__wrap">
+                                <div class="image">
+                                    <div class="image__wrap">
+                                        <img src="{{block.settings.img | img_url: 'master'}}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                
+                <div class="swiper-pagination my-swiper-pagination"></div>
+            </div>
+            <div class="section-img-btn">
+                <a href="{{section.settings.url}}" class="a-btn">{{section.settings.btn_name}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "section-image-slider",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "title",
+        "default": "Wir bieten dir einen umfassenden Service in folgenden Kategorien: "
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "subtitle",
+        "default": "Suchst du nach Anregungen oder möchtest dir unsere bisherigen Arrangements ansehen? Dann kannst du hier durch die Galerie stöbern!"
+      },
+      {
+        "type": "text",
+        "id": "btn_name",
+        "label": "btn name",
+        "default": "Galerie Ansehen"
+      },{
+        "type": "url",
+        "id": "url",
+        "label": "url"
+        
+      }
+
+    ],
+    "blocks": [
+      {
+        "name": "item",
+        "type": "item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "image"
+          }
+
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "section-image-slider"
+      }
+    ]
+  }
+{% endschema %}

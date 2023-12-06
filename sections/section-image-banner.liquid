@@ -1,0 +1,97 @@
+{%  style  %} 
+.section-image-banner{
+    position:relative;
+    padding:70px 0;
+}
+.section-image-banner .bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+.section-image-banner .bg img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.section-image-banner__body{
+    padding:60px 20px;
+    background: rgba(248, 245, 240, 0.90);
+    backdrop-filter: blur(2.5px);
+    position:relative;
+    z-index:2;
+    max-width:662px;
+    margin:0 auto;
+}
+.section-image-banner .title{
+    margin:0 auto 24px auto;
+    max-width:446px;
+}
+.section-image-banner .title h4{
+    margin:0;
+    text-align:center;
+}
+.section-image-banner .img-banner-btn{
+    display:flex;
+    justify-content:center;
+}
+.section-image-banner .img-banner-btn .a-btn{
+    max-width:324px;
+}
+{% endstyle %} 
+
+
+<div class="section-image-banner">
+  <div class="bg">
+    <img src="{{section.settings.img | img_url: 'master'}}" alt="">
+  </div>
+  <div class="container">
+    <div class="section-image-banner__wrap">
+      <div class="section-image-banner__body">
+        <div class="title">
+          <h4>
+            {{ section.settings.title }}
+          </h4>
+        </div>
+        <div class="img-banner-btn">
+          <a href="{{section.settings.url}}" class="a-btn">{{ section.settings.btn_name }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "section-img-banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "image"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "title",
+        "default": "Möchtest du deine süsse Erfolgsgeschichte auch mit uns gemeinsam schreiben?"
+      }, {
+        "type": "text",
+        "id": "btn_name",
+        "label": "btn name",
+        "default": "Lass dich jetzt von uns verzaubern!"
+      }, {
+        "type": "url",
+        "id": "url",
+        "label": "url"
+      }
+    ],
+    "presets": [
+      {
+        "name": "section-img-banner"
+      }
+    ]
+  }
+{% endschema %}

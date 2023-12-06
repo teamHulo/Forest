@@ -1,0 +1,94 @@
+<div class="section-history">
+  <div class="container">
+    <div class="section-history__wrap">
+      <div class="title">
+        <h3>
+          {{ section.settings.title }}
+        </h3>
+      </div>
+      <div class="swiper history-sliders">
+
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide swiper-history-slide">
+              <div class="swiper-history-slide__wrap">
+                <div class="image">
+                  <div class="image__wrap">
+                    <img src="{{block.settings.img | img_url: 'master'}}" alt="">
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="body-2">
+                    <p>
+                      {{ block.settings.date }}
+                    </p>
+                  </div>
+                  <div class="title">
+                    <h5>
+                      {{ block.settings.title }}
+                    </h5>
+                  </div>
+                  <div class="text">
+                    <p>
+                      {{ block.settings.text }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="swiper-pagination my-swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "section-history",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "title",
+        "default": "<span>Unsere süssen Erfolgsgeschichten: </span> Was unsere Kunden sagen "
+      }
+
+    ],
+    "blocks": [
+      {
+        "name": "item",
+        "type": "item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "image"
+          }, {
+            "type": "text",
+            "id": "date",
+            "label": "date",
+            "default": "12.05.23"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "title",
+            "default": "Ashley and Jimmy"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "text",
+            "default": "Wir träumen immer noch von diesem wundervollen Tag und waren begeistert vom Brautstrauss und der gesamten Dekoration. Es war alles so wunderbar stimmig und hat so gut zu uns gepasst!"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "section-history"
+      }
+    ]
+  }
+{% endschema %}
