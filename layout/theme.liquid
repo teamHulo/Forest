@@ -25,9 +25,9 @@
 
     {% if template == 'index' %}
       <script>
-         if (window.location.pathname.indexOf('customize') === -1) {
-            window.location.href = "/collections/all-products";
-          }
+         if ( !window.location.pathname.includes('admin')) {
+          window.location.href = "/collections/all-products";
+        }
       </script>
     {% endif %}
     
