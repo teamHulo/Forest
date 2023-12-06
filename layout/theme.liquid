@@ -23,11 +23,14 @@
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
-    {% if template == 'index' %}
+   
       <script>
-        // window.location.href = "collections/all-products";
+        console.error( window.location.href);
+         if ( window.location.href == 'https://forest-events.ch/') {
+           window.location.href = "/collections/all-products";
+        }
       </script>
-    {% endif %}
+    
     
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
