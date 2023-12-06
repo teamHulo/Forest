@@ -199,6 +199,36 @@
         "btn_name": "Galerie Ansehen",
         "url": ""
       }
+    },
+    "7b704b8d-d779-4002-9fc5-3fb54f6a634f": {
+      "type": "section-history",
+      "blocks": {
+        "fdd94d2a-8f40-4054-bf55-84d33a12d421": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Our_5_Best_Tips_For_Hosting_the_Ultimate_Yacht_Wedding.png",
+            "date": "12.05.23",
+            "title": "Ashley and Jimmy",
+            "text": "Wir träumen immer noch von diesem wundervollen Tag und waren begeistert vom Brautstrauss und der gesamten Dekoration. Es war alles so wunderbar stimmig und hat so gut zu uns gepasst!"
+          }
+        },
+        "23f4a0ba-5060-459c-bde3-44ceb311cacb": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Our_5_Best_Tips_For_Hosting_the_Ultimate_Yacht_Wedding_1.png",
+            "date": "Mila and Stephan",
+            "title": "Ashley and Jimmy",
+            "text": "Wir träumen immer noch von diesem wundervollen  Tag und waren begeistert vom Brautstrauß und der gesamten Dekoration. Es war alles so wunderbar stimmig und hat so gut zu uns gepasst! Dann besucht uns in unserem 200 qm großen Showroom in Weinsberg bei Heilbronn und entdeckt kreative Ideen und unser vielfältiges Mietsortiment. Brautstrauß und der gesamten Dekoration. Es war alles so wunderbar stimmig und hat so gut zu uns gepasst!"
+          }
+        }
+      },
+      "block_order": [
+        "fdd94d2a-8f40-4054-bf55-84d33a12d421",
+        "23f4a0ba-5060-459c-bde3-44ceb311cacb"
+      ],
+      "settings": {
+        "title": "<span>Unsere süssen Erfolgsgeschichten: <\/span> Was unsere Kunden sagen"
+      }
     }
   },
   "order": [
@@ -208,6 +238,7 @@
     "04f6a1e1-6a3b-46ba-859c-0ae21e4183ea",
     "818cd7e3-ba22-4ed8-8531-17c41691c934",
     "8dd1775b-c47d-452c-800e-9bf21861c3e7",
-    "e9a12648-00a0-4bf1-b648-83a73dcb9727"
+    "e9a12648-00a0-4bf1-b648-83a73dcb9727",
+    "7b704b8d-d779-4002-9fc5-3fb54f6a634f"
   ]
 }
