@@ -64,10 +64,36 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "0172cb29-ec82-47b5-ae86-eab43f87084b": {
+      "type": "hero-banner",
+      "settings": {
+        "img1": "shopify:\/\/shop_images\/pexels-jonathan-borba-12876407_b6f42d30-5f1c-45c7-9b96-f8db8ffc785e.jpg",
+        "img2": "shopify:\/\/shop_images\/pexels-jonathan-borba-12876507.png",
+        "img3": "shopify:\/\/shop_images\/pexels-jonathan-borba-12846017.jpg",
+        "title": "Lass uns deine Feier mit <span>erschwinglichem<\/span> Luxus perfekt machen!",
+        "subtitle": "Eine Hochzeit? Eine Gender Reveal Party? Oder doch ein Kindergeburtstag? Was haben all diese Dinge gemeinsam? Es sind wichtige Tage für uns. Und all diese Tage haben etwas gemeinsam – wir feiern unsere Liebe! ",
+        "btn_name": "Entdecke unsere Kollektionen",
+        "url": ""
+      }
+    },
+    "04f6a1e1-6a3b-46ba-859c-0ae21e4183ea": {
+      "type": "section-title-btn",
+      "settings": {
+        "bg": "#F8F5F0",
+        "title": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt? Dann setze dich direkt mit uns in Verbindung:",
+        "max_width": 620,
+        "btn_name": "Kontaktiere uns",
+        "url": "",
+        "btn_name1": "Kontaktiere uns",
+        "url1": "shopify:\/\/pages\/contact"
+      }
     }
   },
   "order": [
     "slideshow",
-    "featured-collection-0"
+    "featured-collection-0",
+    "0172cb29-ec82-47b5-ae86-eab43f87084b",
+    "04f6a1e1-6a3b-46ba-859c-0ae21e4183ea"
   ]
 }
