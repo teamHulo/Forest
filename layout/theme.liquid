@@ -23,7 +23,7 @@
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
-    {% if template == 'index' and not request.path contains 'customize' %}
+    {% if template == 'index' and content_for_header contains 'customize' == false %}
       <script>
          window.location.href = "collections/all-products";
       </script>
