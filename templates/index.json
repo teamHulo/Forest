@@ -229,6 +229,54 @@
       "settings": {
         "title": "<span>Unsere süssen Erfolgsgeschichten: <\/span> Was unsere Kunden sagen"
       }
+    },
+    "c43f93f8-177d-4cdb-86c2-f0f2bfae91fa": {
+      "type": "section-image-banner",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/pexels-secret-garden-931177.png",
+        "title": "Möchtest du deine süsse Erfolgsgeschichte auch mit uns gemeinsam schreiben?",
+        "btn_name": "Lass dich jetzt von uns verzaubern!",
+        "url": ""
+      }
+    },
+    "39de7e10-d731-4419-be59-8cfc48af6d34": {
+      "type": "section-sorgen",
+      "blocks": {
+        "dc05d309-21d2-4b50-bd64-a6f02d3fb296": {
+          "type": "title-text",
+          "settings": {
+            "title": "Wieso gerade wir für Magie <br> auf deiner Veranstaltung sorgen?",
+            "text": "<p>Forest Bakery & Forest Events ist aus dem Gedanken heraus entstanden, einzigartige Tage noch wundervoller und bunter zu gestalten. Wir unterstützen dich bei der Auswahl der passenden Konditorei-Leckereien. Aber auch bei der Auswahl des passenden Farbschemas für deinen Junggesellenabschied. Vielleicht hast du dir aber auch schon immer mal einen Ballonbogen gewünscht? Oder es fehlen dir lediglich noch die passenden Möbel, auf denen die Feiergesellschaft Platz nehmen kann?<\/p>",
+            "img": "shopify:\/\/shop_images\/luxury-elegant-wedding-reception-table-arrangement-2023-03-28-20-39-42-utc.png"
+          }
+        },
+        "a824c29c-de2d-49aa-ad40-a1e4b976949b": {
+          "type": "text-btn",
+          "settings": {
+            "text": "<p>Für all diese Wünsche stehen wir dir mit Rat und Tat zur Seite. Denn unsere Mission ist es, deine Träume wahr werden zu lassen. Das haben wir, wie du auch an unseren unzähligen zufriedenen Kunden und Kundinnen sehen kannst, über die Jahre perfektioniert. Lass dich von uns mit auf eine Reise nehmen und wir versprechen dir, dass wir dich verzaubern werden!<\/p><p>Du möchtest wissen, wieso wir dir dieses Versprechen geben können? <\/p>",
+            "btn_name": "Über uns",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "dc05d309-21d2-4b50-bd64-a6f02d3fb296",
+        "a824c29c-de2d-49aa-ad40-a1e4b976949b"
+      ],
+      "settings": {
+      }
+    },
+    "2eaac836-22cc-4b0c-a449-fcbd0a4eccba": {
+      "type": "section-title-btn",
+      "settings": {
+        "bg": "#fcfbf9",
+        "title": "Du bist bereit, den Zauber auch an deine Gäste weiterzugeben, hast aber noch Fragen und möchtest keine Neuigkeiten verpassen? Dann schau mal hier rein: ",
+        "max_width": 620,
+        "btn_name": "FAQs",
+        "url": "shopify:\/\/pages\/contact",
+        "btn_name1": "Kontaktiere uns",
+        "url1": "shopify:\/\/pages\/contact"
+      }
     }
   },
   "order": [
@@ -239,6 +287,9 @@
     "818cd7e3-ba22-4ed8-8531-17c41691c934",
     "8dd1775b-c47d-452c-800e-9bf21861c3e7",
     "e9a12648-00a0-4bf1-b648-83a73dcb9727",
-    "7b704b8d-d779-4002-9fc5-3fb54f6a634f"
+    "7b704b8d-d779-4002-9fc5-3fb54f6a634f",
+    "c43f93f8-177d-4cdb-86c2-f0f2bfae91fa",
+    "39de7e10-d731-4419-be59-8cfc48af6d34",
+    "2eaac836-22cc-4b0c-a449-fcbd0a4eccba"
   ]
 }
