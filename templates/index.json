@@ -88,12 +88,126 @@
         "btn_name1": "Kontaktiere uns",
         "url1": "shopify:\/\/pages\/contact"
       }
+    },
+    "818cd7e3-ba22-4ed8-8531-17c41691c934": {
+      "type": "section-besten",
+      "settings": {
+        "img1": "shopify:\/\/shop_images\/white-2022-11-11-07-33-36-utc.png",
+        "img2": "shopify:\/\/shop_images\/pexels-emma-bauso-2253870_1_1366433c-0cc0-43b9-a2d1-c03893d667f5.png",
+        "title": "Und wie feiert man diese am besten?",
+        "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p><p>Da du dich nun auf unserer Seite wiedergefunden hast, wirst du wohl auch gerade vor der Frage stehen, was dir für den perfekten Tag noch fehlt. Möglicherweise hast du auch schon ganz konkrete Vorstellungen, aber einfach noch niemanden gefunden, der diese optimal umsetzen kann? <\/p>"
+      }
+    },
+    "8dd1775b-c47d-452c-800e-9bf21861c3e7": {
+      "type": "section-blocks-grid",
+      "blocks": {
+        "3685169b-577f-4ed4-881f-5972e75ed8fd": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pexels-jonathan-borba-11994914-2.png",
+            "title": "Eventmöbelverleih",
+            "text": "Wir bieten dir ein umfassendes Sortiment von Möbeln für deine Feier. Keine langweilige Biertischgarnitur mehr - dafür aber an deinen Stil angepasste Stühle.",
+            "btn_name": "Mehr Erfahren",
+            "url": ""
+          }
+        },
+        "ae40e371-6121-4f90-9850-c6bea1545b42": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Whites_and_Champagnes___The_Flower_House_1.png",
+            "title": "Konditorei",
+            "text": "Cupcakes, Candybar oder Hochzeitstorte? Alles kein Problem für uns - wir gestalten die Leckereien für deine Feier nach deiner Traumvorstellung und vor allem mit Liebe zum Detail.",
+            "btn_name": "Mehr Erfahren",
+            "url": ""
+          }
+        },
+        "ad05cabe-4158-44b7-817f-4a92b28cfb1d": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pexels-jonathan-borba-11994906_1.png",
+            "title": "Dekoration",
+            "text": "Wer wünscht sich keine stimmige, auf den Erinnerungsfotos traumhaft aussehende Deko? Wir unterstützen dich bei der Konzepterstellung und du kannst direkt bei uns leihen.",
+            "btn_name": "Mehr Erfahren",
+            "url": ""
+          }
+        },
+        "af5f902f-cbaa-49bc-938b-16b6c373caab": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/cropped-shot-of-woman-applying-cream-onto-freshly-2022-12-16-16-32-17-utc_1_1.png",
+            "title": "Workshops",
+            "text": " Du möchtest auch gerne süsse Leckereien zaubern können, aber man hat dir noch nicht richtig gezeigt, wie? Lerne von uns und unserer jahrelangen Erfahrung. ",
+            "btn_name": "Mehr Erfahren",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "3685169b-577f-4ed4-881f-5972e75ed8fd",
+        "ae40e371-6121-4f90-9850-c6bea1545b42",
+        "ad05cabe-4158-44b7-817f-4a92b28cfb1d",
+        "af5f902f-cbaa-49bc-938b-16b6c373caab"
+      ],
+      "settings": {
+        "title": "Wir bieten dir einen umfassenden Service in folgenden Kategorien:"
+      }
+    },
+    "e9a12648-00a0-4bf1-b648-83a73dcb9727": {
+      "type": "section-image-slider",
+      "blocks": {
+        "70378228-b0eb-4f42-bbd8-ff2fb6cc41d2": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/wedding-decor-2021-10-06-22-21-47-utc.png"
+          }
+        },
+        "ae90dc46-e6c2-4343-83a4-7be9d47ad77a": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pexels-craig-adderley-2306281.png"
+          }
+        },
+        "f81d8e30-f382-446a-afd6-380f14afc3d5": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/wedding-table-2021-08-26-12-09-46-utc.png"
+          }
+        },
+        "ae97d938-66f6-46c8-b91f-5072531bacc8": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pexels-amar-preciado-14716282.png"
+          }
+        },
+        "492c4b05-7cbe-4767-98dd-dcad790edcf6": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pexels-agung-pandit-wiguna-2788492.png"
+          }
+        }
+      },
+      "block_order": [
+        "70378228-b0eb-4f42-bbd8-ff2fb6cc41d2",
+        "ae90dc46-e6c2-4343-83a4-7be9d47ad77a",
+        "f81d8e30-f382-446a-afd6-380f14afc3d5",
+        "ae97d938-66f6-46c8-b91f-5072531bacc8",
+        "492c4b05-7cbe-4767-98dd-dcad790edcf6"
+      ],
+      "settings": {
+        "title": "Wir bieten dir einen umfassenden Service in folgenden Kategorien:",
+        "text": "Suchst du nach Anregungen oder möchtest dir unsere bisherigen Arrangements ansehen? Dann kannst du hier durch die Galerie stöbern!",
+        "btn_name": "Galerie Ansehen",
+        "url": ""
+      }
     }
   },
   "order": [
     "slideshow",
     "featured-collection-0",
     "0172cb29-ec82-47b5-ae86-eab43f87084b",
-    "04f6a1e1-6a3b-46ba-859c-0ae21e4183ea"
+    "04f6a1e1-6a3b-46ba-859c-0ae21e4183ea",
+    "818cd7e3-ba22-4ed8-8531-17c41691c934",
+    "8dd1775b-c47d-452c-800e-9bf21861c3e7",
+    "e9a12648-00a0-4bf1-b648-83a73dcb9727"
   ]
 }
