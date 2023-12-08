@@ -1427,10 +1427,12 @@ summary.list-menu__item{
 .my-swiper-pagination{
   position: static;
 }
+
 .my-swiper-pagination .swiper-pagination-bullet{
   width:10px;
   height: 10px;
   background-color:#EDDFD5 ;
+  opacity: 1 !important;
 }
 .my-swiper-pagination{
   margin-top:20px;
@@ -1444,7 +1446,7 @@ summary.list-menu__item{
 /********* section history **********/
 .section-history{
   padding:48px 0;
-  background: var(--beige-02, #F8F5F0);
+  /*background: var(--beige-02, #F8F5F0);*/
 }
 .section-history .title{
   max-width: 550px;
@@ -1467,6 +1469,7 @@ summary.list-menu__item{
 .section-history .my-swiper-pagination{
   margin-top:24px;
 }
+
 .swiper-history-slide__wrap .image {
   width: 100%;
   max-width: 225px;
