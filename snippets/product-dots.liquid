@@ -1,0 +1,50 @@
+{% capture class_top %}
+    {% if top > 60 %}
+        bottom
+    {% elsif top < 70 and top > 30 %}
+        middle
+    {% else %}
+        top
+    {% endif %}
+{% endcapture %}
+{% capture class_left %} 
+    {% if left > 70 %}
+        right
+    {% elsif left < 70 and left > 30 %}
+        center
+    {% else  %}
+        left
+    {% endif %}
+{% endcapture %}
+<div class="dots-product {{class_top}} {{class_left}}" >
+        <div class="dots-product__wrap">
+            <div class="image">
+                <div class="image__wrap">
+                    <img src="{{product.featured_image | img_url: 'master'}}" alt="">
+                </div>
+            </div>
+            <div class="product_content">
+                <div class="subtitle-2">
+                    <p>{{product.title}}</p>
+                </div>
+                {% if product.metafields.custom.material != blank %}
+                    <div class="overline overline1">
+                        <p>
+                            {{product.metafields.custom.material}}
+                        </p>
+                    </div>
+                {% endif %}
+                <div class="bottom-content">
+                    <div class="overline">
+                        <p>
+                            Rental fee:{{product.price | money}}
+                        </p>
+                    </div>
+                    <div class="product-btn">
+                        <a href="{{product.url}}" class="a-btn">Details</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>

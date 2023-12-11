@@ -1533,3 +1533,126 @@ summary.list-menu__item{
   }
 }
 /********** end history ***********/
+
+/***** dots product *****/
+.my-dots__wrap{
+  position:relative;
+}
+.dots-product{
+  position:absolute;
+  z-index: 3;
+  max-width: 324px;
+  width: 324px;
+}
+.dots-product .image{
+  width: 152px;
+}
+.dots-product .product_content{
+  width:calc(100% - 162px);
+}
+.dots-product .image .image__wrap{
+  position:relative;
+  padding-top:110%;
+}
+.dots-product .image .image__wrap img{
+  display:block;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  object-fit:cover;
+  z-index: 3;
+}
+.dots-product__wrap{
+  padding:10px;
+  background: rgba(252, 251, 249, 0.90);
+  backdrop-filter: blur(5px); 
+}
+.dots-product__wrap{
+  display: flex;
+  gap:10px;
+  justify-content: space-between;
+}
+.dots-product__wrap .product-btn .a-btn{
+  width:100%;
+  padding:0;
+}
+.dots-product .subtitle-2 p{
+  margin:0;
+
+}
+.dots-product .overline p{
+  margin:0;
+  color:#6D5F52;
+}
+.dots-product .overline.overline1 p{
+  color:#A7A294;
+}
+.dots-product .product_content{
+  display:flex;
+  flex-direction: column;
+}
+.dots-product .product_content .bottom-content{
+  margin-top:auto;
+}
+.dots-product .product_content .bottom-content .overline{
+  margin-bottom:10px;
+}
+.dots-product.bottom.left{
+  left:0px;
+  top:-200px;
+} 
+.dots-product.top.left{
+  left:0px;
+  top:-45px;
+}     
+.dots-product.top.right{
+  right:0;
+  top:-45px;
+} 
+.dots-product.bottom.right{
+  right:0px;
+  top:-200px;
+} 
+.dots-product.middle.center{
+  left:-91px;
+  top:-72px;
+} 
+.dots-product.bottom.center{
+  left:-160px;
+  top:-72px;
+} 
+@media (max-width:500px){
+  .dots-product .product_content{
+    width:calc(100% - 100px);
+  }
+  .dots-product .image{
+    width: 100px;
+  }
+  .dots-product{
+    position:absolute;
+  
+    max-width: 250px;
+    width: 250px;
+  }
+
+  .dots-product.bottom.left{
+    left:-30px;
+    top:-150px;
+  } 
+  .dots-product.top.left{
+    left:0px;
+    top:-45px;
+  }     
+  .dots-product.top.right{
+    left:-214px;
+    top:-45px;
+  } 
+  .dots-product.bottom.right{
+    left:-200px;
+    top:-150px;
+  } 
+}
+
+/***** end dots product ****/

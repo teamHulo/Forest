@@ -1,0 +1,20 @@
+{% if product != blank %}
+  <div
+    class="my-dots my-dots-1"
+    style="top:{% if top > 95 %}
+      calc({{ top }}% - 38px);
+    {% else %}
+      {{ top }}%;
+    {% endif %}
+    left:{% if left > 95 %}
+      calc({{ left }}% - 38px);
+    {% else %}
+      {{ left }}%
+    {% endif %}">
+    {% render 'icon-dots' %}
+    <div class="my-dots__wrap">
+        {% render 'product-dots', product: product, left:left, top:top %}
+    </div>
+    
+  </div>
+{% endif %}

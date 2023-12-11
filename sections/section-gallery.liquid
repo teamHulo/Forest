@@ -1,0 +1,433 @@
+{% style %}
+  #shopify-section-{{ section.id}}{
+    margin-top:{{section.settings.mt}}px;
+  }
+  @media (max-width:1134px){
+    #shopify-section-{{ section.id}}{
+    margin-top:20px;
+  }
+  }
+  #shopify-section-{{ section.id}} .section-gallary{
+    padding-top:{{section.settings.pt}}px;
+    padding-bottom:{{section.settings.pb}}px;
+  }
+  .section-gallary .title {
+    margin: 0 0 48px 0;
+  }
+  .section-gallary .title h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .section-gallary .right {
+    text-align: left;
+  }
+  #shopify-section-{{ section.id}} .section-gallary .items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction:{{section.settings.aligments}};
+    gap: 15px;
+  }
+  .section-gallary .items .card .image {
+    position:relative;
+
+  }
+  .section-gallary .items .card:hover .image:before, .section-gallary .items .card:hover .image .image-btn{
+    opacity:1;
+    transition: all .3s ease-out;
+  }
+  .section-gallary .items .card .image:before{
+    content:'';
+    display:block;
+    width:100%;
+    height:100%;
+    background: linear-gradient(0deg, rgba(55, 49, 42, 0.40) 0%, rgba(55, 49, 42, 0.40) 100%);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    opacity:0;
+    transition: all .3s ease-out;
+    }
+  .section-gallary .items .card .image .image-btn .a-btn{
+    background: var(--beige-01, #FCFBF9);
+    color: var(--brown-01, #6D5F52);
+  }
+  .section-gallary .items .card .image .image-btn{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    width:100%;
+    padding:0 clamp(10px, 3.958vw ,57px);
+    z-index:2;
+    opacity:0;
+    transition: all .3s ease-out;
+  }
+  .section-gallary .items .card .image__wrap {
+    position: relative;
+    padding-top: 100%;
+  }
+  .section-gallary .items .card .image__wrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit:cover;
+  }
+  .section-gallary p{
+    margin:0;
+  }
+  .section-gallary .items a{
+    text-decoration:none;
+  }
+  #shopify-section-{{ section.id}} .section-gallary .items .left__wrap {
+    display: flex;
+    gap: 15px;
+    flex-direction:{{section.settings.aligments_left}};
+  }
+  .section-gallary .items .big-card .image{
+    margin-bottom:15px;
+  }
+  .section-gallary .items .small-card .image{
+    margin-bottom:10px;
+  }
+  .section-gallary .items .big-card {
+    max-width: 380px;
+  }
+  .section-gallary .items .big-card .image__wrap {
+    padding-top: 132.106%;
+  }
+  .section-gallary .items .small-card .image__wrap {
+    padding-top: 126.495%;
+  }
+  .section-gallary .items .small-card {
+    max-width: 268px;
+  }
+  .section-gallary .card.big-card .title{
+    margin:0 0 10px 0;
+  }
+  .section-gallary .card.small-card .title{
+    margin:0 0 6px 0;
+  }
+  .section-gallary .card .title h3, .section-gallary .card .title h5{
+    margin:0;
+  }
+
+  @media (max-width:767px){
+    #shopify-section-{{ section.id}} .section-gallary .items{
+        flex-wrap:wrap;
+
+    }
+    #shopify-section-{{ section.id}} .section-gallary .left{
+        width:100%;
+    }
+    #shopify-section-{{ section.id}} .section-gallary .right{
+        width:100%;
+    }
+    #shopify-section-{{ section.id}} .section-gallary .items .card{
+        max-width:100%;
+        width:49%;
+    }
+    #shopify-section-{{ section.id}} .section-gallary .items .card .image__wrap{
+        padding-top:120%;
+    }
+    .section-gallary .items .big-card .image{
+        margin-bottom:15px;
+    }
+    .section-gallary .items .small-card .image{
+        margin-bottom:15px;
+    }
+    .section-gallary .card.big-card .title{
+        margin:0 0 10px 0;
+    }
+    .section-gallary .card.small-card .title{
+        margin:0 0 10px 0;
+    }
+    .section-gallary .card .title h5{
+        font-family: "ivypresto-display";
+        font-size: var(--font-size-36);
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+        text-transform: capitalize;
+    }
+  }
+  @media (max-width:500px){
+    #shopify-section-{{ section.id}} .section-gallary .items .card{
+        width:100%;
+    }
+    #shopify-section-{{ section.id}} .section-gallary .items .card{
+        max-width:100%;
+        width:100%;
+    }
+    #shopify-section-{{ section.id}} .section-gallary .items .left__wrap{
+        flex-wrap:wrap;
+    }
+  }
+
+
+{% endstyle %}
+
+
+
+<div class="section-gallary">
+  <div class="container">
+    <div class="section-gallary__wrap">
+      {% if section.settings.title != blank %}
+        <div class="title">
+          <h2>
+            {{ section.settings.title }}
+          </h2>
+        </div>
+      {% endif %}
+      <div class="items">
+        <div class="left item">
+          <div class="left__wrap">
+            <div class="card big-card">
+              <div class="card__wrap">
+                <a href="{{section.settings.url_1}}">
+                  <div class="image">
+                    <div class="image__wrap">
+                      <img src="{{section.settings.img1 | img_url: 'master'}}" alt="">
+                    </div>
+                    <div class="image-btn">
+                        <span class="a-btn"> Details </span>
+                    </div>
+                  </div>
+                  <div class="title">
+                    <h3>
+                      {{ section.settings.title1 }}
+                    </h3>
+                  </div>
+                  <div class="text">
+                    <p>
+                      {{ section.settings.subtitle }}
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card small-card">
+              <div class="card__wrap">
+                <a href="{{section.settings.url_2}}">
+                  <div class="image">
+                    <div class="image__wrap">
+                      <img src="{{section.settings.img2 | img_url: 'master'}}" alt="">
+                    </div>
+                    <div class="image-btn">
+                        <span class="a-btn"> Details </span>
+                    </div>
+                  </div>
+                  <div class="title">
+                    <h5>
+                      {{ section.settings.title_small1 }}
+                    </h5>
+                  </div>
+                  <div class="text">
+                    <p>
+                      {{ section.settings.subtitle_small1 }}
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right item">
+          <div class="right__wrap">
+            {% if section.settings.show_right %}
+                <div class="card small-card">
+                    <div class="card__wrap">
+                        <a href="{{section.settings.url_3}}">
+                        <div class="image">
+                            <div class="image__wrap">
+                            <img src="{{section.settings.img3 | img_url: 'master'}}" alt="">
+                            </div>
+                            <div class="image-btn">
+                                <span class="a-btn"> Details </span>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h5>
+                            {{ section.settings.title_small2 }}
+                            </h5>
+                        </div>
+                        <div class="text">
+                            <p>
+                            {{ section.settings.subtitle_small2 }}
+                            </p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "section-gallary",
+    "settings": [
+        {
+        "type": "range",
+        "id": "mt",
+        "min": -100,
+        "max": 0,
+        "step": 1,
+        "unit": "px",
+        "label": "margin-top",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "pt",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "padding-top",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "pb",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "padding-bottom",
+        "default": 0
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "title",
+        "default": "gallery "
+      },
+      {
+        "type": "select",
+        "id": "aligments",
+        "label": "alignments all",
+        "options": [
+            {
+            "value": "row-reverse",
+            "label": "right"
+            },
+            {
+            "value": "row",
+            "label": "left"
+            }
+        ],
+        "default": "row"
+      },
+      {
+        "type": "header",
+        "content": "Big card left"
+      },
+      {
+        "type": "image_picker",
+        "id": "img1",
+        "label": "left big image card "
+      },
+      {
+        "type": "text",
+        "id": "title1",
+        "label": "left big card title ",
+        "default": "Eucalyptus of love"
+      }, {
+        "type": "text",
+        "id": "subtitle",
+        "label": "left big card subtitle",
+        "default": "Organic wedding with beautiful floral garland on the table."
+      }, {
+        "type": "url",
+        "id": "url_1",
+        "label": "big card url"
+
+      }, {
+        "type": "header",
+        "content": "Small card left"
+      }, {
+        "type": "image_picker",
+        "id": "img2",
+        "label": "left small image card "
+      }, {
+        "type": "text",
+        "id": "title_small1",
+        "label": "left small card title ",
+        "default": "Outdoor wedding"
+      }, {
+        "type": "text",
+        "id": "subtitle_small1",
+        "label": "left small card subtitle",
+        "default": "Romantic and rustic wedding decorations."
+      }, {
+        "type": "url",
+        "id": "url_2",
+        "label": "small card url"
+
+      }, 
+      {
+        "type": "select",
+        "id": "aligments_left",
+        "label": "alignments left items",
+        "options": [
+            {
+            "value": "row-reverse",
+            "label": "right"
+            },
+            {
+            "value": "row",
+            "label": "left"
+            }
+        ],
+        "default": "row"
+      },
+      
+      {
+        "type": "header",
+        "content": "Small card right"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_right",
+        "label": "show right",
+        "default": true
+      },
+      
+      {
+        "type": "image_picker",
+        "id": "img3",
+        "label": "right small image card "
+      }, {
+        "type": "text",
+        "id": "title_small2",
+        "label": "right small card title ",
+        "default": "Outdoor wedding"
+      }, {
+        "type": "text",
+        "id": "subtitle_small2",
+        "label": "right small card subtitle",
+        "default": "Romantic and rustic wedding decorations."
+      }, {
+        "type": "url",
+        "id": "url_3",
+        "label": "small card url"
+
+      }
+    ],
+    "presets": [
+      {
+        "name": "section-gallary"
+      }
+    ]
+  }
+{% endschema %}

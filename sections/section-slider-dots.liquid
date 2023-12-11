@@ -1,0 +1,303 @@
+{% style %}
+  #shopify-section-{{ section.id}}{}
+  .section-slider-dots {
+    padding: 48px 0;
+  }
+  .section-slider-dots img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* position:absolute;
+        top:0;
+        left:0;*/
+    max-height: 510px;
+  }
+  .section-slider-dots .title {
+    margin: 0 0 24px;
+  }
+  .section-slider-dots .title h2 {
+    margin: 0;
+    text-align: center;
+  }
+  .section-slider-dots .image {
+    max-height: 510px;
+    position: relative;
+  }
+  .section-slider-dots .image .my-dots {
+    position: absolute;
+    
+    width: 38px;
+    height: 38px;
+  }
+  .section-slider-dots .image .image__wrap {
+    position: relative;
+
+
+    /*padding-top:100%;
+        padding-top: 38.06%;*/
+  }
+  .section-slider-dots .my-swiper-pagination {
+    margin-top: 20px;
+  }
+  .section-slider-dots .swiper-slide {
+    height: auto;
+    max-height: 510px;
+  }
+  .section-slider-dots .swiper-buttons {
+    width: 42px;
+    height: 42px;
+  }
+  .section-slider-dots .swiper-buttons:after {
+    content: none;
+  }
+  .section-slider-dots .swiper-button-prev {
+    transform: rotate(180deg);
+  }
+  .section-slider-dots .dots-product{
+    display:none;
+
+  }
+  .section-slider-dots .my-dots:hover .dots-product{
+    display:block;
+  }
+
+  
+  
+
+
+{% endstyle %}
+
+
+<div class="section-slider-dots">
+  <div class="container">
+    <div class="section-slider-dots__wrap">
+      <div class="title">
+        <h2>
+          {{ section.settings.title }}
+        </h2>
+      </div>
+      <div class="swiper swiper-dots">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <div class="slide__wrap">
+                <div class="image">
+                  <div class="image__wrap">
+                    <img src="{{block.settings.img | img_url: 'master'}}" alt="">
+                  </div>
+                  {% for i in (1..5) %}
+                    {% assign product_key = "product" | append: i %}
+                    {% assign left_key = "left" | append: i %}
+                    {% assign top_key = "top" | append: i %}
+
+                    {% assign product = block.settings[product_key] %}
+                    {% assign left = block.settings[left_key] %}
+                    {% assign top = block.settings[top_key] %}
+                    {% render 'slider-dots', product: product, left: left, top: top %}
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="swiper-pagination my-swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-buttons">
+          <svg
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="21"
+              cy="21"
+              r="21"
+              fill="white" />
+            <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52" />
+          </svg>
+        </div>
+        <div class="swiper-button-next swiper-buttons">
+          <svg
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="21"
+              cy="21"
+              r="21"
+              fill="white" />
+            <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52" />
+          </svg>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "section-slider-dots",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "title",
+        "default": "Shop by look"
+      }
+
+    ],
+    "blocks": [
+      {
+        "name": "item",
+        "type": "item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "image"
+          },
+          {
+            "type": "header",
+            "content": "dots1"
+          },
+          {
+            "type": "product",
+            "id": "product1",
+            "label": "product"
+          },
+          {
+            "type": "range",
+            "id": "top1",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "top",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "left1",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "left",
+            "default": 0
+          }, {
+            "type": "header",
+            "content": "dots2"
+          }, {
+            "type": "range",
+            "id": "top2",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "top",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "left2",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "left",
+            "default": 0
+          }, {
+            "type": "product",
+            "id": "product2",
+            "label": "product"
+          }, {
+            "type": "header",
+            "content": "dots3"
+          }, {
+            "type": "range",
+            "id": "top3",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "top",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "left3",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "left",
+            "default": 0
+          }, {
+            "type": "product",
+            "id": "product3",
+            "label": "product"
+          }, {
+            "type": "header",
+            "content": "dots4"
+          }, {
+            "type": "range",
+            "id": "top4",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "top",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "left4",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "left",
+            "default": 0
+          }, {
+            "type": "product",
+            "id": "product4",
+            "label": "product"
+          }, {
+            "type": "header",
+            "content": "dots5"
+          }, {
+            "type": "range",
+            "id": "top5",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "top",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "left5",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "left",
+            "default": 0
+          }, {
+            "type": "product",
+            "id": "product5",
+            "label": "product"
+          }
+
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "section-slider-dots"
+      }
+    ]
+  }
+{% endschema %}
