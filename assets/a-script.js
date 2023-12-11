@@ -73,18 +73,21 @@ $(() => {
   }
  
   function generateRelated() {
-    let urlProduct = $(".tab-recomendation").attr("data-url");
-    fetch(urlProduct)
-      .then((response) => response.text())
-      .then((text) => {
-        const $html = $("<div>").html(text);
-        
-        const $recommendations = $html.find(".product-tabs-recomentadion");
-        
-        $(".product-tabs-recomentadion").replaceWith($recommendations);
-        swiperRecommendation();
-      })
-      .catch((e) => {});
+    if( $(".tab-recomendation").lenght > 0 ){
+      let urlProduct = $(".tab-recomendation").attr("data-url");
+      fetch(urlProduct)
+        .then((response) => response.text())
+        .then((text) => {
+          const $html = $("<div>").html(text);
+          
+          const $recommendations = $html.find(".product-tabs-recomentadion");
+          
+          $(".product-tabs-recomentadion").replaceWith($recommendations);
+          swiperRecommendation();
+        })
+        .catch((e) => {});
+    }
+    
   }
   generateRelated();
 
