@@ -65,10 +65,106 @@
         "btn_name": "Galerie Ansehen",
         "url": ""
       }
+    },
+    "c18fcab2-2ced-44dd-ba9a-3e6f06a87592": {
+      "type": "section-tabs-slider",
+      "blocks": {
+        "2f413c10-1af6-437c-8cf0-86a090e7b9a3": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "e814b00b-dceb-43f3-b9e1-d5a62f445231": {
+          "type": "slide",
+          "settings": {
+            "name": "Birthday Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "967127a0-650a-43ee-a84c-e88752c72696": {
+          "type": "slide",
+          "settings": {
+            "name": "Baby Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "ca7756e1-502c-4e66-83d5-3a30a624e871": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7975.jpg"
+          }
+        },
+        "e60fb44c-8403-45fc-a693-201ea93312d7": {
+          "type": "slide",
+          "settings": {
+            "name": "Birthday Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7975.jpg"
+          }
+        },
+        "3b6bdd6e-2cb3-466a-a984-2ac0c8cc3f77": {
+          "type": "slide",
+          "settings": {
+            "name": "Baby Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7975.jpg"
+          }
+        },
+        "0d08e921-3219-49f2-8db9-d0402974c169": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7972.jpg"
+          }
+        },
+        "0ec480c8-0454-4c8c-a3a8-1eb407aab551": {
+          "type": "slide",
+          "settings": {
+            "name": "Birthday Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7972.jpg"
+          }
+        },
+        "c645dcaf-a8f9-47f5-acd7-23803ef7f3f8": {
+          "type": "slide",
+          "settings": {
+            "name": "Baby Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7972.jpg"
+          }
+        },
+        "c11cee07-3fca-4faf-bbdb-003caa2a145d": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/wedding-cake-at-a-beach-wedding-on-the-background-2022-02-15-17-04-53-utc.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "2f413c10-1af6-437c-8cf0-86a090e7b9a3",
+        "e814b00b-dceb-43f3-b9e1-d5a62f445231",
+        "967127a0-650a-43ee-a84c-e88752c72696",
+        "ca7756e1-502c-4e66-83d5-3a30a624e871",
+        "e60fb44c-8403-45fc-a693-201ea93312d7",
+        "3b6bdd6e-2cb3-466a-a984-2ac0c8cc3f77",
+        "0d08e921-3219-49f2-8db9-d0402974c169",
+        "0ec480c8-0454-4c8c-a3a8-1eb407aab551",
+        "c645dcaf-a8f9-47f5-acd7-23803ef7f3f8",
+        "c11cee07-3fca-4faf-bbdb-003caa2a145d"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "heading": "Gallery",
+        "list": [
+
+        ]
+      }
     }
   },
   "order": [
     "main",
-    "e8e5d282-4a63-4193-ae46-868992744fbd"
+    "e8e5d282-4a63-4193-ae46-868992744fbd",
+    "c18fcab2-2ced-44dd-ba9a-3e6f06a87592"
   ]
 }
