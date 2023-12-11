@@ -2,13 +2,73 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "e8e5d282-4a63-4193-ae46-868992744fbd": {
+      "type": "section-simple-image-slide",
+      "blocks": {
+        "17ff52d6-4dda-4f99-a36c-8c8ce675c23e": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/nicolas-falgetelli-wk9iC7_keLY-unsplash_1.jpg"
+          }
+        },
+        "285783c4-e49f-4886-95cc-7f1fd2c7485b": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/gold-whisk-whipping-cream-2022-11-11-06-05-13-utc_1.jpg"
+          }
+        },
+        "a45160ae-0eb5-4438-9b83-3c97c38a253a": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screenshot_2023-11-27_at_17.40_1.jpg"
+          }
+        },
+        "4ed5bfe5-b218-4474-8987-17cea717c3e0": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pexels-shvets-production-7525012_1.jpg"
+          }
+        },
+        "413f9b30-6cce-4de4-890e-05aa4bcfec90": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/wedding-cake-at-a-beach-wedding-on-the-background-2022-02-15-17-04-53-utc.jpg"
+          }
+        },
+        "ad28ca07-a23c-4430-8acc-29d2a7ee800f": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "17ff52d6-4dda-4f99-a36c-8c8ce675c23e",
+        "285783c4-e49f-4886-95cc-7f1fd2c7485b",
+        "a45160ae-0eb5-4438-9b83-3c97c38a253a",
+        "4ed5bfe5-b218-4474-8987-17cea717c3e0",
+        "413f9b30-6cce-4de4-890e-05aa4bcfec90",
+        "ad28ca07-a23c-4430-8acc-29d2a7ee800f"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "title": "our bakery",
+        "text": "For your special occasions, we create stunning cakes that are produced in our own bakery. You can order a cake from us for any celebration.",
+        "max_width": 400,
+        "btn_name": "Galerie Ansehen",
+        "url": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "e8e5d282-4a63-4193-ae46-868992744fbd"
   ]
 }
