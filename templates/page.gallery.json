@@ -31,10 +31,67 @@
         "subtitle_small2": "Romantic and rustic wedding decorations.",
         "url_3": ""
       }
+    },
+    "60dfa60d-2d52-4574-9b77-9bba558f69d5": {
+      "type": "section-gallery",
+      "settings": {
+        "mt": -100,
+        "pt": 0,
+        "pb": 0,
+        "title": "",
+        "aligments": "row-reverse",
+        "img1": "shopify:\/\/shop_images\/wedding-decor-2021-10-06-22-21-47-utc.png",
+        "title1": "Natural Bloom",
+        "subtitle": "Organic wedding with beautiful floral garland on the table.",
+        "url_1": "",
+        "img2": "shopify:\/\/shop_images\/elegant-design-centerpieces-and-wedding-cutlery-2022-05-04-22-04-42-utc.jpg",
+        "title_small1": "Romantic Wedding",
+        "subtitle_small1": "Romantic and rustic wedding decorations.",
+        "url_2": "",
+        "aligments_left": "row-reverse",
+        "show_right": false,
+        "title_small2": "Outdoor wedding",
+        "subtitle_small2": "Romantic and rustic wedding decorations.",
+        "url_3": ""
+      }
+    },
+    "65db9fd6-6ae6-44be-a226-23cff479bc17": {
+      "type": "section-slider-dots",
+      "blocks": {
+        "ca991c43-885e-4ff1-af0c-e3d87940782f": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pexels-jonathan-borba-12876493.jpg",
+            "product1": "belle-stuhle-transparent",
+            "top1": 43,
+            "left1": 12,
+            "top2": 34,
+            "left2": 25,
+            "product2": "besteck-gold-klassik-set",
+            "top3": 42,
+            "left3": 65,
+            "product3": "chiavari-stuhl-weiss-holz",
+            "top4": 0,
+            "left4": 0,
+            "product4": "better-together-neon-schrift",
+            "top5": 0,
+            "left5": 0,
+            "product5": ""
+          }
+        }
+      },
+      "block_order": [
+        "ca991c43-885e-4ff1-af0c-e3d87940782f"
+      ],
+      "settings": {
+        "title": "Shop by look"
+      }
     }
   },
   "order": [
     "main",
-    "6a0beb94-68eb-4c31-927b-295616a9a192"
+    "6a0beb94-68eb-4c31-927b-295616a9a192",
+    "60dfa60d-2d52-4574-9b77-9bba558f69d5",
+    "65db9fd6-6ae6-44be-a226-23cff479bc17"
   ]
 }
