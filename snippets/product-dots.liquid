@@ -1,7 +1,7 @@
 {% capture class_top %}
     {% if top > 60 %}
         bottom
-    {% elsif top < 70 and top > 30 %}
+    {% elsif top <= 70 and top >= 30 %}
         middle
     {% else %}
         top
@@ -10,7 +10,7 @@
 {% capture class_left %} 
     {% if left > 70 %}
         right
-    {% elsif left < 70 and left > 30 %}
+    {% elsif left <= 70 and left >= 30 %}
         center
     {% else  %}
         left

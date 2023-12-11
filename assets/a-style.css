@@ -1617,14 +1617,14 @@ summary.list-menu__item{
   top:-200px;
 } 
 .dots-product.middle.center{
-  left:-91px;
+  left:-120px;
   top:-72px;
 } 
 .dots-product.bottom.center{
   left:-160px;
   top:-72px;
 } 
-@media (max-width:500px){
+@media (max-width:600px){
   .dots-product .product_content{
     width:calc(100% - 100px);
   }
