@@ -5,13 +5,19 @@
     }
 </style>
 <div class="breadcrumb container">
-    {% render 'breadcrumbs' %}
+    {% render 'breadcrumbs', show_back: section.settings.show_back %}
 </div>
 
 {% schema %}
 {
     "name": "Breadcrumb",
     "settings": [
+        {
+            "type":"checkbox",
+            "id":"show_back",
+            "label": "show_back",
+            "default": true
+        },
         {
             "type": "range",
             "id": "padding_top",
