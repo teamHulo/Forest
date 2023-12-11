@@ -1,0 +1,22 @@
+.simple-image-slider .swiper{
+    margin: 36px 0;
+}
+.simple-image-slider__label {
+    margin: 0 auto;
+    text-align: center;
+}
+.simple-image-slider__label .title h4, .simple-image-slider__label .title {
+    margin-bottom: 16px;
+}
+.simple-image-slider__label .title h4 {
+    font-size: var(--font-size-48);
+}
+.simple-img-wrap {
+    position: relative;
+    height: 100%;
+}
+.simple-img-wrap img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

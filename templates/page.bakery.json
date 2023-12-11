@@ -2,13 +2,336 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "e8e5d282-4a63-4193-ae46-868992744fbd": {
+      "type": "section-simple-image-slide",
+      "blocks": {
+        "17ff52d6-4dda-4f99-a36c-8c8ce675c23e": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/nicolas-falgetelli-wk9iC7_keLY-unsplash_1.jpg"
+          }
+        },
+        "285783c4-e49f-4886-95cc-7f1fd2c7485b": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/gold-whisk-whipping-cream-2022-11-11-06-05-13-utc_1.jpg"
+          }
+        },
+        "a45160ae-0eb5-4438-9b83-3c97c38a253a": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Screenshot_2023-11-27_at_17.40_1.jpg"
+          }
+        },
+        "4ed5bfe5-b218-4474-8987-17cea717c3e0": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pexels-shvets-production-7525012_1.jpg"
+          }
+        },
+        "413f9b30-6cce-4de4-890e-05aa4bcfec90": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/wedding-cake-at-a-beach-wedding-on-the-background-2022-02-15-17-04-53-utc.jpg"
+          }
+        },
+        "ad28ca07-a23c-4430-8acc-29d2a7ee800f": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "17ff52d6-4dda-4f99-a36c-8c8ce675c23e",
+        "285783c4-e49f-4886-95cc-7f1fd2c7485b",
+        "a45160ae-0eb5-4438-9b83-3c97c38a253a",
+        "4ed5bfe5-b218-4474-8987-17cea717c3e0",
+        "413f9b30-6cce-4de4-890e-05aa4bcfec90",
+        "ad28ca07-a23c-4430-8acc-29d2a7ee800f"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "title": "our bakery",
+        "text": "For your special occasions, we create stunning cakes that are produced in our own bakery. You can order a cake from us for any celebration.",
+        "max_width": 400,
+        "btn_name": "Galerie Ansehen",
+        "url": ""
+      }
+    },
+    "c18fcab2-2ced-44dd-ba9a-3e6f06a87592": {
+      "type": "section-tabs-slider",
+      "blocks": {
+        "2f413c10-1af6-437c-8cf0-86a090e7b9a3": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "fbd02f2d-f1b1-4830-8add-a68b4ca47a18": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "960cd993-161e-4436-9afe-0684353d3bd3": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "e814b00b-dceb-43f3-b9e1-d5a62f445231": {
+          "type": "slide",
+          "settings": {
+            "name": "Birthday Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "967127a0-650a-43ee-a84c-e88752c72696": {
+          "type": "slide",
+          "settings": {
+            "name": "Baby Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "f2cb9a93-003b-4f45-8fae-fc764c958ed8": {
+          "type": "slide",
+          "settings": {
+            "name": "Baby Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "e9dbbaa4-fe7d-44d7-8691-61cc1c1abebc": {
+          "type": "slide",
+          "settings": {
+            "name": "Baby Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "ca7756e1-502c-4e66-83d5-3a30a624e871": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7975.jpg"
+          }
+        },
+        "e60fb44c-8403-45fc-a693-201ea93312d7": {
+          "type": "slide",
+          "settings": {
+            "name": "Birthday Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7975.jpg"
+          }
+        },
+        "3b6bdd6e-2cb3-466a-a984-2ac0c8cc3f77": {
+          "type": "slide",
+          "settings": {
+            "name": "Baby Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7975.jpg"
+          }
+        },
+        "0d08e921-3219-49f2-8db9-d0402974c169": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7972.jpg"
+          }
+        },
+        "ebd59f13-efea-420e-a101-4afe8436e231": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7972.jpg"
+          }
+        },
+        "001205cc-accc-47ae-a267-6f8f95bde436": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7972.jpg"
+          }
+        },
+        "0ec480c8-0454-4c8c-a3a8-1eb407aab551": {
+          "type": "slide",
+          "settings": {
+            "name": "Birthday Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7972.jpg"
+          }
+        },
+        "c645dcaf-a8f9-47f5-acd7-23803ef7f3f8": {
+          "type": "slide",
+          "settings": {
+            "name": "Baby Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7972.jpg"
+          }
+        },
+        "c11cee07-3fca-4faf-bbdb-003caa2a145d": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/wedding-cake-at-a-beach-wedding-on-the-background-2022-02-15-17-04-53-utc.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "2f413c10-1af6-437c-8cf0-86a090e7b9a3",
+        "fbd02f2d-f1b1-4830-8add-a68b4ca47a18",
+        "960cd993-161e-4436-9afe-0684353d3bd3",
+        "e814b00b-dceb-43f3-b9e1-d5a62f445231",
+        "967127a0-650a-43ee-a84c-e88752c72696",
+        "f2cb9a93-003b-4f45-8fae-fc764c958ed8",
+        "e9dbbaa4-fe7d-44d7-8691-61cc1c1abebc",
+        "ca7756e1-502c-4e66-83d5-3a30a624e871",
+        "e60fb44c-8403-45fc-a693-201ea93312d7",
+        "3b6bdd6e-2cb3-466a-a984-2ac0c8cc3f77",
+        "0d08e921-3219-49f2-8db9-d0402974c169",
+        "ebd59f13-efea-420e-a101-4afe8436e231",
+        "001205cc-accc-47ae-a267-6f8f95bde436",
+        "0ec480c8-0454-4c8c-a3a8-1eb407aab551",
+        "c645dcaf-a8f9-47f5-acd7-23803ef7f3f8",
+        "c11cee07-3fca-4faf-bbdb-003caa2a145d"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "heading": "Gallery",
+        "list": [
+
+        ]
+      }
+    },
+    "a8eeef52-e869-49c8-91b4-3b84edb50291": {
+      "type": "section-image-text-v3",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "bg": "#f8f5f0",
+        "gap": 0,
+        "img": "shopify:\/\/shop_images\/cropped-shot-of-woman-decorating-freshly-baked-bla-2022-12-16-18-58-43-utc_1.jpg",
+        "small_img": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_08.05_1.jpg",
+        "title": "Und wie feiert man diese am besten?",
+        "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p>",
+        "max_width": 600
+      }
+    },
+    "c1de842a-5e12-44f7-8b5e-faf4701ee632": {
+      "type": "backery-contact",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "bg": "#f8f5f0",
+        "img": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_08.07_1.jpg",
+        "phone": "+1 343 343 33 22",
+        "email": "info@forestevents.com",
+        "title": "Order Cake",
+        "text": "Fill out the contact  form or contact us using the contacts below"
+      }
+    },
+    "5adb88db-1ec4-4958-a0d8-f53719d306b6": {
+      "type": "section-reviews-slider",
+      "blocks": {
+        "94a04e3d-c15c-4647-8804-3e3d20dde0ba": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "35959528-69ac-4e3a-a44a-1ace4185f17b": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "e8e85238-2ef3-4d6e-90ce-1408b029545d": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "d72a665a-1c71-41f3-b2ee-239cb4bc67b4": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "996c6702-fda2-4dd8-848b-302ad1701906": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "b02e08f7-62ec-4953-850e-0d9997a3e473": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "d1a288bc-0ed6-46c6-85ad-117a310b507d": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "94a04e3d-c15c-4647-8804-3e3d20dde0ba",
+        "35959528-69ac-4e3a-a44a-1ace4185f17b",
+        "e8e85238-2ef3-4d6e-90ce-1408b029545d",
+        "d72a665a-1c71-41f3-b2ee-239cb4bc67b4",
+        "996c6702-fda2-4dd8-848b-302ad1701906",
+        "b02e08f7-62ec-4953-850e-0d9997a3e473",
+        "d1a288bc-0ed6-46c6-85ad-117a310b507d"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "title": "Customer Reviews"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "e8e5d282-4a63-4193-ae46-868992744fbd",
+    "c18fcab2-2ced-44dd-ba9a-3e6f06a87592",
+    "a8eeef52-e869-49c8-91b4-3b84edb50291",
+    "c1de842a-5e12-44f7-8b5e-faf4701ee632",
+    "5adb88db-1ec4-4958-a0d8-f53719d306b6"
   ]
 }

@@ -1,0 +1,48 @@
+.card-reviews {
+    background-color: #F8F5F0;
+    padding: 24px 37px 53px 24px;
+  }
+  .card-reviews__top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .card-reviews__info .name {
+    margin-bottom: 0;
+    font-family: acumin-pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .card-reviews__info .date {
+    margin-top: 0;
+    font-family: acumin-pro;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+  }
+  .card-reviews__text p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.12px;
+  }
+  .reviews-slider__label h4 {
+    text-align: center;
+    font-family: ivyPresto-display;
+    font-size: var(--font-size-36);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%;
+  }
+  .card-reviews__top img {
+    object-fit: cover;
+    width: 53px;
+    height: 53px;
+    border-radius: 25px;
+  }

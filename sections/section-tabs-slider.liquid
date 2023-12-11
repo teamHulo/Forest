@@ -1,92 +1,102 @@
+
+{{ 'section-tabs-slider.css' | asset_url | stylesheet_tag }}
+
 <style>
 #shopify-section-{{ section.id }} {
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
 }
-.flickity-viewport:focus-visible, .carousel:focus-visible {
-    box-shadow: none !important;
-    outline: none;
-}
-.tabs {
-	display: flex;
-	flex-wrap: wrap; 
-}
-.tabs label {
-	order: 1; 
-	display: block;
-	padding: 1rem 2rem;
-	margin-right: 0.2rem;
-	cursor: pointer;
-    transition: background ease 0.2s;
-}
-.tabs .tab {
-    order: 99;
-    flex-grow: 1;
-	width: 100%;
-	display: none;
-    background: #fff;
-}
-.tabs input[type="radio"] {
-	display: none;
-}
-.tabs input[type="radio"]:checked + label {
-	border-bottom: 2px solid #6D5F52;
-}
-.tabs input[type="radio"]:checked + label + .tab {
-	display: block;
-}
-
-@media (max-width: 45em) {
-  .tabs .tab,
-  .tabs label {
-    order: initial;
-  }
-  .tabs label {
-    width: 100%;
-    margin-right: 0;
-    margin-top: 0.2rem;
-  }
-}
-.carousel-cell {
-  width: 20%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: gallery-cell;
-}
-.carousel-cell img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-}
-.flickity-page-dots {
-  bottom: -22px;
-}
-/* dots are lines */
-.flickity-page-dots .dot {
-    background-color: #EDDFD5;
-  height: 4px;
-  width: 40px;
-  margin: 0;
-  border-radius: 0;
-}
 </style>
-<div class="page-width tabs">
-    {% for collection in section.settings.list %}  
-        <input type="radio" name="tabs" id="tab-{{ forloop.index }}" checked="checked">
-        <label for="tab-{{ forloop.index }}">{{ collection.title }}</label>
-        <div class="tab">
-            <div class="carousel"
-            data-flickity='{ "groupCells": true }'>
-            {% for product in collection.products %}    
-                <div class="carousel-cell">
-                    {% render 'product-media', media: product.media[0] %}
-                </div>
-            {% endfor %}
-            </div>          
+{% liquid
+  assign tabs = "" 
+  for block in section.blocks 
+    assign tabs = tabs | append: ',' | append: block.settings.name
+  endfor
+  assign tabsNameArray = tabs | remove_first: ',' | split: ',' | uniq 
+%}
+
+<div class="tabs-slider">
+  <div class="container">
+    <div class="product-tabs-recomentadion__wrap section-{{ section.id }}-padding">
+      <div class="title">
+        <h4> {{ section.settings.heading }} </h4>
+      </div>
+      <div class="tabs">
+        <div class="tabs__header">
+          {% for value in tabsNameArray %}
+          <div class="tab__item{% if forloop.first %} active{% endif %}" data-title="{{ value }}">
+              <span>{{ value }}</span>
+            </div>
+          {% endfor %}
         </div>
-    {% endfor %}
+        <div class="tabs-contants">
+          {% for tabName in tabsNameArray %}
+            {% assign slidesArray = section.blocks | map: 'settings' | where: 'name', tabName %}
+
+            <div class="tab-content  {% if  forloop.index == 1 %} active {% endif %}"  data-title="{{ tabName }}">
+                <s-slider  class="swiper">
+                  <script class="config" type="application/json">
+                  {
+                          "slidesPerView": 3,
+                          "spaceBetween": 10,
+                          "navigation": {
+                            "nextEl": ".swiper-button-next",
+                            "prevEl": ".swiper-button-prev"
+                          },
+                          "pagination": {
+                            "el": ".my-swiper-pagination",
+                            "clickable": true
+                          },
+                          "breakpoints": {
+                            "100": {
+                              "slidesPerView": 1
+                            },
+                    
+                            "300": {
+                              "slidesPerView": 1.5
+                            },
+                            "500": {
+                              "slidesPerView": 2.5
+                            },
+                            "767": {
+                              "slidesPerView": 3
+                            },
+                            "900": {
+                              "slidesPerView": 3
+                            },
+                            "1024": {
+                              "slidesPerView": 3
+                            }
+                          }
+                      }
+                  </script>
+                  <div class="swiper-wrapper">
+                    {% for slide in slidesArray %}
+                      <div class="swiper-slide" style="height: auto;">
+                        <div class="swiper-slide__wrap" style="height: 100%;">
+                          <div class="img-wrap">
+                              <img src="{{ slide.img | img_url: 'master'  }}" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                  <div class="swiper-button-next swiper-btn" style="color: #6D5F52;">
+                  {% render 'icon-next-arrow' %}
+                  </div>
+                  <div class="swiper-button-prev swiper-btn" style="color: #6D5F52"> 
+                      {% render 'icon-prev-arrow' %}
+                  </div>
+                  <div class="pagination__wrap container" >
+                    <div class="my-swiper-pagination"></div> 
+                  </div>
+                </s-slider>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% schema %}
 {
@@ -113,10 +123,35 @@
             "default": 36
         },
         {
+            "type": "inline_richtext",
+            "id": "heading",
+            "default": "Gallery",
+            "label": "Heading"
+        },
+        {
             "type": "collection_list",
             "id": "list",
             "label": "Collections"
         }
+    ],
+    "blocks": [
+      {
+        "name": "Slide",
+        "type": "slide",
+        "settings": [
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Tab name",
+            "default": "Wedding Cakes"
+          },
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+          }
+        ]
+      }
     ],
     "presets": [
         {

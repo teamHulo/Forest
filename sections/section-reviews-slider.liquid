@@ -1,0 +1,166 @@
+
+{{ 'section-reviews-slider.css' | asset_url | stylesheet_tag }}
+
+<style>
+#shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+
+</style>
+<div class="reviews-slider">
+    <div class="container">
+        <div class="reviews-slider__wrap">
+            <div class="reviews-slider__label">
+              <div class="title">
+                  <h4>{{ section.settings.title }}</h4>
+              </div>
+            </div>
+            <s-slider class="swiper">
+              <script class="config" type="application/json">
+              {
+                      "slidesPerView": 3.5,
+                      "spaceBetween": 10,
+                      "navigation": {
+                        "nextEl": ".swiper-button-next",
+                        "prevEl": ".swiper-button-prev"
+                      },
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "progressbar"
+                      },
+                      "breakpoints": {
+                        "100": {
+                          "slidesPerView": 1
+                        },
+                        "300": {
+                          "slidesPerView": 1.5
+                        },
+                        "500": {
+                          "slidesPerView": 2.5
+                        },
+                        "767": {
+                          "slidesPerView": 3.5
+                        },
+                        "900": {
+                          "slidesPerView": 3.5
+                        },
+                        "1024": {
+                          "slidesPerView": 3.5
+                        }
+                      }
+                  }
+              </script>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        <div class="swiper-slide">
+                          <div class="card-reviews">
+                            <div class="card-reviews__top">
+                              <img src="{{ block.settings.img | image_url: width: 53 }}" 
+                                    width="53"
+                                    height="53"
+                                    loading="lazy"
+                                    alt="{{ block.settings.img.alt }}"
+                              >
+                              <div class="card-reviews__info">
+                                <p class="name">{{ block.settings.name }}</p>
+                                <p class="date">{{ block.settings.date }}</p>
+                              </div>
+                            </div>
+                            <div class="card-reviews__rating">
+                              {% for i in (1.. block.settings.rating ) %}
+                                {% render 'icon-rating-star' %}
+                              {% endfor %}
+                            </div>
+                            <div class="card-reviews__text">{{ block.settings.text }}</div>
+                          </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+                <div class="pagination__wrap">
+                  <div class="swiper-pagination" style="position: relative;"></div> 
+                </div>
+            </s-slider>
+        </div>
+    </div>
+</div>
+{% schema %}
+  {
+    "name": "Reviews slider",
+    "settings": [
+      {
+          "type": "range",
+          "id": "padding_top",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_top",
+          "default": 36
+      },
+      {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_bottom",
+          "default": 36
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "title",
+        "default": "Customer Reviews"
+      }
+
+    ],
+    "blocks": [
+      {
+        "name": "item",
+        "type": "item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Avatar"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Name",
+            "default": "Ashley"
+          },
+          {
+            "type": "text",
+            "id": "date",
+            "label": "Date",
+            "default": "12.05.23"
+          },
+          {
+            "type": "range",
+            "id": "rating",
+            "min": 2,
+            "max": 5,
+            "step": 1,
+            "label": "Rating",
+            "default": 5
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases</p>"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Reviews slider"
+      }
+    ]
+  }
+{% endschema %}
