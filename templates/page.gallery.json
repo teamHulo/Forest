@@ -133,6 +133,30 @@
         "subtitle_small2": "Romantic and rustic wedding decorations.",
         "url_3": ""
       }
+    },
+    "cf1e60ca-2895-4a2e-9d82-6d033b3f6f90": {
+      "type": "section-gallery",
+      "settings": {
+        "mt": 0,
+        "pt": 27,
+        "pb": 50,
+        "title": "",
+        "aligments": "row",
+        "img1": "shopify:\/\/shop_images\/luxury-elegant-wedding-reception-table-arrangement-2023-03-28-21-38-30-utc.jpg",
+        "title1": "Eucalyptus of love",
+        "subtitle": "Organic wedding with beautiful floral garland on the table.",
+        "url_1": "",
+        "img2": "shopify:\/\/shop_images\/benigno-hoyuela-vECZ5tm5lNQ-unsplash.jpg",
+        "title_small1": "Outdoor wedding",
+        "subtitle_small1": "Romantic and rustic wedding decorations.",
+        "url_2": "",
+        "aligments_left": "row",
+        "show_right": true,
+        "img3": "shopify:\/\/shop_images\/pexels-agung-pandit-wiguna-2788492.jpg",
+        "title_small2": "Outdoor wedding",
+        "subtitle_small2": "Romantic and rustic wedding decorations.",
+        "url_3": ""
+      }
     }
   },
   "order": [
@@ -141,6 +165,7 @@
     "60dfa60d-2d52-4574-9b77-9bba558f69d5",
     "65db9fd6-6ae6-44be-a226-23cff479bc17",
     "a2b5784d-f65b-4514-8439-de5e57f6957a",
-    "dfe80801-1ecf-4dec-92ed-b768741b5077"
+    "dfe80801-1ecf-4dec-92ed-b768741b5077",
+    "cf1e60ca-2895-4a2e-9d82-6d033b3f6f90"
   ]
 }
