@@ -1563,6 +1563,7 @@ summary.list-menu__item{
   height: 100%;
   object-fit:cover;
   z-index: 3;
+  min-height: 0;
 }
 .dots-product__wrap{
   padding:10px;
