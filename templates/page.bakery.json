@@ -160,11 +160,130 @@
 
         ]
       }
+    },
+    "a8eeef52-e869-49c8-91b4-3b84edb50291": {
+      "type": "section-image-text-v3",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "bg": "#F8F5F0",
+        "gap": 0,
+        "img": "shopify:\/\/shop_images\/cropped-shot-of-woman-decorating-freshly-baked-bla-2022-12-16-18-58-43-utc_1.jpg",
+        "small_img": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_08.05_1.jpg",
+        "title": "Und wie feiert man diese am besten?",
+        "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p>",
+        "max_width": 600
+      }
+    },
+    "c1de842a-5e12-44f7-8b5e-faf4701ee632": {
+      "type": "backery-contact",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "bg": "#F8F5F0",
+        "img": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_08.07_1.jpg",
+        "phone": "+1 343 343 33 22",
+        "email": "info@forestevents.com",
+        "title": "Order Cake",
+        "text": "Fill out the contact  form or contact us using the contacts below"
+      }
+    },
+    "5adb88db-1ec4-4958-a0d8-f53719d306b6": {
+      "type": "section-reviews-slider",
+      "blocks": {
+        "94a04e3d-c15c-4647-8804-3e3d20dde0ba": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "35959528-69ac-4e3a-a44a-1ace4185f17b": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "e8e85238-2ef3-4d6e-90ce-1408b029545d": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "d72a665a-1c71-41f3-b2ee-239cb4bc67b4": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "996c6702-fda2-4dd8-848b-302ad1701906": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "b02e08f7-62ec-4953-850e-0d9997a3e473": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        },
+        "d1a288bc-0ed6-46c6-85ad-117a310b507d": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+            "name": "Ashley",
+            "date": "12.05.23",
+            "rating": 5,
+            "text": "<p>Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "94a04e3d-c15c-4647-8804-3e3d20dde0ba",
+        "35959528-69ac-4e3a-a44a-1ace4185f17b",
+        "e8e85238-2ef3-4d6e-90ce-1408b029545d",
+        "d72a665a-1c71-41f3-b2ee-239cb4bc67b4",
+        "996c6702-fda2-4dd8-848b-302ad1701906",
+        "b02e08f7-62ec-4953-850e-0d9997a3e473",
+        "d1a288bc-0ed6-46c6-85ad-117a310b507d"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "title": "Customer Reviews"
+      }
     }
   },
   "order": [
     "main",
     "e8e5d282-4a63-4193-ae46-868992744fbd",
-    "c18fcab2-2ced-44dd-ba9a-3e6f06a87592"
+    "c18fcab2-2ced-44dd-ba9a-3e6f06a87592",
+    "a8eeef52-e869-49c8-91b4-3b84edb50291",
+    "c1de842a-5e12-44f7-8b5e-faf4701ee632",
+    "5adb88db-1ec4-4958-a0d8-f53719d306b6"
   ]
 }
