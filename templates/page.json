@@ -54,11 +54,44 @@
         "subtitle_small2": "Romantic and rustic wedding decorations.",
         "url_3": ""
       }
+    },
+    "c0e8c59f-2cc2-42fa-91e2-6934730fde90": {
+      "type": "section-slider-dots",
+      "blocks": {
+        "cdb868c3-d111-4853-8d24-b6da7e08fcef": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pexels-jonathan-borba-12876493.jpg",
+            "product1": "besteck-gold-klassik-set",
+            "top1": 42,
+            "left1": 12,
+            "top2": 36,
+            "left2": 25,
+            "product2": "besteck-gold-klassik-set",
+            "top3": 42,
+            "left3": 65,
+            "product3": "better-together-neon-schrift",
+            "top4": 61,
+            "left4": 70,
+            "product4": "blumengirlande-luxe",
+            "top5": 0,
+            "left5": 0,
+            "product5": ""
+          }
+        }
+      },
+      "block_order": [
+        "cdb868c3-d111-4853-8d24-b6da7e08fcef"
+      ],
+      "settings": {
+        "title": "Shop by look"
+      }
     }
   },
   "order": [
     "main",
     "35cb2b53-4874-43ea-bf33-24e58ddc477d",
-    "9de05d14-e187-4700-9b92-b30691f503f9"
+    "9de05d14-e187-4700-9b92-b30691f503f9",
+    "c0e8c59f-2cc2-42fa-91e2-6934730fde90"
   ]
 }
