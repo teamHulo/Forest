@@ -7,9 +7,32 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "6a0beb94-68eb-4c31-927b-295616a9a192": {
+      "type": "section-gallery",
+      "settings": {
+        "mt": 0,
+        "pt": 0,
+        "pb": 0,
+        "title": "gallery",
+        "aligments": "row",
+        "title1": "Eucalyptus of love",
+        "subtitle": "Organic wedding with beautiful floral garland on the table.",
+        "url_1": "",
+        "img2": "shopify:\/\/shop_images\/8bef0a047785c2e135d2097a75e1fe7c.png",
+        "title_small1": "Outdoor wedding",
+        "subtitle_small1": "Romantic and rustic wedding decorations.",
+        "url_2": "",
+        "aligments_left": "row",
+        "show_right": true,
+        "title_small2": "Outdoor wedding",
+        "subtitle_small2": "Romantic and rustic wedding decorations.",
+        "url_3": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "6a0beb94-68eb-4c31-927b-295616a9a192"
   ]
 }
