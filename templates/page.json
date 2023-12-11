@@ -78,10 +78,32 @@
             "left5": 0,
             "product5": ""
           }
+        },
+        "97f2e630-de28-442b-a29d-5cf3894b3a45": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pexels-jonathan-borba-9703867.png",
+            "product1": "",
+            "top1": 0,
+            "left1": 0,
+            "top2": 0,
+            "left2": 0,
+            "product2": "",
+            "top3": 0,
+            "left3": 0,
+            "product3": "",
+            "top4": 0,
+            "left4": 0,
+            "product4": "",
+            "top5": 0,
+            "left5": 0,
+            "product5": ""
+          }
         }
       },
       "block_order": [
-        "cdb868c3-d111-4853-8d24-b6da7e08fcef"
+        "cdb868c3-d111-4853-8d24-b6da7e08fcef",
+        "97f2e630-de28-442b-a29d-5cf3894b3a45"
       ],
       "settings": {
         "title": "Shop by look"
