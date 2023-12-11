@@ -1,7 +1,6 @@
 class CPriceRange extends HTMLElement {
     constructor() {
         super();
-        console.log('F_SLIDER');
 
         this.minValue = this.querySelector("#min-value");
         this.maxValue = this.querySelector("#max-value");
@@ -49,7 +48,7 @@ class CPriceRange extends HTMLElement {
 
 }
 
-if (!customElements.get('f-slider')) {
+if (!customElements.get('c-price-range')) {
     customElements.define('c-price-range', CPriceRange)
   }
   

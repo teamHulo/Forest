@@ -1,0 +1,135 @@
+<style>
+#shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+</style>
+<div class="gallery__wrapper">
+    <div class="gallery container">
+        <div class="image-text__left">
+            <div class="img__wrapper">
+                <img src="{{ section.settings.img | img_url: 'master' }}" alt="">
+            </div>
+            <img class="small-img" src="{{ section.settings.small_img | img_url: 'master' }}" alt="">
+        </div>
+        <div class="image-text__right">
+            <div class="text__wrapper">
+                <h4>{{ section.settings.title }}</h4>
+                <div>{{ section.settings.text }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+    "name": "Gallery",
+    "settings": [
+        {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Margin top",
+            "default": 36
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Padding bottom",
+            "default": 36
+        },
+        {
+            "type": "image_picker",
+            "id": "img_1",
+            "label": "Image 1"
+        },
+        {
+            "type": "text",
+            "id": "title_1",
+            "label": "Title",
+            "default": "Eucalyptus of love"
+        },
+        {
+            "type": "text",
+            "id": "text_1",
+            "label": "Text",
+            "default": "Organic wedding with beautiful floral garland on the table."
+        },
+        {
+            "type": "text",
+            "id": "text_btn_1",
+            "label": "Text button"
+        },
+        {
+            "type": "url",
+            "id": "btn_url_1",
+            "label": "Button url"
+        },
+        {
+            "type": "image_picker",
+            "id": "img_2",
+            "label": "Image 2"
+        },
+        {
+            "type": "text",
+            "id": "title_2",
+            "label": "Title",
+            "default": "Eucalyptus of love"
+        },
+        {
+            "type": "text",
+            "id": "text_2",
+            "label": "Text",
+            "default": "Organic wedding with beautiful floral garland on the table."
+        },
+        {
+            "type": "text",
+            "id": "text_btn_2",
+            "label": "Text button"
+        },
+        {
+            "type": "url",
+            "id": "btn_url_2",
+            "label": "Button url"
+        },
+        {
+            "type": "image_picker",
+            "id": "img_3",
+            "label": "Image 3"
+        },
+        {
+            "type": "text",
+            "id": "title_3",
+            "label": "Title",
+            "default": "Eucalyptus of love"
+        },
+        {
+            "type": "text",
+            "id": "text_3",
+            "label": "Text",
+            "default": "Organic wedding with beautiful floral garland on the table."
+        },
+        {
+            "type": "text",
+            "id": "text_btn_3",
+            "label": "Text button"
+        },
+        {
+            "type": "url",
+            "id": "btn_url_3",
+            "label": "Button url"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Gallery"
+        }
+    ]
+}
+{% endschema %}
