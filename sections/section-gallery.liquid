@@ -7,7 +7,7 @@
       margin-top: 20px;
     }
   }
-  #shopify-section-{{ section.id}}.section-gallary {
+  #shopify-section-{{ section.id}} .section-gallary {
     padding-top: {{ section.settings.pt}}px;
     padding-bottom: {{ section.settings.pb}}px;
   }
@@ -21,7 +21,7 @@
   .section-gallary .right {
     text-align: left;
   }
-  #shopify-section-{{ section.id}}.section-gallary .items {
+  #shopify-section-{{ section.id}} .section-gallary .items {
     display: flex;
     justify-content: space-between;
     flex-direction: {{ section.settings.aligments}};
@@ -59,7 +59,7 @@
     left: 0;
     transform: translateY(-50%);
     width: 100%;
-    padding: 0 clamp(10px, 3.958vw ,;
+    padding: 0 clamp(10px, 3.958vw ,20px);
     z-index: 2;
     opacity: 0;
     transition: all 0.3s ease-out;
@@ -83,7 +83,7 @@
   .section-gallary .items a {
     text-decoration: none;
   }
-  #shopify-section-{{ section.id}}.section-gallary .items .left__wrap {
+  #shopify-section-{{ section.id}} .section-gallary .items .left__wrap {
     display: flex;
     gap: 15px;
     flex-direction: {{ section.settings.aligments_left}};
@@ -118,21 +118,21 @@
   }
 
   @media(max-width:767px) {
-    #shopify-section-{{ section.id}}.section-gallary .items {
+    #shopify-section-{{ section.id}} .section-gallary .items {
       flex-wrap: wrap;
 
     }
-    #shopify-section-{{ section.id}}.section-gallary .left {
+    #shopify-section-{{ section.id}} .section-gallary .left {
       width: 100%;
     }
-    #shopify-section-{{ section.id}}.section-gallary .right {
+    #shopify-section-{{ section.id}} .section-gallary .right {
       width: 100%;
     }
-    #shopify-section-{{ section.id}}.section-gallary .items .card {
+    #shopify-section-{{ section.id}} .section-gallary .items .card {
       max-width: 100%;
       width: 49%;
     }
-    #shopify-section-{{ section.id}}.section-gallary .items .card .image__wrap {
+    #shopify-section-{{ section.id}} .section-gallary .items .card .image__wrap {
       padding-top: 120%;
     }
     .section-gallary .items .big-card .image {
@@ -157,14 +157,14 @@
     }
   }
   @media(max-width:500px) {
-    #shopify-section-{{ section.id}}.section-gallary .items .card {
+    #shopify-section-{{ section.id}} .section-gallary .items .card {
       width: 100%;
     }
-    #shopify-section-{{ section.id}}.section-gallary .items .card {
+    #shopify-section-{{ section.id}} .section-gallary .items .card {
       max-width: 100%;
       width: 100%;
     }
-    #shopify-section-{{ section.id}}.section-gallary .items .left__wrap {
+    #shopify-section-{{ section.id}} .section-gallary .items .left__wrap {
       flex-wrap: wrap;
     }
   }
