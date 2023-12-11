@@ -108,12 +108,36 @@
       "settings": {
         "title": "Shop by look"
       }
+    },
+    "a0a970a6-614e-433d-843d-a541ceaca964": {
+      "type": "section-gallery",
+      "settings": {
+        "mt": 0,
+        "pt": 0,
+        "pb": 0,
+        "title": "",
+        "aligments": "row",
+        "img1": "shopify:\/\/shop_images\/andrea-garibay-7n367ZUiHL0-unsplash.jpg",
+        "title1": "Eucalyptus of love",
+        "subtitle": "Organic wedding with beautiful floral garland on the table.",
+        "url_1": "",
+        "img2": "shopify:\/\/shop_images\/pexels-jonathan-borba-11994906.jpg",
+        "title_small1": "Outdoor wedding",
+        "subtitle_small1": "Romantic and rustic wedding decorations.",
+        "url_2": "",
+        "aligments_left": "row-reverse",
+        "show_right": false,
+        "title_small2": "Outdoor wedding",
+        "subtitle_small2": "Romantic and rustic wedding decorations.",
+        "url_3": ""
+      }
     }
   },
   "order": [
     "main",
     "35cb2b53-4874-43ea-bf33-24e58ddc477d",
     "9de05d14-e187-4700-9b92-b30691f503f9",
-    "c0e8c59f-2cc2-42fa-91e2-6934730fde90"
+    "c0e8c59f-2cc2-42fa-91e2-6934730fde90",
+    "a0a970a6-614e-433d-843d-a541ceaca964"
   ]
 }
