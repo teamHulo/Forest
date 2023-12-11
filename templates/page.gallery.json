@@ -8,6 +8,13 @@
         "padding_bottom": 28
       }
     },
+    "2366c08b-e681-45e7-b654-3a45a06d5ab4": {
+      "type": "section-breadcrumb",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
     "6a0beb94-68eb-4c31-927b-295616a9a192": {
       "type": "section-gallery",
       "settings": {
@@ -183,6 +190,7 @@
   },
   "order": [
     "main",
+    "2366c08b-e681-45e7-b654-3a45a06d5ab4",
     "6a0beb94-68eb-4c31-927b-295616a9a192",
     "60dfa60d-2d52-4574-9b77-9bba558f69d5",
     "65db9fd6-6ae6-44be-a226-23cff479bc17",
