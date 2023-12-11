@@ -76,6 +76,20 @@
             "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
           }
         },
+        "fbd02f2d-f1b1-4830-8add-a68b4ca47a18": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "960cd993-161e-4436-9afe-0684353d3bd3": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
         "e814b00b-dceb-43f3-b9e1-d5a62f445231": {
           "type": "slide",
           "settings": {
@@ -84,6 +98,20 @@
           }
         },
         "967127a0-650a-43ee-a84c-e88752c72696": {
+          "type": "slide",
+          "settings": {
+            "name": "Baby Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "f2cb9a93-003b-4f45-8fae-fc764c958ed8": {
+          "type": "slide",
+          "settings": {
+            "name": "Baby Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7971.jpg"
+          }
+        },
+        "e9dbbaa4-fe7d-44d7-8691-61cc1c1abebc": {
           "type": "slide",
           "settings": {
             "name": "Baby Cakes",
@@ -118,6 +146,20 @@
             "img": "shopify:\/\/shop_images\/IMG_7972.jpg"
           }
         },
+        "ebd59f13-efea-420e-a101-4afe8436e231": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7972.jpg"
+          }
+        },
+        "001205cc-accc-47ae-a267-6f8f95bde436": {
+          "type": "slide",
+          "settings": {
+            "name": "Wedding Cakes",
+            "img": "shopify:\/\/shop_images\/IMG_7972.jpg"
+          }
+        },
         "0ec480c8-0454-4c8c-a3a8-1eb407aab551": {
           "type": "slide",
           "settings": {
@@ -142,12 +184,18 @@
       },
       "block_order": [
         "2f413c10-1af6-437c-8cf0-86a090e7b9a3",
+        "fbd02f2d-f1b1-4830-8add-a68b4ca47a18",
+        "960cd993-161e-4436-9afe-0684353d3bd3",
         "e814b00b-dceb-43f3-b9e1-d5a62f445231",
         "967127a0-650a-43ee-a84c-e88752c72696",
+        "f2cb9a93-003b-4f45-8fae-fc764c958ed8",
+        "e9dbbaa4-fe7d-44d7-8691-61cc1c1abebc",
         "ca7756e1-502c-4e66-83d5-3a30a624e871",
         "e60fb44c-8403-45fc-a693-201ea93312d7",
         "3b6bdd6e-2cb3-466a-a984-2ac0c8cc3f77",
         "0d08e921-3219-49f2-8db9-d0402974c169",
+        "ebd59f13-efea-420e-a101-4afe8436e231",
+        "001205cc-accc-47ae-a267-6f8f95bde436",
         "0ec480c8-0454-4c8c-a3a8-1eb407aab551",
         "c645dcaf-a8f9-47f5-acd7-23803ef7f3f8",
         "c11cee07-3fca-4faf-bbdb-003caa2a145d"
