@@ -71,8 +71,8 @@
             "top3": 42,
             "left3": 65,
             "product3": "chiavari-stuhl-weiss-holz",
-            "top4": 0,
-            "left4": 0,
+            "top4": 54,
+            "left4": 70,
             "product4": "better-together-neon-schrift",
             "top5": 0,
             "left5": 0,
@@ -86,12 +86,86 @@
       "settings": {
         "title": "Shop by look"
       }
+    },
+    "a2b5784d-f65b-4514-8439-de5e57f6957a": {
+      "type": "section-gallery",
+      "settings": {
+        "mt": 0,
+        "pt": 0,
+        "pb": 0,
+        "title": "",
+        "aligments": "row",
+        "img1": "shopify:\/\/shop_images\/andrea-garibay-7n367ZUiHL0-unsplash.jpg",
+        "title1": "Eucalyptus of love",
+        "subtitle": "Organic wedding with beautiful floral garland on the table.",
+        "url_1": "",
+        "img2": "shopify:\/\/shop_images\/pexels-jonathan-borba-11994906.jpg",
+        "title_small1": "Outdoor wedding",
+        "subtitle_small1": "Romantic and rustic wedding decorations.",
+        "url_2": "",
+        "aligments_left": "row-reverse",
+        "show_right": false,
+        "title_small2": "Outdoor wedding",
+        "subtitle_small2": "Romantic and rustic wedding decorations.",
+        "url_3": ""
+      }
+    },
+    "dfe80801-1ecf-4dec-92ed-b768741b5077": {
+      "type": "section-gallery",
+      "settings": {
+        "mt": 0,
+        "pt": 27,
+        "pb": 0,
+        "title": "",
+        "aligments": "row-reverse",
+        "img1": "shopify:\/\/shop_images\/white-2022-11-11-07-33-36-utc_d12d1eba-8518-431b-b9a2-d98d11c70013.jpg",
+        "title1": "Eucalyptus of love",
+        "subtitle": "Organic wedding with beautiful floral garland on the table.",
+        "url_1": "",
+        "img2": "shopify:\/\/shop_images\/pexels-soulseeker-14703670.jpg",
+        "title_small1": "Romantic Wedding",
+        "subtitle_small1": "Romantic and rustic wedding decorations.",
+        "url_2": "",
+        "aligments_left": "row-reverse",
+        "show_right": true,
+        "img3": "shopify:\/\/shop_images\/pexels-leeloo-thefirst-5038747.jpg",
+        "title_small2": "Outdoor wedding",
+        "subtitle_small2": "Romantic and rustic wedding decorations.",
+        "url_3": ""
+      }
+    },
+    "cf1e60ca-2895-4a2e-9d82-6d033b3f6f90": {
+      "type": "section-gallery",
+      "settings": {
+        "mt": 0,
+        "pt": 27,
+        "pb": 50,
+        "title": "",
+        "aligments": "row",
+        "img1": "shopify:\/\/shop_images\/luxury-elegant-wedding-reception-table-arrangement-2023-03-28-21-38-30-utc.jpg",
+        "title1": "Eucalyptus of love",
+        "subtitle": "Organic wedding with beautiful floral garland on the table.",
+        "url_1": "",
+        "img2": "shopify:\/\/shop_images\/benigno-hoyuela-vECZ5tm5lNQ-unsplash.jpg",
+        "title_small1": "Outdoor wedding",
+        "subtitle_small1": "Romantic and rustic wedding decorations.",
+        "url_2": "",
+        "aligments_left": "row",
+        "show_right": true,
+        "img3": "shopify:\/\/shop_images\/pexels-agung-pandit-wiguna-2788492.jpg",
+        "title_small2": "Outdoor wedding",
+        "subtitle_small2": "Romantic and rustic wedding decorations.",
+        "url_3": ""
+      }
     }
   },
   "order": [
     "main",
     "6a0beb94-68eb-4c31-927b-295616a9a192",
     "60dfa60d-2d52-4574-9b77-9bba558f69d5",
-    "65db9fd6-6ae6-44be-a226-23cff479bc17"
+    "65db9fd6-6ae6-44be-a226-23cff479bc17",
+    "a2b5784d-f65b-4514-8439-de5e57f6957a",
+    "dfe80801-1ecf-4dec-92ed-b768741b5077",
+    "cf1e60ca-2895-4a2e-9d82-6d033b3f6f90"
   ]
 }
