@@ -8,186 +8,135 @@
         "padding_bottom": 28
       }
     },
-    "35cb2b53-4874-43ea-bf33-24e58ddc477d": {
-      "type": "section-gallery",
+    "148fea7f-f1a9-4537-a32c-52e81b9951f8": {
+      "type": "section-image-banner",
       "settings": {
-        "mt": 0,
-        "pt": 0,
-        "pb": 0,
-        "title": "gallery",
-        "aligments": "row",
-        "img1": "shopify:\/\/shop_images\/wedding-table-2021-08-26-12-09-46-utc_1.png",
-        "title1": "Eucalyptus of love",
-        "subtitle": "Organic wedding with beautiful floral garland on the table.",
-        "url_1": "",
-        "img2": "shopify:\/\/shop_images\/pexels-jonathan-borba-9703867.png",
-        "title_small1": "Outdoor wedding",
-        "subtitle_small1": "Romantic and rustic wedding decorations.",
-        "url_2": "",
-        "aligments_left": "row",
-        "show_right": true,
-        "img3": "shopify:\/\/shop_images\/silvia-mara-fgXon5q4jAA-unsplash.png",
-        "title_small2": "Romantic Wedding",
-        "subtitle_small2": "Romantic and rustic wedding decorations.",
-        "url_3": ""
+        "img": "shopify:\/\/shop_images\/faadd8638722ae26455720b9300bb9c3.jpg",
+        "label": "About Us",
+        "title": "Die Geschichte von Forest Events",
+        "text": "Willkommen bei Forest Events – deinen Partnerinnen für einzigartige Veranstaltungen und köstliche Backkreationen!",
+        "btn_name": "Lass dich jetzt von uns verzaubern!",
+        "url": ""
       }
     },
-    "9de05d14-e187-4700-9b92-b30691f503f9": {
-      "type": "section-gallery",
+    "ce416884-b23a-4697-affe-5f6dc90c0779": {
+      "type": "section-text-three-photos",
       "settings": {
-        "mt": -100,
-        "pt": 0,
-        "pb": 0,
-        "title": "",
-        "aligments": "row-reverse",
-        "img1": "shopify:\/\/shop_images\/wedding-decor-2021-10-06-22-21-47-utc.png",
-        "title1": "Natural Bloom",
-        "subtitle": "Organic wedding with beautiful floral garland on the table.",
-        "url_1": "",
-        "img2": "shopify:\/\/shop_images\/elegant-design-centerpieces-and-wedding-cutlery-2022-05-04-22-04-42-utc.jpg",
-        "title_small1": "Romantic Wedding",
-        "subtitle_small1": "Romantic and rustic wedding decorations.",
-        "url_2": "",
-        "aligments_left": "row-reverse",
-        "show_right": false,
-        "title_small2": "Outdoor wedding",
-        "subtitle_small2": "Romantic and rustic wedding decorations.",
-        "url_3": ""
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "bg": "#ffffff",
+        "title": "Unsere Geschichte",
+        "text": "<p>Unsere Reise begann mit einer leidenschaftlichen Vision: Eleganz und Stil sollten endlich für alle erschwinglich sein. Gegründet von Esther, energiegeladener Mama und Unternehmerin, haben wir uns fest vorgenommen, deine besonderen Anlässe in atemberaubende Erlebnisse zu verwandeln, ohne dabei dein Budget zu sprengen.<br\/><br\/>Mit dem Namen \"Forest\" hat auch Esthers Sohn einen Platz in ihrer Marke enthalten. Ihre Reise begann nämlich mit der Gestaltung unvergesslicher Feste für ihre Kinder, woraus nun ein Unternehmen entstanden ist, das nicht nur Kinderaugen zum Strahlen bringt, sondern auch die ganz grossen Feiern in atemberaubende Erlebnisse verwandelt.<\/p>",
+        "max_width": 600,
+        "img1": "shopify:\/\/shop_images\/wedding-dreamz-pqkn1uIS6jY-unsplash.jpg",
+        "img2": "shopify:\/\/shop_images\/wedding-decor-2021-10-06-22-21-47-utc.jpg",
+        "img3": "shopify:\/\/shop_images\/boho-wedding-table-for-guests-at-bouquet-after-wed-2022-12-16-08-57-43-utc.jpg"
       }
     },
-    "c0e8c59f-2cc2-42fa-91e2-6934730fde90": {
-      "type": "section-slider-dots",
+    "a6e32234-64aa-47b3-bd40-3fe7204a722b": {
+      "type": "image-with-text",
       "blocks": {
-        "cdb868c3-d111-4853-8d24-b6da7e08fcef": {
-          "type": "item",
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-heading-1": {
+          "type": "heading",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pexels-jonathan-borba-12876493.jpg",
-            "product1": "besteck-gold-klassik-set",
-            "top1": 42,
-            "left1": 12,
-            "top2": 36,
-            "left2": 25,
-            "product2": "besteck-gold-klassik-set",
-            "top3": 42,
-            "left3": 65,
-            "product3": "better-together-neon-schrift",
-            "top4": 61,
-            "left4": 70,
-            "product4": "blumengirlande-luxe",
-            "top5": 0,
-            "left5": 0,
-            "product5": ""
+            "heading": "Unser Angebot",
+            "heading_size": "h1"
           }
         },
-        "97f2e630-de28-442b-a29d-5cf3894b3a45": {
-          "type": "item",
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-text-1": {
+          "type": "text",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pexels-jonathan-borba-9703867.png",
-            "product1": "",
-            "top1": 0,
-            "left1": 0,
-            "top2": 0,
-            "left2": 0,
-            "product2": "",
-            "top3": 0,
-            "left3": 0,
-            "product3": "",
-            "top4": 0,
-            "left4": 0,
-            "product4": "",
-            "top5": 0,
-            "left5": 0,
-            "product5": ""
+            "text": "<p>Unsere Leistungen umfassen die Vermietung von exquisiter Dekoration und stilvollen Möbeln für deine Veranstaltungen. Von romantischen Hochzeiten bis hin zu bezaubernden Geburtstagen – wir machen aus deinen Träumen Wirklichkeit.<br\/>Als Krönung bieten wir dir handgefertigte Tortenkreationen, die deine Gäste nicht nur mit dem reinen Anblick beeindrucken, sondern auch den Geschmackssinn verzaubern. Schau dir unsere Kreationen gerne auch auf Instagram an, um einen Vorgeschmack auf unsere süssen Meisterwerke zu erhalten.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Instagram",
+            "button_link": "#",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "cdb868c3-d111-4853-8d24-b6da7e08fcef",
-        "97f2e630-de28-442b-a29d-5cf3894b3a45"
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-heading-1",
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-text-1",
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-button-1"
       ],
       "settings": {
-        "title": "Shop by look"
+        "text_padding_top": 100,
+        "text_padding_right": 100,
+        "text_padding_bottom": 48,
+        "text_padding_left": 0,
+        "image": "shopify:\/\/shop_images\/silvia-mara-0LC3ei-lqVQ-unsplash.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "a0a970a6-614e-433d-843d-a541ceaca964": {
-      "type": "section-gallery",
+    "7135cc91-721d-480b-a524-6552183c24fd": {
+      "type": "section-card-image-text",
+      "blocks": {
+        "fef3663b-8db6-4928-8629-be80c2a2cb69": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/34367adcf2c8333f1fcb61d293a8e0f7.jpg",
+            "title": "Unsere Werte",
+            "text": "<p>Unsere Werte bilden das Herzstück unserer Marke. Wir legen höchsten Wert auf deine Zufriedenheit, Ehrlichkeit, Professionalität, Erschwinglichkeit und Unkompliziertheit. Deine Freude an deinen besonderen Tagen ist unser grösster Antrieb, und wir setzen all unser Können und Engagement ein, um dich zu verzaubern.<\/p>",
+            "max_width": 400
+          }
+        },
+        "11c9ac73-ce6a-41d7-baae-f0afdc040fb2": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4f4b4351128361e8cb3ebb5975c0658a.jpg",
+            "title": "Unsere Vision",
+            "text": "<p>Unsere Vision ist es, jeden Menschen, den wir mit auf seine Eventreise nehmen, mindestens so glücklich zu machen, wie er es sich erträumt hat. Wir möchten, dass du uns nicht nur als Dienstleister, sondern als Vertrauten auf deiner Reise zu unvergesslichen Momenten siehst.<\/p>",
+            "max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "fef3663b-8db6-4928-8629-be80c2a2cb69",
+        "11c9ac73-ce6a-41d7-baae-f0afdc040fb2"
+      ],
       "settings": {
-        "mt": 0,
-        "pt": 0,
-        "pb": 0,
-        "title": "",
-        "aligments": "row",
-        "img1": "shopify:\/\/shop_images\/andrea-garibay-7n367ZUiHL0-unsplash.jpg",
-        "title1": "Eucalyptus of love",
-        "subtitle": "Organic wedding with beautiful floral garland on the table.",
-        "url_1": "",
-        "img2": "shopify:\/\/shop_images\/pexels-jonathan-borba-11994906.jpg",
-        "title_small1": "Outdoor wedding",
-        "subtitle_small1": "Romantic and rustic wedding decorations.",
-        "url_2": "",
-        "aligments_left": "row-reverse",
-        "show_right": false,
-        "title_small2": "Outdoor wedding",
-        "subtitle_small2": "Romantic and rustic wedding decorations.",
-        "url_3": ""
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "bg": "#F8F5F0"
       }
     },
-    "81c4866f-1e25-4713-a0bc-931f0218080d": {
-      "type": "section-gallery",
+    "0582edc6-5646-40b7-9d8f-e40afadccb2e": {
+      "type": "section-title-btn",
       "settings": {
-        "mt": 0,
-        "pt": 27,
-        "pb": 0,
-        "title": "",
-        "aligments": "row-reverse",
-        "img1": "shopify:\/\/shop_images\/white-2022-11-11-07-33-36-utc_d12d1eba-8518-431b-b9a2-d98d11c70013.jpg",
-        "title1": "Natural Bloom",
-        "subtitle": "Organic wedding with beautiful floral garland on the table.",
-        "url_1": "",
-        "img2": "shopify:\/\/shop_images\/pexels-soulseeker-14703670.jpg",
-        "title_small1": "Outdoor wedding",
-        "subtitle_small1": "Romantic and rustic wedding decorations.",
-        "url_2": "",
-        "aligments_left": "row-reverse",
-        "show_right": true,
-        "img3": "shopify:\/\/shop_images\/pexels-leeloo-thefirst-5038747.jpg",
-        "title_small2": "Romantic Wedding",
-        "subtitle_small2": "Romantic and rustic wedding decorations.",
-        "url_3": ""
-      }
-    },
-    "01f2a472-a152-4070-b9c4-25c7d1bd079a": {
-      "type": "section-gallery",
-      "settings": {
-        "mt": 0,
-        "pt": 27,
-        "pb": 50,
-        "title": "",
-        "aligments": "row",
-        "img1": "shopify:\/\/shop_images\/luxury-elegant-wedding-reception-table-arrangement-2023-03-28-21-38-30-utc.jpg",
-        "title1": "Eucalyptus of love",
-        "subtitle": "Organic wedding with beautiful floral garland on the table.",
-        "url_1": "",
-        "img2": "shopify:\/\/shop_images\/benigno-hoyuela-vECZ5tm5lNQ-unsplash.jpg",
-        "title_small1": "Outdoor wedding",
-        "subtitle_small1": "Romantic and rustic wedding decorations.",
-        "url_2": "",
-        "aligments_left": "row",
-        "show_right": true,
-        "img3": "shopify:\/\/shop_images\/pexels-agung-pandit-wiguna-2788492.jpg",
-        "title_small2": "Outdoor wedding",
-        "subtitle_small2": "Romantic and rustic wedding decorations.",
-        "url_3": ""
+        "bg": "#ffffff",
+        "title": "Kontaktiere uns",
+        "text": "Wir stehen dir jederzeit zur Verfügung, um deine Fragen zu beantworten und dir bei der Umsetzung der Veranstaltung deiner Träume zu helfen. Und lass uns dir auf dieser Reise mit Rat und Tat zur Seite stehen!",
+        "max_width": 620,
+        "bnt_bg": "#eddfd5",
+        "btn_name": "Kontaktiere uns",
+        "url": "#",
+        "btn_name1": "Kontaktiere uns",
+        "url1": ""
       }
     }
   },
   "order": [
     "main",
-    "35cb2b53-4874-43ea-bf33-24e58ddc477d",
-    "9de05d14-e187-4700-9b92-b30691f503f9",
-    "c0e8c59f-2cc2-42fa-91e2-6934730fde90",
-    "a0a970a6-614e-433d-843d-a541ceaca964",
-    "81c4866f-1e25-4713-a0bc-931f0218080d",
-    "01f2a472-a152-4070-b9c4-25c7d1bd079a"
+    "148fea7f-f1a9-4537-a32c-52e81b9951f8",
+    "ce416884-b23a-4697-affe-5f6dc90c0779",
+    "a6e32234-64aa-47b3-bd40-3fe7204a722b",
+    "7135cc91-721d-480b-a524-6552183c24fd",
+    "0582edc6-5646-40b7-9d8f-e40afadccb2e"
   ]
 }
