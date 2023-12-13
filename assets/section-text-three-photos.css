@@ -1,0 +1,25 @@
+.three-image__text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.three-image_images .img__wrapper {
+    position: relative;
+    /* padding-top: 100%; */
+    width: 100%;
+}
+.three-image_images .img__wrapper img {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+}
+.three-image_images {
+    display: flex;
+    margin-top: 30px;
+    gap: clamp(10px, 3.472vw, 50px);
+}
+.mb-0 {
+    margin-bottom: 0;
+}
