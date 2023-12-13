@@ -1,0 +1,37 @@
+.column-card .img__wrapper {
+    position: relative;
+    padding-top: 100%;
+}
+.column-card .img__wrapper img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+}
+.column-card__wrapper {
+    display: flex;
+}
+.column-card {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.card__text {
+    text-align: center;
+}
+.column-card:not(:last-child) {
+    border-right: 1px solid #A7A294;
+}
+@media(max-width: 500px) {
+    .column-card__wrapper {
+        flex-wrap: wrap;
+    }
+    .column-card:not(:last-child) {
+        border-right: none;
+    }
+    .column-card {
+        flex: auto;
+    }
+}
