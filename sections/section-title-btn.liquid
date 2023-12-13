@@ -1,21 +1,31 @@
-{%  style  %}  
-    #shopify-section-{{section.id}} .title{
-        max-width:{{section.settings.max_width}}px;
+{% style %}  
+    #shopify-section-{{ section.id }} .title {
+        max-width:{{ section.settings.max_width }}px;
     }
-    #shopify-section-{{section.id}} .section-title-btn{
+    #shopify-section-{{ section.id }} .section-title-btn {
         background:{{ section.settings.bg }};
     }
-    #shopify-section-{{section.id}} .a-btn.second-btn{
+    #shopify-section-{{ section.id }} .a-btn.second-btn {
         border: 1px solid var(--brown-01, #6D5F52);
-        background:transparent;
+        {% if section.settings.bnt_bg != blank %}
+            background: {{ section.settings.bnt_bg }};
+        {% else %}
+            background:transparent;
+        {% endif %}
     }
-    #shopify-section-{{section.id}} .a-btn.second-btn:hover{
+    #shopify-section-{{ section.id }} .a-btn.second-btn:hover {
         background:#6d5f52;
     }
-    #shopify-section-{{section.id}} .section-title-btns{
+    #shopify-section-{{ section.id }} .section-title-btns {
         display:flex;
         gap:15px;
         flex-wrap:wrap;
+    }
+    #shopify-section-{{ section.id }} .section-title-btn__wrap .text {
+        text-align: center;
+    }
+    #shopify-section-{{ section.id }} .a-btn {
+        background-color: {{ section.settings.bnt_bg }};
     }
 {% endstyle %} 
 
@@ -24,8 +34,11 @@
         <div class="section-title-btn__wrap">
             <div class="title">
                 <h4>
-                    {{section.settings.title}}
+                    {{ section.settings.title }}
                 </h4>
+                {% if section.settings.text != blank %}
+                    <p class="text">{{ section.settings.text }}</p>
+                {% endif %}
             </div>
             {% if  section.settings.url != blank or section.settings.url1 != blank%}
                 <div class="section-title-btns">
@@ -59,14 +72,25 @@
                 "default": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt? Dann setze dich direkt mit uns in Verbindung:"
             },
             {
+                "type":"text",
+                "id":"text",
+                "label":"Text",
+                "default": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt? Dann setze dich direkt mit uns in Verbindung:"
+            },
+            {
             "type": "range",
             "id": "max_width",
-            "min": 521,
+            "min": 350,
             "max": 620,
-            "step": 1,
+            "step": 3,
             "unit": "px",
             "label": "max-width text",
             "default": 620
+            },
+            {
+                "type": "color",
+                "id": "bnt_bg",
+                "label": "Button background"
             },
             {
                 "type":"text",
