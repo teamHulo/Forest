@@ -1,5 +1,13 @@
 {
   "sections": {
+    "77ac3fbc-d7e8-4298-8734-b23419baf69a": {
+      "type": "section-breadcrumb",
+      "settings": {
+        "show_back": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "0538d538-b73a-4140-b5e2-59d06a11875d": {
       "type": "section-gallary-item",
       "settings": {
@@ -43,6 +51,7 @@
     }
   },
   "order": [
+    "77ac3fbc-d7e8-4298-8734-b23419baf69a",
     "0538d538-b73a-4140-b5e2-59d06a11875d",
     "a43374ae-9ade-433c-ae43-dbbb60fbbc8d",
     "87fd7d3b-ad39-4e55-af22-68cbc52d3bcd"
