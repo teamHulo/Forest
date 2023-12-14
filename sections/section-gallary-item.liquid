@@ -1,0 +1,276 @@
+{% style %}
+     #shopify-section-{{ section.id}} .section-gallery-item {
+        padding-top: {{ section.settings.pt}}px;
+        padding-bottom: {{ section.settings.pb}}px;
+    }
+    .section-gallery-item .title h2{
+        margin:0;
+        text-align:center;
+    }
+   
+    .section-gallery-item .title{
+        margin:0 0 16px 0;
+    }
+    .section-gallery-item .subtitle p {
+        text-align:center;
+        margin:0;
+        letter-spacing:0;
+    }
+    .section-gallery-item .subtitle {
+        padding-bottom:16px;
+        max-width:361px;
+        margin:0 auto 36px auto;
+        position:relative;
+    }
+    .section-gallery-item .subtitle:before{
+        content:'';
+        display:block;
+        width:210px;
+        height:1px;
+        background: #A7A294;
+        left:50%;
+        transform:translateX(-50%);
+        bottom:0;
+        position:absolute;
+    }
+    #shopify-section-{{ section.id}} .section-gallery-item__content{
+        display:flex;
+        flex-direction: {{ section.settings.aligments}};
+        justify-content:space-between;
+        gap: 20px 5.2238%;
+    }
+    .section-gallery-item__content .left{
+        width: 45.432%;
+    }
+    #shopify-section-{{ section.id}} .section-gallery-item__content .right{
+        width: 49.934%;
+        display:flex;
+        align-items:{{section.settings.aligments_verticla}};
+        text-align:left;
+    }
+    .section-gallery-item__content .right .title{
+        margin:0 0 16px 0;
+    }
+    .section-gallery-item__content .right .title h4{
+        margin:0;
+    }
+    .section-gallery-item__content .right .text{
+        margin-bottom:clamp(20px,5.347vw,77px);
+        max-width:380px;
+    }
+    .section-gallery-item__content .right .text p{
+        margin:0;
+        letter-spacing:0;
+    }
+    .section-gallery-item__content .right__wrap{
+        width:100%;
+    }
+    .section-gallery-item__content .right .images{
+        display:flex;
+        gap:15px;
+    }
+    .section-gallery-item__content .right .image{
+        width:50%;
+    }
+    .section-gallery-item__content .image__wrap{
+        position:relative;
+        padding-top: 116.36%;
+    }
+    .section-gallery-item__content .right .image__wrap{
+        padding-top: 126.156%;
+    }
+    .section-gallery-item__content .image__wrap img{
+        display:block;
+        object-fit:cover;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+
+    @media (max-width:767px){
+        #shopify-section-{{ section.id}} .section-gallery-item__content{
+            flex-wrap:wrap;
+        }
+        .section-gallery-item__content .left{
+            width: 100%;
+        }
+        #shopify-section-{{ section.id}} .section-gallery-item__content .right{
+            width: 100%;
+            
+        }
+    }
+{% endstyle %}
+
+
+
+<div class="section-gallery-item">
+    <div class="container">
+        <div class="section-gallery-item__wrap">
+            {% if section.settings.title != blank %}
+                <div class="title">
+                    <h2>
+                        {{section.settings.title}}
+                    </h2>
+                </div>
+            {% endif %}
+            {% if section.settings.subtitle != blank %}
+                <div class="subtitle">
+                    <p>
+                        {{ section.settings.subtitle }}
+                    </p>
+                </div>
+            {% endif %}
+            <div class="section-gallery-item__content">
+                <div class="left">
+                    <div class="left__wrap">
+                        <div class="image">
+                            <div class="image__wrap">
+                                <img src="{{section.settings.left_img | img_url: 'master'}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right__wrap">
+                        {% if section.settings.title_right != blank %}
+                            <div class="title">
+                                <h4>
+                                    {{section.settings.title_right}}
+                                </h4>
+                            </div>
+                        {% endif %}
+                        {% if section.settings.text_right != blank %}
+                            <div class="text">
+                                <p>
+                                    {{section.settings.text_right}}
+                                </p>
+                            </div>
+                        {% endif %}
+                        <div class="images">
+                            <div class="image">
+                                <div class="image__wrap">
+                                    <img src="{{section.settings.right_img1 | img_url: 'master'}}" alt="">
+                                </div>
+                            </div>
+                            <div class="image">
+                                <div class="image__wrap">
+                                    <img src="{{section.settings.right_img2 | img_url: 'master'}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "section-gallery-item",
+        "settings": [
+            {
+                "type": "range",
+                "id": "pt",
+                "min": 0,
+                "max": 50,
+                "step": 1,
+                "unit": "px",
+                "label": "padding-top",
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "pb",
+                "min": 0,
+                "max": 50,
+                "step": 1,
+                "unit": "px",
+                "label": "padding-bottom",
+                "default": 0
+            },
+            
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Eucalyptus of love"
+            }, 
+            {
+                "type": "text",
+                "id": "subtitle",
+                "label": "subtitle",
+                "default": "Organic wedding with beautiful floral garland on the table. <br> Location: Heuchelberger Warte"
+            },
+            {
+                "type": "select",
+                "id": "aligments",
+                "label": "alignments all",
+                "options": [
+                {
+                    "value": "row-reverse",
+                    "label": "right"
+                }, {
+                    "value": "row",
+                    "label": "left"
+                }
+                ],
+                "default": "row"
+            },
+            {
+                "type": "select",
+                "id": "aligments_verticla",
+                "label": "alignments vertical right items",
+                "options": [
+                {
+                    "value": "flex-start",
+                    "label": "tob"
+                }, {
+                    "value": "center",
+                    "label": "center"
+                }, {
+                    "value": "flex-end",
+                    "label": "bottom"
+                }
+                ],
+                "default": "center"
+            },
+            {
+                "type": "image_picker",
+                "id":"left_img",
+                "label":"image left"
+            },
+            {
+                "type": "image_picker",
+                "id":"right_img1",
+                "label":"first img right"
+            },
+            {
+                "type": "image_picker",
+                "id":"right_img2",
+                "label":"second img right"
+            },
+            {
+                "type": "text",
+                "id": "title_right",
+                "label": "Title right img",
+                "default": "Decoration Idea"
+            }, 
+            {
+                "type": "text",
+                "id": "text_right",
+                "label": "right right img",
+                "default": "Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases, seating charts and wedding arches, you can find a full selection of rental items in our decorative showroom."
+            }
+
+            
+        ],
+        "presets": [
+            {
+                "name": "section-gallery-item"
+            }
+        ]
+    }
+    {% endschema %}

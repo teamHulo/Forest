@@ -1,0 +1,169 @@
+{% style %}
+    #shopify-section-{{ section.id}} .section-gallery-collection {
+        padding-top: {{ section.settings.pt}}px;
+        padding-bottom: {{ section.settings.pb}}px;
+    }
+    .section-gallery-collection .container{
+        padding-left:0;
+        padding-right:0;
+    }
+    .section-gallery-collection .title{
+        margin: 0 0 30px 0;
+        padding:0 20px;
+    }
+    .section-gallery-collection .title h2{
+        margin:0;
+        text-align:center;
+    }
+    .section-gallery-collection .a-btn{
+        width:100%;
+        padding:0;
+    }
+    .section-gallery-collection .block__collections .title{
+        padding:0;
+        margin-bottom:4px;
+    }
+    .section-gallery-collection .swiper-slide{
+        height:auto;
+    }
+    .section-gallery-collection .swiper-slide__wrap{
+        height:100%;
+    }
+    .section-gallery-collection  .swiper-btn{
+        width:42px;
+        height:42px;
+    }
+    .section-gallery-collection  .swiper-btn:after{
+        content:none;
+    }
+    .section-gallery-collection  .swiper-button-prev{
+        transform:rotate(180deg);
+    }
+    .section-gallery-collection .swiper-pagination{
+        position:static !important;
+    }
+    .section-gallery-collection .block__collections{
+        padding-left: clamp(20px, 3.472vw, 50px);
+    }
+    .section-gallery-collection .pagination__wrap{
+        margin-top:30px;
+       
+        padding-right: clamp(20px, 3.472vw, 50px);
+    }
+{% endstyle %}
+
+{%  assign  collection =  section.settings.collection %} 
+<div class="section-gallery-collection">
+    <div class="container">
+        <div class="section-gallery-collection__wrap">
+            <div class="title">
+                <h2>
+                    {{section.settings.title}}
+                </h2>
+            </div>
+            <div class="block__collections">
+                <s-slider class="swiper">
+                    <script class="config" type="application/json">
+                    {
+                            "slidesPerView": 4.5,
+                            "spaceBetween": 10,
+                            "navigation": {
+                              "nextEl": ".swiper-button-next",
+                              "prevEl": ".swiper-button-prev"
+                            },
+                            "pagination": {
+                              "el": ".swiper-pagination",
+                              "type": "progressbar"
+                            },
+                            "breakpoints": {
+                              "100": {
+                                "slidesPerView": 1.5
+                              },
+                              "500": {
+                                "slidesPerView": 2.5
+                              },
+                              "767": {
+                                "slidesPerView": 3.5
+                              },
+                              "1024": {
+                                "slidesPerView": 4.5
+                              }
+                            }
+                        }
+                    </script>
+                      <div class="swiper-wrapper">
+                          {% for product in collection.products %}
+                              <div class="swiper-slide">
+                                <div class="swiper-slide__wrap">
+                                    {% render 'my-card', product:product %}
+                                    
+                                </div>
+                              </div>
+                          {% endfor %}
+      
+                      </div>
+                      <div class="swiper-button-next swiper-btn">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="21" cy="21" r="21" fill="white"/>
+                          <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52"/>
+                        </svg>
+                      </div>
+                      <div class="swiper-button-prev swiper-btn">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="21" cy="21" r="21" fill="white"/>
+                          <path d="M25.7071 21.7071C26.0976 21.3166 26.0976 20.6834 25.7071 20.2929L19.3431 13.9289C18.9526 13.5384 18.3195 13.5384 17.9289 13.9289C17.5384 14.3195 17.5384 14.9526 17.9289 15.3431L23.5858 21L17.9289 26.6569C17.5384 27.0474 17.5384 27.6805 17.9289 28.0711C18.3195 28.4616 18.9526 28.4616 19.3431 28.0711L25.7071 21.7071ZM24 22H25V20H24V22Z" fill="#6D5F52"/>
+                        </svg>
+                      </div>
+                      <div class="pagination__wrap container">
+                        <div class="swiper-pagination"></div> 
+                      </div>
+                  </s-slider>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "gallery-collection",
+        "settings": [
+            {
+                "type": "range",
+                "id": "pt",
+                "min": 0,
+                "max": 50,
+                "step": 1,
+                "unit": "px",
+                "label": "padding-top",
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "pb",
+                "min": 0,
+                "max": 50,
+                "step": 1,
+                "unit": "px",
+                "label": "padding-bottom",
+                "default": 0
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Shop by collection"
+            },
+            {
+                "type": "collection",
+                "id":"collection",
+                "label":"collection"
+            }
+            
+        ],
+        "presets": [
+            {
+                "name": "gallery-collection"
+            }
+        ]
+    }
+    {% endschema %}
