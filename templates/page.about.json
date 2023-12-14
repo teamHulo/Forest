@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "148fea7f-f1a9-4537-a32c-52e81b9951f8": {
+      "type": "section-image-banner",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/faadd8638722ae26455720b9300bb9c3.jpg",
+        "label": "About Us",
+        "title": "Die Geschichte von Forest Events",
+        "text": "Willkommen bei Forest Events – deinen Partnerinnen für einzigartige Veranstaltungen und köstliche Backkreationen!",
+        "btn_name": "Lass dich jetzt von uns verzaubern!",
+        "url": ""
+      }
+    },
+    "ce416884-b23a-4697-affe-5f6dc90c0779": {
+      "type": "section-text-three-photos",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "bg": "#ffffff",
+        "title": "Unsere Geschichte",
+        "text": "<p>Unsere Reise begann mit einer leidenschaftlichen Vision: Eleganz und Stil sollten endlich für alle erschwinglich sein. Gegründet von Esther, energiegeladener Mama und Unternehmerin, haben wir uns fest vorgenommen, deine besonderen Anlässe in atemberaubende Erlebnisse zu verwandeln, ohne dabei dein Budget zu sprengen.<br\/><br\/>Mit dem Namen \"Forest\" hat auch Esthers Sohn einen Platz in ihrer Marke enthalten. Ihre Reise begann nämlich mit der Gestaltung unvergesslicher Feste für ihre Kinder, woraus nun ein Unternehmen entstanden ist, das nicht nur Kinderaugen zum Strahlen bringt, sondern auch die ganz grossen Feiern in atemberaubende Erlebnisse verwandelt.<\/p>",
+        "max_width": 600,
+        "img1": "shopify:\/\/shop_images\/wedding-dreamz-pqkn1uIS6jY-unsplash.jpg",
+        "img2": "shopify:\/\/shop_images\/wedding-decor-2021-10-06-22-21-47-utc.jpg",
+        "img3": "shopify:\/\/shop_images\/boho-wedding-table-for-guests-at-bouquet-after-wed-2022-12-16-08-57-43-utc.jpg"
+      }
+    },
+    "a6e32234-64aa-47b3-bd40-3fe7204a722b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unser Angebot",
+            "heading_size": "h1"
+          }
+        },
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unsere Leistungen umfassen die Vermietung von exquisiter Dekoration und stilvollen Möbeln für deine Veranstaltungen. Von romantischen Hochzeiten bis hin zu bezaubernden Geburtstagen – wir machen aus deinen Träumen Wirklichkeit.<br\/>Als Krönung bieten wir dir handgefertigte Tortenkreationen, die deine Gäste nicht nur mit dem reinen Anblick beeindrucken, sondern auch den Geschmackssinn verzaubern. Schau dir unsere Kreationen gerne auch auf Instagram an, um einen Vorgeschmack auf unsere süssen Meisterwerke zu erhalten.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Instagram",
+            "button_link": "#",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-heading-1",
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-text-1",
+        "template--15257461456975__a6e32234-64aa-47b3-bd40-3fe7204a722b-button-1"
+      ],
+      "settings": {
+        "text_padding_top": 100,
+        "text_padding_right": 100,
+        "text_padding_bottom": 48,
+        "text_padding_left": 0,
+        "image": "shopify:\/\/shop_images\/silvia-mara-0LC3ei-lqVQ-unsplash.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7135cc91-721d-480b-a524-6552183c24fd": {
+      "type": "section-card-image-text",
+      "blocks": {
+        "fef3663b-8db6-4928-8629-be80c2a2cb69": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/34367adcf2c8333f1fcb61d293a8e0f7.jpg",
+            "title": "Unsere Werte",
+            "text": "<p>Unsere Werte bilden das Herzstück unserer Marke. Wir legen höchsten Wert auf deine Zufriedenheit, Ehrlichkeit, Professionalität, Erschwinglichkeit und Unkompliziertheit. Deine Freude an deinen besonderen Tagen ist unser grösster Antrieb, und wir setzen all unser Können und Engagement ein, um dich zu verzaubern.<\/p>",
+            "max_width": 400
+          }
+        },
+        "11c9ac73-ce6a-41d7-baae-f0afdc040fb2": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4f4b4351128361e8cb3ebb5975c0658a.jpg",
+            "title": "Unsere Vision",
+            "text": "<p>Unsere Vision ist es, jeden Menschen, den wir mit auf seine Eventreise nehmen, mindestens so glücklich zu machen, wie er es sich erträumt hat. Wir möchten, dass du uns nicht nur als Dienstleister, sondern als Vertrauten auf deiner Reise zu unvergesslichen Momenten siehst.<\/p>",
+            "max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "fef3663b-8db6-4928-8629-be80c2a2cb69",
+        "11c9ac73-ce6a-41d7-baae-f0afdc040fb2"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "bg": "#F8F5F0"
+      }
+    },
+    "0582edc6-5646-40b7-9d8f-e40afadccb2e": {
+      "type": "section-title-btn",
+      "settings": {
+        "bg": "#ffffff",
+        "title": "Kontaktiere uns",
+        "text": "Wir stehen dir jederzeit zur Verfügung, um deine Fragen zu beantworten und dir bei der Umsetzung der Veranstaltung deiner Träume zu helfen. Und lass uns dir auf dieser Reise mit Rat und Tat zur Seite stehen!",
+        "max_width": 620,
+        "bnt_bg": "#eddfd5",
+        "btn_name": "Kontaktiere uns",
+        "url": "#",
+        "btn_name1": "Kontaktiere uns",
+        "url1": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "148fea7f-f1a9-4537-a32c-52e81b9951f8",
+    "ce416884-b23a-4697-affe-5f6dc90c0779",
+    "a6e32234-64aa-47b3-bd40-3fe7204a722b",
+    "7135cc91-721d-480b-a524-6552183c24fd",
+    "0582edc6-5646-40b7-9d8f-e40afadccb2e"
+  ]
+}
