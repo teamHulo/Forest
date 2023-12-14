@@ -50,7 +50,19 @@ cart-drawer.is-empty .drawer__inner {
   align-items: center;
   padding: 0;
 }
-
+.drawer__heading-empty {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #E3DCCA;
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+.drawer__heading-empty .drawer__close {
+  right: 15px !important;
+  top: 25px !important;
+}
 cart-drawer.is-empty .drawer__header {
   display: none;
 }
@@ -79,6 +91,15 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 .drawer__heading {
   margin: 0 0 1rem;
   font-size: var(--font-size-36);
+}
+.drawer__heading-count {
+  font-family: ivyPresto-display;
+  font-size: var(--font-size-24);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+  letter-spacing: 0.24px;
+  text-transform: capitalize;
 }
 
 .drawer__close {
