@@ -1,7 +1,50 @@
 {
   "sections": {
+    "0538d538-b73a-4140-b5e2-59d06a11875d": {
+      "type": "section-gallary-item",
+      "settings": {
+        "pt": 0,
+        "pb": 0,
+        "title": "{{ metaobject.title_item.value }}",
+        "subtitle": "{{ metaobject.subtitle.value }}",
+        "aligments": "row",
+        "aligments_verticla": "center",
+        "left_img": "{{ metaobject.img_1.value }}",
+        "right_img1": "{{ metaobject.img_2.value }}",
+        "right_img2": "{{ metaobject.img_3.value }}",
+        "title_right": "",
+        "text_right": ""
+      }
+    },
+    "a43374ae-9ade-433c-ae43-dbbb60fbbc8d": {
+      "type": "section-gallary-item",
+      "settings": {
+        "pt": 36,
+        "pb": 48,
+        "title": "",
+        "subtitle": "",
+        "aligments": "row-reverse",
+        "aligments_verticla": "flex-end",
+        "left_img": "{{ metaobject.img_4.value }}",
+        "right_img1": "{{ metaobject.img_5.value }}",
+        "right_img2": "{{ metaobject.img_6.value }}",
+        "title_right": "Decoration Idea",
+        "text_right": "Discover creative decorating ideas and our diverse range of rentals with a drink and relaxing music. From chair covers and tablecloths to candle holders, vases, seating charts and wedding arches, you can find a full selection of rental items in our decorative showroom."
+      }
+    },
+    "87fd7d3b-ad39-4e55-af22-68cbc52d3bcd": {
+      "type": "section-gallery-collection",
+      "settings": {
+        "pt": 0,
+        "pb": 48,
+        "title": "{{ metaobject.title_collection.value }}",
+        "collection": "{{ metaobject.collection.value }}"
+      }
+    }
   },
   "order": [
-
+    "0538d538-b73a-4140-b5e2-59d06a11875d",
+    "a43374ae-9ade-433c-ae43-dbbb60fbbc8d",
+    "87fd7d3b-ad39-4e55-af22-68cbc52d3bcd"
   ]
 }
