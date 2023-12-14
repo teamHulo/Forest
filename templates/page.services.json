@@ -60,6 +60,24 @@
         "btn_name": "zur Bäckerei-Seite",
         "url": ""
       }
+    },
+    "5ce6049f-5523-493d-85f1-245d63d05481": {
+      "type": "section-text-three-photos",
+      "settings": {
+        "order": "images",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "text_btn": "Melde dich für einen Workshop an",
+        "btn_url": "#",
+        "bg": "#ffffff",
+        "title": "Erlebe Workshops Voller <br>Inspiration und Genuss",
+        "text": "<p>Weil wir lieben, was wir machen - du wolltest schon immer mal hinter die Türen einer Bäckerei blicken und lernen, wie wir solche Meisterstücke für deine Events zaubern? Dann hast du bei uns die Gelegenheit dazu.<br\/><br\/>Wir bieten immer mal wieder Workshops an, in denen wir dir unser Können und unsere Leidenschaft zu verschiedenen Backwerken näherbringen. Fühle dich wie ein Profi und lerne ein paar grundlegende Regeln für die perfekte süsse Leckerei kennen. Melde dich einfach bei uns, wir freuen uns auf dich!<\/p>",
+        "max_width": 450,
+        "img1": "shopify:\/\/shop_images\/gold-whisk-whipping-cream-2022-11-11-06-05-13-utc_1_1_ec54a5ae-1f78-44ac-a98c-00ff732ae599.jpg",
+        "img2": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.13_1_90b1c920-17d7-42c4-ab02-ebde9c0054fe.jpg",
+        "transform_img": 0,
+        "img3": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.16_1_5ad1b691-2ed6-4069-a98e-fb7e6c55a814.jpg"
+      }
     }
   },
   "order": [
@@ -68,6 +86,7 @@
     "94a64556-2e4f-417e-aaba-5eec8b9e9100",
     "b8518fc6-933c-4550-8fd7-f819631f0cc5",
     "daeecb31-ba1d-4624-9659-d2c2fe5fbf24",
-    "a49775fb-5fd7-4c29-a4bc-84d155f03c62"
+    "a49775fb-5fd7-4c29-a4bc-84d155f03c62",
+    "5ce6049f-5523-493d-85f1-245d63d05481"
   ]
 }
