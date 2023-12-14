@@ -2,192 +2,81 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 28
       }
     },
-    "35cb2b53-4874-43ea-bf33-24e58ddc477d": {
-      "type": "section-gallery",
-      "settings": {
-        "mt": 0,
-        "pt": 0,
-        "pb": 0,
-        "title": "gallery",
-        "aligments": "row",
-        "img1": "shopify:\/\/shop_images\/wedding-table-2021-08-26-12-09-46-utc_1.png",
-        "title1": "Eucalyptus of love",
-        "subtitle": "Organic wedding with beautiful floral garland on the table.",
-        "url_1": "",
-        "img2": "shopify:\/\/shop_images\/pexels-jonathan-borba-9703867.png",
-        "title_small1": "Outdoor wedding",
-        "subtitle_small1": "Romantic and rustic wedding decorations.",
-        "url_2": "",
-        "aligments_left": "row",
-        "show_right": true,
-        "img3": "shopify:\/\/shop_images\/silvia-mara-fgXon5q4jAA-unsplash.png",
-        "title_small2": "Romantic Wedding",
-        "subtitle_small2": "Romantic and rustic wedding decorations.",
-        "url_3": ""
-      }
-    },
-    "9de05d14-e187-4700-9b92-b30691f503f9": {
-      "type": "section-gallery",
-      "settings": {
-        "mt": -100,
-        "pt": 0,
-        "pb": 0,
-        "title": "",
-        "aligments": "row-reverse",
-        "img1": "shopify:\/\/shop_images\/wedding-decor-2021-10-06-22-21-47-utc.png",
-        "title1": "Natural Bloom",
-        "subtitle": "Organic wedding with beautiful floral garland on the table.",
-        "url_1": "",
-        "img2": "shopify:\/\/shop_images\/elegant-design-centerpieces-and-wedding-cutlery-2022-05-04-22-04-42-utc.jpg",
-        "title_small1": "Romantic Wedding",
-        "subtitle_small1": "Romantic and rustic wedding decorations.",
-        "url_2": "",
-        "aligments_left": "row-reverse",
-        "show_right": false,
-        "title_small2": "Outdoor wedding",
-        "subtitle_small2": "Romantic and rustic wedding decorations.",
-        "url_3": ""
-      }
-    },
-    "c0e8c59f-2cc2-42fa-91e2-6934730fde90": {
-      "type": "section-slider-dots",
+    "2562b313-56ee-4fcc-b0fd-a28cdaf46732": {
+      "type": "section-faq-tabs",
       "blocks": {
-        "cdb868c3-d111-4853-8d24-b6da7e08fcef": {
-          "type": "item",
+        "572de9bb-c2d7-4790-b610-9bd30cca53e1": {
+          "type": "tab",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pexels-jonathan-borba-12876493.jpg",
-            "product1": "besteck-gold-klassik-set",
-            "top1": 42,
-            "left1": 12,
-            "top2": 36,
-            "left2": 25,
-            "product2": "besteck-gold-klassik-set",
-            "top3": 42,
-            "left3": 65,
-            "product3": "better-together-neon-schrift",
-            "top4": 61,
-            "left4": 70,
-            "product4": "blumengirlande-luxe",
-            "top5": 0,
-            "left5": 0,
-            "product5": ""
+            "title": "Welche Veranstaltungen kann ich zusammen mit Forest Events ausrichten?",
+            "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p>"
           }
         },
-        "97f2e630-de28-442b-a29d-5cf3894b3a45": {
-          "type": "item",
+        "8fce6e46-452c-4cae-87d3-2205d3e3b195": {
+          "type": "tab",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pexels-jonathan-borba-9703867.png",
-            "product1": "",
-            "top1": 0,
-            "left1": 0,
-            "top2": 0,
-            "left2": 0,
-            "product2": "",
-            "top3": 0,
-            "left3": 0,
-            "product3": "",
-            "top4": 0,
-            "left4": 0,
-            "product4": "",
-            "top5": 0,
-            "left5": 0,
-            "product5": ""
+            "title": "Wie kann ich bei Forest Events bestellen?",
+            "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p>"
+          }
+        },
+        "c9d8d3fb-ddb4-40ff-83f0-9ffa7f07e29a": {
+          "type": "tab",
+          "settings": {
+            "title": "Kann ich Muster oder Beispiele der Dekorationen sehen?",
+            "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p>"
+          }
+        },
+        "1695060b-b69a-4083-925b-9ef2051c7ac4": {
+          "type": "tab",
+          "settings": {
+            "title": "Wie funktioniert die Mietabwicklung?",
+            "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p>"
+          }
+        },
+        "6b1bbf6d-17c1-4284-aa1e-117d3a476a2d": {
+          "type": "tab",
+          "settings": {
+            "title": "Gibt es eine Mindestbestellmenge oder -dauer?",
+            "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p>"
+          }
+        },
+        "9752ed96-ad9f-49e8-920c-0bbb94d46ac0": {
+          "type": "tab",
+          "settings": {
+            "title": "Werden die vermieteten Objekte geliefert und wieder abgeholt?",
+            "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p>"
+          }
+        },
+        "5f1a7e0b-6234-4d5b-af0c-4cc152c5468f": {
+          "type": "tab",
+          "settings": {
+            "title": "Kann ich individuelle Kuchen bestellen?",
+            "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p>"
           }
         }
       },
       "block_order": [
-        "cdb868c3-d111-4853-8d24-b6da7e08fcef",
-        "97f2e630-de28-442b-a29d-5cf3894b3a45"
+        "572de9bb-c2d7-4790-b610-9bd30cca53e1",
+        "8fce6e46-452c-4cae-87d3-2205d3e3b195",
+        "c9d8d3fb-ddb4-40ff-83f0-9ffa7f07e29a",
+        "1695060b-b69a-4083-925b-9ef2051c7ac4",
+        "6b1bbf6d-17c1-4284-aa1e-117d3a476a2d",
+        "9752ed96-ad9f-49e8-920c-0bbb94d46ac0",
+        "5f1a7e0b-6234-4d5b-af0c-4cc152c5468f"
       ],
       "settings": {
-        "title": "Shop by look"
-      }
-    },
-    "a0a970a6-614e-433d-843d-a541ceaca964": {
-      "type": "section-gallery",
-      "settings": {
-        "mt": 0,
-        "pt": 0,
-        "pb": 0,
-        "title": "",
-        "aligments": "row",
-        "img1": "shopify:\/\/shop_images\/andrea-garibay-7n367ZUiHL0-unsplash.jpg",
-        "title1": "Eucalyptus of love",
-        "subtitle": "Organic wedding with beautiful floral garland on the table.",
-        "url_1": "",
-        "img2": "shopify:\/\/shop_images\/pexels-jonathan-borba-11994906.jpg",
-        "title_small1": "Outdoor wedding",
-        "subtitle_small1": "Romantic and rustic wedding decorations.",
-        "url_2": "",
-        "aligments_left": "row-reverse",
-        "show_right": false,
-        "title_small2": "Outdoor wedding",
-        "subtitle_small2": "Romantic and rustic wedding decorations.",
-        "url_3": ""
-      }
-    },
-    "81c4866f-1e25-4713-a0bc-931f0218080d": {
-      "type": "section-gallery",
-      "settings": {
-        "mt": 0,
-        "pt": 27,
-        "pb": 0,
-        "title": "",
-        "aligments": "row-reverse",
-        "img1": "shopify:\/\/shop_images\/white-2022-11-11-07-33-36-utc_d12d1eba-8518-431b-b9a2-d98d11c70013.jpg",
-        "title1": "Natural Bloom",
-        "subtitle": "Organic wedding with beautiful floral garland on the table.",
-        "url_1": "",
-        "img2": "shopify:\/\/shop_images\/pexels-soulseeker-14703670.jpg",
-        "title_small1": "Outdoor wedding",
-        "subtitle_small1": "Romantic and rustic wedding decorations.",
-        "url_2": "",
-        "aligments_left": "row-reverse",
-        "show_right": true,
-        "img3": "shopify:\/\/shop_images\/pexels-leeloo-thefirst-5038747.jpg",
-        "title_small2": "Romantic Wedding",
-        "subtitle_small2": "Romantic and rustic wedding decorations.",
-        "url_3": ""
-      }
-    },
-    "01f2a472-a152-4070-b9c4-25c7d1bd079a": {
-      "type": "section-gallery",
-      "settings": {
-        "mt": 0,
-        "pt": 27,
-        "pb": 50,
-        "title": "",
-        "aligments": "row",
-        "img1": "shopify:\/\/shop_images\/luxury-elegant-wedding-reception-table-arrangement-2023-03-28-21-38-30-utc.jpg",
-        "title1": "Eucalyptus of love",
-        "subtitle": "Organic wedding with beautiful floral garland on the table.",
-        "url_1": "",
-        "img2": "shopify:\/\/shop_images\/benigno-hoyuela-vECZ5tm5lNQ-unsplash.jpg",
-        "title_small1": "Outdoor wedding",
-        "subtitle_small1": "Romantic and rustic wedding decorations.",
-        "url_2": "",
-        "aligments_left": "row",
-        "show_right": true,
-        "img3": "shopify:\/\/shop_images\/pexels-agung-pandit-wiguna-2788492.jpg",
-        "title_small2": "Outdoor wedding",
-        "subtitle_small2": "Romantic and rustic wedding decorations.",
-        "url_3": ""
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "35cb2b53-4874-43ea-bf33-24e58ddc477d",
-    "9de05d14-e187-4700-9b92-b30691f503f9",
-    "c0e8c59f-2cc2-42fa-91e2-6934730fde90",
-    "a0a970a6-614e-433d-843d-a541ceaca964",
-    "81c4866f-1e25-4713-a0bc-931f0218080d",
-    "01f2a472-a152-4070-b9c4-25c7d1bd079a"
+    "2562b313-56ee-4fcc-b0fd-a28cdaf46732"
   ]
 }
