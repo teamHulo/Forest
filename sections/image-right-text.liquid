@@ -1,0 +1,150 @@
+{% style %}
+    #shopify-section-{{ section.id}} .image-right-text {
+            padding-top: {{ section.settings.pt}}px;
+            padding-bottom: {{ section.settings.pb}}px;
+            background: var(--beige-02, #F8F5F0);
+    }
+    .image-right-text .container{
+        padding-left:0;
+        padding-right:0;
+    }
+    .image-right-text__wrap{
+        display:flex;
+        gap:20px 6.388888889%;
+        align-items:center;
+    }
+    .image-right-text .left{
+        width:100%;
+        max-width:728px;
+    }
+    .image-right-text .image__wrap {
+        position:relative;
+        padding-top: 68.82%;
+    }
+    .image-right-text .image__wrap img{
+        display:block;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    .image-right-text .right{
+        width:100%;
+        max-width:473px;
+        text-align:left;
+        padding-right:20px;
+    }
+    .image-right-text .title{
+        margin: 0 0 16px 0;
+    }
+    .image-right-text .title h3{
+        margin:0;
+        letter-spacing:0;
+        text-transform: none;
+
+    }
+    .image-right-text .title h3 span{
+        font-style:italic;
+    }
+    .image-right-text .subtitle-2 p{
+        margin:0;
+    }
+    .image-right-text .subtitle-2{
+        max-width:364px;
+    }
+    @media (max-width:767px) {
+        .image-right-text__wrap{
+           flex-wrap:wrap;
+        }
+        .image-right-text .left{
+            width:100%;
+            max-width:100%;
+        }
+        .image-right-text .right{
+            width:100%;
+            max-width:100%;
+            padding-left:20px;
+        }
+    }
+{% endstyle %}
+<div class="image-right-text">
+    <div class="container">
+        <div class="image-right-text__wrap">
+            <div class="left">
+                <div class="left__wrap">
+                    <div class="image">
+                        <div class="image__wrap">
+                            <img src="{{section.settings.img | img_url: 'master'}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right__wrap">
+                    <div class="title">
+                        <h3>
+                            {{section.settings.title}}
+                        </h3>
+                    </div>
+                    <div class="subtitle-2">
+                        {{section.settings.text}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "image-right-text",
+        "settings": [
+            {
+                "type": "range",
+                "id": "pt",
+                "min": 0,
+                "max": 50,
+                "step": 1,
+                "unit": "px",
+                "label": "padding-top",
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "pb",
+                "min": 0,
+                "max": 50,
+                "step": 1,
+                "unit": "px",
+                "label": "padding-bottom",
+                "default": 0
+            },
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "image"
+               
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Unsere Angebote für <span>unvergessliche Veranstaltungen</span>"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text",
+                "default": "<p>Bist du bereit, die Reise zu deiner einzigartigen Feier mit uns zu beginnen? Dann kannst du dir hier einen Überblick über unser Angebot verschaffen:</p>"
+            }
+            
+        ],
+        "presets": [
+            {
+                "name": "image-right-text"
+            }
+        ]
+    }
+    {% endschema %}

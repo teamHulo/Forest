@@ -1,0 +1,241 @@
+{% style %}
+    .section-glanz{
+        
+    }
+    .section-glanz .container{
+        padding-left:0;
+        padding-right:0;
+    }
+    .section-glanz__wrap{
+        display:flex;
+        position:relative;
+    }
+    .section-glanz .left, .section-glanz .small_image{
+        width:100%;
+        max-width:clamp(200px,22.014vw,317px);
+        display:flex;
+        align-items:flex-end;
+    }
+    .section-glanz .left__wrap{
+        width:100%;
+    }
+    .section-glanz .middle{
+        width:100%;
+        max-width:636px;
+
+        display:flex;
+        align-items:center;
+    }
+    .section-glanz .middle__wrap{
+        padding:20px clamp(20px,8.889vw,128px) 20px  clamp(20px,5vw,72px);
+    }
+    
+    .section-glanz .right{
+        width:100%;
+        max-width:clamp(350px,33.819vw,487px);
+        padding-bottom:clamp(20px,8.889vw,94px);
+    }
+    .section-glanz .right__wrap{
+        width:100%;
+    }
+    .section-glanz .image__wrap{
+        position:relative;
+        padding-top: 124.293%;
+    }
+    .section-glanz .right .image__wrap{
+        padding-top: 123.204%;
+    }
+    .section-glanz .image__wrap img{
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    .section-glanz .title{
+        margin:0 0 24px 0;
+        max-width:344px;
+    }
+    .section-glanz .title h4{
+        margin:0;
+        letter-spacing:0;
+        text-transform:none;
+    }
+    .section-glanz .a-btn{
+        max-width:267px;
+    }
+    .section-glanz .text {
+        margin-bottom:24px;
+    }
+    .section-glanz .text p{
+        margin:0 0 20px 0;
+        letter-spacing:0;
+    }
+    .section-glanz .text p:last-child{
+        margin:0;
+    }
+    .section-glanz .left__wrap{
+        position:relative;
+    }
+    .section-glanz .small_image{
+        position:absolute;
+        left:0;
+        bottom:0;
+        display:none;
+    }
+    .section-glanz .right{
+        position:relative;
+    }
+    @media (max-width:1023px){
+        .section-glanz .small_image{
+            display:block;
+        }
+        .section-glanz .right{
+            padding-bottom:30px;
+            padding-left:30px;
+        }
+        .section-glanz .left{
+            display:none;
+        }
+        .section-glanz__wrap{
+            justify-content:space-between;
+        }
+        .section-glanz .left__wrap{
+            padding-right:30px;
+            padding-bottom:30px;
+        }
+        .section-glanz .small_image{
+            width:100%;
+            max-width:200px;
+            
+        }
+        .section-glanz .right{
+            width:100%;
+            max-width:487px;
+            
+        }
+        .section-glanz .small_image .image__wrap {
+            padding-top:110%;
+        }
+        .section-glanz .middle__wrap{
+            padding:20px;
+        }
+    }
+    @media (max-width:767px){
+        .section-glanz__wrap{
+            flex-wrap:wrap-reverse;
+            justify-content:space-between;
+        }
+            .section-glanz .right{
+            width:100%;
+            max-width:100%;
+        }
+        .section-glanz .middle{
+            width:100%;
+            max-width:100%;
+
+            display:flex;
+            align-items:center;
+        }
+    }
+{% endstyle %}
+
+
+
+<div class="section-glanz">
+    <div class="container">
+        <div class="section-glanz__wrap">
+            <div class="left">
+                <div class="left__wrap">
+                    
+                    <div class="image ">
+                        <div class="image__wrap">
+                            <img src="{{section.settings.img1| img_url: 'master'}}" alt="">
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="middle">
+                <div class="middle__wrap">
+                    <div class="title">
+                        <h4>
+                            {{section.settings.title}}
+                        </h4>
+                    </div>
+                    <div class="text">
+                        {{section.settings.text}}
+                    </div>
+                    <div class="glanz-btn">
+                        <a href="{{section.settings.url}}" class="a-btn">{{section.settings.btn_name}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right__wrap">
+                    
+                    <div class="image">
+                        <div class="image__wrap">
+                            <img src="{{section.settings.img2| img_url: 'master'}}" alt="">
+                        </div>
+                    </div>
+                    <div class="image small_image">
+                        <div class="image__wrap">
+                            <img src="{{section.settings.img1| img_url: 'master'}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "section-section-glanz",
+        "settings": [
+           
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Unsere Angebote für <span>unvergessliche Veranstaltungen</span>"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text",
+                "default": "<p>Unsere Dekorationen sind darauf ausgerichtet, deine Veranstaltung in ein zauberhaftes und stilvolles Erlebnis zu verwandeln. Wir bieten eine breite Palette von Dekorationsartikeln, darunter Ballonbögen, Blumenarrangements, Beleuchtung und vieles mehr.</p> <p>Egal, ob du deinen besonderen Tag in Form einer Hochzeit, eine Geburtstagsfeier für dein Kind oder einen Junggesellenabschied planst - unsere Dekorationen schaffen eine einladende Atmosphäre und verzaubern deine Gäste. Gerne beraten wir dich bei der Auswahl der passenden Elemente, die nicht nur zu deiner Veranstaltung passen, sondern deine ganze Kreation auch stimmig wirken lassen.</p>"
+            },
+            {
+                "type": "image_picker",
+                "id": "img1",
+                "label": "image1"
+            },
+            {
+                "type": "image_picker",
+                "id": "img2",
+                "label": "image2"
+            },
+            {
+                "type": "text",
+                "id": "btn_name",
+                "label": "btn name",
+                "default": "zur Bäckerei-Seite"
+            },
+            {
+                "type": "url",
+                "id": "url",
+                "label": "url"
+            }
+            
+        ],
+        "presets": [
+            {
+                "name": "section-glanz"
+            }
+        ]
+    }
+    {% endschema %}

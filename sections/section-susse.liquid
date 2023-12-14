@@ -1,0 +1,205 @@
+{% style %}
+    .section-susse{
+        background: var(--beige-02, #F8F5F0);
+    }
+    .section-susse .container{
+        padding-left:0;
+        padding-right:0;
+    }
+    .section-susse__wrap{
+        display:flex;
+        position:relative;
+    }
+    .section-susse .left{
+        width:100%;
+        max-width:clamp(450px, 37.5vw , 540px);
+    }
+    .section-susse .middle{
+        width:100%;
+        max-width:639px;
+
+        display:flex;
+        align-items:center;
+    }
+    .section-susse .middle__wrap{
+        padding:20px clamp(20px,4.931vw,71px) 20px clamp(20px,5.208vw,75px);
+    }
+    
+    .section-susse .right, .section-susse .small_image{
+        width:100%;
+        max-width:clamp(200px,18.125vw,261px);
+        display:flex;
+        align-items:flex-end;
+    }
+    .section-susse .right__wrap{
+        width:100%;
+    }
+    .section-susse .image__wrap{
+        position:relative;
+        padding-top: 112.038%;
+    }
+    .section-susse .right .image__wrap{
+        padding-top: 106.514%;
+    }
+    .section-susse .image__wrap img{
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    .section-susse .title{
+        margin:0 0 24px 0;
+        max-width:290px;
+    }
+    .section-susse .title h4{
+        margin:0;
+        letter-spacing:0;
+        text-transform:none;
+    }
+    .susse-btn .a-btn{
+        max-width:267px;
+    }
+    .section-susse .text {
+        margin-bottom:24px;
+    }
+    .section-susse .text p{
+        margin:0 0 20px 0;
+        letter-spacing:0;
+    }
+    .section-susse .text p:last-child{
+        margin:0;
+    }
+    .section-susse .left__wrap{
+        position:relative;
+    }
+    .section-susse .small_image{
+        position:absolute;
+        right:0;
+        bottom:0;
+        display:none;
+    }
+    @media (max-width:1023px){
+        .section-susse .small_image{
+            display:block;
+        }
+        .section-susse .right{
+            display:none;
+        }
+        .section-susse .left__wrap{
+            padding-right:30px;
+            padding-bottom:30px;
+        }
+    }
+    @media (max-width:767px){
+        .section-susse__wrap{
+            flex-wrap:wrap;
+        }
+        .section-susse .left{
+        width:100%;
+        max-width:100%;
+    }
+    .section-susse .middle{
+        width:100%;
+        max-width:100%;
+
+        display:flex;
+        align-items:center;
+    }
+    }
+{% endstyle %}
+<div class="section-susse">
+    <div class="container">
+        <div class="section-susse__wrap">
+            <div class="left">
+                <div class="left__wrap">
+                    <div class="image">
+                        <div class="image__wrap">
+                            <img src="{{section.settings.img1| img_url: 'master'}}" alt="">
+                        </div>
+                    </div>
+                    <div class="image small_image">
+                        <div class="image__wrap">
+                            <img src="{{section.settings.img2| img_url: 'master'}}" alt="">
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="middle">
+                <div class="middle__wrap">
+                    <div class="title">
+                        <h4>
+                            {{section.settings.title}}
+                        </h4>
+                    </div>
+                    <div class="text">
+                        {{section.settings.text}}
+                    </div>
+                    <div class="susse-btn">
+                        <a href="{{section.settings.url}}" class="a-btn">{{section.settings.btn_name}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right__wrap">
+                    <div class="image">
+                        <div class="image__wrap">
+                            <img src="{{section.settings.img2| img_url: 'master'}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "section-susse",
+        "settings": [
+           
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Unsere Angebote für <span>unvergessliche Veranstaltungen</span>"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text",
+                "default": "<p>Fehlt dir jetzt nur noch die passende Leckerei? Unsere Bäckerei zeichnet sich durch die Herstellung von individuellen Tortenkreationen aus, die nicht nur visuell beeindrucken, sondern auch köstlich schmecken. Jeder Torte, den wir kreieren, ist ein Kunstwerk, das speziell auf deine Wünsche und Vorstellungen zugeschnitten ist. Von eleganten Hochzeitstorten bis hin zu verspielten Geburtstagskuchen – wir setzen dein Event mit unseren süssen Kreationen in Szene.</p><p>Wir legen grössten Wert auf Qualität und Geschmack. Lass uns süsse Erinnerungen für dich schaffen, die deinen besonderen Tag unvergesslich machen.</p>"
+            },
+            {
+                "type": "image_picker",
+                "id": "img1",
+                "label": "image1"
+            },
+            {
+                "type": "image_picker",
+                "id": "img2",
+                "label": "image2"
+            },
+            {
+                "type": "text",
+                "id": "btn_name",
+                "label": "btn name",
+                "default": "zur Bäckerei-Seite"
+            },
+            {
+                "type": "url",
+                "id": "url",
+                "label": "url"
+            }
+            
+        ],
+        "presets": [
+            {
+                "name": "section-susse"
+            }
+        ]
+    }
+    {% endschema %}

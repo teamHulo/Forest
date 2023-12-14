@@ -1,0 +1,186 @@
+{% style %}
+    #shopify-section-{{ section.id}} .section-stilvolle {
+            padding-top: {{ section.settings.pt}}px;
+            padding-bottom: {{ section.settings.pb}}px;
+    }
+    .section-stilvolle__wrap {
+        display:flex;
+        justify-content:space-between;
+        gap:20px;
+    }
+    .section-stilvolle__wrap .title {
+        margin:0 0 24px 0;
+        max-width:291px;
+    }
+    .section-stilvolle__wrap .title h4{
+        margin:0;
+        letter-spacing:0;
+    }
+    .section-stilvolle__wrap .title h4 span{
+        font-style:italic;
+    }
+    .section-stilvolle__wrap .text{
+        margin-bottom:24px;
+    }
+    .section-stilvolle__wrap .text p{
+        margin: 0 0 20px 0;
+        letter-spacing:0;
+    }
+    .section-stilvolle__wrap .text p:last-child{
+        margin:0;
+    }
+    .stilvolle-btn .a-btn{
+        max-width:267px;
+    }
+    .section-stilvolle__wrap .left{
+        width: 41.044%;
+    }
+    .section-stilvolle__wrap .left__wrap{
+        padding-left:clamp(0px,3.889vw,56px);
+    }
+    .section-stilvolle__wrap .right{
+        max-width: clamp(450px,38.264vw,551px);
+        width:100%;
+    }
+    .section-stilvolle__wrap .right__wrap .images{
+        display:flex;
+        gap:15px;
+    }
+    .section-stilvolle__wrap .right__wrap .images .image{
+        width:50%;
+    }
+    .section-stilvolle__wrap .image__wrap {
+        position:relative;
+        padding-top: 136.195%;
+    }
+    .section-stilvolle__wrap .image__wrap img{
+        display:block;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+
+    @media (max-width:1023px){
+        .section-stilvolle__wrap .left__wrap{
+            padding-left:0px;
+        }
+        .section-stilvolle__wrap {
+            flex-wrap:wrap-reverse;
+        }
+        .section-stilvolle__wrap .left{
+            width: 100%;
+        }
+        .section-stilvolle__wrap .right{
+            max-width: 100%;
+            width:100%;
+        }
+    }
+{% endstyle %}
+
+<div class="section-stilvolle">
+    <div class="container">
+        <div class="section-stilvolle__wrap">
+            <div class="left">
+                <div class="left__wrap">
+                    <div class="title">
+                        <h4>
+                            {{section.settings.title}}
+                        </h4>
+                    </div>
+                    <div class="text">
+                        {{section.settings.text}}
+                    </div>
+                    <div class="stilvolle-btn">
+                        <a href="{{section.settings.url}}" class="a-btn">{{section.settings.btn_name}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right__wrap">
+                    <div class="images">
+                        <div class="image">
+                            <div class="image__wrap">
+                                <img src="{{section.settings.img1 | img_url: 'master'}}" alt="">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <div class="image__wrap">
+                                <img src="{{section.settings.img2 | img_url: 'master'}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "section-stilvolle",
+        "settings": [
+            {
+                "type": "range",
+                "id": "pt",
+                "min": 0,
+                "max": 50,
+                "step": 1,
+                "unit": "px",
+                "label": "padding-top",
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "pb",
+                "min": 0,
+                "max": 50,
+                "step": 1,
+                "unit": "px",
+                "label": "padding-bottom",
+                "default": 0
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Unsere Angebote für <span>unvergessliche Veranstaltungen</span>"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text",
+                "default": "<p>Unsere Möbelvermietung bietet dir eine Auswahl an stilvollen Möbelstücken, die deiner Veranstaltung nicht nur Leben, sondern auch Luxus einhauchen. Von eleganten Tischen und Stühlen bis hin zu bequemen Loungemöbeln – wir haben alles, um deinem Event eine persönliche Note zu verleihen.</p><p>Unsere Möbel sind von höchster Qualität und werden regelmässig erneuert, um sicherzustellen, dass sie stets den neuesten Trends entsprechen. Egal, ob du eine kleine und private Feier oder doch eher eine grosse Veranstaltung planst, unsere Möbel sind darauf ausgerichtet, den Komfort und das Ambiente für deine Gäste optimal zu ergänzen.</p>"
+            },
+            {
+                "type": "image_picker",
+                "id": "img1",
+                "label": "image1"
+            },
+            {
+                "type": "image_picker",
+                "id": "img2",
+                "label": "image2"
+            },
+            {
+                "type": "text",
+                "id": "btn_name",
+                "label": "btn name",
+                "default": "zum Möbelkatalog"
+            },
+            {
+                "type": "url",
+                "id": "url",
+                "label": "url"
+            }
+            
+        ],
+        "presets": [
+            {
+                "name": "section-stilvolle"
+            }
+        ]
+    }
+    {% endschema %}
