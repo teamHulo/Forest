@@ -43,6 +43,15 @@
     outline-offset: unset;
     box-shadow: none;
 }
+.contact__form input::placeholder, .contact__form textarea::placeholder {
+    color: #A7A294;
+    font-family: acumin-pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.12px;
+}
 .contact__form .submit {
     margin-top: 25px;
 }

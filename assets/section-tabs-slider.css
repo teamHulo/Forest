@@ -21,6 +21,17 @@
   .tabs-slider .active.tab__item {
     border-bottom-color: #6D5F52;
   }
+  .tabs-slider .tab__item span {
+  font-family: acumin-pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  }
+  .tabs-slider .active.tab__item span {
+    font-weight: 500;
+    color: #6D5F52;
+  }
   
   .tabs-slider .tabs-contants {
     margin-top: 24px;
