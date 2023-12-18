@@ -10,6 +10,9 @@
     },
     "148fea7f-f1a9-4537-a32c-52e81b9951f8": {
       "type": "section-image-banner",
+      "custom_css": [
+        ".section-image-banner .title h4 {font-size: 36px;}"
+      ],
       "settings": {
         "padding_top_bottom": 150,
         "img": "shopify:\/\/shop_images\/faadd8638722ae26455720b9300bb9c3.jpg",
