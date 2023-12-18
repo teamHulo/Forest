@@ -40,8 +40,8 @@
                           "slidesPerView": 3,
                           "spaceBetween": 10,
                           "navigation": {
-                            "nextEl": ".swiper-button-next",
-                            "prevEl": ".swiper-button-prev"
+                            "nextEl": ".tabs-slider-btn-next-{{ forloop.index }}",
+                            "prevEl": ".tabs-slider-btn-prev-{{ forloop.index }}"
                           },
                           "pagination": {
                             "el": ".my-swiper-pagination",
@@ -81,10 +81,10 @@
                       </div>
                     {% endfor %}
                   </div>
-                  <div class="swiper-button-next swiper-btn" style="color: #6D5F52;">
+                  <div class="tabs-slider-btn-next-{{ forloop.index }} swiper-button-next swiper-btn" style="color: #6D5F52;">
                   {% render 'icon-next-arrow' %}
                   </div>
-                  <div class="swiper-button-prev swiper-btn" style="color: #6D5F52"> 
+                  <div class="tabs-slider-btn-prev-{{ forloop.index }} swiper-button-prev swiper-btn" style="color: #6D5F52"> 
                       {% render 'icon-prev-arrow' %}
                   </div>
                   <div class="pagination__wrap container" >
