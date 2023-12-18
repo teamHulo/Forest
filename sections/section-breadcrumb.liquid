@@ -2,6 +2,7 @@
     #shopify-section-{{ section.id }} {
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
+        background:{{section.settings.bg}};
     }
 </style>
 <div class="breadcrumb container">
@@ -12,6 +13,11 @@
 {
     "name": "Breadcrumb",
     "settings": [
+        {
+            "type":"color",
+            "id":"bg",
+            "label":"bakcground"
+        },
         {
             "type":"checkbox",
             "id":"show_back",

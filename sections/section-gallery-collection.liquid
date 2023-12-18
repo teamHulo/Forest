@@ -1,4 +1,7 @@
 {% style %}
+    #shopify-section-{{ section.id}} {
+        background:#F8F5F0;
+    }
     #shopify-section-{{ section.id}} .section-gallery-collection {
         padding-top: {{ section.settings.pt}}px;
         padding-bottom: {{ section.settings.pb}}px;
@@ -49,6 +52,9 @@
         margin-top:30px;
        
         padding-right: clamp(20px, 3.472vw, 50px);
+    }
+    .section-gallery-collection .swiper-pagination{
+        background:transparent;
     }
 {% endstyle %}
 
