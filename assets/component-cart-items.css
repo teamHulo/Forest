@@ -82,9 +82,16 @@ cart-items .title-wrapper-with-link {
 }
 
 .cart-item__name:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-underline-offset: 0.3rem;
   text-decoration-thickness: 0.2rem;
+}
+.cart-item__name {
+  font-family: acumin-pro ;
+  font-size: var(--font-size-14) ;
+  font-style: normal ;
+  font-weight: 500 ;
+  line-height: 150% ;
 }
 
 .cart-item__price-wrapper > * {
@@ -231,7 +238,7 @@ cart-remove-button .icon-remove {
   .cart-item {
     display: grid;
     grid-template: repeat(2, auto) / repeat(4, 1fr);
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
     margin-bottom: 3.5rem;
   }
 

@@ -13,29 +13,71 @@
 </style>
 <div class="three-image__wrapper">
     <div class="three-image container">
-        <div class="three-image__text">
-            <div class="text__wrapper">
-                <h4 class="mb-0">{{ section.settings.title }}</h4>
-                <div>{{ section.settings.text }}</div>
+        {% if section.settings.order == "text" %}
+            <div class="three-image__text">
+                <div class="text__wrapper">
+                    <h4 class="mb-0">{{ section.settings.title }}</h4>
+                    <div>{{ section.settings.text }}</div>
+                    {% if section.settings.btn_url != blank and section.settings.text_btn != blank %}
+                        <a class="a-btn" href="{{ section.settings.btn_url }}">{{ section.settings.text_btn }}</a>
+                    {% endif %}
+                </div>
             </div>
-        </div>
-        <div class="three-image_images">
-            <div class="img__wrapper">
-                <img src="{{ section.settings.img1 | image_url: height: 400 }}" alt="">
+            <div class="three-image_images">
+                <div class="img__wrapper">
+                    <img src="{{ section.settings.img1 | image_url: height: 400 }}" alt="">
+                </div>
+                <div style="bottom: {{ section.settings.transform_img }}px;" class="img__wrapper">
+                    <img src="{{ section.settings.img2 | image_url: height: 400 }}" alt="">
+                </div>
+                <div class="img__wrapper">
+                    <img src="{{ section.settings.img3 | image_url: height: 400 }}" alt="">
+                </div>
             </div>
-            <div style="bottom: -75px;" class="img__wrapper">
-                <img src="{{ section.settings.img2 | image_url: height: 400 }}" alt="">
+        {% else %}
+            <div class="three-image_images" style="gap: 15px;">
+                <div class="img__wrapper">
+                    <img src="{{ section.settings.img1 | image_url: height: 400 }}" alt="">
+                </div>
+                <div style="bottom: {{ section.settings.transform_img }}px;" class="img__wrapper">
+                    <img src="{{ section.settings.img2 | image_url: height: 400 }}" alt="">
+                </div>
+                <div class="img__wrapper">
+                    <img src="{{ section.settings.img3 | image_url: height: 400 }}" alt="">
+                </div>
             </div>
-            <div class="img__wrapper">
-                <img src="{{ section.settings.img3 | image_url: height: 400 }}" alt="">
+            <div class="three-image__text">
+                <div class="text__wrapper">
+                    <h4 class="mb-0">{{ section.settings.title }}</h4>
+                    <div>{{ section.settings.text }}</div>
+                    {% if section.settings.btn_url != blank and section.settings.text_btn != blank %}
+                        <a class="a-btn" href="{{ section.settings.btn_url }}">{{ section.settings.text_btn }}</a>
+                    {% endif %}
+                </div>
             </div>
-        </div>
+        {% endif %}
     </div>
 </div>
 {% schema %}
 {
     "name": "Text plus three photos",
     "settings": [
+        {
+            "type": "select",
+            "id": "order",
+            "label": "First block",
+            "options": [
+                {
+                    "label": "Images",
+                    "value": "images"
+                },
+                {
+                    "label": "Text",
+                    "value": "text"
+                }
+            ],
+            "default": "text"
+        },
         {
             "type": "range",
             "id": "padding_top",
@@ -55,6 +97,16 @@
             "unit": "px",
             "label": "Padding bottom",
             "default": 36
+        },
+        {
+            "type": "text",
+            "id": "text_btn",
+            "label": "Text button"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Button url"
         },
         {
             "type": "color",
@@ -93,6 +145,16 @@
             "type": "image_picker",
             "id": "img2",
             "label": "Image"
+        },
+        {
+            "type": "range",
+            "id": "transform_img",
+            "min": -100,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "label": "Tranfrorm vertical axis second image",
+            "default": 0
         },
         {
             "type": "image_picker",
