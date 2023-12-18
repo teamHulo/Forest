@@ -1,7 +1,7 @@
 {% style %} 
 .section-image-banner{
     position:relative;
-    padding:70px 0;
+    padding:{{ section.settings.padding_top_bottom }}px 0;
 }
 .section-image-banner .bg{
     position:absolute;
@@ -30,6 +30,16 @@
     text-align: center;
     margin:0 auto 24px auto;
     max-width:446px;
+}
+.section-image-banner .title span {
+  font-family: acumin-pro;
+  margin-bottom: 16px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
 }
 .section-image-banner .title h4{
     margin:0;
@@ -77,6 +87,16 @@
   {
     "name": "section-img-banner",
     "settings": [
+      {
+        "type": "range",
+        "id": "padding_top_bottom",
+        "min": 70,
+        "max": 210,
+        "step": 2,
+        "unit": "px",
+        "label": "Padding top/bottop",
+        "default": 70
+      },
       {
         "type": "image_picker",
         "id": "img",
