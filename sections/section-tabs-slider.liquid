@@ -44,7 +44,7 @@
                             "prevEl": ".tabs-slider-btn-prev-{{ forloop.index }}"
                           },
                           "pagination": {
-                            "el": ".my-swiper-pagination",
+                            "el": ".tabs-slider-pagination-{{ forloop.index }}",
                             "clickable": true
                           },
                           "breakpoints": {
@@ -88,7 +88,7 @@
                       {% render 'icon-prev-arrow' %}
                   </div>
                   <div class="pagination__wrap container" >
-                    <div class="my-swiper-pagination"></div> 
+                    <div class="tabs-slider-pagination-{{ forloop.index }} my-swiper-pagination"></div> 
                   </div>
                 </s-slider>
             </div>
