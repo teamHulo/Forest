@@ -11,6 +11,7 @@
     "148fea7f-f1a9-4537-a32c-52e81b9951f8": {
       "type": "section-image-banner",
       "settings": {
+        "padding_top_bottom": 150,
         "img": "shopify:\/\/shop_images\/faadd8638722ae26455720b9300bb9c3.jpg",
         "label": "About Us",
         "title": "Die Geschichte von Forest Events",
@@ -22,15 +23,20 @@
     "ce416884-b23a-4697-affe-5f6dc90c0779": {
       "type": "section-text-three-photos",
       "settings": {
+        "order": "text",
         "padding_top": 36,
         "padding_bottom": 100,
+        "text_btn": "",
+        "btn_url": "",
         "bg": "#ffffff",
         "title": "Unsere Geschichte",
         "text": "<p>Unsere Reise begann mit einer leidenschaftlichen Vision: Eleganz und Stil sollten endlich für alle erschwinglich sein. Gegründet von Esther, energiegeladener Mama und Unternehmerin, haben wir uns fest vorgenommen, deine besonderen Anlässe in atemberaubende Erlebnisse zu verwandeln, ohne dabei dein Budget zu sprengen.<br\/><br\/>Mit dem Namen \"Forest\" hat auch Esthers Sohn einen Platz in ihrer Marke enthalten. Ihre Reise begann nämlich mit der Gestaltung unvergesslicher Feste für ihre Kinder, woraus nun ein Unternehmen entstanden ist, das nicht nur Kinderaugen zum Strahlen bringt, sondern auch die ganz grossen Feiern in atemberaubende Erlebnisse verwandelt.<\/p>",
         "max_width": 600,
         "img1": "shopify:\/\/shop_images\/wedding-dreamz-pqkn1uIS6jY-unsplash.jpg",
         "img2": "shopify:\/\/shop_images\/wedding-decor-2021-10-06-22-21-47-utc.jpg",
-        "img3": "shopify:\/\/shop_images\/boho-wedding-table-for-guests-at-bouquet-after-wed-2022-12-16-08-57-43-utc.jpg"
+        "transform_img": 0,
+        "img3": "shopify:\/\/shop_images\/boho-wedding-table-for-guests-at-bouquet-after-wed-2022-12-16-08-57-43-utc.jpg",
+        "img_max_width": 324
       }
     },
     "a6e32234-64aa-47b3-bd40-3fe7204a722b": {
@@ -113,7 +119,7 @@
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36,
-        "bg": "#F8F5F0"
+        "bg": "#f8f5f0"
       }
     },
     "0582edc6-5646-40b7-9d8f-e40afadccb2e": {
