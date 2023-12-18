@@ -64,8 +64,27 @@
     display:block;
   }
 
-  
-  
+  .my-dots.mobile{
+      display:none;
+  }
+  .section-slider-dots .image .image__wrap img.mobile{
+    display:none;
+  }
+  @media(max-width:500px){
+    .my-dots.desk{
+      display:none;
+
+    }
+    .my-dots.mobile{
+      display:block;
+    }
+    .section-slider-dots .image .image__wrap img.mobile{
+      display:block;
+    }
+    .section-slider-dots .image .image__wrap img.desk{
+      display:none;
+    }
+  }
 
 
 {% endstyle %}
@@ -86,17 +105,22 @@
               <div class="slide__wrap">
                 <div class="image">
                   <div class="image__wrap">
-                    <img src="{{block.settings.img | img_url: 'master'}}" alt="">
+                    <img class="desk" src="{{block.settings.img | img_url: 'master'}}" alt="">
+                    <img class="mobile" src="{{block.settings.img1 | img_url: 'master'}}" alt="">
                   </div>
                   {% for i in (1..5) %}
                     {% assign product_key = "product" | append: i %}
                     {% assign left_key = "left" | append: i %}
                     {% assign top_key = "top" | append: i %}
-
+                    {% assign mobile_left_key = "mobile_left" | append: i %}
+                    {% assign mobile_top_key = "mobile_top" | append: i %}
                     {% assign product = block.settings[product_key] %}
                     {% assign left = block.settings[left_key] %}
                     {% assign top = block.settings[top_key] %}
-                    {% render 'slider-dots', product: product, left: left, top: top %}
+                    {% assign mobile_left = block.settings[mobile_left_key] %}
+                    {% assign mobile_top = block.settings[mobile_top_key] %}
+                    {% render 'slider-dots', product: product, left: left, top: top, class:"desk" %}
+                    {% render 'slider-dots', product: product, left: mobile_left, top: mobile_top, class:"mobile" %}
                   {% endfor %}
                 </div>
               </div>
@@ -291,6 +315,122 @@
             "type": "product",
             "id": "product5",
             "label": "product"
+          },
+          {
+            "type": "header",
+            "content": "mobile version"
+          },
+          {
+            "type": "image_picker",
+            "id": "img1",
+            "label": "image mobile"
+          },
+          {
+            "type": "header",
+            "content": "dots1 mobile"
+          },
+          {
+            "type": "range",
+            "id": "mobile_top1",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "top",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "mobile_left1",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "left",
+            "default": 0
+          }, {
+            "type": "header",
+            "content": "dots2 mobile"
+          }, {
+            "type": "range",
+            "id": "mobile_top2",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "top",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "mobile_left2",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "left",
+            "default": 0
+          }, {
+            "type": "header",
+            "content": "dots3 mobile"
+          }, {
+            "type": "range",
+            "id": "mobile_top3",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "top",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "mobile_left3",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "left",
+            "default": 0
+          }, {
+            "type": "header",
+            "content": "dots4 mobile"
+          }, {
+            "type": "range",
+            "id": "mobile_top4",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "top",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "mobile_left4",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "left",
+            "default": 0
+          }, {
+            "type": "header",
+            "content": "dots5 mobile"
+          }, {
+            "type": "range",
+            "id": "mobile_top5",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "top",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "mobile_left5",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "left",
+            "default": 0
           }
 
         ]
