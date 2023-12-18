@@ -11,6 +11,7 @@
     "720e1ff3-4710-460d-ac46-37029d08c0c2": {
       "type": "section-breadcrumb",
       "settings": {
+        "bg": "#f8f5f0",
         "show_back": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -29,11 +30,11 @@
     "b8518fc6-933c-4550-8fd7-f819631f0cc5": {
       "type": "section-glanz",
       "settings": {
-        "title": "<span>Verleihe deiner Veranstaltung<\/span><br> Glanz und Eleganz",
+        "title": "Verleihe deiner Veranstaltung Glanz und Eleganz",
         "text": "<p>Unsere Dekorationen sind darauf ausgerichtet, deine Veranstaltung in ein zauberhaftes und stilvolles Erlebnis zu verwandeln. Wir bieten eine breite Palette von Dekorationsartikeln, darunter Ballonbögen, Blumenarrangements, Beleuchtung und vieles mehr.<\/p><p>Egal, ob du deinen besonderen Tag in Form einer Hochzeit, eine Geburtstagsfeier für dein Kind oder einen Junggesellenabschied planst - unsere Dekorationen schaffen eine einladende Atmosphäre und verzaubern deine Gäste. Gerne beraten wir dich bei der Auswahl der passenden Elemente, die nicht nur zu deiner Veranstaltung passen, sondern deine ganze Kreation auch stimmig wirken lassen.<\/p>",
         "img1": "shopify:\/\/shop_images\/pexels-amar-preciado-10288372.jpg",
         "img2": "shopify:\/\/shop_images\/andrea-garibay-7n367ZUiHL0-unsplash_1.jpg",
-        "btn_name": "zum Dekorationskatalog",
+        "btn_name": "Zum Dekorationskatalog",
         "url": ""
       }
     },
@@ -42,11 +43,11 @@
       "settings": {
         "pt": 50,
         "pb": 40,
-        "title": "Stilvolle Möbel für <br><span>Unvergessliche Momente<\/span>",
+        "title": "Stilvolle Möbel für Unvergessliche Momente",
         "text": "<p>Unsere Möbelvermietung bietet dir eine Auswahl an stilvollen Möbelstücken, die deiner Veranstaltung nicht nur Leben, sondern auch Luxus einhauchen. Von eleganten Tischen und Stühlen bis hin zu bequemen Loungemöbeln – wir haben alles, um deinem Event eine persönliche Note zu verleihen.<\/p><p>Unsere Möbel sind von höchster Qualität und werden regelmässig erneuert, um sicherzustellen, dass sie stets den neuesten Trends entsprechen. Egal, ob du eine kleine und private Feier oder doch eher eine grosse Veranstaltung planst, unsere Möbel sind darauf ausgerichtet, den Komfort und das Ambiente für deine Gäste optimal zu ergänzen.<\/p>",
         "img1": "shopify:\/\/shop_images\/boho-wedding-table-for-guests-at-bouquet-after-wed-2022-12-16-08-57-43-utc_7aedcdad-6547-4496-b865-3b0c44207e2c.jpg",
         "img2": "shopify:\/\/shop_images\/pexels-jonathan-borba-12876504.jpg",
-        "btn_name": "zum Möbelkatalog",
+        "btn_name": "Zum Möbelkatalog",
         "url": ""
       }
     },
@@ -57,7 +58,7 @@
         "text": "<p>Fehlt dir jetzt nur noch die passende Leckerei? Unsere Bäckerei zeichnet sich durch die Herstellung von individuellen Tortenkreationen aus, die nicht nur visuell beeindrucken, sondern auch köstlich schmecken. Jeder Torte, den wir kreieren, ist ein Kunstwerk, das speziell auf deine Wünsche und Vorstellungen zugeschnitten ist. Von eleganten Hochzeitstorten bis hin zu verspielten Geburtstagskuchen – wir setzen dein Event mit unseren süssen Kreationen in Szene.<\/p><p>Wir legen grössten Wert auf Qualität und Geschmack. Lass uns süsse Erinnerungen für dich schaffen, die deinen besonderen Tag unvergesslich machen.<\/p>",
         "img1": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_08.05_1_e5010d80-ae6a-463e-928f-830aebd7e63d.jpg",
         "img2": "shopify:\/\/shop_images\/IMG_7975_26b3402c-68bd-445f-b448-3a26e8dfae8b.jpg",
-        "btn_name": "zur Bäckerei-Seite",
+        "btn_name": "Zur Bäckerei-Seite",
         "url": ""
       }
     },

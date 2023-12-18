@@ -3,6 +3,7 @@
     "77ac3fbc-d7e8-4298-8734-b23419baf69a": {
       "type": "section-breadcrumb",
       "settings": {
+        "bg": "#f8f5f0",
         "show_back": false,
         "padding_top": 36,
         "padding_bottom": 36

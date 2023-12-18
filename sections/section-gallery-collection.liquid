@@ -1,4 +1,7 @@
 {% style %}
+    #shopify-section-{{ section.id}} {
+        background:#F8F5F0;
+    }
     #shopify-section-{{ section.id}} .section-gallery-collection {
         padding-top: {{ section.settings.pt}}px;
         padding-bottom: {{ section.settings.pb}}px;
@@ -11,7 +14,7 @@
         margin: 0 0 30px 0;
         padding:0 20px;
     }
-    .section-gallery-collection .title h2{
+    .section-gallery-collection .title h3{
         margin:0;
         text-align:center;
     }
@@ -50,6 +53,9 @@
        
         padding-right: clamp(20px, 3.472vw, 50px);
     }
+    .section-gallery-collection .swiper-pagination{
+        background:transparent;
+    }
 {% endstyle %}
 
 {%  assign  collection =  section.settings.collection %} 
@@ -57,9 +63,9 @@
     <div class="container">
         <div class="section-gallery-collection__wrap">
             <div class="title">
-                <h2>
+                <h3>
                     {{section.settings.title}}
-                </h2>
+                </h3>
             </div>
             <div class="block__collections">
                 <s-slider class="swiper">
