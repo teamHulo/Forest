@@ -84,7 +84,18 @@
             "product4": "better-together-neon-schrift",
             "top5": 81,
             "left5": 73,
-            "product5": "crossback-stuhl-holz"
+            "product5": "crossback-stuhl-holz",
+            "img1": "shopify:\/\/shop_images\/pexels-jonathan-borba-12876504.jpg",
+            "mobile_top1": 0,
+            "mobile_left1": 0,
+            "mobile_top2": 0,
+            "mobile_left2": 100,
+            "mobile_top3": 100,
+            "mobile_left3": 0,
+            "mobile_top4": 100,
+            "mobile_left4": 100,
+            "mobile_top5": 50,
+            "mobile_left5": 50
           }
         },
         "41a137cd-49d9-4335-bfa0-b2a94377226e": {
@@ -105,7 +116,18 @@
             "product4": "",
             "top5": 0,
             "left5": 0,
-            "product5": ""
+            "product5": "",
+            "img1": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.16_1.jpg",
+            "mobile_top1": 0,
+            "mobile_left1": 0,
+            "mobile_top2": 0,
+            "mobile_left2": 0,
+            "mobile_top3": 0,
+            "mobile_left3": 0,
+            "mobile_top4": 0,
+            "mobile_left4": 0,
+            "mobile_top5": 0,
+            "mobile_left5": 0
           }
         }
       },
