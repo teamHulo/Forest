@@ -30,11 +30,29 @@
   }
   .cart-item__media {
     width: 100% !important;
+    margin-right: 15px;
   }
-  /* .cart-item-remove-btn, .cart-item__details {
+  .cart-item-remove-btn {
+    margin-left: 0 !important;
+  }
+  .cart-item-remove-btn, .cart-item__details {
+    
     padding-bottom: 12px !important;
     border-bottom: 1px solid #E3DCCA !important;
-  } */
+  }
+  .cart-item__quantity  {
+    margin-top: 12px;
+  }
+  .continue-shipping-paragraph {
+  text-align: center;
+  font-family: acumin-pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  margin-bottom: 25px;
+  }
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
@@ -66,16 +84,17 @@
                     {% render 'icon-close' %}
                   </button>
                 </div>
+              <p class="continue-shipping-paragraph">Go to the shop and continue shopping.</p>
               <a href="{{ routes.all_products_collection_url }}" class="button">
                 {{ 'general.continue_shopping' | t }}
               </a>
 
-              {%- if shop.customer_accounts_enabled and customer == null -%}
+              {% comment %} {%- if shop.customer_accounts_enabled and customer == null -%}
                 <p class="cart__login-title h3">{{ 'sections.cart.login.title' | t }}</p>
                 <p class="cart__login-paragraph">
                   {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
                 </p>
-              {%- endif -%}
+              {%- endif -%} {% endcomment %}
             </div>
           </div>
           {%- if settings.cart_drawer_collection != blank -%}
@@ -184,11 +203,11 @@
                               </strong>
                             </div>
                           {%- else -%}
-                            <div class="product-option">
+                            <div class="product-option d-none">
                               {{ item.original_price | money }}
-                              {{ item.product.metafields.custom.color }}
-                              {% comment %} auto 1fr / 154px repeat(3,1fr) {% endcomment %}
                             </div>
+                            {% render 'product-color', color: item.product.metafields.custom.color %}
+
                           {%- endif -%}
 
                           {%- if item.product.has_only_default_variant == false

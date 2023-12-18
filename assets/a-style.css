@@ -1673,3 +1673,19 @@ summary.list-menu__item{
 }
 
 /***** end dots product ****/
+.d-none {
+  display: none;
+}
+.custom-product-color {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.custom-product-color::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 25px;
+  background-color: aqua;
+}
