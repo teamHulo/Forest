@@ -11,6 +11,7 @@
     "720e1ff3-4710-460d-ac46-37029d08c0c2": {
       "type": "section-breadcrumb",
       "settings": {
+        "bg": "#f8f5f0",
         "show_back": false,
         "padding_top": 36,
         "padding_bottom": 36
