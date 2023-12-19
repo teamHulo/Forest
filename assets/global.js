@@ -21,21 +21,13 @@ class ElementObserver1 {
       this.observer.observe(elm);
     });
   }
-
-  // Функция обратного вызова, которая будет вызвана после перерисовки
   rerenderCallback() {
     this.observeElements();
   }
 }
 
-// Создаем экземпляр класса ElementObserver
 const elementObserver = new ElementObserver1();
 
-// Пример вызова rerenderCallback после перерисовки
-// Замените это на фактическое событие или условие, вызывающее перерисовку
-document.addEventListener('yourRerenderEvent', () => {
-  elementObserver.rerenderCallback();
-});
 
 
 function getFocusableElements(container) {
