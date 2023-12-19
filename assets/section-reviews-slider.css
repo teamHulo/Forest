@@ -1,6 +1,9 @@
-.card-reviews {
+  .card-reviews {
     background-color: #F8F5F0;
     padding: 24px 37px 53px 24px;
+  }
+  .reviews-slider .swiper-pagination-progressbar {
+    background-color: #F8F5F0;
   }
   .card-reviews__top {
     display: flex;
