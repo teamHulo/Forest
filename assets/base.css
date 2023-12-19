@@ -3300,7 +3300,7 @@ details-disclosure > details {
   .scroll-trigger.scroll-trigger--design-mode .slider,
   .scroll-trigger:not(.scroll-trigger--offscreen).scroll-trigger--cancel {
     opacity: 1;
-    animation: none;
+    /*animation: none;*/
     transition: none;
   }
 
