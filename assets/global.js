@@ -1,3 +1,43 @@
+class ElementObserver1 {
+  constructor(threshold = [0.2]) {
+    this.options = {
+      threshold: threshold,
+    };
+    this.observer = new IntersectionObserver(this.onEntry.bind(this), this.options);
+    this.observeElements();
+  }
+
+  onEntry(entry) {
+    entry.forEach((change) => {
+      if (change.isIntersecting) {
+        change.target.classList.add("element-show");
+      }
+    });
+  }
+
+  observeElements() {
+    this.elements = document.querySelectorAll(".element-animation");
+    this.elements.forEach((elm) => {
+      this.observer.observe(elm);
+    });
+  }
+
+  // Функция обратного вызова, которая будет вызвана после перерисовки
+  rerenderCallback() {
+    this.observeElements();
+  }
+}
+
+// Создаем экземпляр класса ElementObserver
+const elementObserver = new ElementObserver1();
+
+// Пример вызова rerenderCallback после перерисовки
+// Замените это на фактическое событие или условие, вызывающее перерисовку
+document.addEventListener('yourRerenderEvent', () => {
+  elementObserver.rerenderCallback();
+});
+
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(

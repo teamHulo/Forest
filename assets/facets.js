@@ -54,6 +54,7 @@ class FacetFiltersForm extends HTMLElement {
     });
 
     if (updateURLHash) FacetFiltersForm.updateURLHash(searchParams);
+    
   }
 
   static renderSectionFromFetch(url, event) {
@@ -66,6 +67,7 @@ class FacetFiltersForm extends HTMLElement {
         FacetFiltersForm.renderProductGridContainer(html);
         FacetFiltersForm.renderProductCount(html);
         if (typeof initializeScrollAnimationTrigger === 'function') initializeScrollAnimationTrigger(html.innerHTML);
+        
       });
   }
 
@@ -88,6 +90,8 @@ class FacetFiltersForm extends HTMLElement {
       .forEach((element) => {
         element.classList.add('scroll-trigger--cancel');
       });
+      console.log('asdfffff');
+      elementObserver.rerenderCallback();
   }
 
   static renderProductCount(html) {
