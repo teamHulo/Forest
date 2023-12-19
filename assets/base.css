@@ -3299,9 +3299,9 @@ details-disclosure > details {
   .scroll-trigger.scroll-trigger--design-mode.animate--slide-in,
   .scroll-trigger.scroll-trigger--design-mode .slider,
   .scroll-trigger:not(.scroll-trigger--offscreen).scroll-trigger--cancel {
-    opacity: 1;
+     /*opacity: 1;
     animation: none;
-    transition: none;
+    transition: none;*/
   }
 
   .scroll-trigger.scroll-trigger--design-mode.animate--slide-in {
