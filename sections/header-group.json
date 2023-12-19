@@ -28,6 +28,37 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "f6fbc35e-5d45-4e0b-a8a0-90094f7386a3": {
+          "type": "images",
+          "settings": {
+            "item_menu": "Möbel",
+            "img1": "shopify:\/\/shop_images\/pexels-jonathan-borba-11994914-2.jpg",
+            "img2": "shopify:\/\/shop_images\/pexels-craig-adderley-2306282.jpg"
+          }
+        },
+        "99c44215-c014-4dc3-83f6-0c8e163f85c8": {
+          "type": "images",
+          "settings": {
+            "item_menu": "Dekoration und Beleuchtung",
+            "img1": "shopify:\/\/shop_images\/pexels-alina-skazka-14822265.jpg",
+            "img2": "shopify:\/\/shop_images\/andrea-garibay-7n367ZUiHL0-unsplash_2.jpg"
+          }
+        },
+        "5f3260d4-2918-4f07-9a68-1875bad6b66d": {
+          "type": "images",
+          "settings": {
+            "item_menu": "Tischzubehör & Geschirr",
+            "img1": "shopify:\/\/shop_images\/luxury-elegant-wedding-reception-table-arrangement-2023-03-28-21-38-30-utc_1.jpg",
+            "img2": "shopify:\/\/shop_images\/pexels-amar-preciado-10288372_1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "f6fbc35e-5d45-4e0b-a8a0-90094f7386a3",
+        "99c44215-c014-4dc3-83f6-0c8e163f85c8",
+        "5f3260d4-2918-4f07-9a68-1875bad6b66d"
+      ],
       "settings": {
         "logo_position": "top-center",
         "menu": "main",
