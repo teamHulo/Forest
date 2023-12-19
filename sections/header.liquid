@@ -200,7 +200,8 @@
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
         elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu'
+          
+          render 'my-header-megamenu', blocks: section.blocks
         endif
       endif
     %}
@@ -684,6 +685,27 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type":"images",
+      "name":"images",
+      "settings": [
+        {
+          "type": "text",
+          "id":"item_menu",
+          "label":"item menu lvl 2"
+        },
+        {
+          "type":"image_picker",
+          "id":"img1",
+          "label":"image"
+        },
+        {
+          "type":"image_picker",
+          "id":"img2",
+          "label":"image"
+        }
+      ]
     }
   ]
 }
