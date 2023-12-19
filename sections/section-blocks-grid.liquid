@@ -1,12 +1,12 @@
 <div class="section-blocks-grid">
   <div class="container">
     <div class="section-blocks-grid__wrap">
-      <div class="title">
+      <div class="title element-animation">
         <h3>
           {{ section.settings.title }}
         </h3>
       </div>
-      <div class="blocks-list">
+      <div class="blocks-list element-animation">
         {% for block in section.blocks %}
           {% render 'my-blocks-item'
            , title: block.settings.title,

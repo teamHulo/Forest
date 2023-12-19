@@ -106,16 +106,16 @@
                         {% when 'title-text' %}
                             <div class="block-title-text">
                                 <div class="content">
-                                    <div class="title">
+                                    <div class="title element-animation">
                                         <h4>
                                             {{block.settings.title}}
                                         </h4>
                                     </div>
-                                    <div class="text">
+                                    <div class="text element-animation">
                                         {{block.settings.text}}
                                     </div>
                                 </div>
-                                <div class="image">
+                                <div class="image element-animation">
                                     <div class="image__wrap">
                                         <img src="{{block.settings.img | img_url: 'master'}}" alt="">
                                     </div>
@@ -125,10 +125,10 @@
                            
                         {% when 'text-btn' %}
                             <div class="block-text-btn">
-                                <div class="text">
+                                <div class="text element-animation">
                                     {{block.settings.text}}
                                 </div>
-                                <div class="block-btn">
+                                <div class="block-btn element-animation">
                                     <a href="{{block.settings.url}}" class="a-btn">{{block.settings.btn_name}}</a>
                                 </div>
                             </div>

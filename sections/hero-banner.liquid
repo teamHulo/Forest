@@ -3,10 +3,10 @@
         <div class="hero-banner__wrap">
             <div class="left">
                 <div class="left__wrap">
-                    <div class="images">
+                    <div class="images element-animation">
                         <div class="images__wrap">
                             {% if section.settings.img1 != blank %}
-                                <div class="image">
+                                <div class="image element-animation">
                                     <div class="image__body">
                                         <img src="{{section.settings.img1 | img_url: 'master'}}" alt="">
                                     </div>
@@ -14,7 +14,7 @@
                                 </div>
                             {% endif %}
                             {% if section.settings.img2 != blank %}
-                                <div class="image">
+                                <div class="image element-animation">
                                     <div class="image__body">
                                         <img src="{{section.settings.img2 | img_url: 'master'}}" alt="">
                                     </div>
@@ -22,18 +22,18 @@
                             {% endif %}
                         </div>
                     </div>
-                    <div class="title">
+                    <div class="title element-animation">
                         <h3>
                             {{section.settings.title}}
                         </h3>
                     </div>
-                    <div class="text">
+                    <div class="text element-animation">
                         <h6>
                             {{section.settings.subtitle}}
                         </h6>
                     </div>
                     {% if  section.settings.url != blank %}
-                        <div class="hero-btn">
+                        <div class="hero-btn element-animation">
                             <a href="{{section.settings.url}}" class="a-btn">{{section.settings.btn_name}}</a>
                         </div>
                     {% endif %}
@@ -41,7 +41,7 @@
             </div>
             <div class="right">
                 <div class="right__wrap">
-                    <div class="image">
+                    <div class="image element-animation">
                         <img src="{{section.settings.img3 | img_url: 'master'}}" alt="">
                     </div>
                 </div>

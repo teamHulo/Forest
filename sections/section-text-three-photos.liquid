@@ -19,42 +19,42 @@
         {% if section.settings.order == "text" %}
             <div class="three-image__text">
                 <div class="text__wrapper">
-                    <h4 class="mb-0">{{ section.settings.title }}</h4>
-                    <div>{{ section.settings.text }}</div>
+                    <h4 class="mb-0 element-animation">{{ section.settings.title }}</h4>
+                    <div class="element-animation">{{ section.settings.text }}</div>
                     {% if section.settings.btn_url != blank and section.settings.text_btn != blank %}
-                        <a class="a-btn" href="{{ section.settings.btn_url }}">{{ section.settings.text_btn }}</a>
+                        <a class="a-btn element-animation" href="{{ section.settings.btn_url }}">{{ section.settings.text_btn }}</a>
                     {% endif %}
                 </div>
             </div>
             <div class="three-image_images">
-                <div class="img__wrapper">
+                <div class="img__wrapper element-animation">
                     <img src="{{ section.settings.img1 | image_url: height: 400 }}" alt="">
                 </div>
-                <div style="bottom: {{ section.settings.transform_img }}px;" class="img__wrapper">
+                <div style="bottom: {{ section.settings.transform_img }}px;" class="img__wrapper element-animation">
                     <img src="{{ section.settings.img2 | image_url: height: 400 }}" alt="">
                 </div>
-                <div class="img__wrapper">
+                <div class="img__wrapper element-animation">
                     <img src="{{ section.settings.img3 | image_url: height: 400 }}" alt="">
                 </div>
             </div>
         {% else %}
             <div class="three-image_images" style="gap: 15px;">
-                <div class="img__wrapper">
+                <div class="img__wrapper element-animation">
                     <img src="{{ section.settings.img1 | image_url: height: 400 }}" alt="">
                 </div>
-                <div style="bottom: {{ section.settings.transform_img }}px;" class="img__wrapper">
+                <div style="bottom: {{ section.settings.transform_img }}px;" class="img__wrapper element-animation">
                     <img src="{{ section.settings.img2 | image_url: height: 400 }}" alt="">
                 </div>
-                <div class="img__wrapper">
+                <div class="img__wrapper element-animation">
                     <img src="{{ section.settings.img3 | image_url: height: 400 }}" alt="">
                 </div>
             </div>
             <div class="three-image__text">
                 <div class="text__wrapper">
-                    <h4 class="mb-0">{{ section.settings.title }}</h4>
-                    <div>{{ section.settings.text }}</div>
+                    <h4 class="mb-0 element-animation">{{ section.settings.title }}</h4>
+                    <div class="element-animation">{{ section.settings.text }}</div>
                     {% if section.settings.btn_url != blank and section.settings.text_btn != blank %}
-                        <a class="a-btn" href="{{ section.settings.btn_url }}">{{ section.settings.text_btn }}</a>
+                        <a class="a-btn element-animation" href="{{ section.settings.btn_url }}">{{ section.settings.text_btn }}</a>
                     {% endif %}
                 </div>
             </div>

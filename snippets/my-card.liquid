@@ -2,33 +2,33 @@
     <div class="my-card__wrap">
         <div class="image">
             <a href="{{product.url}}">
-                <div class="image__body">
+                <div class="image__body element-animation">
                     <img  src="{{ product.images[0].src | product_img_url: 'large' }}" alt="{{ product.title }}">
                 </div>
             </a>
         </div>
         <div class="item-content">
             <div class="item-content__wrap">
-                <div class="title">
+                <div class="title element-animation">
                     <h6>
                         {{product.title}}
                     </h6>
                 </div>
                 {% if product.metafields.custom.material != blank %}
-                    <div class="overline">
+                    <div class="overline element-animation">
                         <p>
                             {{product.metafields.custom.material}}
                         </p>
                     </div>
                 {% endif %}
-                <div class="product_price">
+                <div class="product_price element-animation">
                     <p>
                         Mietpreis: <span>{{product.price | money}}</span>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="product-btn">
+        <div class="product-btn element-animation">
             <a href="{{product.url}}" class="a-btn"> Details</a>
         </div>
     </div>

@@ -12,23 +12,23 @@
           {% for block in section.blocks %}
             <div class="swiper-slide swiper-history-slide">
               <div class="swiper-history-slide__wrap">
-                <div class="image">
+                <div class="image element-animation">
                   <div class="image__wrap">
                     <img src="{{block.settings.img | img_url: 'master'}}" alt="">
                   </div>
                 </div>
                 <div class="content">
-                  <div class="body-2">
+                  <div class="body-2 element-animation">
                     <p>
                       {{ block.settings.date }}
                     </p>
                   </div>
-                  <div class="title">
+                  <div class="title element-animation">
                     <h5>
                       {{ block.settings.title }}
                     </h5>
                   </div>
-                  <div class="text">
+                  <div class="text element-animation">
                     <p>
                       {{ block.settings.text }}
                     </p>

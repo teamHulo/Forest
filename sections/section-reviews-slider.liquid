@@ -12,7 +12,7 @@
     <div class="container">
         <div class="reviews-slider__wrap">
             <div class="reviews-slider__label">
-              <div class="title">
+              <div class="title element-animation">
                   <h4>{{ section.settings.title }}</h4>
               </div>
             </div>
@@ -51,7 +51,7 @@
                     {% for block in section.blocks %}
                         <div class="swiper-slide">
                           <div class="card-reviews">
-                            <div class="card-reviews__top">
+                            <div class="card-reviews__top element-animation">
                               <img src="{{ block.settings.img | image_url: width: 53 }}" 
                                     width="53"
                                     height="53"
@@ -59,16 +59,16 @@
                                     alt="{{ block.settings.img.alt }}"
                               >
                               <div class="card-reviews__info">
-                                <p class="name">{{ block.settings.name }}</p>
-                                <p class="date">{{ block.settings.date }}</p>
+                                <p class="name element-animation">{{ block.settings.name }}</p>
+                                <p class="date element-animation">{{ block.settings.date }}</p>
                               </div>
                             </div>
-                            <div class="card-reviews__rating">
+                            <div class="card-reviews__rating element-animation">
                               {% for i in (1.. block.settings.rating ) %}
                                 {% render 'icon-rating-star' %}
                               {% endfor %}
                             </div>
-                            <div class="card-reviews__text">{{ block.settings.text }}</div>
+                            <div class="card-reviews__text element-animation">{{ block.settings.text }}</div>
                           </div>
                         </div>
                     {% endfor %}

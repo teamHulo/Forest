@@ -18,18 +18,18 @@
 <div class="tabs-slider">
   <div class="container">
     <div class="product-tabs-recomentadion__wrap section-{{ section.id }}-padding">
-      <div class="title">
+      <div class="title element-animation">
         <h4> {{ section.settings.heading }} </h4>
       </div>
       <div class="tabs">
-        <div class="tabs__header">
+        <div class="tabs__header element-animation">
           {% for value in tabsNameArray %}
           <div class="tab__item{% if forloop.first %} active{% endif %}" data-title="{{ value }}">
               <span>{{ value }}</span>
             </div>
           {% endfor %}
         </div>
-        <div class="tabs-contants">
+        <div class="tabs-contants element-animation">
           {% for tabName in tabsNameArray %}
             {% assign slidesArray = section.blocks | map: 'settings' | where: 'name', tabName %}
 

@@ -12,14 +12,14 @@
         <div class="column-card">
             <div class="card" style="max-width: {{ block.settings.max_width }}px;">
                 <div class="card__img">
-                    <div class="img__wrapper">
+                    <div class="img__wrapper element-animation">
                         <img src="{{ block.settings.img | img_url: 'master' }}" alt="">
                     </div>
                 </div>
                 <div class="card__content">
                     <div class="card__text">
-                        <h4>{{ block.settings.title }}</h4>
-                        <div>{{ block.settings.text }}</div>
+                        <h4 class="element-animation">{{ block.settings.title }}</h4>
+                        <div class="element-animation">{{ block.settings.text }}</div>
                     </div>
                 </div>
             </div>

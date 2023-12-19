@@ -42,7 +42,7 @@
 }
 </style>
 <div class="faq-tabs__wrapper container">
-    <div class="faq-tabs">
+    <div class="faq-tabs element-animation">
         {% for block in section.blocks %}
             <details class="faq_tab" >
                 <summary>
@@ -55,10 +55,10 @@
                     {{ block.settings.title }}
                 </summary>
 
-                <div class="faq-content">
+                <div class="faq-content ">
                 {{ block.settings.text }}
                 {% if product.metafields.custom.material != blank %}
-                    <p>Material: {{ product.metafields.custom.material }}</p>
+                    <p class="element-animation">Material: {{ product.metafields.custom.material }}</p>
                 {% endif %}
 
                 </div>

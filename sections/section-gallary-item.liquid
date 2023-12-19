@@ -113,14 +113,14 @@
     <div class="container">
         <div class="section-gallery-item__wrap">
             {% if section.settings.title != blank %}
-                <div class="title">
+                <div class="title element-animation">
                     <h2>
                         {{section.settings.title}}
                     </h2>
                 </div>
             {% endif %}
             {% if section.settings.subtitle != blank %}
-                <div class="subtitle">
+                <div class="subtitle element-animation">
                     <p>
                         {{ section.settings.subtitle }}
                     </p>
@@ -129,7 +129,7 @@
             <div class="section-gallery-item__content">
                 <div class="left">
                     <div class="left__wrap">
-                        <div class="image">
+                        <div class="image element-animation">
                             <div class="image__wrap">
                                 <img src="{{section.settings.left_img | img_url: 'master'}}" alt="">
                             </div>
@@ -139,26 +139,26 @@
                 <div class="right">
                     <div class="right__wrap">
                         {% if section.settings.title_right != blank %}
-                            <div class="title">
+                            <div class="title element-animation">
                                 <h4>
                                     {{section.settings.title_right}}
                                 </h4>
                             </div>
                         {% endif %}
                         {% if section.settings.text_right != blank %}
-                            <div class="text">
+                            <div class="text element-animation">
                                 <p>
                                     {{section.settings.text_right}}
                                 </p>
                             </div>
                         {% endif %}
                         <div class="images">
-                            <div class="image">
+                            <div class="image element-animation">
                                 <div class="image__wrap">
                                     <img src="{{section.settings.right_img1 | img_url: 'master'}}" alt="">
                                 </div>
                             </div>
-                            <div class="image">
+                            <div class="image element-animation">
                                 <div class="image__wrap">
                                     <img src="{{section.settings.right_img2 | img_url: 'master'}}" alt="">
                                 </div>

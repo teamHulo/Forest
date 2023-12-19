@@ -18,7 +18,16 @@ body::-webkit-scrollbar { width: 0; }
   --font-size-12: 12px;
   --font-size-10: 10px;
 }
+.element-animation {
+  opacity: 0;
+  transform: translateY(50px);
+}
 
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 0.5s;
+  transform: translateY(0%);
+}
 h1 {
   font-family: "ivypresto-display";
   font-size: var(--font-size-60);

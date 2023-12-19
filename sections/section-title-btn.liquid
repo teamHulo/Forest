@@ -32,21 +32,21 @@
 <div class="section-title-btn">
     <div class="container">
         <div class="section-title-btn__wrap">
-            <div class="title">
+            <div class="title element-animation">
                 <h4>
                     {{ section.settings.title }}
                 </h4>
                 {% if section.settings.text != blank %}
-                    <p class="text">{{ section.settings.text }}</p>
+                    <p class="text element-animation">{{ section.settings.text }}</p>
                 {% endif %}
             </div>
             {% if  section.settings.url != blank or section.settings.url1 != blank%}
                 <div class="section-title-btns">
                     {% if  section.settings.url != blank %}
-                        <a href="{{section.settings.url}}" class="a-btn second-btn">{{section.settings.btn_name}}</a>
+                        <a href="{{section.settings.url}}" class="a-btn second-btn element-animation">{{section.settings.btn_name}}</a>
                     {% endif %}
                     {% if  section.settings.url1 != blank %}
-                        <a href="{{section.settings.url1}}" class="a-btn">{{section.settings.btn_name1}}</a>
+                        <a href="{{section.settings.url1}}" class="a-btn element-animation">{{section.settings.btn_name1}}</a>
                     {% endif %}
                     
                 </div>

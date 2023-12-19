@@ -176,7 +176,7 @@
   <div class="container">
     <div class="section-gallary__wrap">
       {% if section.settings.title != blank %}
-        <div class="title">
+        <div class="title element-animation">
           <h2>
             {{ section.settings.title }}
           </h2>
@@ -188,22 +188,22 @@
             <div class="card big-card">
               <div class="card__wrap">
                 <a href="{{section.settings.url_1}}">
-                  <div class="image">
+                  <div class="image element-animation">
                     <div class="image__wrap">
                       <img src="{{section.settings.img1 | img_url: 'master'}}" alt="">
                     </div>
-                    <div class="image-btn">
+                    <div class="image-btn ">
                       <span class="a-btn">
                         Details
                       </span>
                     </div>
                   </div>
-                  <div class="title">
+                  <div class="title element-animation">
                     <h3>
                       {{ section.settings.title1 }}
                     </h3>
                   </div>
-                  <div class="text">
+                  <div class="text element-animation">
                     <p>
                       {{ section.settings.subtitle }}
                     </p>
@@ -214,22 +214,22 @@
             <div class="card small-card">
               <div class="card__wrap">
                 <a href="{{section.settings.url_2}}">
-                  <div class="image">
-                    <div class="image__wrap">
+                  <div class="image element-animation">
+                    <div class="image__wrap ">
                       <img src="{{section.settings.img2 | img_url: 'master'}}" alt="">
                     </div>
-                    <div class="image-btn">
+                    <div class="image-btn ">
                       <span class="a-btn">
                         Details
                       </span>
                     </div>
                   </div>
-                  <div class="title">
+                  <div class="title element-animation">
                     <h5>
                       {{ section.settings.title_small1 }}
                     </h5>
                   </div>
-                  <div class="text">
+                  <div class="text element-animation">
                     <p>
                       {{ section.settings.subtitle_small1 }}
                     </p>
@@ -245,7 +245,7 @@
               <div class="card small-card">
                 <div class="card__wrap">
                   <a href="{{section.settings.url_3}}">
-                    <div class="image">
+                    <div class="image element-animation">
                       <div class="image__wrap">
                         <img src="{{section.settings.img3 | img_url: 'master'}}" alt="">
                       </div>
@@ -255,12 +255,12 @@
                         </span>
                       </div>
                     </div>
-                    <div class="title">
+                    <div class="title element-animation">
                       <h5>
                         {{ section.settings.title_small2 }}
                       </h5>
                     </div>
-                    <div class="text">
+                    <div class="text element-animation">
                       <p>
                         {{ section.settings.subtitle_small2 }}
                       </p>

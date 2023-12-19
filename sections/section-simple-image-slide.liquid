@@ -15,10 +15,10 @@
     <div class="">
         <div class="section-image-slider__wrap">
             <div class="simple-image-slider__label">
-              <div class="title">
+              <div class="title element-animation">
                   <h4>{{ section.settings.title }}</h4>
               </div>
-              <div class="subtitle">
+              <div class="subtitle element-animation">
                   <p>{{ section.settings.text }}</p>
               </div>
             </div>
@@ -57,7 +57,7 @@
                     {% for block in section.blocks %}
                       <div class="swiper-slide" style="height: auto;">
                         <div class="swiper-slide__wrap" style="height: 100%;">
-                          <div class="simple-img-wrap">
+                          <div class="simple-img-wrap element-animation">
                               <img src="{{ block.settings.img | img_url: 'master'  }}" 
                               style="width: 100%;"
                                     alt="">

@@ -367,7 +367,25 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="{{ 'a-script.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 's-slider.js' | asset_url }}" defer="defer"></script>
-    
+    <script>
+      function onEntry(entry) {
+        entry.forEach((change) => {
+          if (change.isIntersecting) {
+            change.target.classList.add("element-show");
+          }
+        });
+      }
+
+      let options = {
+        threshold: [0.2],
+      };
+      let observer = new IntersectionObserver(onEntry, options);
+      let elements = document.querySelectorAll(".element-animation");
+
+      for (let elm of elements) {
+        observer.observe(elm);
+      }
+    </script>
     
   </body>
 </html>

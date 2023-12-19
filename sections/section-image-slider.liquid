@@ -1,12 +1,12 @@
 <div class="section-image-slider">
     <div class="container">
         <div class="section-image-slider__wrap">
-            <div class="title">
+            <div class="title element-animation">
                 <h4>
                     {{section.settings.title}}
                 </h4>
             </div>
-            <div class="subtitle">
+            <div class="subtitle element-animation">
                 <p>
                     {{section.settings.text}}
                 </p>
@@ -17,7 +17,7 @@
                     {% for block in section.blocks %}
                         <div class="swiper-slide swiper-image-slide">
                             <div class="swiper-image-slide__wrap">
-                                <div class="image">
+                                <div class="image element-animation">
                                     <div class="image__wrap">
                                         <img src="{{block.settings.img | img_url: 'master'}}" alt="">
                                     </div>
@@ -29,7 +29,7 @@
                 
                 <div class="swiper-pagination my-swiper-pagination"></div>
             </div>
-            <div class="section-img-btn">
+            <div class="section-img-btn element-animation">
                 <a href="{{section.settings.url}}" class="a-btn">{{section.settings.btn_name}}</a>
             </div>
         </div>

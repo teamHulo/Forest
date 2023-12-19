@@ -13,15 +13,15 @@
 <div class="image-text__wrapper v3">
     <div class="image-text container">
         <div class="image-text__left">
-            <div class="img__wrapper">
+            <div class="img__wrapper element-animation">
                 <img src="{{ section.settings.img | img_url: 'master' }}" alt="">
             </div>
             <img class="small-img" src="{{ section.settings.small_img | img_url: 'master' }}" alt="">
         </div>
         <div class="image-text__right">
             <div class="text__wrapper">
-                <h4>{{ section.settings.title }}</h4>
-                <div>{{ section.settings.text }}</div>
+                <h4 class="element-animation">{{ section.settings.title }}</h4>
+                <div class="element-animation">{{ section.settings.text }}</div>
             </div>
         </div>
     </div>
