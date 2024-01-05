@@ -14,10 +14,13 @@
         ".section-image-banner .title h4 {font-size: 36px;}"
       ],
       "settings": {
+        "color_wrap": "#f8f5f0",
+        "opc": 0.2,
+        "color_text": "#ffffff",
         "padding_top_bottom": 92,
         "img": "shopify:\/\/shop_images\/presidium-of-the-newlyweds-in-the-banquet-hall-gre-2023-11-27-05-36-07-utc.jpg",
         "label": "About Us",
-        "title": "Die Geschichte von Forest Events",
+        "title": "Die Geschichte <br> Von Forest Events",
         "text": "Willkommen bei Forest Events – deinen Partnerinnen für einzigartige Veranstaltungen und köstliche Backkreationen!",
         "btn_name": "Lass dich jetzt von uns verzaubern!",
         "url": ""
