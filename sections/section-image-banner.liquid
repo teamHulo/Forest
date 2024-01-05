@@ -1,3 +1,11 @@
+{%- 
+  liquid
+  assign rgb = section.settings.color_wrap | color_to_rgb
+  assign tail = section.settings.opc | prepend: ', ' | append: ')' 
+  assign rgba = rgb | replace: 'rgb', 'rgba' | replace: ')', tail
+-%}
+
+
 {% style %} 
 .section-image-banner{
     position:relative;
@@ -52,6 +60,9 @@
 .section-image-banner .img-banner-btn .a-btn{
     max-width:324px;
 }
+#shopify-section-{{section.id}} .section-image-banner__body{
+  background: {{rgba}};
+}
 {% endstyle %} 
 
 
@@ -62,15 +73,15 @@
   <div class="container">
     <div class="section-image-banner__wrap">
       <div class="section-image-banner__body">
-        <div class="title element-animation">
+        <div class="title element-animation" >
           {% if section.settings.label != blank %}
-            <span>{{ section.settings.label | upcase }}</span>
+            <span style="color:{{section.settings.color_text}};">{{ section.settings.label | upcase }}</span>
           {% endif %}
-          <h4 class="element-animation">
+          <h4 class="element-animation"v style="color:{{section.settings.color_text}};">
             {{ section.settings.title }}
           </h4>
           {% if section.settings.text != blank %}
-            <p class="element-animation">{{ section.settings.text }}</p>
+            <p class="element-animation" style="color:{{section.settings.color_text}};">{{ section.settings.text }}</p>
           {% endif %}
         </div>
         {% if section.settings.url != blank %}
@@ -87,6 +98,28 @@
   {
     "name": "section-img-banner",
     "settings": [
+      {
+        "type":"color",
+        "id":"color_wrap",
+        "label":"background wrap",
+        "default":"#f8f5f0"
+      },
+      {
+        "type": "range",
+        "id": "opc",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "unit": "%",
+        "label": "opacity wrap bg",
+        "default": 0.9
+      },
+      {
+        "type":"color",
+        "id":"color_text",
+        "label":"color text",
+        "default":"#6D5F52"
+      },
       {
         "type": "range",
         "id": "padding_top_bottom",
