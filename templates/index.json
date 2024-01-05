@@ -255,13 +255,16 @@
     "c43f93f8-177d-4cdb-86c2-f0f2bfae91fa": {
       "type": "section-image-banner",
       "settings": {
+        "color_wrap": "#f8f5f0",
+        "opc": 0.9,
+        "color_text": "#6D5F52",
         "padding_top_bottom": 70,
         "img": "shopify:\/\/shop_images\/pexels-secret-garden-931177.png",
         "label": "",
         "title": "Möchtest du deine süsse Erfolgsgeschichte auch mit uns gemeinsam schreiben?",
         "text": "",
         "btn_name": "Lass dich jetzt von uns verzaubern!",
-        "url": ""
+        "url": "#"
       }
     },
     "39de7e10-d731-4419-be59-8cfc48af6d34": {
