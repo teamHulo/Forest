@@ -14,11 +14,11 @@
         ".section-image-banner .title h4 {font-size: 36px;}"
       ],
       "settings": {
-        "padding_top_bottom": 150,
+        "padding_top_bottom": 92,
         "img": "shopify:\/\/shop_images\/faadd8638722ae26455720b9300bb9c3.jpg",
         "label": "About Us",
-        "title": "Die Geschichte von<br> Forest Events",
-        "text": "Willkommen bei Forest Events – deinen<br> Partnerinnen für einzigartige Veranstaltungen und<br> köstliche Backkreationen!",
+        "title": "Die Geschichte von Forest Events",
+        "text": "Willkommen bei Forest Events – deinen Partnerinnen für einzigartige Veranstaltungen und köstliche Backkreationen!",
         "btn_name": "Lass dich jetzt von uns verzaubern!",
         "url": ""
       }
