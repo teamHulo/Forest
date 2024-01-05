@@ -231,12 +231,22 @@
             "title": "Ashley and Jimmy",
             "text": "Wir träumen immer noch von diesem wundervollen  Tag und waren begeistert vom Brautstrauß und der gesamten Dekoration. Es war alles so wunderbar stimmig und hat so gut zu uns gepasst! Dann besucht uns in unserem 200 qm großen Showroom in Weinsberg bei Heilbronn und entdeckt kreative Ideen und unser vielfältiges Mietsortiment. Brautstrauß und der gesamten Dekoration. Es war alles so wunderbar stimmig und hat so gut zu uns gepasst!"
           }
+        },
+        "46d8043f-5fb7-45fb-9b6c-6542b0fb1e0b": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Our_5_Best_Tips_For_Hosting_the_Ultimate_Yacht_Wedding.png",
+            "date": "12.05.23",
+            "title": "Ashley and Jimmy",
+            "text": "Wir träumen immer noch von diesem wundervollen Tag und waren begeistert vom Brautstrauss und der gesamten Dekoration. Es war alles so wunderbar stimmig und hat so gut zu uns gepasst!"
+          }
         }
       },
       "block_order": [
         "fdd94d2a-8f40-4054-bf55-84d33a12d421",
         "23f4a0ba-5060-459c-bde3-44ceb311cacb",
-        "8b6f8601-b3c0-4594-b784-c992e1ff1d01"
+        "8b6f8601-b3c0-4594-b784-c992e1ff1d01",
+        "46d8043f-5fb7-45fb-9b6c-6542b0fb1e0b"
       ],
       "settings": {
         "title": "<span>Unsere süssen Erfolgsgeschichten: <\/span> Was unsere Kunden sagen"
