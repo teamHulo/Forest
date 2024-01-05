@@ -80,9 +80,11 @@
     "04f6a1e1-6a3b-46ba-859c-0ae21e4183ea": {
       "type": "section-title-btn",
       "settings": {
-        "bg": "#F8F5F0",
+        "bg": "#f8f5f0",
         "title": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt? Dann setze dich direkt mit uns in Verbindung:",
+        "text": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt? Dann setze dich direkt mit uns in Verbindung:",
         "max_width": 620,
+        "bnt_bg": "",
         "btn_name": "Kontaktiere uns",
         "url": "",
         "btn_name1": "Kontaktiere uns",
@@ -220,11 +222,21 @@
             "title": "Ashley and Jimmy",
             "text": "Wir träumen immer noch von diesem wundervollen  Tag und waren begeistert vom Brautstrauß und der gesamten Dekoration. Es war alles so wunderbar stimmig und hat so gut zu uns gepasst! Dann besucht uns in unserem 200 qm großen Showroom in Weinsberg bei Heilbronn und entdeckt kreative Ideen und unser vielfältiges Mietsortiment. Brautstrauß und der gesamten Dekoration. Es war alles so wunderbar stimmig und hat so gut zu uns gepasst!"
           }
+        },
+        "8b6f8601-b3c0-4594-b784-c992e1ff1d01": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Our_5_Best_Tips_For_Hosting_the_Ultimate_Yacht_Wedding_1.png",
+            "date": "Mila and Stephan",
+            "title": "Ashley and Jimmy",
+            "text": "Wir träumen immer noch von diesem wundervollen  Tag und waren begeistert vom Brautstrauß und der gesamten Dekoration. Es war alles so wunderbar stimmig und hat so gut zu uns gepasst! Dann besucht uns in unserem 200 qm großen Showroom in Weinsberg bei Heilbronn und entdeckt kreative Ideen und unser vielfältiges Mietsortiment. Brautstrauß und der gesamten Dekoration. Es war alles so wunderbar stimmig und hat so gut zu uns gepasst!"
+          }
         }
       },
       "block_order": [
         "fdd94d2a-8f40-4054-bf55-84d33a12d421",
-        "23f4a0ba-5060-459c-bde3-44ceb311cacb"
+        "23f4a0ba-5060-459c-bde3-44ceb311cacb",
+        "8b6f8601-b3c0-4594-b784-c992e1ff1d01"
       ],
       "settings": {
         "title": "<span>Unsere süssen Erfolgsgeschichten: <\/span> Was unsere Kunden sagen"
@@ -233,8 +245,11 @@
     "c43f93f8-177d-4cdb-86c2-f0f2bfae91fa": {
       "type": "section-image-banner",
       "settings": {
+        "padding_top_bottom": 70,
         "img": "shopify:\/\/shop_images\/pexels-secret-garden-931177.png",
+        "label": "",
         "title": "Möchtest du deine süsse Erfolgsgeschichte auch mit uns gemeinsam schreiben?",
+        "text": "",
         "btn_name": "Lass dich jetzt von uns verzaubern!",
         "url": ""
       }
@@ -271,7 +286,9 @@
       "settings": {
         "bg": "#fcfbf9",
         "title": "Du bist bereit, den Zauber auch an deine Gäste weiterzugeben, hast aber noch Fragen und möchtest keine Neuigkeiten verpassen? Dann schau mal hier rein: ",
+        "text": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt? Dann setze dich direkt mit uns in Verbindung:",
         "max_width": 533,
+        "bnt_bg": "",
         "btn_name": "FAQs",
         "url": "shopify:\/\/pages\/contact",
         "btn_name1": "Kontaktiere uns",
