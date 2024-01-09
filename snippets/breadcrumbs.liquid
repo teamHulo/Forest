@@ -30,9 +30,42 @@
             <a class="breadcrumbs__link {% if t == 'collection' %}current-page{% endif %}" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + "}} <span> / </span></a>
           </li>
         {%- else -%}
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link {% if t == 'collection' %}current-page{% endif %}" href="{{ collection.url }}" aria-current="page">{{ collection.title }} <span> / </span></a>
-          </li>
+            
+            {% if nav != blank %}
+                {% for link in nav.links %}
+                  
+                  {% if link.current %}
+                    <li class="breadcrumbs__item">
+                      <a class="breadcrumbs__link {% if t == 'collection' %}current-page{% endif %}" href="{{ link.url }}" aria-current="page">{{ link.title }}</a>
+                    </li>
+                  {% elsif link.child_active %}
+                   
+                    <li class="breadcrumbs__item">
+                      <a class="breadcrumbs__link" href="{{ link.url }}" aria-current="page">{{ link.title }} <span> / </span></a>
+                    </li>
+                    {% for child_link in link.links %}
+                      {% if child_link.current %}
+                        <li class="breadcrumbs__item">
+                          <a class="breadcrumbs__link {% if t == 'collection' %}current-page{% endif %}" href="{{ child_link.url }}" aria-current="page">{{ child_link.title }} </a>
+                        </li>
+                      {% elsif child_link.child_active %}
+                  
+                        <li class="breadcrumbs__item">
+                          <a class="breadcrumbs__link" href="{{ child_link.url }}" aria-current="page">{{ child_link.title }} <span> / </span></a>
+                        </li>
+                          {% for grandchild_link in child_link.links %}
+                            {% if grandchild_link.current %}
+                              <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link {% if t == 'collection' %}current-page{% endif %}" href="{{ grandchild_link.url }}" aria-current="page">{{ grandchild_link.title }}</a>
+                              </li>
+                            {% endif %}
+                          {% endfor %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+         
         {%- endif -%}
       {%- when 'blog' -%}
         {%- if current_tags -%}

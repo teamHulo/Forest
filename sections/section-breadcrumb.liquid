@@ -6,13 +6,18 @@
     }
 </style>
 <div class="breadcrumb container">
-    {% render 'breadcrumbs', show_back: section.settings.show_back %}
+    {% render 'breadcrumbs', show_back: section.settings.show_back, nav: section.settings.nav %}
 </div>
 
 {% schema %}
 {
     "name": "Breadcrumb",
     "settings": [
+        {
+            "type": "link_list",
+            "id":"nav",
+            "label":"collection page breadcrumbs"
+        },
         {
             "type":"color",
             "id":"bg",
