@@ -1,14 +1,3 @@
-$(() => {
-  $('.link-level-2 span').click(function(){
-      $(this).closest('.mega-menu__content').find('.link-level-2').removeClass('active');
-      $(this).closest('.mega-menu__content').find('.menu-level3 .links-items').removeClass('active');
-      let vendor = $(this).attr('data-title');
-      $(this).closest('.link-level-2').addClass('active');
-      $('.menu-level3 .links-items[data-item="'+ vendor +'"]').addClass('active');
-  });
-});
-
-
 
 $(() => {
   console.log(1);
