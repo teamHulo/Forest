@@ -3,6 +3,9 @@
     "ded4a3e4-1785-40bd-9274-76321471056d": {
       "type": "section-breadcrumb",
       "settings": {
+        "nav": "dev",
+        "bg": "",
+        "show_back": true,
         "padding_top": 14,
         "padding_bottom": 30
       }
