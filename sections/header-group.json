@@ -60,13 +60,22 @@
             "img1": "shopify:\/\/shop_images\/luxury-elegant-wedding-reception-table-arrangement-2023-03-28-21-38-30-utc_1.jpg",
             "img2": "shopify:\/\/shop_images\/pexels-amar-preciado-10288372_1.jpg"
           }
+        },
+        "images_WGeWNx": {
+          "type": "images",
+          "settings": {
+            "item_menu": "Verschiedenes & Detaildekor",
+            "img1": "shopify:\/\/shop_images\/Frame_318_1.jpg",
+            "img2": "shopify:\/\/shop_images\/Frame_319_1.jpg"
+          }
         }
       },
       "block_order": [
         "f6fbc35e-5d45-4e0b-a8a0-90094f7386a3",
         "2ec86d28-e0e3-42c0-9839-e7f4cfe2287e",
         "99c44215-c014-4dc3-83f6-0c8e163f85c8",
-        "5f3260d4-2918-4f07-9a68-1875bad6b66d"
+        "5f3260d4-2918-4f07-9a68-1875bad6b66d",
+        "images_WGeWNx"
       ],
       "settings": {
         "logo_position": "top-center",
