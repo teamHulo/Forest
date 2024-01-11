@@ -68,6 +68,14 @@
             "img1": "shopify:\/\/shop_images\/Frame_318_1.jpg",
             "img2": "shopify:\/\/shop_images\/Frame_319_1.jpg"
           }
+        },
+        "images_eGVyaL": {
+          "type": "images",
+          "settings": {
+            "item_menu": "Kinderbereich",
+            "img1": "shopify:\/\/shop_images\/Frame_318_2.jpg",
+            "img2": "shopify:\/\/shop_images\/Frame_319_2.jpg"
+          }
         }
       },
       "block_order": [
@@ -75,7 +83,8 @@
         "2ec86d28-e0e3-42c0-9839-e7f4cfe2287e",
         "99c44215-c014-4dc3-83f6-0c8e163f85c8",
         "5f3260d4-2918-4f07-9a68-1875bad6b66d",
-        "images_WGeWNx"
+        "images_WGeWNx",
+        "images_eGVyaL"
       ],
       "settings": {
         "logo_position": "top-center",
