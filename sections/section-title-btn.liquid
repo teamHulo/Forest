@@ -36,6 +36,17 @@
                 <h4>
                     {{ section.settings.title }}
                 </h4>
+                {% if  section.settings.url2 != blank or section.settings.url3 != blank%}
+                <div class="section-title-btns" style="padding:15px 0">
+                    {% if  section.settings.url2 != blank %}
+                        <a href="{{section.settings.url2}}" class="a-btn second-btn element-animation">{{section.settings.btn_name2}}</a>
+                    {% endif %}
+                    {% if  section.settings.url3 != blank %}
+                        <a href="{{section.settings.url3}}" class="a-btn element-animation">{{section.settings.btn_name3}}</a>
+                    {% endif %}
+                    
+                </div>
+            {% endif %}
                 {% if section.settings.text != blank %}
                     <p class="text element-animation">{{ section.settings.text }}</p>
                 {% endif %}
@@ -113,7 +124,32 @@
                 "type":"url",
                 "id":"url1",
                 "label":"url 2"
+            },
+            {
+                "type":"text",
+                "id":"btn_name2",
+                "label":"btn name 3",
+                "default":"Kontaktiere uns"
+            },
+            {
+                "type":"url",
+                "id":"url2",
+                "label":"url 3"
+            },
+            {
+                "type":"text",
+                "id":"btn_name3",
+                "label":"btn name 4",
+                "default":"Kontaktiere uns"
+            },
+            {
+                "type":"url",
+                "id":"url3",
+                "label":"url 4"
             }
+
+
+            
         ],
         "presets": [
             {
