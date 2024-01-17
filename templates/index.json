@@ -88,7 +88,11 @@
         "btn_name": "Kontaktiere uns",
         "url": "",
         "btn_name1": "Kontaktiere uns",
-        "url1": "shopify:\/\/pages\/contact"
+        "url1": "shopify:\/\/pages\/contact",
+        "btn_name2": "Kontaktiere uns",
+        "url2": "",
+        "btn_name3": "Kontaktiere uns",
+        "url3": ""
       }
     },
     "818cd7e3-ba22-4ed8-8531-17c41691c934": {
@@ -257,7 +261,7 @@
       "settings": {
         "color_wrap": "#f8f5f0",
         "opc": 0.9,
-        "color_text": "#6D5F52",
+        "color_text": "#6d5f52",
         "padding_top_bottom": 70,
         "img": "shopify:\/\/shop_images\/pexels-secret-garden-931177.png",
         "label": "",
@@ -302,10 +306,14 @@
         "text": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt? Dann setze dich direkt mit uns in Verbindung:",
         "max_width": 533,
         "bnt_bg": "",
-        "btn_name": "FAQs",
-        "url": "shopify:\/\/pages\/contact",
+        "btn_name": "",
+        "url": "",
         "btn_name1": "Kontaktiere uns",
-        "url1": "shopify:\/\/pages\/contact"
+        "url1": "shopify:\/\/pages\/contact",
+        "btn_name2": "FAQs",
+        "url2": "shopify:\/\/pages\/contact",
+        "btn_name3": "",
+        "url3": ""
       }
     }
   },
