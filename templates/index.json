@@ -81,8 +81,8 @@
       "type": "section-title-btn",
       "settings": {
         "bg": "#f8f5f0",
-        "title": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt? Dann setze dich direkt mit uns in Verbindung:",
-        "text": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt? Dann setze dich direkt mit uns in Verbindung:",
+        "title": "Du weisst bereits, was du möchtest und was dir zu deiner perfekten Feier noch fehlt?",
+        "text": "",
         "max_width": 620,
         "bnt_bg": "",
         "btn_name": "Kontaktiere uns",
