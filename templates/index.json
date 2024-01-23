@@ -286,9 +286,9 @@
         "a824c29c-de2d-49aa-ad40-a1e4b976949b": {
           "type": "text-btn",
           "settings": {
-            "text": "<p>Für all diese Wünsche stehen wir dir mit Rat und Tat zur Seite. Denn unsere Mission ist es, deine Träume wahr werden zu lassen. Das haben wir, wie du auch an unseren unzähligen zufriedenen Kunden und Kundinnen sehen kannst, über die Jahre perfektioniert. Lass dich von uns mit auf eine Reise nehmen und wir versprechen dir, dass wir dich verzaubern werden!<\/p><p>Du möchtest wissen, wieso wir dir dieses Versprechen geben können? <\/p>",
+            "text": "<p>Erfahre mehr über Forest Events und was die Gründerin und leidenschaftliche Mompreneur dazu bewegt hat, das geschätzte Unternehmen zu gründen.<\/p>",
             "btn_name": "Über uns",
-            "url": ""
+            "url": "shopify:\/\/pages\/about"
           }
         }
       },
