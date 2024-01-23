@@ -61,6 +61,13 @@
             "text": "<p>Die Mietdauer: Freitags ab 9:00 Uhr - Montags 11:30 Uhr. Bei zusätzlichen Tagen werden 30% der Mietkosten dazugerechnet. <br\/><br\/><\/p>"
           }
         },
+        "tab_9nhgNR": {
+          "type": "tab",
+          "settings": {
+            "title": "Wie sind die Mietkonditionen?",
+            "text": "<p>Jede Anfrage wird durch uns geprüft. Falls die Artikel verfügbar sind, senden wir dir das Angebot zum bestätigen. <br\/>Angebote können mit einer Anzahlung von 50% reserviert werden. Die Restzahlung ist bis 30 Tage vor dem Event fällig. <br\/>Die Lieferung kostet CHF 80.- + CHF 1.-\/Km. <br\/>Der Aufstellservice kostet je nach Verfügbarkeit CHF 80.- pro Stunde und wird berechnet nach effektivem Aufwand. <br\/>Die weiteren detaillierten Konditionen findest du in unseren AGB's. <\/p>"
+          }
+        },
         "9752ed96-ad9f-49e8-920c-0bbb94d46ac0": {
           "type": "tab",
           "settings": {
@@ -74,13 +81,6 @@
             "title": "Kann ich individuelle Torten bestellen?",
             "text": "<p>Selbstverständlich bieten wir dir Torten und andere süsse Leckereien nach deinen <br\/>Wünschen an. Diese werden mit viel Liebe zum Detail und nach deinen <br\/>Traumvorstellungen kreiert. Schau auf unserem <a href=\"https:\/\/www.instagram.com\/forestbakery_switzerland\/\" target=\"_blank\" title=\"Instagram Link zum Profil von Forest Bakery für Torten-Inspiration \">Instagram<\/a> Profil vorbei, um dich inspirieren zu lassen. <\/p>"
           }
-        },
-        "tab_9nhgNR": {
-          "type": "tab",
-          "settings": {
-            "title": "Wie sind die Mietkonditionen?",
-            "text": "<p>Jede Anfrage wird durch uns geprüft. Falls die Artikel verfügbar sind, senden wir dir das Angebot zum bestätigen. <br\/>Angebote können mit einer Anzahlung von 50% reserviert werden. Die Restzahlung ist bis 30 Tage vor dem Event fällig. <br\/>Die Lieferung kostet CHF 80.- + CHF 1.-\/Km. <br\/>Der Aufstellservice kostet je nach Verfügbarkeit CHF 80.- pro Stunde und wird berechnet nach effektivem Aufwand. <br\/>Die weiteren detaillierten Konditionen findest du in unseren AGB's. <\/p>"
-          }
         }
       },
       "block_order": [
@@ -89,9 +89,9 @@
         "c9d8d3fb-ddb4-40ff-83f0-9ffa7f07e29a",
         "1695060b-b69a-4083-925b-9ef2051c7ac4",
         "6b1bbf6d-17c1-4284-aa1e-117d3a476a2d",
+        "tab_9nhgNR",
         "9752ed96-ad9f-49e8-920c-0bbb94d46ac0",
-        "5f1a7e0b-6234-4d5b-af0c-4cc152c5468f",
-        "tab_9nhgNR"
+        "5f1a7e0b-6234-4d5b-af0c-4cc152c5468f"
       ],
       "settings": {
         "padding_top": 0,
