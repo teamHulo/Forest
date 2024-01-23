@@ -11,6 +11,7 @@
     "720e1ff3-4710-460d-ac46-37029d08c0c2": {
       "type": "section-breadcrumb",
       "settings": {
+        "nav": "",
         "bg": "#f8f5f0",
         "show_back": false,
         "padding_top": 36,
@@ -30,8 +31,8 @@
     "b8518fc6-933c-4550-8fd7-f819631f0cc5": {
       "type": "section-glanz",
       "settings": {
-        "title": "Verleihe deiner Veranstaltung Glanz und Eleganz",
-        "text": "<p>Unsere Dekorationen sind darauf ausgerichtet, deine Veranstaltung in ein zauberhaftes und stilvolles Erlebnis zu verwandeln. Wir bieten eine breite Palette von Dekorationsartikeln, darunter Ballonbögen, Blumenarrangements, Beleuchtung und vieles mehr.<\/p><p>Egal, ob du deinen besonderen Tag in Form einer Hochzeit, eine Geburtstagsfeier für dein Kind oder einen Junggesellenabschied planst - unsere Dekorationen schaffen eine einladende Atmosphäre und verzaubern deine Gäste. Gerne beraten wir dich bei der Auswahl der passenden Elemente, die nicht nur zu deiner Veranstaltung passen, sondern deine ganze Kreation auch stimmig wirken lassen.<\/p>",
+        "title": "Verleihe deiner Feier das gewisse Etwas!",
+        "text": "<p>Unsere Dekorationen sind darauf ausgerichtet, deine Veranstaltung in ein zauberhaftes und stilvolles Erlebnis zu verwandeln. Wir bieten eine breite Palette von Dekorationsartikeln, darunter Ballonbögen, Blumenarrangements, Beleuchtung und vieles mehr.<\/p><p>Egal, ob du deinen besonderen Tag in Form einer Hochzeit, einer Geburtstagsfeier für dein Kind oder einer Baby Shower planst - unsere Dekorationen verzaubern deine Gäste. <\/p>",
         "img1": "shopify:\/\/shop_images\/pexels-amar-preciado-10288372.jpg",
         "img2": "shopify:\/\/shop_images\/andrea-garibay-7n367ZUiHL0-unsplash_1.jpg",
         "btn_name": "Zum Dekorationskatalog",
@@ -77,7 +78,8 @@
         "img1": "shopify:\/\/shop_images\/gold-whisk-whipping-cream-2022-11-11-06-05-13-utc_1_1_ec54a5ae-1f78-44ac-a98c-00ff732ae599.jpg",
         "img2": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.13_1_90b1c920-17d7-42c4-ab02-ebde9c0054fe.jpg",
         "transform_img": 0,
-        "img3": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.16_1_5ad1b691-2ed6-4069-a98e-fb7e6c55a814.jpg"
+        "img3": "shopify:\/\/shop_images\/Screenshot_2023-11-28_at_09.16_1_5ad1b691-2ed6-4069-a98e-fb7e6c55a814.jpg",
+        "img_max_width": 324
       }
     }
   },
