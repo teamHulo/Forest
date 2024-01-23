@@ -81,6 +81,13 @@
             "title": "Kann ich individuelle Torten bestellen?",
             "text": "<p>Selbstverständlich bieten wir dir Torten und andere süsse Leckereien nach deinen <br\/>Wünschen an. Diese werden mit viel Liebe zum Detail und nach deinen <br\/>Traumvorstellungen kreiert. Schau auf unserem <a href=\"https:\/\/www.instagram.com\/forestbakery_switzerland\/\" target=\"_blank\" title=\"Instagram Link zum Profil von Forest Bakery für Torten-Inspiration \">Instagram<\/a> Profil vorbei, um dich inspirieren zu lassen. <\/p>"
           }
+        },
+        "tab_8nNazY": {
+          "type": "tab",
+          "settings": {
+            "title": "Sind in den Preisen die Mehrwertsteuern inbegriffen?",
+            "text": "<p>Die Preise auf der Seite sind exklusiv Mehrwertsteuer. Die Mehrwertsteuer wird beim Check-Out hinzugefügt. <\/p>"
+          }
         }
       },
       "block_order": [
@@ -91,7 +98,8 @@
         "6b1bbf6d-17c1-4284-aa1e-117d3a476a2d",
         "tab_9nhgNR",
         "9752ed96-ad9f-49e8-920c-0bbb94d46ac0",
-        "5f1a7e0b-6234-4d5b-af0c-4cc152c5468f"
+        "5f1a7e0b-6234-4d5b-af0c-4cc152c5468f",
+        "tab_8nNazY"
       ],
       "settings": {
         "padding_top": 0,
