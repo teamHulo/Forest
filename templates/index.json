@@ -303,8 +303,8 @@
       "type": "section-title-btn",
       "settings": {
         "bg": "#fcfbf9",
-        "title": "Hast du noch Fragen?",
-        "text": "Sieh dir unsere meistgestellten Fragen an",
+        "title": "Hast du noch Fragen? Hier findest du Antworten auf die meistgestellten Fragen:",
+        "text": "",
         "max_width": 533,
         "bnt_bg": "",
         "btn_name": "",
