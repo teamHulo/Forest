@@ -113,7 +113,7 @@ class ChildrenMenuHover  {
 
   }
   open(el) {
-    let spanElement = el.querySelector('span');
+    let spanElement = el.querySelector('.child-open');
 
     if (spanElement) {
       this.close(this.megaMenuChilds, this.megaMenuGrandChilds );

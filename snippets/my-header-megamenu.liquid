@@ -30,9 +30,13 @@
                             {% for childlink in  link.links %}
                                 <div class="link-level-2 {% if forloop.index == 1 %} active {% endif %}">
                                     {%if  childlink.links != blank  %}
-                                        <span data-title="{{childlink.title}}">
+                                      {% if childlink.url != blank%}
+                                        <a class="child-open" data-title="{{childlink.title}}" href="{{childlink.url}}">{{childlink.title}}</a>
+                                      {% else %}
+                                        <span class="child-open" data-title="{{childlink.title}}">
                                             {{childlink.title}}
                                         </span>
+                                      {% endif %}
                                     {% else %}
                                         <a href="{{childlink.url}}">{{childlink.title}}</a>
                                     {% endif %}

@@ -921,7 +921,7 @@ summary.list-menu__item{
   font-weight: 300;
   line-height: 130%; /* 26px */
   letter-spacing: 0.2px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   text-decoration: none;
 }
 .link-level-2.active span{
