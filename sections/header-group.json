@@ -80,7 +80,7 @@
         "images_FbCriC": {
           "type": "images",
           "settings": {
-            "item_menu": "",
+            "item_menu": "Alle Artikel",
             "img1": "shopify:\/\/shop_images\/Frame_318_71b30d3b-5239-4a89-bd41-9df1ccce813a.jpg",
             "img2": "shopify:\/\/shop_images\/Frame_319_517a034a-e73a-44ca-9548-e00230019965.jpg"
           }
