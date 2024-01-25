@@ -1581,7 +1581,7 @@ a.product__text {
 }
 
 .recipient-form .error-message::first-letter {
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 @media screen and (forced-colors: active) {

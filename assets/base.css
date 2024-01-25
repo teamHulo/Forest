@@ -1880,7 +1880,7 @@ input[type='checkbox'] {
 }
 
 .form-status-list .link::first-letter {
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 /* component-quantity */

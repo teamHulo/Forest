@@ -7,7 +7,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: 126.667%;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 .isolate > .rich-text p {
     font-family: acumin-pro;
@@ -217,7 +217,7 @@ details.collection-filter-item a {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 .facets-horizontal .facet-filters .select select:focus-visible {
     outline: none;
