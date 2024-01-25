@@ -76,6 +76,14 @@
             "img1": "shopify:\/\/shop_images\/Frame_318_2.jpg",
             "img2": "shopify:\/\/shop_images\/Frame_319_2.jpg"
           }
+        },
+        "images_FbCriC": {
+          "type": "images",
+          "settings": {
+            "item_menu": "",
+            "img1": "shopify:\/\/shop_images\/Frame_318_71b30d3b-5239-4a89-bd41-9df1ccce813a.jpg",
+            "img2": "shopify:\/\/shop_images\/Frame_319_517a034a-e73a-44ca-9548-e00230019965.jpg"
+          }
         }
       },
       "block_order": [
@@ -84,7 +92,8 @@
         "99c44215-c014-4dc3-83f6-0c8e163f85c8",
         "5f3260d4-2918-4f07-9a68-1875bad6b66d",
         "images_WGeWNx",
-        "images_eGVyaL"
+        "images_eGVyaL",
+        "images_FbCriC"
       ],
       "settings": {
         "logo_position": "top-center",
