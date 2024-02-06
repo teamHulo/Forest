@@ -42,7 +42,12 @@
             <div class="right">
                 <div class="right__wrap">
                     <div class="image element-animation">
-                        <img src="{{section.settings.img3 | img_url: 'master'}}" alt="">
+                        <video 
+                            muted
+                            loop
+                            autoplay
+                            src="{{section.settings.img3.sources[1].url}}"
+                        ></video>
                     </div>
                 </div>
             </div>
@@ -66,7 +71,7 @@
                 "label":"second image left"
             },
             {
-                "type":"image_picker",
+                "type":"video",
                 "id":"img3",
                 "label":"image right"
             },
