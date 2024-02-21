@@ -40,12 +40,6 @@
           "settings": {
           }
         },
-        "izyrent_product_calendar_JHzjRW": {
-          "type": "shopify:\/\/apps\/izyrent\/blocks\/productCalendar\/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
         "7619a3c7-f9b2-4b8c-9e82-bc6f676abe92": {
           "type": "text",
           "settings": {
@@ -56,6 +50,12 @@
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
+          }
+        },
+        "izyrent_product_calendar_JHzjRW": {
+          "type": "shopify:\/\/apps\/izyrent\/blocks\/productCalendar\/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
+          "settings": {
+            "product": "{{product}}"
           }
         },
         "buy_buttons": {
@@ -101,9 +101,9 @@
         "variant_picker",
         "4ed11026-50de-4318-8310-fd057b0df5ba",
         "price",
-        "izyrent_product_calendar_JHzjRW",
         "7619a3c7-f9b2-4b8c-9e82-bc6f676abe92",
         "quantity_selector",
+        "izyrent_product_calendar_JHzjRW",
         "buy_buttons",
         "share",
         "6be0b615-fb42-467a-9755-ffa8984cffba",
