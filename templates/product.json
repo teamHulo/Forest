@@ -51,7 +51,7 @@
         "richtext_QXrkVV": {
           "type": "richtext",
           "settings": {
-            "richtext": "<ul><li>Mietpreis für 4 Tage (+30% für jeden weiteren Tag)<\/li><li> Mindestbestellwert: CHF 200.-<\/li><li>Preise inkl. MWST<\/li><\/ul><p><\/p>",
+            "richtext": "<ul><li>Mietpreis für 4 Tage (+30% für jeden weiteren Tag)<\/li><li>Mindestbestellwert: CHF 200.-<\/li><li>Preise inkl. MWST<\/li><\/ul><p><\/p>",
             "text_style": "body"
           }
         },
