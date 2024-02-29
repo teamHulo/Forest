@@ -130,7 +130,18 @@
                   {{- block.settings.text -}}
                 </p>
               </div>
-              
+            
+            {%- when 'richtext' -%}
+              <div class="product-text">
+                <div
+                  style="max-width: unset;"
+                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{- block.settings.richtext -}}
+                </div>
+              </div>  
+            
             {%- when 'title' -%}
               {% assign rental = false %}
               {% for tag in product.tags %}
@@ -780,6 +791,37 @@
           "type": "inline_richtext",
           "id": "text",
           "default": "Text block",
+          "label": "t:sections.main-product.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__2.label"
+            },
+            {
+              "value": "uppercase",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__3.label"
+            }
+          ],
+          "default": "body",
+          "label": "t:sections.main-product.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "name": "richtext",
+      "settings": [
+        {
+          "type":"richtext",
+          "id": "richtext",
           "label": "t:sections.main-product.blocks.text.settings.text.label"
         },
         {
