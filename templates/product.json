@@ -42,8 +42,16 @@
         },
         "7619a3c7-f9b2-4b8c-9e82-bc6f676abe92": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Mietpreis für 4 Tage (+30% für jeden weiteren Tag)",
+            "text_style": "body"
+          }
+        },
+        "richtext_QXrkVV": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<ul><li>Mietpreis für 4 Tage (+30% für jeden weiteren Tag)<\/li><li> Mindestbestellwert: CHF 200.-<\/li><li>Preise inkl. MWST<\/li><\/ul><p><\/p>",
             "text_style": "body"
           }
         },
@@ -102,6 +110,7 @@
         "4ed11026-50de-4318-8310-fd057b0df5ba",
         "price",
         "7619a3c7-f9b2-4b8c-9e82-bc6f676abe92",
+        "richtext_QXrkVV",
         "izyrent_product_calendar_JHzjRW",
         "quantity_selector",
         "buy_buttons",
