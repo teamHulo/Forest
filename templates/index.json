@@ -139,6 +139,7 @@
         },
         "af5f902f-cbaa-49bc-938b-16b6c373caab": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "img": "shopify:\/\/shop_images\/cropped-shot-of-woman-applying-cream-onto-freshly-2022-12-16-16-32-17-utc_1_1.png",
             "title": "Workshops",
