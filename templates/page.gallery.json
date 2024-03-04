@@ -11,6 +11,8 @@
     "2366c08b-e681-45e7-b654-3a45a06d5ab4": {
       "type": "section-breadcrumb",
       "settings": {
+        "nav": "",
+        "bg": "",
         "show_back": false,
         "padding_top": 36,
         "padding_bottom": 12
@@ -22,7 +24,7 @@
         "mt": 0,
         "pt": 0,
         "pb": 0,
-        "title": "gallery",
+        "title": "Galerie",
         "aligments": "row",
         "img1": "shopify:\/\/shop_images\/wedding-table-2021-08-26-12-09-46-utc_1.png",
         "title1": "Eucalyptus of love",
