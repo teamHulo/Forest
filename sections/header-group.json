@@ -84,6 +84,12 @@
             "img1": "shopify:\/\/shop_images\/Frame_318_71b30d3b-5239-4a89-bd41-9df1ccce813a.jpg",
             "img2": "shopify:\/\/shop_images\/Frame_319_517a034a-e73a-44ca-9548-e00230019965.jpg"
           }
+        },
+        "mobile_menu_VyRbqD": {
+          "type": "mobile-menu",
+          "settings": {
+            "mobile_menu": "mobile-menu"
+          }
         }
       },
       "block_order": [
@@ -93,7 +99,8 @@
         "5f3260d4-2918-4f07-9a68-1875bad6b66d",
         "images_WGeWNx",
         "images_eGVyaL",
-        "images_FbCriC"
+        "images_FbCriC",
+        "mobile_menu_VyRbqD"
       ],
       "settings": {
         "logo_position": "top-center",
