@@ -68,6 +68,7 @@ class HeaderMenu extends DetailsDisclosure {
     this.mainDetails = this.querySelector('details');
     document.querySelector('.header__inline-menu').addEventListener('mouseleave',this.closeAll);
     this.mainDetails.addEventListener('mouseenter', this.onHeaderMouseEnter.bind(this));
+    document.querySelectorAll('a.header__menu-item').forEach(e => e.addEventListener('mouseenter', this.close.bind(this)));
   }
 
   onToggle() {

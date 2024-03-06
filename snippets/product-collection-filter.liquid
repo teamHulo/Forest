@@ -35,7 +35,7 @@
                 {% endif %}
               {% endfor %}
             {% endif %}
-          <li class="first-lvl {% if isOpen %}active{% endif %} element-animation">
+          <li class="first-lvl {% if isOpen or item.links.size > 0 %}active{% endif %} element-animation">
             <div class="link-item">
               <a href="{{ item.url }}"> {{ item.title }}</a>
               {% if  item.links != empty %}

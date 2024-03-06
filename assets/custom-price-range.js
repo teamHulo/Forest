@@ -42,8 +42,8 @@ class CPriceRange extends HTMLElement {
         this.rangeFill.style.width = maxPercentage - minPercentage + "%";
     
         // Update the displayed min and max values
-        this.minValue.innerHTML = "$" + minPrice;
-        this.maxValue.innerHTML = "$" + maxPrice;
+        this.minValue.innerHTML = "CHF" + ' ' + minPrice;
+        this.maxValue.innerHTML = "CHF" + ' ' + maxPrice;
     }
 
 }

@@ -156,15 +156,19 @@
   -%}
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
     {%- liquid
+      assign  nav = section.settings.menu
+      assign  mobile_menu = section.blocks |where: 'type', 'mobile-menu' 
+      if mobile_menu[0].settings.mobile_menu != blank
+        assign nav = mobile_menu[0].settings.mobile_menu
+      endif
       if section.settings.menu != blank
-        render 'header-drawer'
+        render 'header-drawer', menu: nav
       endif
 
       if section.settings.logo_position == 'top-center' or section.settings.menu == blank
         render 'header-search', input_id: 'Search-In-Modal-1'
       endif
     -%}
-
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
@@ -704,6 +708,19 @@
           "type":"image_picker",
           "id":"img2",
           "label":"image"
+        }
+      ]
+    },
+    {
+      "type": "mobile-menu",
+      "name": "Mobile menu",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "mobile_menu",
+          "default": "main-menu",
+          "label": "Mobile menu"
         }
       ]
     }
