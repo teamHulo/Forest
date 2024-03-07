@@ -1,5 +1,15 @@
 {
   "sections": {
+    "section_breadcrumb_HntW3j": {
+      "type": "section-breadcrumb",
+      "settings": {
+        "nav": "dev",
+        "bg": "",
+        "show_back": false,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -158,6 +168,7 @@
     }
   },
   "order": [
+    "section_breadcrumb_HntW3j",
     "main",
     "related-products",
     "8532fafa-06cd-45c1-9f26-f43a429da3c1"
