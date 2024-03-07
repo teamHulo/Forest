@@ -16,10 +16,33 @@
           <li class="breadcrumbs__item">
             {{ collection.title | link_to: collection.url }}
           </li>
+        {% else %}
+          {% if nav != blank %}
+            {% assign product_collections = product.collections | map: "handle" | join: ',' %}
+            {% for link in nav.links %}
+              {% if product_collections contains link.handle %}
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link 1" href="{{ link.url }}">{{ link.title }} <span> / </span></a>
+                </li>
+                  {% for childlink in link.links %}
+                    {% if product_collections contains childlink.handle %}
+                      <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link 2" href="{{ childlink.url }}" aria-current="page">{{ childlink.title }} <span> / </span></a>
+                      </li>
+                      {% for grandchildlink in childlink.links %}
+                        {% if product_collections contains grandchildlink.handle %}
+                          <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link 3" href="{{ grandchildlink.url }}" aria-current="page">{{ grandchildlink.title }} <span> / </span></a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                    {% endif %}
+                  {% endfor %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
         {%- endif -%}
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link {% if t == 'product' %}current-page{% endif %}" href="{{ product.url }}" aria-current="page">{{ product.title }} <span> / </span></a>
-        </li>
+
       {%- when 'collection' and collection.handle -%}
         {%- if current_tags -%}
           <li class="breadcrumbs__item">

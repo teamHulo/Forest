@@ -97,11 +97,11 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
-  <div class="breadcrumbs-body">
+  {% comment %} <div class="breadcrumbs-body">
     <div class="container">
       {% render 'breadcrumbs' %}
     </div>
-  </div>
+  </div> {% endcomment %}
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
@@ -130,7 +130,7 @@
                   {{- block.settings.text -}}
                 </p>
               </div>
-            
+
             {%- when 'richtext' -%}
               <div class="product-text">
                 <div
@@ -140,8 +140,8 @@
                 >
                   {{- block.settings.richtext -}}
                 </div>
-              </div>  
-            
+              </div>
+              
             {%- when 'title' -%}
               {% assign rental = false %}
               {% for tag in product.tags %}
@@ -784,13 +784,12 @@
       "type": "@app"
     },
     {
-      "type": "text",
-      "name": "t:sections.main-product.blocks.text.name",
+      "type": "richtext",
+      "name": "richtext",
       "settings": [
         {
-          "type": "inline_richtext",
-          "id": "text",
-          "default": "Text block",
+          "type":"richtext",
+          "id": "richtext",
           "label": "t:sections.main-product.blocks.text.settings.text.label"
         },
         {
@@ -816,12 +815,13 @@
       ]
     },
     {
-      "type": "richtext",
-      "name": "richtext",
+      "type": "text",
+      "name": "t:sections.main-product.blocks.text.name",
       "settings": [
         {
-          "type":"richtext",
-          "id": "richtext",
+          "type": "inline_richtext",
+          "id": "text",
+          "default": "Text block",
           "label": "t:sections.main-product.blocks.text.settings.text.label"
         },
         {
