@@ -30,7 +30,7 @@
                         <a class="breadcrumbs__link 2" href="{{ childlink.url }}" aria-current="page">{{ childlink.title }} <span> / </span></a>
                       </li>
                       {% for grandchildlink in childlink.links %}
-                        {% if product_collections contains grandchildlink..url  and grandchildlink.url != '/collections/all-products' %}
+                        {% if product_collections contains grandchildlink.url  and grandchildlink.url != '/collections/all-products' %}
                           <li class="breadcrumbs__item">
                             <a class="breadcrumbs__link 3" href="{{ grandchildlink.url }}" aria-current="page">{{ grandchildlink.title }} <span> / </span></a>
                           </li>
