@@ -2573,6 +2573,11 @@ product-info .loading__spinner:not(.hidden) ~ *,
   position: relative;
   margin-right: -1.2rem;
 }
+@media(max-width: 990px) {
+  .header__icon--cart span {
+    display: none;
+  }
+}
 
 .header__icon--menu[aria-expanded='true']::before {
   content: '';
