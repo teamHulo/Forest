@@ -1,11 +1,24 @@
 
+<style>
+  .megamenu-levels {
+    padding: 0;
+    gap: 20px;
+  }
+  .menu-level2 {
+    flex: 7;
+    column-count: 2;
+  }
+  .links-image {
+    flex: 3;
+  }
+</style>
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
-            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu" open>
               <summary
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
@@ -30,7 +43,6 @@
                         <div class="menu-level2">
                             {% for childlink in  link.links %}
                                 <div class="link-level-2 {% if forloop.index == 1 %} active {% endif %}">
-                                    {%if  childlink.links != blank  %}
                                       {% if childlink.url != blank%}
                                         <a class="child-open" data-title="{{childlink.title}}" href="{{childlink.url}}">{{childlink.title}}</a>
                                       {% else %}
@@ -38,54 +50,34 @@
                                             {{childlink.title}}
                                         </span>
                                       {% endif %}
-                                    {% else %}
-                                        <a href="{{childlink.url}}">{{childlink.title}}</a>
-                                    {% endif %}
+             
                                 </div>
                             {% endfor %}
                         </div>
-                        <div class="menu-level3">
-                            {% for childlink in  link.links %}
-                                {%- if childlink.links != blank -%}
-                                    <div class="links-items {% if forloop.index == 1 %} active {% endif %}" data-item="{{childlink.title}}">
-                                        <div class="links-items-content">
-                                            <div class="labael-menu-3 overline">
-                                                <p>
-                                                    {{childlink.title}}
-                                                </p>
-                                            </div>
-                                            {%- for grandchildlink in childlink.links -%}
-                                                <div class="link-level-3">
-                                                    <a href="{{grandchildlink.url}}">{{grandchildlink.title}}</a>
-                                                </div>
-                                            {% endfor %}
-                                        </div>
-                                        {% assign array = blocks | map : 'settings' | where: 'item_menu',childlink.title  %}
-                                            
-                                                {% if array != blank %}
-                                                    <div class="megamenu-images">
-                                                            <div class="image">
-                                                                <div class="image__wrap">
-                                                                    <img src="{{ array[0].img1 | img_url:'master'}}" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="image">
-                                                                <div class="image__wrap">
-                                                                    <img src="{{ array[0].img2 | img_url:'master'}}" alt="">
-                                                                </div>
-                                                            </div>
-                                                    </div>
-                                                {% endif %}
-                                        
-                                    </div>
-                                    
-                                {% endif %}
-                            {% endfor %}
-                        </div>
+
+                        <div class="links-image">
+                        {% for childlink in  link.links %}
+                        {% assign array = blocks | map : 'settings' | where: 'item_menu', childlink.title  %}         
+                        {% if array != blank %}
+                          <div class="links-items {% if forloop.index == 1 %} active {% endif %}" data-item="{{ childlink.title }}">
+                            <div class="megamenu-images">
+                              <div class="image">
+                                <div class="image__wrap">
+                                  <img src="{{ array[0].img1 | img_url:'master'}}" alt="">
+                                </div>
+                              </div>
+                              <div class="image">
+                                <div class="image__wrap">
+                                  <img src="{{ array[0].img2 | img_url:'master'}}" alt="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                      </div>
                     </div>
-                    
                   </div>
-               
               </div>
             </details>
           </header-menu>

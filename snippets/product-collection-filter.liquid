@@ -45,13 +45,15 @@
                 </svg>
               {% endif %}
             </div>
-            <ul class="links-second-lvl">
-              {% for sub_item in item.links %}
-                <li>
-                  <a href="{{ sub_item.url }}">{{ sub_item.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
+            {% if item.links.size > 0 %}
+              <ul class="links-second-lvl">
+                {% for sub_item in item.links %}
+                  <li>
+                    <a href="{{ sub_item.url }}">{{ sub_item.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
           </li>
         {% endfor %}
       </ul>

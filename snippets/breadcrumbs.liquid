@@ -18,19 +18,19 @@
           </li>
         {% else %}
           {% if nav != blank %}
-            {% assign product_collections = product.collections | map: "handle" | join: ',' %}
+            {% assign product_collections = product.collections | map: "url" | join: ',' %}
             {% for link in nav.links %}
-              {% if product_collections contains link.handle %}
+              {% if product_collections contains link.url and link.url != '/collections/all-products' %}
                 <li class="breadcrumbs__item">
                   <a class="breadcrumbs__link 1" href="{{ link.url }}">{{ link.title }} <span> / </span></a>
                 </li>
                   {% for childlink in link.links %}
-                    {% if product_collections contains childlink.handle %}
+                    {% if product_collections contains childlink.url  and childlink.url != '/collections/all-products' %}
                       <li class="breadcrumbs__item">
                         <a class="breadcrumbs__link 2" href="{{ childlink.url }}" aria-current="page">{{ childlink.title }} <span> / </span></a>
                       </li>
                       {% for grandchildlink in childlink.links %}
-                        {% if product_collections contains grandchildlink.handle %}
+                        {% if product_collections contains grandchildlink..url  and grandchildlink.url != '/collections/all-products' %}
                           <li class="breadcrumbs__item">
                             <a class="breadcrumbs__link 3" href="{{ grandchildlink.url }}" aria-current="page">{{ grandchildlink.title }} <span> / </span></a>
                           </li>
