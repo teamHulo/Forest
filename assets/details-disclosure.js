@@ -107,7 +107,7 @@ class ChildrenMenuHover  {
   constructor() {
     this.header = document.querySelector('header');
     this.megaMenuChilds =  this.header.querySelectorAll('.link-level-2');
-    this.megaMenuGrandChilds =  this.header.querySelectorAll('.menu-level3 .links-items[data-item]');
+    this.megaMenuGrandChilds =  this.header.querySelectorAll('.links-items[data-item]');
     this.megaMenuChilds.forEach((el)=>{
       el.addEventListener('mouseenter', this.open.bind(this, el));
     })
