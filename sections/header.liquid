@@ -180,8 +180,12 @@
                 {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
                 {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
                 {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+                {% assign hasMobLogo = 'header__heading-logo motion-reduce' %}
+                {% if settings.mobile_logo != blank %}
+                  {% assign hasMobLogo = 'header__heading-logo motion-reduce has-mobile-logo' %}
+                {% endif %}
                 {{ settings.logo | image_url: width: 600 | image_tag:
-                  class: 'header__heading-logo motion-reduce',
+                  class: hasMobLogo,
                   widths: widths,
                   height: logo_height,
                   width: settings.logo_width,
@@ -189,6 +193,17 @@
                   sizes: sizes,
                   preload: true
                 }}
+                {% if settings.mobile_logo != blank %}    
+                  {{ settings.mobile_logo | image_url: width: 600 | image_tag:
+                    class: 'header__heading-logo motion-reduce mobile-logo',
+                    widths: widths,
+                    height: logo_height,
+                    width: settings.logo_width,
+                    alt: logo_alt,
+                    sizes: sizes,
+                    preload: true
+                  }}
+                {% endif %}
               </div>
             {%- else -%}
               <span class="h2">{{ shop.name }}</span>
