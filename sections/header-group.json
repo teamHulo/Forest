@@ -104,7 +104,7 @@
       ],
       "settings": {
         "logo_position": "top-center",
-        "menu": "main",
+        "menu": "main-dev",
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
