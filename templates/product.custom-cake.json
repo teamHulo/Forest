@@ -1,0 +1,183 @@
+{
+  "sections": {
+    "section_breadcrumb_HntW3j": {
+      "type": "section-breadcrumb",
+      "settings": {
+        "nav": "collections-dev",
+        "bg": "",
+        "show_back": false,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "4ed11026-50de-4318-8310-fd057b0df5ba": {
+          "type": "custom_variant",
+          "disabled": true,
+          "settings": {
+            "list": [
+              "chiavari-chair",
+              "copy-of-chiavari-chair",
+              "copy-of-copy-of-chiavari-chair"
+            ]
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "7619a3c7-f9b2-4b8c-9e82-bc6f676abe92": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Mietpreis für 4 Tage (+30% für jeden weiteren Tag)",
+            "text_style": "body"
+          }
+        },
+        "richtext_QXrkVV": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<ul><li>Mietpreis für 4 Tage (+30% für jeden weiteren Tag)<\/li><li>Mindestbestellwert: CHF 200.-<\/li><li>Preise inkl. MWST<\/li><\/ul><p><\/p>",
+            "text_style": "body"
+          }
+        },
+        "izyrent_product_calendar_JHzjRW": {
+          "type": "shopify:\/\/apps\/izyrent\/blocks\/productCalendar\/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "6be0b615-fb42-467a-9755-ffa8984cffba": {
+          "type": "tab",
+          "settings": {
+            "title": "Details",
+            "text": ""
+          }
+        },
+        "10a7b13a-ae4a-4b39-a9cf-aec0da8fb9f6": {
+          "type": "tab",
+          "settings": {
+            "title": "Mietkonditionen",
+            "text": "<p><strong>Mietdauer<\/strong>: Freitags ab 9:00 - Monatgs 11:30<br\/>Bei zusätzlichen Tagen werden 30% der Mietkosten dazugerechnet. <br\/><br\/><strong>Aufstellservice<\/strong>: (nach Verfügbarkeit CHF 80.-\/h berechnet nach effektivem Aufwand) <br\/><br\/><strong>Deine Anfrage wird durch Forest Events geprüft.<br\/>Falls die Artikel verfügbar sind, senden wir dir das Angebot per E-Mail zum Bestätigen und zur Bezahlung.<\/strong><br\/><br\/>Angebote können mit einer Anzahlung von 50% reserviert werden. <br\/><br\/>Die Restzahlung ist bis 30 Tage vor dem Event fällig. <br\/><br\/>Reservationen können bis 6 Monate vor dem Event gegen eine Gebühr von Fr. 150.- storniert werden.<br\/><br\/>Liegt der Stornierungszeitpunkt innerhalb der 6 Monate behalten wir uns das Recht vor, die bereits getätigte Anzahlung von 50% der Gesamtsumme einzubehalten.  Der Betrag ist jedoch niemals kleiner als die zum Zeitpunkt tatsächlich entstandenen Kosten.<br\/> <br\/>Bitte beachten Sie, dass Anfragen\/offene Gespräche nicht als reservierte Artikel gelten.<br\/><br\/><strong>Unsere Reservationen sind nur nach Anzahlung fixiert.<\/strong><br\/> <br\/>Reservationen unter 200.- sind auf Vorauskasse<\/p>"
+          }
+        },
+        "2515e14c-3496-45d5-b216-0476026c7473": {
+          "type": "tab",
+          "settings": {
+            "title": "Lieferung und Rückgabe",
+            "text": "<p>Genaue Details erfolgen bei der offiziellen Reservierung, welche nach der Anzahlung aktiv ist.<strong><br\/><br\/>Sebstabholung ab 30 Stühle<\/strong>: CHF 40.-<br\/><br\/><strong>Lieferung<\/strong>: CHF 80.- zuzüglich CHF 1.- pro gefahrener Kilometer<br\/><br\/><strong>Rückgabe: <\/strong>Die Gegenstände müssen gereinigt, trocken, rückstandslos und schadlos zum vereinbarten Zeitpunkt zurückgebracht werden.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "rating",
+        "variant_picker",
+        "4ed11026-50de-4318-8310-fd057b0df5ba",
+        "price",
+        "7619a3c7-f9b2-4b8c-9e82-bc6f676abe92",
+        "richtext_QXrkVV",
+        "izyrent_product_calendar_JHzjRW",
+        "quantity_selector",
+        "buy_buttons",
+        "share",
+        "6be0b615-fb42-467a-9755-ffa8984cffba",
+        "10a7b13a-ae4a-4b39-a9cf-aec0da8fb9f6",
+        "2515e14c-3496-45d5-b216-0476026c7473"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "1711994462677ebc02": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Das könnte dir auch gefallen",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "8532fafa-06cd-45c1-9f26-f43a429da3c1": {
+      "type": "section-contact",
+      "settings": {
+        "img1": "shopify:\/\/shop_images\/Weddings_-_Holly_Clark_Photography_3e8565c8-96ee-44a4-9646-437687af42d8.png",
+        "img2": "shopify:\/\/shop_images\/Monochromatic_Wedding_Florals_A_Wild_Vine_94a775bc-008d-4a2e-b850-e4f263284e5a.png",
+        "title": "Kontaktiere uns",
+        "text": "<p>Bei Fragen melde dich gerne bei uns unter:<\/p>",
+        "phone": "Telefon",
+        "phone_name": "+41 76 710 24 13",
+        "email": "E-Mail",
+        "email_name": "info@forest-events.ch"
+      }
+    }
+  },
+  "order": [
+    "section_breadcrumb_HntW3j",
+    "main",
+    "1711994462677ebc02",
+    "related-products",
+    "8532fafa-06cd-45c1-9f26-f43a429da3c1"
+  ]
+}
