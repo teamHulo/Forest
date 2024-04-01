@@ -71,6 +71,11 @@
             "product": "{{product}}"
           }
         },
+        "easyflow_product_options_app_block_CVGMUx": {
+          "type": "shopify:\/\/apps\/easyflow-product-options\/blocks\/app-block\/83d04f43-e63e-4a8d-82b9-e4f0b41ef22f",
+          "settings": {
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -122,6 +127,7 @@
         "7619a3c7-f9b2-4b8c-9e82-bc6f676abe92",
         "richtext_QXrkVV",
         "izyrent_product_calendar_JHzjRW",
+        "easyflow_product_options_app_block_CVGMUx",
         "quantity_selector",
         "buy_buttons",
         "share",
