@@ -80,7 +80,7 @@
           "type": "column",
           "settings": {
             "title": "Einstöckig & Mehrstöckige Torten",
-            "text": "<p>- Torten beginnen bei 150.- (10-12 Personen, 15cm x 11cm)<br\/>&lt;br&gt;<\/p><p>- Verzierungen wie Fondant,  verschiedene Farben, Metallic-Akzente, strukturierte Oberflächen, Paspelierungen, Schablonen, frische oder<br\/><\/p><p>- Zuckerblumen usw. werden zusätzlich je nach Aufwand verrechnet. Zuckerfiguren: Je nach Aufwand + Design zwischen 40-100 CHF pro Stk.<\/p>",
+            "text": "<p>• <strong>Mindestpreis<\/strong>: Torten beginnen bei 150.- (10-12 Personen, 15cm x 11cm)<br\/><br\/>• <strong>Verzierungen <\/strong>wie Fondant,  verschiedene Farben, Metallic-Akzente, strukturierte Oberflächen, Paspelierungen, Schablonen, frische oder Zuckerblumen usw. werden zusätzlich je nach Aufwand verrechnet. <br\/><br\/>• <strong>Zuckerfiguren<\/strong>: Je nach Aufwand + Design zwischen 40-100 CHF pro Stk.<br\/><br\/>Die Preise sind individuell und richten sich nach dem Zeitaufwand und den Details, die mit der Herstellung deines essbaren Schaustücks verbunden sind.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -88,26 +88,44 @@
         "column_VnYCRE": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus asd<\/p>",
+            "title": "Cupcakes",
+            "text": "<p>• <strong>Mindestbestellung<\/strong>: 12 Stück (1 Geschmackssorte), <br\/><br\/>• <strong>Cupcakes mit Füllung<\/strong>: ab CHF 6.- pro Stück<br\/><br\/>Die Startpreise gelten für Cupcakes mit natürlicher Buttercreme in Standard-Cupcake-Förmchen und simplem Design. Die Kosten für zusätzliche Verzierungen variieren.<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_zpH9HA": {
+        "column_fxE7eC": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Geschmackssorten",
+            "text": "<p>• <strong>Bourbon Vanille Bisquit<\/strong> mit Himbeercreme und Himbeer Coulis Füllung<br\/><\/p><p>• <strong>Valrhona Schokoladen Bisquit<\/strong> mit Schokoladencreme und Meringue Crunch<\/p><p>• <strong>Valrhona Schokoladen Bisquit<\/strong> mit Bourbon Vanille Creme und Himbeer Coulis<\/p><p>• <strong>Vanille Bisquit <\/strong>mit Mocca Creme und Meringue Crunch<\/p><p>• <strong>Vanille Bisquit <\/strong>mit Bourbon Vanille Creme und Himbeer Coulis<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_Ff6XbE": {
+        "column_ckjLFF": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Abholung \/ Lieferung",
+            "text": "<p>• Von <strong>Freitag bis Sonntag<\/strong> (bis 10:00 vormittags) bieten wir Abholungen auf genauen Termin an. Bitte erscheine pünktlich da wir oft wegen Auslieferungsterminen unsere Backstube wieder verlassen müssen.<br\/><br\/>• Wünscht du eine Abholung flexibel, ab Wunschzeit oder nach 10:00Uhr? -&gt; Hole deine Torte (transportbereit, verpackt in einer Box) in unserem Selbstabholungsraum Kühlschrank ab.<br\/><br\/><strong>Second Life Betenwilerstr. 5 9325 Roggwil<br\/><br\/>Lieferung:<br\/><\/strong>• Wir machen Lieferungen von Torten auf Anfrage & Verfügbarkeit.<br\/>• Preis variiert nach Ort (ab 50CHF)<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KkfdQM": {
+          "type": "column",
+          "settings": {
+            "title": "Reservierungen",
+            "text": "<p>Eine <strong>Anzahlung <\/strong>von 50 % ist erforderlich, um die Bestellung zu sichern. (Torten unter 200 sind auf Vorkasse) <br\/><br\/>Der <strong>Restbetrag <\/strong>ist bis 2 Wochen vor dem Veranstaltungsdatum fällig. <br\/><br\/><strong>Bitte beachte das Anfragen\/offene Gespräche nicht als Vor-Reservierung gelten.<\/strong><br\/><br\/><strong>Achtung<\/strong>: Anzahlungen für Reservationen sind innerhalb 1 Tagen fällig, nach dieser Zeit werden Daten für andere Kunden wieder verfügbar und müssen nochmals angefragt und durch uns bestätigt werden.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rMVYcf": {
+          "type": "column",
+          "settings": {
+            "title": "Kostenregelung bei Stornierung",
+            "text": "<p>Bis <strong>30 Tage <\/strong>vor dem Event: 50% der Kosten bleiben geschuldet (aber keinesfalls weniger als die zum Zeitpunkt bereits entstandenen Kosten.<br\/><br\/>Bis <strong>14 Tage<\/strong> vor dem Event: voller Betrag bleibt geschuldet<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -116,24 +134,26 @@
       "block_order": [
         "column_aWiFTP",
         "column_VnYCRE",
-        "column_zpH9HA",
-        "column_Ff6XbE"
+        "column_fxE7eC",
+        "column_ckjLFF",
+        "column_KkfdQM",
+        "column_rMVYcf"
       ],
       "settings": {
         "title": "Torteninformationen",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
+        "button_label": "Torteninformationen PDF herunterladen",
+        "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0572\/9442\/2095\/files\/torteninformationen.jpg?v=1711987669",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 40
       }
     }
   },
