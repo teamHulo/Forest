@@ -103,20 +103,20 @@
             "link": ""
           }
         },
-        "column_ckjLFF": {
-          "type": "column",
-          "settings": {
-            "title": "Abholung \/ Lieferung",
-            "text": "<p>• Von <strong>Freitag bis Sonntag<\/strong> (bis 10:00 vormittags) bieten wir Abholungen auf genauen Termin an. Bitte erscheine pünktlich da wir oft wegen Auslieferungsterminen unsere Backstube wieder verlassen müssen.<br\/><br\/>• Wünscht du eine Abholung flexibel, ab Wunschzeit oder nach 10:00Uhr? -&gt; Hole deine Torte (transportbereit, verpackt in einer Box) in unserem Selbstabholungsraum Kühlschrank ab.<br\/><br\/><strong>Second Life Betenwilerstr. 5 9325 Roggwil<br\/><br\/>Lieferung:<br\/><\/strong>• Wir machen Lieferungen von Torten auf Anfrage & Verfügbarkeit.<br\/>• Preis variiert nach Ort (ab 50CHF)<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_KkfdQM": {
           "type": "column",
           "settings": {
             "title": "Reservierungen",
             "text": "<p>Eine <strong>Anzahlung <\/strong>von 50 % ist erforderlich, um die Bestellung zu sichern. (Torten unter 200 sind auf Vorkasse) <br\/><br\/>Der <strong>Restbetrag <\/strong>ist bis 2 Wochen vor dem Veranstaltungsdatum fällig. <br\/><br\/><strong>Bitte beachte das Anfragen\/offene Gespräche nicht als Vor-Reservierung gelten.<\/strong><br\/><br\/><strong>Achtung<\/strong>: Anzahlungen für Reservationen sind innerhalb 1 Tagen fällig, nach dieser Zeit werden Daten für andere Kunden wieder verfügbar und müssen nochmals angefragt und durch uns bestätigt werden.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ckjLFF": {
+          "type": "column",
+          "settings": {
+            "title": "Abholung \/ Lieferung",
+            "text": "<p>• Von <strong>Freitag bis Sonntag<\/strong> (bis 10:00 vormittags) bieten wir Abholungen auf genauen Termin an. Bitte erscheine pünktlich da wir oft wegen Auslieferungsterminen unsere Backstube wieder verlassen müssen.<br\/><br\/>• Wünscht du eine Abholung flexibel, ab Wunschzeit oder nach 10:00Uhr? -&gt; Hole deine Torte (transportbereit, verpackt in einer Box) in unserem Selbstabholungsraum Kühlschrank ab.<br\/><br\/><strong>Second Life Betenwilerstr. 5 9325 Roggwil<br\/><br\/>Lieferung:<br\/><\/strong>• Wir machen Lieferungen von Torten auf Anfrage & Verfügbarkeit.<br\/>• Preis variiert nach Ort (ab 50CHF)<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -135,8 +135,8 @@
         "column_aWiFTP",
         "column_VnYCRE",
         "column_fxE7eC",
-        "column_ckjLFF",
         "column_KkfdQM",
+        "column_ckjLFF",
         "column_rMVYcf"
       ],
       "settings": {
