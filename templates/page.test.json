@@ -76,7 +76,17 @@
             "product4": "blumengirlande-luxe",
             "top5": 0,
             "left5": 0,
-            "product5": ""
+            "product5": "",
+            "mobile_top1": 0,
+            "mobile_left1": 0,
+            "mobile_top2": 0,
+            "mobile_left2": 0,
+            "mobile_top3": 0,
+            "mobile_left3": 0,
+            "mobile_top4": 0,
+            "mobile_left4": 0,
+            "mobile_top5": 0,
+            "mobile_left5": 0
           }
         },
         "97f2e630-de28-442b-a29d-5cf3894b3a45": {
@@ -97,7 +107,17 @@
             "product4": "",
             "top5": 0,
             "left5": 0,
-            "product5": ""
+            "product5": "",
+            "mobile_top1": 0,
+            "mobile_left1": 0,
+            "mobile_top2": 0,
+            "mobile_left2": 0,
+            "mobile_top3": 0,
+            "mobile_left3": 0,
+            "mobile_top4": 0,
+            "mobile_left4": 0,
+            "mobile_top5": 0,
+            "mobile_left5": 0
           }
         }
       },
