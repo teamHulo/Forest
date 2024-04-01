@@ -73,35 +73,67 @@
         "padding_bottom": 60
       }
     },
-    "section_card_image_text_JkhLgN": {
-      "type": "section-card-image-text",
+    "multicolumn_W8XkPh": {
+      "type": "multicolumn",
       "blocks": {
-        "card_MjRGKh": {
-          "type": "card",
+        "column_aWiFTP": {
+          "type": "column",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_7971.jpg",
-            "title": "Und wie feiert man diese am besten?",
-            "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p>",
-            "max_width": 600
+            "title": "Einstöckig & Mehrstöckige Torten",
+            "text": "<p>- Torten beginnen bei 150.- (10-12 Personen, 15cm x 11cm)<br\/>&lt;br&gt;<\/p><p>- Verzierungen wie Fondant,  verschiedene Farben, Metallic-Akzente, strukturierte Oberflächen, Paspelierungen, Schablonen, frische oder<br\/><\/p><p>- Zuckerblumen usw. werden zusätzlich je nach Aufwand verrechnet. Zuckerfiguren: Je nach Aufwand + Design zwischen 40-100 CHF pro Stk.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "card_kAhgx9": {
-          "type": "card",
+        "column_VnYCRE": {
+          "type": "column",
           "settings": {
-            "title": "Und wie feiert man diese am besten?",
-            "text": "<p>Mit den Menschen, die einem am wichtigsten sind. Diese besonderen Tage werden nicht nur von den Menschen geprägt, mit welchen wir sie verbringen. Nein, wir machen uns bereits lange Zeit zuvor ganz genaue Gedanken darüber, womit wir diesen Tag füllen, damit dieser zu einer perfekten Feier für alle wird. Lass uns deine Feier mit erschwinglichem Luxus zum perfekten Tag machen!<\/p>",
-            "max_width": 600
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus asd<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zpH9HA": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Ff6XbE": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "card_MjRGKh",
-        "card_kAhgx9"
+        "column_aWiFTP",
+        "column_VnYCRE",
+        "column_zpH9HA",
+        "column_Ff6XbE"
       ],
       "settings": {
+        "title": "Torteninformationen",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36,
-        "bg": "#f8f5f0"
+        "padding_bottom": 36
       }
     }
   },
@@ -110,6 +142,6 @@
     "banner",
     "dbd7eed4-a912-48f1-ba7f-d1e74131eac2",
     "product-grid",
-    "section_card_image_text_JkhLgN"
+    "multicolumn_W8XkPh"
   ]
 }
