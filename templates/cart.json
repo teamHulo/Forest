@@ -20,11 +20,20 @@
           "type": "buttons",
           "settings": {
           }
+        },
+        "product_options_customizer_cart_page_customizer_cW6GyH": {
+          "type": "shopify:\/\/apps\/product-options-customizer\/blocks\/cart-page-customizer\/6857ca6c-35eb-4b6f-9d58-a039f31d9406",
+          "settings": {
+            "heading": "Product Customizer - Cart Page",
+            "pc_cart_advanced_custom_css": "",
+            "pc_cart_advanced_custom_js": ""
+          }
         }
       },
       "block_order": [
         "subtotal",
-        "buttons"
+        "buttons",
+        "product_options_customizer_cart_page_customizer_cW6GyH"
       ],
       "settings": {
         "color_scheme": "background-1",
