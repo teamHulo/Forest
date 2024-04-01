@@ -145,6 +145,22 @@
         "padding_bottom": 60
       }
     },
+    "1711994462677ebc02": {
+      "type": "apps",
+      "blocks": {
+        "easyflow_product_options_app_block_hRCdpz": {
+          "type": "shopify:\/\/apps\/easyflow-product-options\/blocks\/app-block\/83d04f43-e63e-4a8d-82b9-e4f0b41ef22f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "easyflow_product_options_app_block_hRCdpz"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -165,29 +181,13 @@
         "email": "E-Mail",
         "email_name": "info@forest-events.ch"
       }
-    },
-    "1711994462677ebc02": {
-      "type": "apps",
-      "blocks": {
-        "easyflow_product_options_app_block_hRCdpz": {
-          "type": "shopify:\/\/apps\/easyflow-product-options\/blocks\/app-block\/83d04f43-e63e-4a8d-82b9-e4f0b41ef22f",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "easyflow_product_options_app_block_hRCdpz"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "section_breadcrumb_HntW3j",
     "main",
+    "1711994462677ebc02",
     "related-products",
-    "8532fafa-06cd-45c1-9f26-f43a429da3c1",
-    "1711994462677ebc02"
+    "8532fafa-06cd-45c1-9f26-f43a429da3c1"
   ]
 }
