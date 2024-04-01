@@ -31,7 +31,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "dropdown"
           }
         },
         "4ed11026-50de-4318-8310-fd057b0df5ba": {
@@ -78,7 +78,7 @@
             "pc_basic_label_font_size": 14,
             "pc_basic_label_bolden": "unset",
             "pc_basic_label_space_above": 0,
-            "pc_basic_option_background_color": "#FFFFFF",
+            "pc_basic_option_background_color": "#ffffff",
             "pc_basic_option_text_color": "#000000",
             "pc_basic_option_border_color": "#000000",
             "pc_basic_option_border_style": "solid",
