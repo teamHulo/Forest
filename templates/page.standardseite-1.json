@@ -1,0 +1,115 @@
+{
+  "sections": {
+    "f5cf29cf-32b2-4521-a27a-9d8f87cc9c84": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2974ad4a3d8f8089c0332e127ee1f465.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "2562b313-56ee-4fcc-b0fd-a28cdaf46732": {
+      "type": "section-faq-tabs",
+      "blocks": {
+        "572de9bb-c2d7-4790-b610-9bd30cca53e1": {
+          "type": "tab",
+          "settings": {
+            "title": "Welche Veranstaltungen kann ich zusammen mit Forest Events ausrichten?",
+            "text": "<p>Wir bieten dir Dekorations- und Möbelvermietung, aber auch konditorische <br\/>Köstlichkeiten für allerlei Veranstaltungen, darunter Hochzeiten, Partys, <br\/>Geschäftsevents, Geburtstage, Verlobungen und mehr.<\/p>"
+          }
+        },
+        "8fce6e46-452c-4cae-87d3-2205d3e3b195": {
+          "type": "tab",
+          "settings": {
+            "title": "Wie kann ich bei Forest Events bestellen?",
+            "text": "<p>Du kannst deine Bestellung einfach online über unsere Website tätigen. Solltest du <br\/>noch Rückfragen oder spezielle Anfragen haben, kannst du uns natürlich auch gerne<br\/>telefonisch kontaktieren. Wir unterstützen dich gerne im gesamten Prozess!<\/p>"
+          }
+        },
+        "c9d8d3fb-ddb4-40ff-83f0-9ffa7f07e29a": {
+          "type": "tab",
+          "settings": {
+            "title": "Kann ich Muster oder Beispiele der Dekorationen sehen?",
+            "text": "<p>Ja, du kannst dir bereits hier in unserer <a href=\"https:\/\/forest-events.ch\/pages\/gallery\" title=\"Galerie für Event-Inspirationen\">Galerie<\/a> ein paar Inspirationen holen. Ansonsten schau gerne mal bei unserem Profil auf <a href=\"https:\/\/www.instagram.com\/forestevents_miete\/\" target=\"_blank\" title=\"Link zum Instagram Profil von Forest Events\">Instagram<\/a> vorbei. <\/p>"
+          }
+        },
+        "1695060b-b69a-4083-925b-9ef2051c7ac4": {
+          "type": "tab",
+          "settings": {
+            "title": "Wie funktioniert die Mietabwicklung?",
+            "text": "<p>Mietartikel sind nur nach Eingang einer Anzahlung\/Vorauszahlung und Bestätigung durch uns für ein bestimmtes Datum garantiert. <br\/>Die Abholung erfolgt im Abholungsraum in Roggwil. Je nach gewählter Option ist auch eine Lieferung möglich. <br\/>Nach dem Gebrauch sind alle Artikel gereinigt und verpackt im Abholungsraum abzugeben bzw. abholbereit. <br\/><\/p>"
+          }
+        },
+        "6b1bbf6d-17c1-4284-aa1e-117d3a476a2d": {
+          "type": "tab",
+          "settings": {
+            "title": "Gibt es eine Mindestmietdauer?",
+            "text": "<p>Die Mietdauer: Freitags ab 9:00 Uhr - Montags 11:30 Uhr. Bei zusätzlichen Tagen werden 30% der Mietkosten dazugerechnet. <br\/><br\/><\/p>"
+          }
+        },
+        "tab_9nhgNR": {
+          "type": "tab",
+          "settings": {
+            "title": "Wie sind die Mietkonditionen?",
+            "text": "<p>Jede Anfrage wird durch uns geprüft. Falls die Artikel verfügbar sind, senden wir dir das Angebot zum bestätigen. <br\/>Angebote können mit einer Anzahlung von 50% reserviert werden. Die Restzahlung ist bis 30 Tage vor dem Event fällig. <br\/>Die Lieferung kostet CHF 80.- + CHF 1.-\/Km. <br\/>Der Aufstellservice kostet je nach Verfügbarkeit CHF 80.- pro Stunde und wird berechnet nach effektivem Aufwand. <br\/>Die weiteren detaillierten Konditionen findest du in unseren AGB's. <\/p>"
+          }
+        },
+        "9752ed96-ad9f-49e8-920c-0bbb94d46ac0": {
+          "type": "tab",
+          "settings": {
+            "title": "Werden die vermieteten Objekte geliefert und wieder abgeholt?",
+            "text": "<p>Ja, wir bieten Lieferungen und Abholungen der gemieteten Artikel an. Die Gebühren <br\/>und Bedingungen variieren je nach Standort und Umfang der Dienstleistungen. <br\/>Sprich uns gerne direkt an und wir sprechen über deine individuellen Bedürfnisse!<\/p>"
+          }
+        },
+        "5f1a7e0b-6234-4d5b-af0c-4cc152c5468f": {
+          "type": "tab",
+          "settings": {
+            "title": "Kann ich individuelle Torten bestellen?",
+            "text": "<p>Selbstverständlich bieten wir dir Torten und andere süsse Leckereien nach deinen <br\/>Wünschen an. Diese werden mit viel Liebe zum Detail und nach deinen <br\/>Traumvorstellungen kreiert. Schau auf unserem <a href=\"https:\/\/www.instagram.com\/forestbakery_switzerland\/\" target=\"_blank\" title=\"Instagram Link zum Profil von Forest Bakery für Torten-Inspiration \">Instagram<\/a> Profil vorbei, um dich inspirieren zu lassen. <\/p>"
+          }
+        },
+        "tab_8nNazY": {
+          "type": "tab",
+          "settings": {
+            "title": "Sind in den Preisen die Mehrwertsteuern inbegriffen?",
+            "text": "<p>Die Preise auf der Seite sind exklusiv Mehrwertsteuer. Die Mehrwertsteuer wird beim Check-Out hinzugefügt. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "572de9bb-c2d7-4790-b610-9bd30cca53e1",
+        "8fce6e46-452c-4cae-87d3-2205d3e3b195",
+        "c9d8d3fb-ddb4-40ff-83f0-9ffa7f07e29a",
+        "1695060b-b69a-4083-925b-9ef2051c7ac4",
+        "6b1bbf6d-17c1-4284-aa1e-117d3a476a2d",
+        "tab_9nhgNR",
+        "9752ed96-ad9f-49e8-920c-0bbb94d46ac0",
+        "5f1a7e0b-6234-4d5b-af0c-4cc152c5468f",
+        "tab_8nNazY"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "f5cf29cf-32b2-4521-a27a-9d8f87cc9c84",
+    "main",
+    "2562b313-56ee-4fcc-b0fd-a28cdaf46732"
+  ]
+}
