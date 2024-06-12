@@ -2,6 +2,7 @@
   "sections": {
     "f5cf29cf-32b2-4521-a27a-9d8f87cc9c84": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/2974ad4a3d8f8089c0332e127ee1f465.jpg",
         "image_overlay_opacity": 0,
@@ -101,6 +102,7 @@
         "5f1a7e0b-6234-4d5b-af0c-4cc152c5468f",
         "tab_8nNazY"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 0,
         "padding_bottom": 80
