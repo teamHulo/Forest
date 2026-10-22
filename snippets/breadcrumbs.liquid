@@ -43,7 +43,7 @@
           {% endif %}
         {%- endif -%}
 
-      {%- when 'collection' and collection.handle -%}
+      {%- when 'collection' -%}
         {%- if current_tags -%}
           <li class="breadcrumbs__item">
             {{ collection.title | link_to: collection.url }}
@@ -128,3 +128,13 @@
   //   history.back();
   // })
 </script>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- when 'collection' and collection.handle -%}"
+  to: "{%- when 'collection' -%}"
+  position: 2348..2373
+{% endcomment %}
